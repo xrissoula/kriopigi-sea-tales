@@ -17,6 +17,7 @@ import { Route as FieldNotesRouteImport } from './routes/field-notes'
 import { Route as ConservationRouteImport } from './routes/conservation'
 import { Route as ConditionsRouteImport } from './routes/conditions'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
 
 const SubmitRoute = SubmitRouteImport.update({
   id: '/submit',
@@ -58,37 +59,45 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FieldNotesGeologyRoute = FieldNotesGeologyRouteImport.update({
+  id: '/geology',
+  path: '/geology',
+  getParentRoute: () => FieldNotesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
-  '/field-notes': typeof FieldNotesRoute
+  '/field-notes': typeof FieldNotesRouteWithChildren
   '/map': typeof MapRoute
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
+  '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
-  '/field-notes': typeof FieldNotesRoute
+  '/field-notes': typeof FieldNotesRouteWithChildren
   '/map': typeof MapRoute
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
+  '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
-  '/field-notes': typeof FieldNotesRoute
+  '/field-notes': typeof FieldNotesRouteWithChildren
   '/map': typeof MapRoute
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
+  '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +110,7 @@ export interface FileRouteTypes {
     | '/oral-history'
     | '/snorkeling'
     | '/submit'
+    | '/field-notes/geology'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +121,7 @@ export interface FileRouteTypes {
     | '/oral-history'
     | '/snorkeling'
     | '/submit'
+    | '/field-notes/geology'
   id:
     | '__root__'
     | '/'
@@ -121,13 +132,14 @@ export interface FileRouteTypes {
     | '/oral-history'
     | '/snorkeling'
     | '/submit'
+    | '/field-notes/geology'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ConditionsRoute: typeof ConditionsRoute
   ConservationRoute: typeof ConservationRoute
-  FieldNotesRoute: typeof FieldNotesRoute
+  FieldNotesRoute: typeof FieldNotesRouteWithChildren
   MapRoute: typeof MapRoute
   OralHistoryRoute: typeof OralHistoryRoute
   SnorkelingRoute: typeof SnorkelingRoute
@@ -192,14 +204,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/field-notes/geology': {
+      id: '/field-notes/geology'
+      path: '/geology'
+      fullPath: '/field-notes/geology'
+      preLoaderRoute: typeof FieldNotesGeologyRouteImport
+      parentRoute: typeof FieldNotesRoute
+    }
   }
 }
+
+interface FieldNotesRouteChildren {
+  FieldNotesGeologyRoute: typeof FieldNotesGeologyRoute
+}
+
+const FieldNotesRouteChildren: FieldNotesRouteChildren = {
+  FieldNotesGeologyRoute: FieldNotesGeologyRoute,
+}
+
+const FieldNotesRouteWithChildren = FieldNotesRoute._addFileChildren(
+  FieldNotesRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ConditionsRoute: ConditionsRoute,
   ConservationRoute: ConservationRoute,
-  FieldNotesRoute: FieldNotesRoute,
+  FieldNotesRoute: FieldNotesRouteWithChildren,
   MapRoute: MapRoute,
   OralHistoryRoute: OralHistoryRoute,
   SnorkelingRoute: SnorkelingRoute,
@@ -208,3 +239,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
