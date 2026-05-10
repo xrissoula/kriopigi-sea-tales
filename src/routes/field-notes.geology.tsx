@@ -8,6 +8,7 @@ import eoceneMap from "@/assets/eocene-world.png";
 import plioceneMap from "@/assets/pliocene-world.png";
 import holoceneMap from "@/assets/holocene-world.jpg";
 import greeceGeoMap from "@/assets/greece-geological-map.webp";
+import halkidikiGeoMap from "@/assets/halkidiki-geology.jpg";
 
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
@@ -19,14 +20,14 @@ export const Route = createFileRoute("/field-notes/geology")({
   component: Geology,
 });
 
-type Era = { age: string; title: string; body: string; image?: string; caption?: string };
+type Era = { age: string; title: string; body: string; image?: string; caption?: string; image2?: string; caption2?: string };
 
 const eras: Era[] = [
   { age: "~250 Mya · Triassic", title: "An ancient sea bed", body: "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone.", image: triassicMap, caption: "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf." },
   { age: "~50 Mya · Eocene", title: "Tectonic uplift", body: "The collision of the African and Eurasian plates lifts the Hellenic peninsula. The Kassandra ridge emerges as a long limestone spine, faulted and folded by ongoing compression.", image: eoceneMap, caption: "Eocene world — Africa drifts north into Eurasia, closing the Tethys and crumpling the Hellenic arc into being." },
   { age: "~5 Mya · Pliocene", title: "Sculpting the coast", body: "Sea level fluctuations and karst dissolution carve coves and headlands. Freshwater percolating through fractured limestone emerges as cold springs along the shore — krio pigi, the cold spring.", image: plioceneMap, caption: "Pliocene world — continents in nearly modern positions; the Mediterranean settles into its present basin." },
   { age: "~12,000 ya · Holocene", title: "The modern shoreline", body: "Post-glacial sea-level rise floods the lower valleys. Aleppo pine (Pinus halepensis) colonises the slopes; Posidonia oceanica meadows establish on the sandy shelf, stabilising the bay.", image: holoceneMap, caption: "Holocene world — continents in their familiar outlines after post-glacial seas rose to today's coastline." },
-  { age: "Today", title: "A living equilibrium", body: "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2–3°C in summer — a microclimate that shelters juvenile fish and keeps the seagrass meadow productive.", image: greeceGeoMap, caption: "Simplified geological map of Greece (modified after IGME, 1983 and Zachariadis, 2007). Kassandra-Sithonia (K-S) marks the Halkidiki peninsulas." },
+  { age: "Today", title: "A living equilibrium", body: "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2–3°C in summer — a microclimate that shelters juvenile fish and keeps the seagrass meadow productive.", image: greeceGeoMap, caption: "Simplified geological map of Greece (modified after IGME, 1983 and Zachariadis, 2007). Kassandra-Sithonia (K-S) marks the Halkidiki peninsulas.", image2: halkidikiGeoMap, caption2: "Geological map of the Halkidiki peninsula and the Serbo-Macedonian Massif (modified after Melfos & Voudouris, 2012; Schmid et al., 2008; van Hinsbergen & Schmid, 2012). Source: ScienceDirect, S0169136822000221." },
 ];
 
 function Geology() {
@@ -65,6 +66,14 @@ function Geology() {
                   <img src={e.image} alt={e.caption ?? e.title} loading="lazy" className="w-full h-auto" />
                   {e.caption && (
                     <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{e.caption}</figcaption>
+                  )}
+                </figure>
+              )}
+              {e.image2 && (
+                <figure className="mt-4 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
+                  <img src={e.image2} alt={e.caption2 ?? e.title} loading="lazy" className="w-full h-auto" />
+                  {e.caption2 && (
+                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{e.caption2}</figcaption>
                   )}
                 </figure>
               )}
