@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
-import elder from "@/assets/elder.jpg";
+import elder from "@/assets/anthropology-tower.webp";
 
 export const Route = createFileRoute("/field-notes/anthropology")({
   head: () => ({
