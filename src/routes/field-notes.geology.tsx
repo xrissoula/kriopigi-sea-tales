@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import hero from "@/assets/hero-kriopigi.webp";
+import timeScale from "@/assets/geologic-time-scale.webp";
 
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
@@ -36,15 +37,25 @@ function Geology() {
         </div>
       </div>
       <PageHeader eyebrow="Formation" title="How the cove was made" lead="Read downward through time — from a Triassic sea bed to the cold spring that still feeds the bay." />
-      <div className="px-5 max-w-2xl mx-auto pb-8 space-y-6">
-        {eras.map((e, i) => (
-          <article key={i} className="relative pl-6 border-l-2 border-accent/40">
-            <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-accent" />
-            <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
-            <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
-            <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{e.body}</p>
-          </article>
-        ))}
+      <div className="px-5 max-w-5xl mx-auto pb-8 grid lg:grid-cols-[260px_1fr] gap-8">
+        <aside className="lg:sticky lg:top-20 lg:self-start">
+          <figure className="rounded-lg overflow-hidden border border-border bg-card shadow-soft">
+            <img src={timeScale} alt="Geologic time scale, 650 million years ago to the present" className="w-full h-auto" />
+            <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">
+              Geologic time scale — 650 Mya to present. © Encyclopædia Britannica.
+            </figcaption>
+          </figure>
+        </aside>
+        <div className="space-y-6 max-w-2xl">
+          {eras.map((e, i) => (
+            <article key={i} className="relative pl-6 border-l-2 border-accent/40">
+              <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-accent" />
+              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
+              <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
+              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{e.body}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </SiteLayout>
   );
