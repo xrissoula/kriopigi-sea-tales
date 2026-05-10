@@ -69,6 +69,14 @@ function Geology() {
                   )}
                 </figure>
               )}
+              {e.image2 && (
+                <figure className="mt-4 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
+                  <img src={e.image2} alt={e.caption2 ?? e.title} loading="lazy" className="w-full h-auto" />
+                  {e.caption2 && (
+                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{e.caption2}</figcaption>
+                  )}
+                </figure>
+              )}
             </article>
           ))}
         </div>
