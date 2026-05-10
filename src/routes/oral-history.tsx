@@ -104,18 +104,39 @@ function OralHistory() {
             Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {photos.map((p, i) => (
-              <figure key={i} className="group rounded-xl overflow-hidden bg-card border border-border shadow-soft">
-                <div className="aspect-square overflow-hidden">
-                  <img src={p.src} alt={p.caption} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Sorted oldest → newest · scroll for recent
+          </p>
+
+          <div className="space-y-8">
+            {Object.keys(groupedByYear)
+              .sort()
+              .map((year) => (
+                <div key={year}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="font-serif text-2xl text-accent">{year}</span>
+                    <span className="flex-1 h-px bg-border" />
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                      {groupedByYear[year].length} {groupedByYear[year].length === 1 ? "photo" : "photos"}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {groupedByYear[year].map((p, i) => (
+                      <figure key={i} className="group rounded-xl overflow-hidden bg-card border border-border shadow-soft">
+                        <div className="aspect-square overflow-hidden">
+                          <img src={p.src} alt={p.caption} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        </div>
+                        <figcaption className="p-3">
+                          <p className="text-sm text-foreground leading-tight">{p.caption}</p>
+                          <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+                            {p.author} · {p.origin} · {formatDate(p.date)}
+                          </p>
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
                 </div>
-                <figcaption className="p-3">
-                  <p className="text-sm text-foreground leading-tight">{p.caption}</p>
-                  <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-muted-foreground">{p.credit}</p>
-                </figcaption>
-              </figure>
-            ))}
+              ))}
           </div>
 
           <a
