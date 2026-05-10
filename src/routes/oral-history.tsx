@@ -23,13 +23,29 @@ const stories = [
   { name: "Petros, b. 1968", role: "Boatwright", quote: "Every caïque from this coast has pine from the slope above the spring. The wood remembers the salt before it ever touches the sea.", length: "15:22" },
 ];
 
-const photos = [
-  { src: hero, caption: "Cove at golden hour", credit: "Anna K. · local · 2025" },
-  { src: tower, caption: "The old stone tower", credit: "D. Marinos · local · 2024" },
-  { src: damselfish, caption: "Damselfish over the reef", credit: "Luca P. · visitor (IT) · 2025" },
-  { src: posidonia, caption: "Posidonia at four meters", credit: "Eleni V. · local · 2025" },
-  { src: elder, caption: "Morning at the harbor", credit: "Tomás R. · visitor (ES) · 2024" },
+type Photo = { src: string; caption: string; author: string; origin: "local" | "visitor"; date: string };
+
+const photosRaw: Photo[] = [
+  { src: hero, caption: "Cove at golden hour", author: "Anna K.", origin: "local", date: "2025-09-14" },
+  { src: tower, caption: "The old stone tower", author: "D. Marinos", origin: "local", date: "2019-06-02" },
+  { src: damselfish, caption: "Damselfish over the reef", author: "Luca P. (IT)", origin: "visitor", date: "2024-08-21" },
+  { src: posidonia, caption: "Posidonia at four meters", author: "Eleni V.", origin: "local", date: "2022-07-30" },
+  { src: elder, caption: "Morning at the harbor", author: "Tomás R. (ES)", origin: "visitor", date: "2017-05-11" },
+  { src: hero, caption: "After the August storm", author: "N. Halkias", origin: "local", date: "2021-08-08" },
+  { src: posidonia, caption: "Sea grapes on the reef", author: "Sofia M.", origin: "local", date: "2023-09-03" },
+  { src: tower, caption: "Winter light, north cove", author: "K. Ioannou", origin: "local", date: "2026-02-19" },
 ];
+
+const photos = [...photosRaw].sort((a, b) => a.date.localeCompare(b.date));
+
+const formatDate = (iso: string) =>
+  new Date(iso).toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+
+const groupedByYear = photos.reduce<Record<string, Photo[]>>((acc, p) => {
+  const y = p.date.slice(0, 4);
+  (acc[y] ||= []).push(p);
+  return acc;
+}, {});
 
 function OralHistory() {
   return (
@@ -88,18 +104,39 @@ function OralHistory() {
             Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {photos.map((p, i) => (
-              <figure key={i} className="group rounded-xl overflow-hidden bg-card border border-border shadow-soft">
-                <div className="aspect-square overflow-hidden">
-                  <img src={p.src} alt={p.caption} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Sorted oldest → newest · scroll for recent
+          </p>
+
+          <div className="space-y-8">
+            {Object.keys(groupedByYear)
+              .sort()
+              .map((year) => (
+                <div key={year}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="font-serif text-2xl text-accent">{year}</span>
+                    <span className="flex-1 h-px bg-border" />
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                      {groupedByYear[year].length} {groupedByYear[year].length === 1 ? "photo" : "photos"}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {groupedByYear[year].map((p, i) => (
+                      <figure key={i} className="group rounded-xl overflow-hidden bg-card border border-border shadow-soft">
+                        <div className="aspect-square overflow-hidden">
+                          <img src={p.src} alt={p.caption} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        </div>
+                        <figcaption className="p-3">
+                          <p className="text-sm text-foreground leading-tight">{p.caption}</p>
+                          <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+                            {p.author} · {p.origin} · {formatDate(p.date)}
+                          </p>
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
                 </div>
-                <figcaption className="p-3">
-                  <p className="text-sm text-foreground leading-tight">{p.caption}</p>
-                  <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-muted-foreground">{p.credit}</p>
-                </figcaption>
-              </figure>
-            ))}
+              ))}
           </div>
 
           <a
