@@ -3,6 +3,7 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import hero from "@/assets/hero-kriopigi.webp";
 import timeScale from "@/assets/geologic-time-scale.webp";
+import triassicMap from "@/assets/triassic-supercontinent.png";
 
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
@@ -14,8 +15,10 @@ export const Route = createFileRoute("/field-notes/geology")({
   component: Geology,
 });
 
-const eras = [
-  { age: "~250 Mya · Triassic", title: "An ancient sea bed", body: "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone." },
+type Era = { age: string; title: string; body: string; image?: string; caption?: string };
+
+const eras: Era[] = [
+  { age: "~250 Mya · Triassic", title: "An ancient sea bed", body: "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone.", image: triassicMap, caption: "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf." },
   { age: "~50 Mya · Eocene", title: "Tectonic uplift", body: "The collision of the African and Eurasian plates lifts the Hellenic peninsula. The Kassandra ridge emerges as a long limestone spine, faulted and folded by ongoing compression." },
   { age: "~5 Mya · Pliocene", title: "Sculpting the coast", body: "Sea level fluctuations and karst dissolution carve coves and headlands. Freshwater percolating through fractured limestone emerges as cold springs along the shore — krio pigi, the cold spring." },
   { age: "~12,000 ya · Holocene", title: "The modern shoreline", body: "Post-glacial sea-level rise floods the lower valleys. Aleppo pine (Pinus halepensis) colonises the slopes; Posidonia oceanica meadows establish on the sandy shelf, stabilising the bay." },
@@ -53,6 +56,14 @@ function Geology() {
               <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
               <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
               <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{e.body}</p>
+              {e.image && (
+                <figure className="mt-4 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
+                  <img src={e.image} alt={e.caption ?? e.title} loading="lazy" className="w-full h-auto" />
+                  {e.caption && (
+                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{e.caption}</figcaption>
+                  )}
+                </figure>
+              )}
             </article>
           ))}
         </div>
