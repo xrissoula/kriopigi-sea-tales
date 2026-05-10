@@ -18,6 +18,7 @@ import { Route as ConservationRouteImport } from './routes/conservation'
 import { Route as ConditionsRouteImport } from './routes/conditions'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
+import { Route as FieldNotesAnthropologyRouteImport } from './routes/field-notes.anthropology'
 
 const SubmitRoute = SubmitRouteImport.update({
   id: '/submit',
@@ -64,6 +65,11 @@ const FieldNotesGeologyRoute = FieldNotesGeologyRouteImport.update({
   path: '/geology',
   getParentRoute: () => FieldNotesRoute,
 } as any)
+const FieldNotesAnthropologyRoute = FieldNotesAnthropologyRouteImport.update({
+  id: '/anthropology',
+  path: '/anthropology',
+  getParentRoute: () => FieldNotesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -74,6 +80,7 @@ export interface FileRoutesByFullPath {
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
+  '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRoutesByTo {
@@ -85,6 +92,7 @@ export interface FileRoutesByTo {
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
+  '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRoutesById {
@@ -97,6 +105,7 @@ export interface FileRoutesById {
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
+  '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRouteTypes {
@@ -110,6 +119,7 @@ export interface FileRouteTypes {
     | '/oral-history'
     | '/snorkeling'
     | '/submit'
+    | '/field-notes/anthropology'
     | '/field-notes/geology'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -121,6 +131,7 @@ export interface FileRouteTypes {
     | '/oral-history'
     | '/snorkeling'
     | '/submit'
+    | '/field-notes/anthropology'
     | '/field-notes/geology'
   id:
     | '__root__'
@@ -132,6 +143,7 @@ export interface FileRouteTypes {
     | '/oral-history'
     | '/snorkeling'
     | '/submit'
+    | '/field-notes/anthropology'
     | '/field-notes/geology'
   fileRoutesById: FileRoutesById
 }
@@ -211,14 +223,23 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FieldNotesGeologyRouteImport
       parentRoute: typeof FieldNotesRoute
     }
+    '/field-notes/anthropology': {
+      id: '/field-notes/anthropology'
+      path: '/anthropology'
+      fullPath: '/field-notes/anthropology'
+      preLoaderRoute: typeof FieldNotesAnthropologyRouteImport
+      parentRoute: typeof FieldNotesRoute
+    }
   }
 }
 
 interface FieldNotesRouteChildren {
+  FieldNotesAnthropologyRoute: typeof FieldNotesAnthropologyRoute
   FieldNotesGeologyRoute: typeof FieldNotesGeologyRoute
 }
 
 const FieldNotesRouteChildren: FieldNotesRouteChildren = {
+  FieldNotesAnthropologyRoute: FieldNotesAnthropologyRoute,
   FieldNotesGeologyRoute: FieldNotesGeologyRoute,
 }
 
