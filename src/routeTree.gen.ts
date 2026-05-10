@@ -18,6 +18,7 @@ import { Route as ConservationRouteImport } from './routes/conservation'
 import { Route as ConditionsRouteImport } from './routes/conditions'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
+import { Route as FieldNotesFloraFaunaRouteImport } from './routes/field-notes.flora-fauna'
 import { Route as FieldNotesAnthropologyRouteImport } from './routes/field-notes.anthropology'
 
 const SubmitRoute = SubmitRouteImport.update({
@@ -65,6 +66,11 @@ const FieldNotesGeologyRoute = FieldNotesGeologyRouteImport.update({
   path: '/geology',
   getParentRoute: () => FieldNotesRoute,
 } as any)
+const FieldNotesFloraFaunaRoute = FieldNotesFloraFaunaRouteImport.update({
+  id: '/flora-fauna',
+  path: '/flora-fauna',
+  getParentRoute: () => FieldNotesRoute,
+} as any)
 const FieldNotesAnthropologyRoute = FieldNotesAnthropologyRouteImport.update({
   id: '/anthropology',
   path: '/anthropology',
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
   '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
+  '/field-notes/flora-fauna': typeof FieldNotesFloraFaunaRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRoutesByTo {
@@ -93,6 +100,7 @@ export interface FileRoutesByTo {
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
   '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
+  '/field-notes/flora-fauna': typeof FieldNotesFloraFaunaRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRoutesById {
@@ -106,6 +114,7 @@ export interface FileRoutesById {
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
   '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
+  '/field-notes/flora-fauna': typeof FieldNotesFloraFaunaRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
 export interface FileRouteTypes {
@@ -120,6 +129,7 @@ export interface FileRouteTypes {
     | '/snorkeling'
     | '/submit'
     | '/field-notes/anthropology'
+    | '/field-notes/flora-fauna'
     | '/field-notes/geology'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -132,6 +142,7 @@ export interface FileRouteTypes {
     | '/snorkeling'
     | '/submit'
     | '/field-notes/anthropology'
+    | '/field-notes/flora-fauna'
     | '/field-notes/geology'
   id:
     | '__root__'
@@ -144,6 +155,7 @@ export interface FileRouteTypes {
     | '/snorkeling'
     | '/submit'
     | '/field-notes/anthropology'
+    | '/field-notes/flora-fauna'
     | '/field-notes/geology'
   fileRoutesById: FileRoutesById
 }
@@ -223,6 +235,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FieldNotesGeologyRouteImport
       parentRoute: typeof FieldNotesRoute
     }
+    '/field-notes/flora-fauna': {
+      id: '/field-notes/flora-fauna'
+      path: '/flora-fauna'
+      fullPath: '/field-notes/flora-fauna'
+      preLoaderRoute: typeof FieldNotesFloraFaunaRouteImport
+      parentRoute: typeof FieldNotesRoute
+    }
     '/field-notes/anthropology': {
       id: '/field-notes/anthropology'
       path: '/anthropology'
@@ -235,11 +254,13 @@ declare module '@tanstack/react-router' {
 
 interface FieldNotesRouteChildren {
   FieldNotesAnthropologyRoute: typeof FieldNotesAnthropologyRoute
+  FieldNotesFloraFaunaRoute: typeof FieldNotesFloraFaunaRoute
   FieldNotesGeologyRoute: typeof FieldNotesGeologyRoute
 }
 
 const FieldNotesRouteChildren: FieldNotesRouteChildren = {
   FieldNotesAnthropologyRoute: FieldNotesAnthropologyRoute,
+  FieldNotesFloraFaunaRoute: FieldNotesFloraFaunaRoute,
   FieldNotesGeologyRoute: FieldNotesGeologyRoute,
 }
 
