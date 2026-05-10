@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import hero from "@/assets/hero-kriopigi.jpg";
+import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/turtle.jpg";
 import { ArrowRight, Map, BookOpen, Waves, Shield } from "lucide-react";
