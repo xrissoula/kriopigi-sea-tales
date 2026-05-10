@@ -20,7 +20,7 @@ export const Route = createFileRoute("/field-notes/geology")({
   component: Geology,
 });
 
-type Era = { age: string; title: string; body: string; image?: string; caption?: string };
+type Era = { age: string; title: string; body: string; image?: string; caption?: string; image2?: string; caption2?: string };
 
 const eras: Era[] = [
   { age: "~250 Mya · Triassic", title: "An ancient sea bed", body: "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone.", image: triassicMap, caption: "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf." },
