@@ -2,7 +2,7 @@ import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-rout
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { Mountain, Users, Leaf, ArrowRight } from "lucide-react";
 import posidonia from "@/assets/posidonia.jpg";
-import turtle from "@/assets/turtle.jpg";
+import tower from "@/assets/anthropology-tower.webp";
 import hero from "@/assets/hero-kriopigi.webp";
 
 export const Route = createFileRoute("/field-notes")({
