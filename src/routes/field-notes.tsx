@@ -1,46 +1,87 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
-import turtle from "@/assets/turtle.jpg";
+import { Mountain, Users, Leaf, ArrowRight } from "lucide-react";
 import posidonia from "@/assets/posidonia.jpg";
+import turtle from "@/assets/turtle.jpg";
+import hero from "@/assets/hero-kriopigi.webp";
 
 export const Route = createFileRoute("/field-notes")({
   head: () => ({
     meta: [
       { title: "Field Notes — Kriopigi Shore Guide" },
-      { name: "description", content: "Recent species observations and field notes from Kriopigi Beach." },
+      { name: "description", content: "A chronological field guide to Kriopigi: geology, human history, and the living shore." },
     ],
   }),
-  component: FieldNotes,
+  component: FieldNotesLayout,
 });
 
-const notes = [
-  { date: "May 4, 2026", species: "Caretta caretta", common: "Loggerhead turtle", img: turtle, observer: "M. Papadopoulos", note: "Juvenile sighted off the north headland at dawn. Surface-resting for ~6 minutes before diving." },
-  { date: "Apr 28, 2026", species: "Posidonia oceanica", common: "Neptune grass", img: posidonia, observer: "Eleni V.", note: "Healthy meadow at 4–7m. Several leaves bearing epiphytic red algae — sign of a stable substrate." },
-  { date: "Apr 21, 2026", species: "Sarpa salpa", common: "Salema porgy", img: posidonia, observer: "D. Kostas", note: "Schooling group of ~40 grazing seagrass tips. Returned each morning for three days." },
-  { date: "Apr 14, 2026", species: "Larus michahellis", common: "Yellow-legged gull", img: turtle, observer: "Visitor", note: "Pair nesting on the cliff above the old harbor. Avoid the upper trail until July." },
+const sections = [
+  {
+    to: "/field-notes/geology" as const,
+    eyebrow: "I · Deep Time",
+    title: "Geological & Natural History",
+    desc: "How tectonics, limestone, and the cold spring shaped the cove and its ecosystem.",
+    image: hero,
+    icon: Mountain,
+  },
+  {
+    to: "/field-notes/anthropology" as const,
+    eyebrow: "II · Human Time",
+    title: "Anthropological History",
+    desc: "From the first settlers of Halkidiki through Byzantine villages to modern tourism.",
+    image: turtle,
+    icon: Users,
+  },
+  {
+    to: "/field-notes/flora-fauna" as const,
+    eyebrow: "III · Living Shore",
+    title: "Flora & Fauna",
+    desc: "A field catalogue from the dune line outward — beach, surf, shallows, and deep water.",
+    image: posidonia,
+    icon: Leaf,
+  },
 ];
 
-function FieldNotes() {
+function FieldNotesLayout() {
+  const { pathname } = useLocation();
+  const isHub = pathname === "/field-notes" || pathname === "/field-notes/";
+  if (!isHub) return <Outlet />;
+
   return (
     <SiteLayout>
-      <PageHeader eyebrow="Field Notes" title="What the shore showed us this week" lead="A naturalist's running ledger — open to revision, often surprising." />
-      <div className="px-5 max-w-3xl mx-auto space-y-5">
-        {notes.map((n) => (
-          <article key={n.date} className="rounded-2xl bg-card border border-border shadow-soft overflow-hidden">
-            <div className="grid sm:grid-cols-[140px_1fr]">
-              <img src={n.img} alt={n.common} loading="lazy" className="h-32 sm:h-full w-full object-cover" />
-              <div className="p-5">
-                <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                  <span>{n.date}</span>
-                  <span>by {n.observer}</span>
+      <PageHeader
+        eyebrow="Field Notes"
+        title="A chronological reading of the shore"
+        lead="Three layers, in order: the rock beneath, the people upon it, and the life that returns each season."
+      />
+      <div className="px-5 max-w-3xl mx-auto space-y-5 pb-8">
+        {sections.map((s) => {
+          const Icon = s.icon;
+          return (
+            <Link
+              key={s.to}
+              to={s.to}
+              className="group block rounded-2xl overflow-hidden bg-card border border-border shadow-soft hover:shadow-deep transition-shadow"
+            >
+              <div className="grid sm:grid-cols-[180px_1fr]">
+                <div className="aspect-[5/3] sm:aspect-auto overflow-hidden">
+                  <img src={s.image} alt="" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
-                <h2 className="mt-1 font-serif text-2xl text-foreground italic">{n.species}</h2>
-                <p className="text-sm text-accent">{n.common}</p>
-                <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{n.note}</p>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 text-accent">
+                    <Icon size={16} />
+                    <span className="text-[10px] uppercase tracking-[0.25em]">{s.eyebrow}</span>
+                  </div>
+                  <h2 className="mt-1 font-serif text-2xl text-foreground">{s.title}</h2>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm text-accent">
+                    Read section <ArrowRight size={14} />
+                  </span>
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </Link>
+          );
+        })}
       </div>
     </SiteLayout>
   );
