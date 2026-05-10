@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import hero from "@/assets/hero-kriopigi.webp";
 import timeScale from "@/assets/geologic-time-scale.webp";
 import triassicMap from "@/assets/triassic-supercontinent.png";
+import eoceneMap from "@/assets/eocene-world.png";
 
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
@@ -19,7 +20,7 @@ type Era = { age: string; title: string; body: string; image?: string; caption?:
 
 const eras: Era[] = [
   { age: "~250 Mya · Triassic", title: "An ancient sea bed", body: "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone.", image: triassicMap, caption: "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf." },
-  { age: "~50 Mya · Eocene", title: "Tectonic uplift", body: "The collision of the African and Eurasian plates lifts the Hellenic peninsula. The Kassandra ridge emerges as a long limestone spine, faulted and folded by ongoing compression." },
+  { age: "~50 Mya · Eocene", title: "Tectonic uplift", body: "The collision of the African and Eurasian plates lifts the Hellenic peninsula. The Kassandra ridge emerges as a long limestone spine, faulted and folded by ongoing compression.", image: eoceneMap, caption: "Eocene world — Africa drifts north into Eurasia, closing the Tethys and crumpling the Hellenic arc into being." },
   { age: "~5 Mya · Pliocene", title: "Sculpting the coast", body: "Sea level fluctuations and karst dissolution carve coves and headlands. Freshwater percolating through fractured limestone emerges as cold springs along the shore — krio pigi, the cold spring." },
   { age: "~12,000 ya · Holocene", title: "The modern shoreline", body: "Post-glacial sea-level rise floods the lower valleys. Aleppo pine (Pinus halepensis) colonises the slopes; Posidonia oceanica meadows establish on the sandy shelf, stabilising the bay." },
   { age: "Today", title: "A living equilibrium", body: "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2–3°C in summer — a microclimate that shelters juvenile fish and keeps the seagrass meadow productive." },
