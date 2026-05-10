@@ -29,7 +29,7 @@ const sections = [
     eyebrow: "II · Human Time",
     title: "Anthropological History",
     desc: "From the first settlers of Halkidiki through Byzantine villages to modern tourism.",
-    image: turtle,
+    image: tower,
     icon: Users,
   },
   {
