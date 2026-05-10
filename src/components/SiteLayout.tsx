@@ -1,0 +1,85 @@
+import { Link, useLocation } from "@tanstack/react-router";
+import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home } from "lucide-react";
+import type { ReactNode } from "react";
+
+const nav = [
+  { to: "/", label: "Home", icon: Home },
+  { to: "/map", label: "Map", icon: Map },
+  { to: "/field-notes", label: "Field", icon: BookOpen },
+  { to: "/oral-history", label: "Voices", icon: Mic },
+  { to: "/conservation", label: "Care", icon: Shield },
+  { to: "/snorkeling", label: "Snorkel", icon: Waves },
+  { to: "/conditions", label: "Sea", icon: Cloud },
+  { to: "/submit", label: "Submit", icon: Send },
+] as const;
+
+export function SiteLayout({ children }: { children: ReactNode }) {
+  const { pathname } = useLocation();
+  return (
+    <div className="min-h-screen flex flex-col bg-background">
+      <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
+        <div className="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-2 group">
+            <span className="w-8 h-8 rounded-full bg-gradient-sea grid place-items-center text-primary-foreground text-xs font-semibold shadow-soft">KS</span>
+            <div className="leading-tight">
+              <div className="font-serif text-lg text-foreground">Kriopigi</div>
+              <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">Shore Guide</div>
+            </div>
+          </Link>
+          <nav className="hidden md:flex gap-1 text-sm">
+            {nav.slice(1).map((n) => (
+              <Link key={n.to} to={n.to} className="px-3 py-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors" activeProps={{ className: "text-foreground bg-muted" }}>
+                {n.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+      </header>
+
+      <main className="flex-1 pb-24 md:pb-12">{children}</main>
+
+      <footer className="border-t border-border py-8 px-5 text-center text-xs text-muted-foreground">
+        <p className="font-serif italic text-base text-foreground/70">"The shore remembers every visitor."</p>
+        <p className="mt-2">Kriopigi Shore Guide · Halkidiki, Greece</p>
+      </footer>
+
+      {/* Mobile bottom nav */}
+      <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-background/95 backdrop-blur-md border-t border-border">
+        <div className="grid grid-cols-4 px-1">
+          {nav.slice(0, 4).map((n) => {
+            const Icon = n.icon;
+            const active = pathname === n.to;
+            return (
+              <Link key={n.to} to={n.to} className={`flex flex-col items-center gap-1 py-2.5 text-[10px] ${active ? "text-accent" : "text-muted-foreground"}`}>
+                <Icon size={18} strokeWidth={1.6} />
+                {n.label}
+              </Link>
+            );
+          })}
+        </div>
+        <div className="grid grid-cols-4 px-1 border-t border-border">
+          {nav.slice(4).map((n) => {
+            const Icon = n.icon;
+            const active = pathname === n.to;
+            return (
+              <Link key={n.to} to={n.to} className={`flex flex-col items-center gap-1 py-2.5 text-[10px] ${active ? "text-accent" : "text-muted-foreground"}`}>
+                <Icon size={18} strokeWidth={1.6} />
+                {n.label}
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export function PageHeader({ eyebrow, title, lead }: { eyebrow: string; title: string; lead?: string }) {
+  return (
+    <div className="px-5 pt-10 pb-6 max-w-3xl mx-auto">
+      <p className="text-[11px] uppercase tracking-[0.25em] text-accent font-medium">{eyebrow}</p>
+      <h1 className="mt-2 text-4xl md:text-5xl font-serif text-foreground text-balance">{title}</h1>
+      {lead && <p className="mt-3 text-muted-foreground leading-relaxed text-balance">{lead}</p>}
+    </div>
+  );
+}
