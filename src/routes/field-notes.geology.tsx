@@ -8,6 +8,7 @@ import eoceneMap from "@/assets/eocene-world.png";
 import plioceneMap from "@/assets/pliocene-world.png";
 import holoceneMap from "@/assets/holocene-world.jpg";
 import greeceGeoMap from "@/assets/greece-geological-map.webp";
+import halkidikiGeoMap from "@/assets/halkidiki-geology.jpg";
 
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
