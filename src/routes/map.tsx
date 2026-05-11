@@ -37,18 +37,18 @@ function MapPage() {
     new mapboxgl.Marker({ color: "#d66a3a" })
       .setLngLat([23.505, 40.038])
       .setPopup(
-        new mapboxgl.Popup({ offset: 25 }).setHTML(`
-          <div style="max-width:260px; font-family:Georgia, serif;">
+        new mapboxgl.Popup({ offset: 18, maxWidth: "220px" }).setHTML(`
+          <div style="max-width:220px; max-height:35vh; overflow:hidden; font-family:Georgia, serif; color:#1f2d2f;">
             <img
-              src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"
-              style="width:100%; border-radius:10px; margin-bottom:10px;"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Posidonia_oceanica_%28L%29.jpg/640px-Posidonia_oceanica_%28L%29.jpg"
+              alt="Posidonia oceanica"
+              style="width:100%; height:90px; object-fit:cover; border-radius:8px; margin-bottom:8px; display:block;"
             />
-            <h3 style="margin:0 0 6px; color:#12343b;">Posidonia Meadow</h3>
-            <p style="font-size:14px; line-height:1.5; margin:0 0 6px;">
-              Offshore seagrass meadows stabilize sediment, shelter juvenile fish,
-              and help maintain the remarkable water clarity of the Aegean coast.
+            <h3 style="margin:0 0 4px; font-size:13px; font-weight:600; letter-spacing:0.01em; color:#12343b;">Posidonia Meadow</h3>
+            <p style="font-size:11.5px; line-height:1.45; margin:0 0 6px; color:#3a4a4d;">
+              Endemic seagrass meadows stabilize sediment and shelter juvenile fish across the Aegean shelf.
             </p>
-            <div style="font-size:12px; opacity:0.7;">Ecology • Marine Habitat • Coastal Processes</div>
+            <div style="font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase; opacity:0.6;">Ecology · Marine · Coast</div>
           </div>
         `)
       )
