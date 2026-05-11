@@ -100,6 +100,13 @@ function Geology() {
               </p>
             </div>
           </Link>
+          <Link
+            to="/field-notes/anthropology"
+            hash="first-settlers"
+            className="mt-4 block text-center text-[12px] uppercase tracking-[0.2em] text-muted-foreground hover:text-accent transition-colors"
+          >
+            …or wanna wade out? <span className="normal-case tracking-normal italic">Stay shallow with the humans →</span>
+          </Link>
         </div>
       </div>
     </SiteLayout>
