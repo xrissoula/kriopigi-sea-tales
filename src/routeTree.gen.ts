@@ -19,6 +19,7 @@ import { Route as ConditionsRouteImport } from './routes/conditions'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
 import { Route as FieldNotesFloraFaunaRouteImport } from './routes/field-notes.flora-fauna'
+import { Route as FieldNotesBiogeochemistryRouteImport } from './routes/field-notes.biogeochemistry'
 import { Route as FieldNotesAnthropologyRouteImport } from './routes/field-notes.anthropology'
 
 const SubmitRoute = SubmitRouteImport.update({
@@ -71,6 +72,12 @@ const FieldNotesFloraFaunaRoute = FieldNotesFloraFaunaRouteImport.update({
   path: '/flora-fauna',
   getParentRoute: () => FieldNotesRoute,
 } as any)
+const FieldNotesBiogeochemistryRoute =
+  FieldNotesBiogeochemistryRouteImport.update({
+    id: '/biogeochemistry',
+    path: '/biogeochemistry',
+    getParentRoute: () => FieldNotesRoute,
+  } as any)
 const FieldNotesAnthropologyRoute = FieldNotesAnthropologyRouteImport.update({
   id: '/anthropology',
   path: '/anthropology',
@@ -87,6 +94,7 @@ export interface FileRoutesByFullPath {
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
   '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
+  '/field-notes/biogeochemistry': typeof FieldNotesBiogeochemistryRoute
   '/field-notes/flora-fauna': typeof FieldNotesFloraFaunaRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
@@ -100,6 +108,7 @@ export interface FileRoutesByTo {
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
   '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
+  '/field-notes/biogeochemistry': typeof FieldNotesBiogeochemistryRoute
   '/field-notes/flora-fauna': typeof FieldNotesFloraFaunaRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
@@ -114,6 +123,7 @@ export interface FileRoutesById {
   '/snorkeling': typeof SnorkelingRoute
   '/submit': typeof SubmitRoute
   '/field-notes/anthropology': typeof FieldNotesAnthropologyRoute
+  '/field-notes/biogeochemistry': typeof FieldNotesBiogeochemistryRoute
   '/field-notes/flora-fauna': typeof FieldNotesFloraFaunaRoute
   '/field-notes/geology': typeof FieldNotesGeologyRoute
 }
@@ -129,6 +139,7 @@ export interface FileRouteTypes {
     | '/snorkeling'
     | '/submit'
     | '/field-notes/anthropology'
+    | '/field-notes/biogeochemistry'
     | '/field-notes/flora-fauna'
     | '/field-notes/geology'
   fileRoutesByTo: FileRoutesByTo
@@ -142,6 +153,7 @@ export interface FileRouteTypes {
     | '/snorkeling'
     | '/submit'
     | '/field-notes/anthropology'
+    | '/field-notes/biogeochemistry'
     | '/field-notes/flora-fauna'
     | '/field-notes/geology'
   id:
@@ -155,6 +167,7 @@ export interface FileRouteTypes {
     | '/snorkeling'
     | '/submit'
     | '/field-notes/anthropology'
+    | '/field-notes/biogeochemistry'
     | '/field-notes/flora-fauna'
     | '/field-notes/geology'
   fileRoutesById: FileRoutesById
@@ -242,6 +255,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FieldNotesFloraFaunaRouteImport
       parentRoute: typeof FieldNotesRoute
     }
+    '/field-notes/biogeochemistry': {
+      id: '/field-notes/biogeochemistry'
+      path: '/biogeochemistry'
+      fullPath: '/field-notes/biogeochemistry'
+      preLoaderRoute: typeof FieldNotesBiogeochemistryRouteImport
+      parentRoute: typeof FieldNotesRoute
+    }
     '/field-notes/anthropology': {
       id: '/field-notes/anthropology'
       path: '/anthropology'
@@ -254,12 +274,14 @@ declare module '@tanstack/react-router' {
 
 interface FieldNotesRouteChildren {
   FieldNotesAnthropologyRoute: typeof FieldNotesAnthropologyRoute
+  FieldNotesBiogeochemistryRoute: typeof FieldNotesBiogeochemistryRoute
   FieldNotesFloraFaunaRoute: typeof FieldNotesFloraFaunaRoute
   FieldNotesGeologyRoute: typeof FieldNotesGeologyRoute
 }
 
 const FieldNotesRouteChildren: FieldNotesRouteChildren = {
   FieldNotesAnthropologyRoute: FieldNotesAnthropologyRoute,
+  FieldNotesBiogeochemistryRoute: FieldNotesBiogeochemistryRoute,
   FieldNotesFloraFaunaRoute: FieldNotesFloraFaunaRoute,
   FieldNotesGeologyRoute: FieldNotesGeologyRoute,
 }
