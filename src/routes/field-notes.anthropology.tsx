@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import elder from "@/assets/anthropology-tower.webp";
 import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
 import mendePithamphora from "@/assets/mende-pithamphora.jpg";
+import philipII from "@/assets/philip-ii-vergina.webp";
 
 type Period = {
   age: string;
@@ -41,7 +42,14 @@ const periods: Period[] = [
     alt: "Pithamphora with floral motifs recovered from the cemetery at Mende.",
     caption: "Pithamphora with floral motifs from the cemetery at Mende. From S. Moschonissioti, “Vases du cimetière de Mendè,” in Recherches récentes sur le monde hellénistique (Publications du Centre Jean Bérard), available via OpenEdition Books: https://books.openedition.org/pcjb/661.",
   },
-  { age: "348 BCE", title: "Macedonian rule", body: "Philip II of Macedon destroys Olynthos and consolidates Halkidiki under Macedonian control. The region's harbours feed Alexander's campaigns." },
+  {
+    age: "348 BCE",
+    title: "Macedonian rule",
+    body: "Philip II of Macedon destroys Olynthos and consolidates Halkidiki under Macedonian control. The region's harbours feed Alexander's campaigns.",
+    image: philipII,
+    alt: "Small ivory head identified as a portrait of Philip II of Macedon, recovered from the royal tumulus at Aigai (Vergina).",
+    caption: "Ivory portrait head identified as Philip II of Macedon, recovered from Tomb II of the Great Tumulus at Aigai (modern Vergina), the royal necropolis of the Macedonian kings.",
+  },
   { age: "Byzantine era", title: "Monastic landscape", body: "Mount Athos to the east becomes the spiritual heart of Orthodoxy. Kassandra's villages live by fishing, olives, and beekeeping; the cold spring at Kriopigi serves caravans crossing the peninsula." },
   { age: "1821 onward", title: "Revolution & rebuilding", body: "Kassandra rises in the Greek War of Independence and is devastated in 1821. Villages are slowly resettled through the 19th century by refugees and returning families." },
   { age: "1923", title: "Population exchange", body: "Following the Greco–Turkish war, refugees from Asia Minor settle across Halkidiki, reshaping the demographics, cuisine, and music of the coast." },
