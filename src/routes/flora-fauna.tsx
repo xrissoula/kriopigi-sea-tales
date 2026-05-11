@@ -4,6 +4,7 @@ import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/turtle.jpg";
 import pineForestShore from "@/assets/pine-forest-shore.jpeg";
 import maquisShrubland from "@/assets/maquis-shrubland.jpeg";
+import phryganaTortoise from "@/assets/phrygana-tortoise.jpeg";
 
 export const Route = createFileRoute("/flora-fauna")({
   head: () => ({
@@ -136,8 +137,12 @@ function FloraFauna() {
           </p>
           <h3 className="mt-5 font-serif text-xl text-foreground">Phrygana on the dry edges</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Degraded / exposed dry edge ecology</p>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-            Where soils thin and grazing pressure rises, maquis gives way to <em>phrygana</em>: lower, more open, thornier, more aromatic — heavily adapted to drought and goats.
+          <figure className="mt-3 -mx-5 overflow-hidden">
+            <img src={phryganaTortoise} alt="Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and an erosional drainage cut beside a dirt track, with a Boettger's tortoise picking its way across the bank." loading="lazy" className="w-full h-auto object-contain bg-muted" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">Phrygana scrub and a seasonal erosion channel above the shore — habitat for species like the Boettger's tortoise, just visible on the bank.</figcaption>
+          </figure>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
+            Where soils thin and grazing pressure rises, maquis gives way to <em>phrygana</em>: lower, more open, thornier, more aromatic — heavily adapted to drought and goats. The exposed substrate, sparse scrub, and small drainage cuts that score these dry edges are part of the same picture: thin Mediterranean soils carrying episodic rain downhill, and edge habitat for reptiles like Hermann's / Boettger's tortoise (<em>Testudo hermanni boettgeri</em>) that thrive in this mosaic of rock, grass, and low cover.
           </p>
         </section>
 
