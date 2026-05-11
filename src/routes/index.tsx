@@ -3,7 +3,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/turtle.jpg";
-import { ArrowRight, Map, BookOpen, Waves, Shield } from "lucide-react";
+import { ArrowRight, Map, Leaf, Waves, Shield } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
