@@ -62,6 +62,16 @@ function Anthropology() {
             <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
             <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
             <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{e.body}</p>
+            {e.image && (
+              <figure className="mt-4 rounded-xl overflow-hidden border border-border bg-card shadow-soft">
+                <img src={e.image} alt={e.alt ?? ""} loading="lazy" className="w-full object-contain bg-[oklch(0.97_0.01_85)]" />
+                {e.caption && (
+                  <figcaption className="px-4 py-3 text-[11px] leading-relaxed text-muted-foreground border-t border-border">
+                    {e.caption}
+                  </figcaption>
+                )}
+              </figure>
+            )}
           </article>
         ))}
       </div>
