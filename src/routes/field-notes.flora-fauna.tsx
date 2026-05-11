@@ -127,9 +127,13 @@ function FloraFauna() {
           <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
             Primarily Mediterranean conifer forest, dominated by <em>Aleppo pine (Pinus halepensis)</em>, locally mixed with <em>Turkish pine (Pinus brutia)</em>. Classic eastern-Mediterranean fire-adapted pines: resinous, drought-tolerant, fast colonisers of poor rocky soils.
           </p>
-          <h3 className="mt-5 font-serif text-xl text-foreground">Maquis underneath</h3>
+          <h3 className="mt-6 font-serif text-xl text-foreground">Maquis underneath</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Dense understory</p>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+          <figure className="mt-3 -mx-5 overflow-hidden">
+            <img src={maquisShrubland} alt="Dense maquis shrubland on a coastal bluff above the Thermaic Gulf at sunset, with mainland mountains hazy in the distance." loading="lazy" className="w-full h-48 object-cover" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">Maquis cloaking the bluff above the gulf at sunset.</figcaption>
+          </figure>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
             Dense evergreen <em>maquis</em> shrubland fills the understory — kermes oak, lentisk, arbutus, wild olive, myrtle, phillyrea, rosemary, thyme, sage. One of the defining ecosystems of the Mediterranean Basin.
           </p>
           <h3 className="mt-5 font-serif text-xl text-foreground">Phrygana on the dry edges</h3>
