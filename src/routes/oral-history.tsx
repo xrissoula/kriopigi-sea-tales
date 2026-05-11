@@ -3,6 +3,7 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import elder from "@/assets/elder.jpg";
 import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
+import kriopigi1998 from "@/assets/kriopigi-1998.jpg";
 import damselfish from "@/assets/flora-fauna-damselfish.jpg";
 import tower from "@/assets/anthropology-tower.webp";
 import { Play, Camera } from "lucide-react";
@@ -20,19 +21,19 @@ export const Route = createFileRoute("/oral-history")({
 const stories = [
   { name: "Yiannis, b. 1942", role: "Fisherman", quote: "When I was a boy, you could see your shadow on the seabed at ten meters. We measured weather not by forecast, but by the smell of the pines.", length: "12:04" },
   { name: "Maria, b. 1955", role: "Beekeeper", quote: "The thyme on the headland blooms three days after the first cicada. My grandmother taught me to listen for it.", length: "08:31" },
-  { name: "Petros, b. 1968", role: "Boatwright", quote: "Every caïque from this coast has pine from the slope above the spring. The wood remembers the salt before it ever touches the sea.", length: "15:22" },
+  { name: "Anonymous, b. 1994", role: "Visitor", quote: "When I was a child in 1998, the beach was significantly wider — there was so much more sand between the path and the water than there is today.", length: "03:47" },
 ];
 
 type Photo = { src: string; caption: string; author: string; origin: "local" | "visitor"; date: string };
 
 const photosRaw: Photo[] = [
+  { src: kriopigi1998, caption: "The shore in summer — beach was much wider then", author: "Anonymous", origin: "visitor", date: "1998-07-15" },
   { src: hero, caption: "Cove at golden hour", author: "Anna K.", origin: "local", date: "2025-09-14" },
   { src: tower, caption: "The old stone tower", author: "D. Marinos", origin: "local", date: "2019-06-02" },
   { src: damselfish, caption: "Damselfish over the reef", author: "Luca P. (IT)", origin: "visitor", date: "2024-08-21" },
   { src: posidonia, caption: "Posidonia at four meters", author: "Eleni V.", origin: "local", date: "2022-07-30" },
   { src: elder, caption: "Morning at the harbor", author: "Tomás R. (ES)", origin: "visitor", date: "2017-05-11" },
   { src: hero, caption: "After the August storm", author: "N. Halkias", origin: "local", date: "2021-08-08" },
-  { src: posidonia, caption: "Sea grapes on the reef", author: "Sofia M.", origin: "local", date: "2023-09-03" },
   { src: tower, caption: "Winter light, north cove", author: "K. Ioannou", origin: "local", date: "2026-02-19" },
 ];
 
