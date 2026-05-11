@@ -3,6 +3,7 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import elder from "@/assets/anthropology-tower.webp";
 import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
+import mendePithamphora from "@/assets/mende-pithamphora.jpg";
 
 type Period = {
   age: string;
@@ -32,7 +33,14 @@ const periods: Period[] = [
     alt: "General plan of the southern projection of the Megali Toumba at Olynthus, showing Byzantine, Prehistoric, Classical, and unexcavated remains.",
     caption: "General plan of the southern projection of the Megali Toumba at Olynthus. From G. E. Mylonas, Excavations at Olynthus, Part I: The Neolithic Settlement (Johns Hopkins University Studies in Archaeology No. 6, ed. D. M. Robinson; Baltimore: The Johns Hopkins Press / London: Humphrey Milford / Oxford University Press, 1929).",
   },
-  { age: "~700 BCE", title: "Ancient Mende & Eretrian colonies", body: "Greek colonists from Eretria found Mende and other coastal cities. The peninsula — then called Pallene — becomes famous for its wine, exported across the Aegean in distinctive amphorae." },
+  {
+    age: "~700 BCE",
+    title: "Ancient Mende & Eretrian colonies",
+    body: "Greek colonists from Eretria found Mende and other coastal cities. The peninsula — then called Pallene — becomes famous for its wine, exported across the Aegean in distinctive amphorae.",
+    image: mendePithamphora,
+    alt: "Pithamphora with floral motifs recovered from the cemetery at Mende.",
+    caption: "Pithamphora with floral motifs from the cemetery at Mende. From S. Moschonissioti, “Vases du cimetière de Mendè,” in Recherches récentes sur le monde hellénistique (Publications du Centre Jean Bérard), available via OpenEdition Books: https://books.openedition.org/pcjb/661.",
+  },
   { age: "348 BCE", title: "Macedonian rule", body: "Philip II of Macedon destroys Olynthos and consolidates Halkidiki under Macedonian control. The region's harbours feed Alexander's campaigns." },
   { age: "Byzantine era", title: "Monastic landscape", body: "Mount Athos to the east becomes the spiritual heart of Orthodoxy. Kassandra's villages live by fishing, olives, and beekeeping; the cold spring at Kriopigi serves caravans crossing the peninsula." },
   { age: "1821 onward", title: "Revolution & rebuilding", body: "Kassandra rises in the Greek War of Independence and is devastated in 1821. Villages are slowly resettled through the 19th century by refugees and returning families." },
