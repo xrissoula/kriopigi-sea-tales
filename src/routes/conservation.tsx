@@ -35,6 +35,18 @@ function Conservation() {
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">Citizen science</p>
           <h3 className="font-serif text-2xl mt-1">Help us count the meadow</h3>
           <p className="mt-2 text-sm opacity-90">Submit your underwater photos via the observation form — researchers at AUTh use them to map yearly seagrass extent.</p>
+          <p className="mt-3 text-sm opacity-90">
+            You can also log sightings on{" "}
+            <a
+              href="https://www.inaturalist.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 font-medium hover:opacity-100"
+            >
+              iNaturalist
+            </a>
+            {" "}— a global citizen-science platform where your geotagged photos are identified by experts and pooled into open biodiversity data used by researchers worldwide.
+          </p>
         </div>
       </div>
     </SiteLayout>
