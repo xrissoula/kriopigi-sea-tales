@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import posidonia from "@/assets/posidonia.jpg";
-import turtle from "@/assets/turtle.jpg";
+
 import pineForestShore from "@/assets/pine-forest-shore.jpeg";
 import maquisShrubland from "@/assets/maquis-shrubland.jpeg";
 import phryganaTortoise from "@/assets/phrygana-tortoise.jpeg";
@@ -227,9 +227,6 @@ function FloraFauna() {
               ))}
             </ul>
 
-            {idx === 3 && (
-              <img src={turtle} alt="" loading="lazy" className="mt-6 w-full h-40 object-cover rounded-xl opacity-90" />
-            )}
           </section>
         ))}
       </div>
