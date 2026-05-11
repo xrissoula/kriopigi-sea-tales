@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/turtle.jpg";
 import pineForestShore from "@/assets/pine-forest-shore.jpeg";
+import maquisShrubland from "@/assets/maquis-shrubland.jpeg";
 
 export const Route = createFileRoute("/field-notes/flora-fauna")({
   head: () => ({
