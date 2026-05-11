@@ -184,7 +184,7 @@ function MapPage() {
         source: "ripple",
         paint: {
           "circle-radius": 40,
-          "circle-color": "oklch(0.7 0.13 220)",
+          "circle-color": "#3a8fb7",
           "circle-opacity": 0.18,
           "circle-blur": 1,
         },
