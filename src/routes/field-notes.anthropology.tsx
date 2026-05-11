@@ -8,6 +8,8 @@ import philipII from "@/assets/philip-ii-vergina.webp";
 import greatLavra from "@/assets/great-lavra-athos.jpg";
 import greekRevolution from "@/assets/greek-revolution.jpg";
 import refugees1923 from "@/assets/refugees-1923.jpg";
+import halkidikiBrochure from "@/assets/halkidiki-brochure.jpeg";
+import olympicAirlines from "@/assets/olympic-airlines-1960s.jpg";
 
 type Period = {
   age: string;
@@ -16,6 +18,7 @@ type Period = {
   image?: string;
   alt?: string;
   caption?: string;
+  images?: { src: string; alt: string }[];
 };
 
 export const Route = createFileRoute("/field-notes/anthropology")({
@@ -77,7 +80,16 @@ const periods: Period[] = [
     alt: "Black-and-white photograph of Greek refugees from Asia Minor disembarking with their bundled belongings at the waterfront of Thessaloniki, c. 1923.",
     caption: "Greek refugees from Asia Minor arriving by caïque at the port of Thessaloniki in the wake of the 1923 Convention Concerning the Exchange of Greek and Turkish Populations. Photographer unknown; widely reproduced from the interwar press archive (see Margaret21, “Greek refugees from Smyrna arriving at Thessaloniki 1923”: https://margaret21.com/2015/02/18/nation-swap-house-swap/greek-refugees-from-smyrna-arriving-at-thessaloniki-1923/).",
   },
-  { age: "1960s–today", title: "The tourist coast", body: "Paved roads reach Kassandra; Kriopigi grows from a fishing hamlet into a summer destination. Pine-shaded campsites and small hotels replace tobacco fields, while the shoreline absorbs new pressures." },
+  {
+    age: "1960s–today",
+    title: "The tourist coast",
+    body: "Paved roads reach Kassandra; Kriopigi grows from a fishing hamlet into a summer destination. Pine-shaded campsites and small hotels replace tobacco fields, while the shoreline absorbs new pressures.",
+    images: [
+      { src: halkidikiBrochure, alt: "Vintage Greek National Tourism Organisation fold-out brochure for Macedonia / Halkidiki, with sun-bleached coastal photographs." },
+      { src: olympicAirlines, alt: "1960s Olympic Airways magazine advertisement showing a stylised passenger reading a newspaper above a clock-wheel, with the Acropolis and the White Tower of Thessaloniki at the base." },
+    ],
+    caption: "Left: fold-out tourism brochure for Macedonia / Halkidiki issued by the Greek National Tourism Organisation (EOT), c. 1970s. Right: Olympic Airways (Ολυμπιακή Αεροπορία) print advertisement, c. 1960s — “In a short while you will be at your destination, rested!” — emblematic of the jet-age opening of northern Greece to mass tourism.",
+  },
 ];
 
 function Anthropology() {
@@ -105,6 +117,22 @@ function Anthropology() {
             {e.image && (
               <figure className="mt-4 rounded-xl overflow-hidden border border-border bg-card shadow-soft">
                 <img src={e.image} alt={e.alt ?? ""} loading="lazy" className="w-full object-contain bg-[oklch(0.97_0.01_85)]" />
+                {e.caption && (
+                  <figcaption className="px-4 py-3 text-[11px] leading-relaxed text-muted-foreground border-t border-border">
+                    {e.caption}
+                  </figcaption>
+                )}
+              </figure>
+            )}
+            {e.images && (
+              <figure className="mt-4 rounded-xl overflow-hidden border border-border bg-card shadow-soft">
+                <div className="grid grid-cols-2 gap-px bg-border">
+                  {e.images.map((im, j) => (
+                    <div key={j} className="bg-[oklch(0.97_0.01_85)] aspect-[3/4] flex items-center justify-center">
+                      <img src={im.src} alt={im.alt} loading="lazy" className="w-full h-full object-contain" />
+                    </div>
+                  ))}
+                </div>
                 {e.caption && (
                   <figcaption className="px-4 py-3 text-[11px] leading-relaxed text-muted-foreground border-t border-border">
                     {e.caption}
