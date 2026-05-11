@@ -117,14 +117,17 @@ function FloraFauna() {
 
         <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
           <h3 className="font-serif text-xl text-foreground">The forest above the shore</h3>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Forest canopy</p>
           <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
             Primarily Mediterranean conifer forest, dominated by <em>Aleppo pine (Pinus halepensis)</em>, locally mixed with <em>Turkish pine (Pinus brutia)</em>. Classic eastern-Mediterranean fire-adapted pines: resinous, drought-tolerant, fast colonisers of poor rocky soils.
           </p>
           <h3 className="mt-5 font-serif text-xl text-foreground">Maquis underneath</h3>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Dense understory</p>
           <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
             Dense evergreen <em>maquis</em> shrubland fills the understory — kermes oak, lentisk, arbutus, wild olive, myrtle, phillyrea, rosemary, thyme, sage. One of the defining ecosystems of the Mediterranean Basin.
           </p>
           <h3 className="mt-5 font-serif text-xl text-foreground">Phrygana on the dry edges</h3>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Degraded / exposed dry edge ecology</p>
           <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
             Where soils thin and grazing pressure rises, maquis gives way to <em>phrygana</em>: lower, more open, thornier, more aromatic — heavily adapted to drought and goats.
           </p>
