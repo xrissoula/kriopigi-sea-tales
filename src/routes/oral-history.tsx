@@ -21,7 +21,7 @@ export const Route = createFileRoute("/oral-history")({
 const stories = [
   { name: "Yiannis, b. 1942", role: "Fisherman", quote: "When I was a boy, you could see your shadow on the seabed at ten meters. We measured weather not by forecast, but by the smell of the pines.", length: "12:04" },
   { name: "Maria, b. 1955", role: "Beekeeper", quote: "The thyme on the headland blooms three days after the first cicada. My grandmother taught me to listen for it.", length: "08:31" },
-  { name: "Petros, b. 1968", role: "Boatwright", quote: "Every caïque from this coast has pine from the slope above the spring. The wood remembers the salt before it ever touches the sea.", length: "15:22" },
+  { name: "Anonymous, b. 1994", role: "Visitor", quote: "When I was a child in 1998, the beach was significantly wider — there was so much more sand between the path and the water than there is today.", length: "03:47" },
 ];
 
 type Photo = { src: string; caption: string; author: string; origin: "local" | "visitor"; date: string };
