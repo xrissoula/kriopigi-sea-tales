@@ -32,6 +32,34 @@ function Conservation() {
           <Tenet icon={HandHeart} title="Carry out what you carry in" body="There is no bin on the trail. Plastic on the strand will be in the meadow by morning." />
         </div>
 
+        <section className="mt-10">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Ridge to reef</p>
+          <h2 className="font-serif text-3xl text-foreground mt-1">From hillside to sea</h2>
+          <p className="mt-3 text-foreground/80 leading-relaxed">
+            Rain falling on roads, gardens, farms, hotels, and hillsides above Kriopigi eventually moves downslope through gullies and seasonal drainage channels into the Aegean. Along the way it can carry sediments, fertilisers, herbicides, pesticides, plastics, oils, and organic waste into coastal waters and nearshore ecosystems.
+          </p>
+          <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
+            <img src={gullyRunoff} alt="An overgrown hillside gully above Kriopigi at dusk, with a tall cypress on the ridge and the Aegean visible beyond — a seasonal drainage line connecting the village to the sea." loading="lazy" className="w-full aspect-[4/3] object-cover" />
+            <figcaption className="p-4 text-sm text-muted-foreground border-t border-border">
+              A vegetated gully on the slope above the bay. In dry months it looks like scrub; after the first autumn storms it becomes a pipeline from the village down to the shore.
+            </figcaption>
+          </figure>
+
+          <div className="mt-5 rounded-2xl bg-card border border-border p-5 shadow-soft">
+            <h3 className="font-serif text-xl text-foreground">Why it matters here</h3>
+            <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+              Mediterranean coasts amplify runoff pulses: intense seasonal rain, dry compacted summer soils, steep slopes, thin soils, wildfire-disturbed ground, and dense tourism infrastructure all funnel water — and whatever it picks up — quickly into the sea.
+            </p>
+            <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
+              In an enclosed, oligotrophic system like parts of the Aegean, even moderate nutrient inputs can shift nearshore ecology: algal growth, turbidity, seagrass stress, altered nutrient balance, coastal erosion, bacterial contamination, and local biodiversity changes.
+            </p>
+          </div>
+
+          <p className="mt-5 text-xs text-muted-foreground italic leading-relaxed">
+            These are general mechanisms documented across Mediterranean coastal systems, not measurements taken at this specific bay. Treat the gully above as a way of seeing the connection between land and sea — observation, not accusation.
+          </p>
+        </section>
+
         <div className="mt-10 rounded-2xl bg-gradient-sea text-primary-foreground p-6 shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">Citizen science</p>
           <h3 className="font-serif text-2xl mt-1">Help us count the meadow</h3>
