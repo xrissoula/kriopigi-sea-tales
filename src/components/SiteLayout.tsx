@@ -59,7 +59,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             );
           })}
         </div>
-        <div className="grid grid-cols-4 px-1 border-t border-border">
+        <div className="grid grid-cols-5 px-1 border-t border-border">
           {nav.slice(5).map((n) => {
             const Icon = n.icon;
             const active = pathname === n.to;
