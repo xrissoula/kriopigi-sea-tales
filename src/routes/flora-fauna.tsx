@@ -18,7 +18,7 @@ export const Route = createFileRoute("/flora-fauna")({
   component: FloraFauna,
 });
 
-type Species = { sci: string; common: string; note: string; img?: string };
+type Species = { sci: string; common: string; note: string; img?: string; wiki?: string };
 type Zone = { id: string; eyebrow: string; title: string; depth: string; lead: string; species: Species[] };
 
 const zones: Zone[] = [
@@ -29,11 +29,10 @@ const zones: Zone[] = [
     depth: "Above the high tide line",
     lead: "The terrestrial fringe — sand-binding plants and the Aleppo pine canopy that shades the shore.",
     species: [
-      { sci: "Pinus halepensis", common: "Aleppo pine", note: "Dominant overstory; resin scents the beach in summer heat." },
-      { sci: "Pancratium maritimum", common: "Sea daffodil", note: "White trumpet flowers in late August; protected — do not pick." },
-      { sci: "Eryngium maritimum", common: "Sea holly", note: "Spiny blue-grey rosettes stabilising the upper sand." },
-      { sci: "Cakile maritima", common: "Sea rocket", note: "Pioneer succulent on the strand line; pale lilac flowers." },
-      { sci: "Larus michahellis", common: "Yellow-legged gull", note: "Nests on the cliffs above the cove; vocal at dawn." },
+      { sci: "Pinus halepensis", common: "Aleppo pine", note: "Dominant overstory; resin scents the beach in summer heat.", wiki: "https://en.wikipedia.org/wiki/Pinus_halepensis" },
+      { sci: "Eryngium maritimum", common: "Sea holly", note: "Spiny blue-grey rosettes stabilising the upper sand.", wiki: "https://en.wikipedia.org/wiki/Eryngium_maritimum" },
+      { sci: "Cakile maritima", common: "Sea rocket", note: "Pioneer succulent on the strand line; pale lilac flowers.", wiki: "https://en.wikipedia.org/wiki/Cakile_maritima" },
+      { sci: "Larus michahellis", common: "Yellow-legged gull", note: "Nests on the cliffs above the cove; vocal at dawn.", wiki: "https://en.wikipedia.org/wiki/Yellow-legged_gull" },
     ],
   },
   {
@@ -43,10 +42,10 @@ const zones: Zone[] = [
     depth: "0 – 0.5 m",
     lead: "The wet sand and breaking surf — turnover habitat for crabs, isopods, and shorebirds.",
     species: [
-      { sci: "Ocypode cursor", common: "Tufted ghost crab", note: "Pale, fast; visible at dusk near burrow entrances on the upper beach." },
-      { sci: "Tylos europaeus", common: "Beach isopod", note: "Nocturnal scavenger of stranded seaweed — a sign of a healthy strand line." },
-      { sci: "Charadrius alexandrinus", common: "Kentish plover", note: "Small shorebird; nests directly on shingle. Keep clear May–July." },
-      { sci: "Donax trunculus", common: "Wedge clam", note: "Filter-feeder in the swash zone; tiny triangular shells wash up after storms." },
+      { sci: "Ocypode cursor", common: "Tufted ghost crab", note: "Pale, fast; visible at dusk near burrow entrances on the upper beach.", wiki: "https://en.wikipedia.org/wiki/Ocypode_cursor" },
+      { sci: "Tylos europaeus", common: "Beach isopod", note: "Nocturnal scavenger of stranded seaweed — a sign of a healthy strand line.", wiki: "https://en.wikipedia.org/wiki/Tylos_europaeus" },
+      { sci: "Charadrius alexandrinus", common: "Kentish plover", note: "Small shorebird; nests directly on shingle. Keep clear May–July.", wiki: "https://en.wikipedia.org/wiki/Kentish_plover" },
+      { sci: "Donax trunculus", common: "Wedge clam", note: "Filter-feeder in the swash zone; tiny triangular shells wash up after storms.", wiki: "https://en.wikipedia.org/wiki/Donax_trunculus" },
     ],
   },
   {
@@ -56,11 +55,11 @@ const zones: Zone[] = [
     depth: "0.5 – 5 m",
     lead: "Sun-warmed sand and rocky patches — nursery ground for juveniles and the inner edge of the seagrass meadow.",
     species: [
-      { sci: "Atherina hepsetus", common: "Mediterranean sand smelt", note: "Silvery shoals near the surface; often the first fish snorkellers see." },
-      { sci: "Diplodus vulgaris", common: "Common two-banded sea bream", note: "Curious juveniles around rocks; two dark bands on a silver body." },
-      { sci: "Sarpa salpa", common: "Salema porgy", note: "Schools of 20–60 graze seagrass tips at the meadow's edge." },
-      { sci: "Hippocampus hippocampus", common: "Short-snouted seahorse", note: "Rare but resident; clings to algae among shallow rocks." },
-      { sci: "Holothuria tubulosa", common: "Cotton-spinner sea cucumber", note: "Slow detritivore on sandy bottoms; do not lift from the substrate." },
+      { sci: "Atherina hepsetus", common: "Mediterranean sand smelt", note: "Silvery shoals near the surface; often the first fish snorkellers see.", wiki: "https://en.wikipedia.org/wiki/Atherina_hepsetus" },
+      { sci: "Diplodus vulgaris", common: "Common two-banded sea bream", note: "Curious juveniles around rocks; two dark bands on a silver body.", wiki: "https://en.wikipedia.org/wiki/Diplodus_vulgaris" },
+      { sci: "Sarpa salpa", common: "Salema porgy", note: "Schools of 20–60 graze seagrass tips at the meadow's edge.", wiki: "https://en.wikipedia.org/wiki/Salema_porgy" },
+      { sci: "Hippocampus hippocampus", common: "Short-snouted seahorse", note: "Rare but resident; clings to algae among shallow rocks.", wiki: "https://en.wikipedia.org/wiki/Hippocampus_hippocampus" },
+      { sci: "Holothuria tubulosa", common: "Cotton-spinner sea cucumber", note: "Slow detritivore on sandy bottoms; do not lift from the substrate.", wiki: "https://en.wikipedia.org/wiki/Holothuria_tubulosa" },
     ],
   },
   {
@@ -70,11 +69,11 @@ const zones: Zone[] = [
     depth: "5 – 15 m",
     lead: "The Mediterranean's lungs — endemic seagrass beds that oxygenate the bay and shelter its biodiversity.",
     species: [
-      { sci: "Posidonia oceanica", common: "Neptune grass", note: "Endemic seagrass; one meter of meadow can be over 100 years old." },
-      { sci: "Pinna nobilis", common: "Noble pen shell", note: "Critically endangered fan mussel anchored in the meadow; report sightings." },
-      { sci: "Octopus vulgaris", common: "Common octopus", note: "Dens between rocks at the meadow's edge; shell middens betray the entrance." },
-      { sci: "Symphodus tinca", common: "Peacock wrasse", note: "Males turn iridescent blue-green during spring courtship over the meadow." },
-      { sci: "Sepia officinalis", common: "Common cuttlefish", note: "Lays grape-like egg clusters on Posidonia leaves in late spring." },
+      { sci: "Posidonia oceanica", common: "Neptune grass", note: "Endemic seagrass; one meter of meadow can be over 100 years old.", wiki: "https://en.wikipedia.org/wiki/Posidonia_oceanica" },
+      { sci: "Pinna nobilis", common: "Noble pen shell", note: "Critically endangered fan mussel anchored in the meadow; report sightings.", wiki: "https://en.wikipedia.org/wiki/Pinna_nobilis" },
+      { sci: "Octopus vulgaris", common: "Common octopus", note: "Dens between rocks at the meadow's edge; shell middens betray the entrance.", wiki: "https://en.wikipedia.org/wiki/Common_octopus" },
+      { sci: "Symphodus tinca", common: "Peacock wrasse", note: "Males turn iridescent blue-green during spring courtship over the meadow.", wiki: "https://en.wikipedia.org/wiki/Symphodus_tinca" },
+      { sci: "Sepia officinalis", common: "Common cuttlefish", note: "Lays grape-like egg clusters on Posidonia leaves in late spring.", wiki: "https://en.wikipedia.org/wiki/Common_cuttlefish" },
     ],
   },
   {
@@ -84,11 +83,11 @@ const zones: Zone[] = [
     depth: "15 m and beyond",
     lead: "Beyond the meadow's outer edge — coralligenous reefs, pelagic visitors, and migratory megafauna.",
     species: [
-      { sci: "Caretta caretta", common: "Loggerhead sea turtle", note: "Seen surfacing in the bay May–October; juveniles forage on the meadow." },
-      { sci: "Tursiops truncatus", common: "Common bottlenose dolphin", note: "Pods of 4–10 transit the gulf; occasional inshore feeding at dawn." },
-      { sci: "Thunnus thynnus", common: "Atlantic bluefin tuna", note: "Migratory; offshore boils visible from the headland on calm summer mornings." },
-      { sci: "Paramuricea clavata", common: "Violescent sea-whip", note: "Coralligenous gorgonian on deeper rocky outcrops; fragile, never anchor near." },
-      { sci: "Scyliorhinus canicula", common: "Small-spotted catshark", note: "Harmless benthic shark; egg cases ('mermaid's purses') wash up after storms." },
+      { sci: "Caretta caretta", common: "Loggerhead sea turtle", note: "Seen surfacing in the bay May–October; juveniles forage on the meadow.", wiki: "https://en.wikipedia.org/wiki/Loggerhead_sea_turtle" },
+      { sci: "Tursiops truncatus", common: "Common bottlenose dolphin", note: "Pods of 4–10 transit the gulf; occasional inshore feeding at dawn.", wiki: "https://en.wikipedia.org/wiki/Common_bottlenose_dolphin" },
+      { sci: "Thunnus thynnus", common: "Atlantic bluefin tuna", note: "Migratory; offshore boils visible from the headland on calm summer mornings.", wiki: "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna" },
+      { sci: "Paramuricea clavata", common: "Violescent sea-whip", note: "Coralligenous gorgonian on deeper rocky outcrops; fragile, never anchor near.", wiki: "https://en.wikipedia.org/wiki/Paramuricea_clavata" },
+      { sci: "Scyliorhinus canicula", common: "Small-spotted catshark", note: "Harmless benthic shark; egg cases ('mermaid's purses') wash up after storms.", wiki: "https://en.wikipedia.org/wiki/Small-spotted_catshark" },
     ],
   },
 ];
@@ -204,7 +203,13 @@ function FloraFauna() {
               {z.species.map((s) => (
                 <li key={s.sci} className="rounded-xl bg-card border border-border p-4 shadow-soft">
                   <div className="flex items-baseline justify-between gap-3 flex-wrap">
-                    <h3 className="font-serif italic text-lg text-foreground">{s.sci}</h3>
+                    {s.wiki ? (
+                      <a href={s.wiki} target="_blank" rel="noopener noreferrer" className="font-serif italic text-lg text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+                        {s.sci}
+                      </a>
+                    ) : (
+                      <h3 className="font-serif italic text-lg text-foreground">{s.sci}</h3>
+                    )}
                     <span className="text-xs text-accent">{s.common}</span>
                   </div>
                   <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{s.note}</p>
