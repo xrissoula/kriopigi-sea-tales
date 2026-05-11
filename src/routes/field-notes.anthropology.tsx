@@ -2,6 +2,16 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import elder from "@/assets/anthropology-tower.webp";
+import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
+
+type Period = {
+  age: string;
+  title: string;
+  body: string;
+  image?: string;
+  alt?: string;
+  caption?: string;
+};
 
 export const Route = createFileRoute("/field-notes/anthropology")({
   head: () => ({
