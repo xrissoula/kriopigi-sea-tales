@@ -28,13 +28,9 @@ type Photo = { src: string; caption: string; author: string; origin: "local" | "
 
 const photosRaw: Photo[] = [
   { src: kriopigi1998, caption: "The shore in summer — beach was much wider then", author: "Anonymous", origin: "visitor", date: "1998-07-15" },
-  { src: hero, caption: "Cove at golden hour", author: "Anna K.", origin: "local", date: "2025-09-14" },
   { src: tower, caption: "The old stone tower", author: "D. Marinos", origin: "local", date: "2019-06-02" },
   { src: damselfish, caption: "Damselfish over the reef", author: "Luca P. (IT)", origin: "visitor", date: "2024-08-21" },
   { src: posidonia, caption: "Posidonia at four meters", author: "Eleni V.", origin: "local", date: "2022-07-30" },
-  
-  { src: hero, caption: "After the August storm", author: "N. Halkias", origin: "local", date: "2021-08-08" },
-  { src: tower, caption: "Winter light, north cove", author: "K. Ioannou", origin: "local", date: "2026-02-19" },
 ];
 
 const photos = [...photosRaw].sort((a, b) => a.date.localeCompare(b.date));
