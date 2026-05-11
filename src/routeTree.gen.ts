@@ -13,6 +13,7 @@ import { Route as SubmitRouteImport } from './routes/submit'
 import { Route as SnorkelingRouteImport } from './routes/snorkeling'
 import { Route as OralHistoryRouteImport } from './routes/oral-history'
 import { Route as MapRouteImport } from './routes/map'
+import { Route as FloraFaunaRouteImport } from './routes/flora-fauna'
 import { Route as FieldNotesRouteImport } from './routes/field-notes'
 import { Route as ConservationRouteImport } from './routes/conservation'
 import { Route as ConditionsRouteImport } from './routes/conditions'
@@ -40,6 +41,11 @@ const OralHistoryRoute = OralHistoryRouteImport.update({
 const MapRoute = MapRouteImport.update({
   id: '/map',
   path: '/map',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FloraFaunaRoute = FloraFaunaRouteImport.update({
+  id: '/flora-fauna',
+  path: '/flora-fauna',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FieldNotesRoute = FieldNotesRouteImport.update({
@@ -89,6 +95,7 @@ export interface FileRoutesByFullPath {
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
   '/field-notes': typeof FieldNotesRouteWithChildren
+  '/flora-fauna': typeof FloraFaunaRoute
   '/map': typeof MapRoute
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
@@ -103,6 +110,7 @@ export interface FileRoutesByTo {
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
   '/field-notes': typeof FieldNotesRouteWithChildren
+  '/flora-fauna': typeof FloraFaunaRoute
   '/map': typeof MapRoute
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
@@ -118,6 +126,7 @@ export interface FileRoutesById {
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
   '/field-notes': typeof FieldNotesRouteWithChildren
+  '/flora-fauna': typeof FloraFaunaRoute
   '/map': typeof MapRoute
   '/oral-history': typeof OralHistoryRoute
   '/snorkeling': typeof SnorkelingRoute
@@ -134,6 +143,7 @@ export interface FileRouteTypes {
     | '/conditions'
     | '/conservation'
     | '/field-notes'
+    | '/flora-fauna'
     | '/map'
     | '/oral-history'
     | '/snorkeling'
@@ -148,6 +158,7 @@ export interface FileRouteTypes {
     | '/conditions'
     | '/conservation'
     | '/field-notes'
+    | '/flora-fauna'
     | '/map'
     | '/oral-history'
     | '/snorkeling'
@@ -162,6 +173,7 @@ export interface FileRouteTypes {
     | '/conditions'
     | '/conservation'
     | '/field-notes'
+    | '/flora-fauna'
     | '/map'
     | '/oral-history'
     | '/snorkeling'
@@ -177,6 +189,7 @@ export interface RootRouteChildren {
   ConditionsRoute: typeof ConditionsRoute
   ConservationRoute: typeof ConservationRoute
   FieldNotesRoute: typeof FieldNotesRouteWithChildren
+  FloraFaunaRoute: typeof FloraFaunaRoute
   MapRoute: typeof MapRoute
   OralHistoryRoute: typeof OralHistoryRoute
   SnorkelingRoute: typeof SnorkelingRoute
@@ -211,6 +224,13 @@ declare module '@tanstack/react-router' {
       path: '/map'
       fullPath: '/map'
       preLoaderRoute: typeof MapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/flora-fauna': {
+      id: '/flora-fauna'
+      path: '/flora-fauna'
+      fullPath: '/flora-fauna'
+      preLoaderRoute: typeof FloraFaunaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/field-notes': {
@@ -295,6 +315,7 @@ const rootRouteChildren: RootRouteChildren = {
   ConditionsRoute: ConditionsRoute,
   ConservationRoute: ConservationRoute,
   FieldNotesRoute: FieldNotesRouteWithChildren,
+  FloraFaunaRoute: FloraFaunaRoute,
   MapRoute: MapRoute,
   OralHistoryRoute: OralHistoryRoute,
   SnorkelingRoute: SnorkelingRoute,

@@ -1,11 +1,12 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home } from "lucide-react";
+import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home, Leaf } from "lucide-react";
 import type { ReactNode } from "react";
 
 const nav = [
   { to: "/", label: "Home", icon: Home },
+  { to: "/flora-fauna", label: "Flora & Fauna", icon: Leaf },
   { to: "/map", label: "Map", icon: Map },
-  { to: "/field-notes", label: "Field Notes", icon: BookOpen },
+  { to: "/field-notes", label: "History", icon: BookOpen },
   { to: "/oral-history", label: "Voices", icon: Mic },
   { to: "/conservation", label: "Care", icon: Shield },
   { to: "/snorkeling", label: "Snorkel", icon: Waves },
@@ -45,8 +46,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       {/* Mobile bottom nav */}
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-background/95 backdrop-blur-md border-t border-border">
-        <div className="grid grid-cols-4 px-1">
-          {nav.slice(0, 4).map((n) => {
+        <div className="grid grid-cols-5 px-1">
+          {nav.slice(0, 5).map((n) => {
             const Icon = n.icon;
             const active = pathname === n.to;
             return (
@@ -58,7 +59,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           })}
         </div>
         <div className="grid grid-cols-4 px-1 border-t border-border">
-          {nav.slice(4).map((n) => {
+          {nav.slice(5).map((n) => {
             const Icon = n.icon;
             const active = pathname === n.to;
             return (
