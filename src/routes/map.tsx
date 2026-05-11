@@ -35,7 +35,7 @@ function MapPage() {
     map.current.addControl(new mapboxgl.NavigationControl(), "top-right");
 
     new mapboxgl.Marker({ color: "#d66a3a" })
-      .setLngLat([23.505, 40.038])
+      .setLngLat([23.483278, 40.042083])
       .setPopup(
         new mapboxgl.Popup({ offset: 18, maxWidth: "220px" }).setHTML(`
           <div style="max-width:220px; max-height:35vh; overflow:hidden; font-family:Georgia, serif; color:#1f2d2f;">
