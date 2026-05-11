@@ -1,11 +1,12 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home } from "lucide-react";
+import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home, Leaf } from "lucide-react";
 import type { ReactNode } from "react";
 
 const nav = [
   { to: "/", label: "Home", icon: Home },
+  { to: "/flora-fauna", label: "Flora & Fauna", icon: Leaf },
   { to: "/map", label: "Map", icon: Map },
-  { to: "/field-notes", label: "Field Notes", icon: BookOpen },
+  { to: "/field-notes", label: "History", icon: BookOpen },
   { to: "/oral-history", label: "Voices", icon: Mic },
   { to: "/conservation", label: "Care", icon: Shield },
   { to: "/snorkeling", label: "Snorkel", icon: Waves },
