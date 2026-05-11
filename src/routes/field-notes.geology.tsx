@@ -78,6 +78,64 @@ function Geology() {
                   )}
                 </figure>
               )}
+              {i === eras.length - 1 && (
+                <div className="mt-6 space-y-6">
+                  <div>
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Reading the maps</p>
+                    <h3 className="mt-1 font-serif text-xl text-foreground">The deep story beneath Kassandra</h3>
+                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">
+                      The colored zones above are not decoration — they are different tectonic <em>terranes</em>: chunks of crust with separate origins, compressed and welded together over hundreds of millions of years to build the Hellenides, the Greek mountain system. The Halkidiki peninsulas sit inside that collage, shaped by continental collision, mountain building, uplift, faulting, the closure of an ancient ocean, and erosion. The landscape you walk through is the surface expression of that history.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl border border-border bg-card p-5 shadow-soft space-y-5">
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-accent">How geology shapes the coast today</p>
+
+                    <div>
+                      <h4 className="font-serif text-lg text-foreground">1. Why the terrain is hilly and dissected</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
+                        Kassandra is uplifted, faulted terrain — steep slopes, gullies, drainage cuts, ridges, coves, and irregular shorelines. Mediterranean rains often arrive in intense bursts, and winter rainfall, erosion, sediment transport, and slope instability still actively shape it.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-serif text-lg text-foreground">2. Why the soils are thin and dry</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
+                        Much of the peninsula sits on metamorphic and crystalline basement rocks with weathered rocky substrates. The result is nutrient-poor, thin, drought-prone, fast-draining soil — conditions that favour Aleppo pine, maquis, phrygana, and aromatic shrubs over lush temperate forest. That is why the vegetation reads sparse, resinous, silver-green, and drought-adapted.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-serif text-lg text-foreground">3. Why the water is so clear</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
+                        Rocky, low-nutrient terrain means little sediment input and limited nutrient runoff. Combined with the oligotrophic conditions of the Aegean, the result is low turbidity and intense clarity — there are no large muddy river systems dumping fines into these shores.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-serif text-lg text-foreground">4. Why there are springs and cold-water pockets</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
+                        Faults and fractured bedrock channel groundwater. Rain infiltrates the rock and re-emerges as coastal springs, seepage zones, and cold-water upwellings — affecting salinity, temperature, nutrients, fish distribution, and seagrass productivity on a very local scale. <em>Krio pigi</em> — the cold spring — is one of these.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-serif text-lg text-foreground">5. Why the beaches alternate between sand, pebbles, and rock</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
+                        Different geological units weather differently. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs — each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
+                    <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">The bigger idea</p>
+                    <h3 className="mt-1 font-serif text-xl">Ecology begins with geology</h3>
+                    <p className="mt-2 text-sm opacity-90 leading-relaxed">
+                      The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all emerge from the same handful of inputs: rock, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.
+                    </p>
+                  </div>
+                </div>
+              )}
             </article>
           ))}
           <Link
