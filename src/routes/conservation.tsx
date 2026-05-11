@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import posidonia from "@/assets/posidonia.jpg";
 import gullyRunoff from "@/assets/gully-runoff.jpeg";
+import lifecycleDiagram from "@/assets/posidonia-lifecycle-diagram.png";
 import { Leaf, AlertTriangle, HandHeart, Shell } from "lucide-react";
 
 export const Route = createFileRoute("/conservation")({
