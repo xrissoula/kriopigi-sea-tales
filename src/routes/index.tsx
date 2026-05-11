@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
-import turtle from "@/assets/turtle.jpg";
+import turtle from "@/assets/hermann-tortoise.jpeg";
 import kassandraMap from "@/assets/kassandra-landcover.webp";
 import { ArrowRight, Map, Leaf, Waves, Shield } from "lucide-react";
 
