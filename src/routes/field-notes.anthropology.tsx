@@ -6,6 +6,7 @@ import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
 import mendePithamphora from "@/assets/mende-pithamphora.jpg";
 import philipII from "@/assets/philip-ii-vergina.webp";
 import greatLavra from "@/assets/great-lavra-athos.jpg";
+import greekRevolution from "@/assets/greek-revolution.jpg";
 
 type Period = {
   age: string;
@@ -59,7 +60,14 @@ const periods: Period[] = [
     alt: "The fortified arsanas (sea-gate tower) of the Great Lavra monastery rising above the rocks on the Athos peninsula.",
     caption: "The Great Lavra (Megisti Lavra), founded in 963 CE by St. Athanasios the Athonite — the oldest and first-ranked of the twenty monasteries of Mount Athos.",
   },
-  { age: "1821 onward", title: "Revolution & rebuilding", body: "Kassandra rises in the Greek War of Independence and is devastated in 1821. Villages are slowly resettled through the 19th century by refugees and returning families." },
+  {
+    age: "1821 onward",
+    title: "Revolution & rebuilding",
+    body: "Kassandra rises in the Greek War of Independence and is devastated in 1821. Villages are slowly resettled through the 19th century by refugees and returning families.",
+    image: greekRevolution,
+    alt: "Hand-coloured lithograph depicting a battle scene from the Greek War of Independence, with Greek fighters in fustanella confronting Ottoman troops on a hillside.",
+    caption: "Scene from the Greek War of Independence (1821), from the series of folk lithographs commissioned by General Yannis Makriyannis and painted by Panagiotis Zografos (1836–1839) to illustrate Makriyannis' Memoirs.",
+  },
   { age: "1923", title: "Population exchange", body: "Following the Greco–Turkish war, refugees from Asia Minor settle across Halkidiki, reshaping the demographics, cuisine, and music of the coast." },
   { age: "1960s–today", title: "The tourist coast", body: "Paved roads reach Kassandra; Kriopigi grows from a fishing hamlet into a summer destination. Pine-shaded campsites and small hotels replace tobacco fields, while the shoreline absorbs new pressures." },
 ];
