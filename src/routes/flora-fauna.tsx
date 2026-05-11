@@ -201,18 +201,28 @@ function FloraFauna() {
 
             <ul className="mt-5 grid gap-3">
               {z.species.map((s) => (
-                <li key={s.sci} className="rounded-xl bg-card border border-border p-4 shadow-soft">
-                  <div className="flex items-baseline justify-between gap-3 flex-wrap">
-                    {s.wiki ? (
-                      <a href={s.wiki} target="_blank" rel="noopener noreferrer" className="font-serif italic text-lg text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
-                        {s.sci}
-                      </a>
-                    ) : (
-                      <h3 className="font-serif italic text-lg text-foreground">{s.sci}</h3>
-                    )}
-                    <span className="text-xs text-accent">{s.common}</span>
+                <li key={s.sci} className="rounded-xl bg-card border border-border shadow-soft overflow-hidden flex gap-3">
+                  {s.img && (
+                    <img
+                      src={s.img}
+                      alt={`${s.common} (${s.sci})`}
+                      loading="lazy"
+                      className="w-24 h-24 sm:w-28 sm:h-28 object-cover flex-shrink-0 bg-muted"
+                    />
+                  )}
+                  <div className="flex-1 min-w-0 p-3 sm:p-4">
+                    <div className="flex items-baseline justify-between gap-3 flex-wrap">
+                      {s.wiki ? (
+                        <a href={s.wiki} target="_blank" rel="noopener noreferrer" className="font-serif italic text-base sm:text-lg text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+                          {s.sci}
+                        </a>
+                      ) : (
+                        <h3 className="font-serif italic text-base sm:text-lg text-foreground">{s.sci}</h3>
+                      )}
+                      <span className="text-xs text-accent">{s.common}</span>
+                    </div>
+                    <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{s.note}</p>
                   </div>
-                  <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{s.note}</p>
                 </li>
               ))}
             </ul>
