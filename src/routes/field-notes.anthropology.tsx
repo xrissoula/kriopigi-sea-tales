@@ -5,6 +5,7 @@ import elder from "@/assets/anthropology-tower.webp";
 import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
 import mendePithamphora from "@/assets/mende-pithamphora.jpg";
 import philipII from "@/assets/philip-ii-vergina.webp";
+import greatLavra from "@/assets/great-lavra-athos.jpg";
 
 type Period = {
   age: string;
