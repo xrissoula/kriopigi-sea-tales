@@ -129,9 +129,8 @@ const KIND_COLORS: Record<Site["kind"], string> = {
 function MapPage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
-  const [token, setToken] = useState<string>(() =>
-    typeof window !== "undefined" ? localStorage.getItem("mapbox_token") || "" : ""
-  );
+  const DEFAULT_TOKEN = "pk.eyJ1IjoieHJpc3NvdWxhIiwiYSI6ImNtcDBvcnkxZTA2bDMycHBvMXBlbXE4ZWEifQ.HMMVNRbE-XEEggoyS22Jig";
+  const [token, setToken] = useState<string>(DEFAULT_TOKEN);
   const [tokenInput, setTokenInput] = useState("");
   const [active, setActive] = useState<Site | null>(null);
 
