@@ -42,7 +42,7 @@ function Index() {
       <section className="px-5 py-16 max-w-2xl mx-auto text-center">
         <p className="text-[11px] uppercase tracking-[0.25em] text-accent">A living archive</p>
         <h2 className="mt-3 font-serif text-3xl md:text-4xl text-foreground text-balance">
-          Where pine forest meets a calcite-blue sea.
+          Where pine forest meets a wine-dark sea.
         </h2>
         <p className="mt-4 text-muted-foreground leading-relaxed">
           Kriopigi — "cold spring" — sits on the western Kassandra coast, a crescent of fine sand under Aleppo pines.
