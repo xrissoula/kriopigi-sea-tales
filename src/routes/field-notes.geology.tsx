@@ -9,6 +9,7 @@ import plioceneMap from "@/assets/pliocene-world.png";
 import holoceneMap from "@/assets/holocene-world.jpg";
 import greeceGeoMap from "@/assets/greece-geological-map.webp";
 import halkidikiGeoMap from "@/assets/halkidiki-geology.jpg";
+import aegeanCirculation from "@/assets/aegean-circulation.png";
 
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
@@ -79,6 +80,26 @@ function Geology() {
               )}
             </article>
           ))}
+          <Link
+            to="/field-notes/biogeochemistry"
+            className="group block mt-8 rounded-xl overflow-hidden border border-border bg-card shadow-soft hover:shadow-deep transition"
+          >
+            <div className="aspect-[4/3] overflow-hidden bg-muted">
+              <img
+                src={aegeanCirculation}
+                alt="Schematic of Aegean Sea upper circulation"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="p-5">
+              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Continue · Part II</p>
+              <h3 className="mt-1 font-serif text-2xl text-foreground">Wanna dive deeper?</h3>
+              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">
+                Click here to learn about the Biogeochemistry of the Aegean.
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </SiteLayout>
