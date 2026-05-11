@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import posidonia from "@/assets/posidonia.jpg";
 import gullyRunoff from "@/assets/gully-runoff.jpeg";
-import { Leaf, AlertTriangle, HandHeart } from "lucide-react";
+import { Leaf, AlertTriangle, HandHeart, Shell } from "lucide-react";
 
 export const Route = createFileRoute("/conservation")({
   head: () => ({
@@ -30,6 +30,7 @@ function Conservation() {
           <Tenet icon={Leaf} title="Anchor on sand, never on seagrass" body="A single boat anchor can clear a meter-wide scar that takes a century to regrow." />
           <Tenet icon={AlertTriangle} title="Give nesting cliffs space" body="From April to July, gulls and shags raise young on the headlands. Stay below the marked path." />
           <Tenet icon={HandHeart} title="Carry out what you carry in" body="There is no bin on the trail. Plastic on the strand will be in the meadow by morning." />
+          <Tenet icon={Shell} title="Leave the shells where they lie" body="Empty shells are not souvenirs — they are habitat and raw material. Hermit crabs move into them, small fish shelter beneath them, and over time waves grind them into the calcium-rich sand that builds the beach itself. A pocketful of shells removed each summer becomes meters of lost shoreline over a generation. Photograph them. Leave them." />` 
         </div>
 
         <section className="mt-10">
