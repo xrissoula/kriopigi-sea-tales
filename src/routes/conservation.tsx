@@ -136,3 +136,15 @@ function Tenet({ icon: Icon, title, body }: { icon: any; title: string; body: st
     </div>
   );
 }
+
+function Stage({ letter, title, children }: { letter: string; title: string; children: React.ReactNode }) {
+  return (
+    <div className="flex gap-4 rounded-xl border border-border bg-card p-4 shadow-soft">
+      <span className="w-10 h-10 rounded-full bg-gradient-sea grid place-items-center text-primary-foreground font-serif text-lg shrink-0">{letter}</span>
+      <div>
+        <h3 className="font-serif text-lg text-foreground">{title}</h3>
+        <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{children}</p>
+      </div>
+    </div>
+  );
+}
