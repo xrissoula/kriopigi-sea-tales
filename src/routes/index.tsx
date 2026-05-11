@@ -4,6 +4,7 @@ import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/hermann-tortoise.jpeg";
 import kassandraMap from "@/assets/kassandra-landcover.webp";
+import conservationPath from "@/assets/conservation-shore-path.jpeg";
 import { ArrowRight, Map, Leaf, Waves, Shield } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -56,7 +57,7 @@ function Index() {
         <FeatureCard to="/map" image={kassandraMap} icon={<Map size={18} />} title="Interactive Map" desc="Trails, springs, dive points & access notes." />
         <FeatureCard to="/flora-fauna" image={turtle} icon={<Leaf size={18} />} title="Flora & Fauna" desc="Five ecological zones, from pine line to open sea." />
         <FeatureCard to="/snorkeling" image={posidonia} icon={<Waves size={18} />} title="Snorkeling" desc="Three coves, mapped with depth & visibility." />
-        <FeatureCard to="/conservation" image={posidonia} icon={<Shield size={18} />} title="Conservation" desc="Posidonia meadows & how to tread lightly." />
+        <FeatureCard to="/conservation" image={conservationPath} icon={<Shield size={18} />} title="Conservation" desc="Posidonia meadows & how to tread lightly." />
       </section>
     </SiteLayout>
   );
