@@ -117,6 +117,10 @@ function FloraFauna() {
         </section>
 
         <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
+          <figure className="-mx-5 -mt-5 mb-5 overflow-hidden">
+            <img src={pineForestShore} alt="Aleppo pines silhouetted above the Kriopigi shoreline at dusk, with the Thermaic Gulf glowing pink behind their trunks." loading="lazy" className="w-full h-56 object-cover" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground border-b border-border bg-muted/30">Aleppo pine canopy along the bluff above Kriopigi at dusk.</figcaption>
+          </figure>
           <h3 className="font-serif text-xl text-foreground">The forest above the shore</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Forest canopy</p>
           <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
