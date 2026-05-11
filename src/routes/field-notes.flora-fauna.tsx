@@ -3,6 +3,7 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { ArrowLeft } from "lucide-react";
 import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/turtle.jpg";
+import pineForestShore from "@/assets/pine-forest-shore.jpeg";
 
 export const Route = createFileRoute("/field-notes/flora-fauna")({
   head: () => ({
