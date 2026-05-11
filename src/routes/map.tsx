@@ -40,7 +40,7 @@ function MapPage() {
         new mapboxgl.Popup({ offset: 18, maxWidth: "220px" }).setHTML(`
           <div style="max-width:220px; max-height:35vh; overflow:hidden; font-family:Georgia, serif; color:#1f2d2f;">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Posidonia_oceanica_%28L%29.jpg/640px-Posidonia_oceanica_%28L%29.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Posidonia_oceanica_%28L%29.jpg/640px-Posidonia_oceanica_%28L%29.jpg"
               alt="Posidonia oceanica"
               style="width:100%; height:90px; object-fit:cover; border-radius:8px; margin-bottom:8px; display:block;"
             />
