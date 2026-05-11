@@ -72,7 +72,7 @@ function Conservation() {
           <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
             <img src={lifecycleDiagram} alt="Cross-section diagram showing the four zones of a Posidonia oceanica beach system: dry beach with egagropiles and banquettes, the sea/beach zone with dead mattes and ripple marks, the living Posidonia meadow exporting leaf litter, and the deep abyss where litter finally settles." loading="lazy" className="w-full object-contain bg-muted" />
             <figcaption className="p-4 text-sm text-muted-foreground border-t border-border">
-              The four zones of a Posidonia beach system, from dune to deep water. Adapted from Boudouresque et al., <em>The necromass of the Posidonia oceanica seagrass meadow: fate, role, ecosystem services and vulnerability</em> (Hydrobiologia, 2016).
+              The four zones of a Posidonia beach system, from dune to deep water. Diagram from Petrounias et al. (2023), <em>Posidonia oceanica Balls (Egagropili) from Kefalonia Island Evaluated as Alternative Biomass Source for Green Energy</em>, Journal of Marine Science and Engineering, 11(4), 749. Open access (CC BY 4.0).
             </figcaption>
           </figure>
 
@@ -99,7 +99,8 @@ function Conservation() {
           </div>
 
           <p className="mt-5 text-xs text-muted-foreground italic leading-relaxed">
-            Sources: Boudouresque, C. F., Pergent, G., Pergent-Martini, C., Ruitton, S., Thibaut, T., &amp; Verlaque, M. (2016). <em>The necromass of the Posidonia oceanica seagrass meadow: fate, role, ecosystem services and vulnerability.</em> Hydrobiologia, 781(1), 25–42. Diagram adapted from the same paper. Carbon-storage comparison: Fourqurean et al. (2012), <em>Nature Geoscience</em>.
+            Source: Petrounias, P., Giannakopoulou, P. P., Rogkala, A., Antoniou, N., Koutsovitis, P., Zygouri, E., Krassakis, P., Islam, I., &amp; Koukouzas, N. (2023). <em>Posidonia oceanica Balls (Egagropili) from Kefalonia Island Evaluated as Alternative Biomass Source for Green Energy.</em> Journal of Marine Science and Engineering, 11(4), 749.{" "}
+            <a href="https://doi.org/10.3390/jmse11040749" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">https://doi.org/10.3390/jmse11040749</a>. Carbon-storage comparison: Fourqurean et al. (2012), <em>Nature Geoscience</em>.
           </p>
         </section>
 
