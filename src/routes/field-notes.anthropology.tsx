@@ -109,7 +109,7 @@ function Anthropology() {
       <PageHeader eyebrow="People of the cove" title="Eight thousand years on a thin coast" lead="From Neolithic foragers to amphora merchants to summer arrivals — every layer is still legible in the village above the bay." />
       <div className="px-5 max-w-2xl mx-auto pb-8 space-y-6">
         {periods.map((e, i) => (
-          <article key={i} className="relative pl-6 border-l-2 border-accent/40">
+          <article key={i} id={i === 0 ? "first-settlers" : undefined} className="relative pl-6 border-l-2 border-accent/40 scroll-mt-24">
             <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-accent" />
             <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
             <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
