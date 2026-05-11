@@ -128,7 +128,7 @@ function FloraFauna() {
           <h3 className="mt-6 font-serif text-xl text-foreground">Maquis underneath</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Dense understory</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
-            <img src={maquisShrubland} alt="A sandy footpath descending through dense maquis shrubland to the turquoise shallows of a Kriopigi cove." loading="lazy" className="w-full h-48 object-cover" />
+            <img src={maquisShrubland} alt="A sandy footpath descending through dense maquis shrubland to the turquoise shallows of a Kriopigi cove." loading="lazy" className="w-full h-auto object-contain bg-muted" />
             <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">Maquis flanking a path down to the cove.</figcaption>
           </figure>
           <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
