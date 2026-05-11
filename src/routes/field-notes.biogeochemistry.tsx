@@ -28,7 +28,7 @@ function Biogeochemistry() {
         <figure className="mt-6 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
           <img src={aegeanCirculation} alt="Schematic of Aegean Sea upper circulation" className="w-full h-auto" />
           <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">
-            Schematic representation of the Aegean Sea upper circulation (after Theocharis et al.).
+            Schematic representation of the Aegean Sea upper circulation (following Theocharis et al., 1993 &amp; 1999; Theocharis &amp; Georgopoulos, 1993; Zodiatis, 1994; Zervakis &amp; Georgopoulos, 2002).
           </figcaption>
         </figure>
         <p className="mt-6 text-foreground/80 leading-relaxed">
