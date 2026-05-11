@@ -153,7 +153,7 @@ function MapPage() {
     map.addControl(new mapboxgl.NavigationControl({ visualizePitch: true }), "top-right");
     map.scrollZoom.disable();
 
-    map.on("style.load", () => {
+    map.on("load", () => {
       // Soft Mediterranean tint over the basemap
       map.setFog({
         color: "oklch(0.92 0.03 85)",
@@ -193,13 +193,16 @@ function MapPage() {
 
       let t = 0;
       const animate = () => {
+        if (!mapRef.current) return;
         t += 0.02;
         const r = 40 + Math.sin(t) * 22;
         const o = 0.18 + (Math.sin(t) + 1) * 0.06;
-        if (map.getLayer("ripple-glow")) {
-          map.setPaintProperty("ripple-glow", "circle-radius", r);
-          map.setPaintProperty("ripple-glow", "circle-opacity", o);
-        }
+        try {
+          if (map.getLayer("ripple-glow")) {
+            map.setPaintProperty("ripple-glow", "circle-radius", r);
+            map.setPaintProperty("ripple-glow", "circle-opacity", o);
+          }
+        } catch {}
         requestAnimationFrame(animate);
       };
       animate();
