@@ -7,6 +7,7 @@ import mendePithamphora from "@/assets/mende-pithamphora.jpg";
 import philipII from "@/assets/philip-ii-vergina.webp";
 import greatLavra from "@/assets/great-lavra-athos.jpg";
 import greekRevolution from "@/assets/greek-revolution.jpg";
+import refugees1923 from "@/assets/refugees-1923.jpg";
 
 type Period = {
   age: string;
@@ -68,7 +69,14 @@ const periods: Period[] = [
     alt: "Hand-coloured lithograph depicting a battle scene from the Greek War of Independence, with Greek fighters in fustanella confronting Ottoman troops on a hillside.",
     caption: "Scene from the Greek War of Independence (1821), from the series of folk lithographs commissioned by General Yannis Makriyannis and painted by Panagiotis Zografos (1836–1839) to illustrate Makriyannis' Memoirs.",
   },
-  { age: "1923", title: "Population exchange", body: "Following the Greco–Turkish war, refugees from Asia Minor settle across Halkidiki, reshaping the demographics, cuisine, and music of the coast." },
+  {
+    age: "1923",
+    title: "Population exchange",
+    body: "Following the Greco–Turkish war, refugees from Asia Minor settle across Halkidiki, reshaping the demographics, cuisine, and music of the coast.",
+    image: refugees1923,
+    alt: "Black-and-white photograph of Greek refugees from Asia Minor disembarking with their bundled belongings at the waterfront of Thessaloniki, c. 1923.",
+    caption: "Greek refugees from Asia Minor arriving by caïque at the port of Thessaloniki in the wake of the 1923 Convention Concerning the Exchange of Greek and Turkish Populations. Photographer unknown; widely reproduced from the interwar press archive (see Margaret21, “Greek refugees from Smyrna arriving at Thessaloniki 1923”: https://margaret21.com/2015/02/18/nation-swap-house-swap/greek-refugees-from-smyrna-arriving-at-thessaloniki-1923/).",
+  },
   { age: "1960s–today", title: "The tourist coast", body: "Paved roads reach Kassandra; Kriopigi grows from a fishing hamlet into a summer destination. Pine-shaded campsites and small hotels replace tobacco fields, while the shoreline absorbs new pressures." },
 ];
 
