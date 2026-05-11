@@ -33,7 +33,7 @@ const sections = [
     icon: Users,
   },
   {
-    to: "/field-notes/flora-fauna" as const,
+    to: "/flora-fauna" as const,
     eyebrow: "III · Living Shore",
     title: "Flora & Fauna",
     desc: "A field catalogue from the dune line outward — beach, surf, shallows, and deep water.",
