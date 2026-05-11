@@ -119,11 +119,11 @@ const SITES: Site[] = [
 ];
 
 const KIND_COLORS: Record<Site["kind"], string> = {
-  habitat: "oklch(0.55 0.11 145)",
-  hydrology: "oklch(0.65 0.12 220)",
-  snorkel: "oklch(0.6 0.13 200)",
-  heritage: "oklch(0.55 0.08 60)",
-  geology: "oklch(0.5 0.06 50)",
+  habitat: "#4d8a52",
+  hydrology: "#3a8fb7",
+  snorkel: "#2f9bb0",
+  heritage: "#a78a4f",
+  geology: "#8a7355",
 };
 
 function MapPage() {
@@ -155,10 +155,10 @@ function MapPage() {
     map.on("load", () => {
       // Soft Mediterranean tint over the basemap
       map.setFog({
-        color: "oklch(0.92 0.03 85)",
-        "high-color": "oklch(0.7 0.08 220)",
+        color: "#eef3ec",
+        "high-color": "#bcd6e6",
         "horizon-blend": 0.15,
-        "space-color": "oklch(0.25 0.05 240)",
+        "space-color": "#0f2540",
         "star-intensity": 0.0,
       });
 
@@ -184,7 +184,7 @@ function MapPage() {
         source: "ripple",
         paint: {
           "circle-radius": 40,
-          "circle-color": "oklch(0.7 0.13 220)",
+          "circle-color": "#3a8fb7",
           "circle-opacity": 0.18,
           "circle-blur": 1,
         },
