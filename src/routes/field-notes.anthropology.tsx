@@ -23,8 +23,15 @@ export const Route = createFileRoute("/field-notes/anthropology")({
   component: Anthropology,
 });
 
-const periods = [
-  { age: "~6500 BCE", title: "First settlers", body: "Neolithic communities arrive in Halkidiki, drawn to springs, sheltered coves, and the rich Thermaic Gulf. Stone tools and ceramics from this period are found across the Kassandra peninsula." },
+const periods: Period[] = [
+  {
+    age: "~6500 BCE",
+    title: "First settlers",
+    body: "Neolithic communities arrive in Halkidiki, drawn to springs, sheltered coves, and the rich Thermaic Gulf. Stone tools and ceramics from this period are found across the Kassandra peninsula.",
+    image: olynthusPlan,
+    alt: "General plan of the southern projection of the Megali Toumba at Olynthus, showing Byzantine, Prehistoric, Classical, and unexcavated remains.",
+    caption: "General plan of the southern projection of the Megali Toumba at Olynthus. From G. E. Mylonas, Excavations at Olynthus, Part I: The Neolithic Settlement (Johns Hopkins University Studies in Archaeology No. 6, ed. D. M. Robinson; Baltimore: The Johns Hopkins Press / London: Humphrey Milford / Oxford University Press, 1929).",
+  },
   { age: "~700 BCE", title: "Ancient Mende & Eretrian colonies", body: "Greek colonists from Eretria found Mende and other coastal cities. The peninsula — then called Pallene — becomes famous for its wine, exported across the Aegean in distinctive amphorae." },
   { age: "348 BCE", title: "Macedonian rule", body: "Philip II of Macedon destroys Olynthos and consolidates Halkidiki under Macedonian control. The region's harbours feed Alexander's campaigns." },
   { age: "Byzantine era", title: "Monastic landscape", body: "Mount Athos to the east becomes the spiritual heart of Orthodoxy. Kassandra's villages live by fishing, olives, and beekeeping; the cold spring at Kriopigi serves caravans crossing the peninsula." },
