@@ -1,5 +1,5 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home, Leaf } from "lucide-react";
+import { Map, BookOpen, Mic, Shield, Waves, Cloud, Send, Home, Leaf, User } from "lucide-react";
 import type { ReactNode } from "react";
 
 const nav = [
@@ -12,6 +12,7 @@ const nav = [
   { to: "/snorkeling", label: "Snorkel", icon: Waves },
   { to: "/conditions", label: "Sea", icon: Cloud },
   { to: "/submit", label: "Submit", icon: Send },
+  { to: "/about", label: "About", icon: User },
 ] as const;
 
 export function SiteLayout({ children }: { children: ReactNode }) {
@@ -58,7 +59,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             );
           })}
         </div>
-        <div className="grid grid-cols-4 px-1 border-t border-border">
+        <div className="grid grid-cols-5 px-1 border-t border-border">
           {nav.slice(5).map((n) => {
             const Icon = n.icon;
             const active = pathname === n.to;

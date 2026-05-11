@@ -17,6 +17,7 @@ import { Route as FloraFaunaRouteImport } from './routes/flora-fauna'
 import { Route as FieldNotesRouteImport } from './routes/field-notes'
 import { Route as ConservationRouteImport } from './routes/conservation'
 import { Route as ConditionsRouteImport } from './routes/conditions'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FieldNotesGeologyRouteImport } from './routes/field-notes.geology'
 import { Route as FieldNotesBiogeochemistryRouteImport } from './routes/field-notes.biogeochemistry'
@@ -62,6 +63,11 @@ const ConditionsRoute = ConditionsRouteImport.update({
   path: '/conditions',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -86,6 +92,7 @@ const FieldNotesAnthropologyRoute = FieldNotesAnthropologyRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
   '/field-notes': typeof FieldNotesRouteWithChildren
@@ -100,6 +107,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
   '/field-notes': typeof FieldNotesRouteWithChildren
@@ -115,6 +123,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/conditions': typeof ConditionsRoute
   '/conservation': typeof ConservationRoute
   '/field-notes': typeof FieldNotesRouteWithChildren
@@ -131,6 +140,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
     | '/conditions'
     | '/conservation'
     | '/field-notes'
@@ -145,6 +155,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
     | '/conditions'
     | '/conservation'
     | '/field-notes'
@@ -159,6 +170,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/conditions'
     | '/conservation'
     | '/field-notes'
@@ -174,6 +186,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   ConditionsRoute: typeof ConditionsRoute
   ConservationRoute: typeof ConservationRoute
   FieldNotesRoute: typeof FieldNotesRouteWithChildren
@@ -242,6 +255,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ConditionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -291,6 +311,7 @@ const FieldNotesRouteWithChildren = FieldNotesRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   ConditionsRoute: ConditionsRoute,
   ConservationRoute: ConservationRoute,
   FieldNotesRoute: FieldNotesRouteWithChildren,
