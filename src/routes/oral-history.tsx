@@ -3,6 +3,7 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import elder from "@/assets/elder.jpg";
 import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
+import kriopigi1998 from "@/assets/kriopigi-1998.jpg";
 import damselfish from "@/assets/flora-fauna-damselfish.jpg";
 import tower from "@/assets/anthropology-tower.webp";
 import { Play, Camera } from "lucide-react";
