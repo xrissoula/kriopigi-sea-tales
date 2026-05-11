@@ -105,6 +105,62 @@ function FloraFauna() {
       </div>
       <PageHeader eyebrow="Field Catalogue" title="From the pine line to the open sea" lead="Five zones, five ecologies — walk outward from the dune and the species change with the depth of the water." />
 
+      {/* Ecosystem context */}
+      <div className="px-5 max-w-3xl mx-auto mb-10 space-y-8">
+        <section>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent">The bigger picture</p>
+          <h2 className="mt-1 font-serif text-2xl text-foreground">A Mediterranean mosaic</h2>
+          <p className="mt-3 text-foreground/80 leading-relaxed">
+            Kassandra — ancient Pallene — is a coastal ecosystem mosaic shaped by limestone geology, dry hot summers, mild wet winters, salt spray, fire, erosion, and thousands of years of human use. Around Kriopigi the landscape switches in just a few hundred metres: upland pine forest, Mediterranean shrubland, rocky coastal slopes, freshwater microhabitats, sandy and pebbled shore, and the shallow marine world beyond.
+          </p>
+        </section>
+
+        <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
+          <h3 className="font-serif text-xl text-foreground">The forest above the shore</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+            Primarily Mediterranean conifer forest, dominated by <em>Aleppo pine (Pinus halepensis)</em>, locally mixed with <em>Turkish pine (Pinus brutia)</em>. Classic eastern-Mediterranean fire-adapted pines: resinous, drought-tolerant, fast colonisers of poor rocky soils.
+          </p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">Maquis underneath</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+            Dense evergreen <em>maquis</em> shrubland fills the understory — kermes oak, lentisk, arbutus, wild olive, myrtle, phillyrea, rosemary, thyme, sage. One of the defining ecosystems of the Mediterranean Basin.
+          </p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">Phrygana on the dry edges</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+            Where soils thin and grazing pressure rises, maquis gives way to <em>phrygana</em>: lower, more open, thornier, more aromatic — heavily adapted to drought and goats.
+          </p>
+        </section>
+
+        <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
+          <h3 className="font-serif text-xl text-foreground">The coast itself</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+            A patchwork of rocky littoral and pocket beach systems. Tidepool organisms, algae, limpets and sea snails on the rocks; crabs in the wrack; octopus dens in the cracks; juvenile fish sheltering in the shallows.
+          </p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">Posidonia meadow offshore</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+            Underwater, the keystone habitat is the <em>Posidonia oceanica</em> meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. The meadows are biodiversity hotspots, fish nurseries, sediment stabilisers, and major carbon sinks.
+          </p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">Why the water is so clear</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+            The famous turquoise comes partly from <em>oligotrophic</em> conditions: nutrient-poor water, low plankton density, high visibility — and lower overall productivity than colder seas.
+          </p>
+        </section>
+
+        <section>
+          <h3 className="font-serif text-xl text-foreground">Geology underfoot</h3>
+          <p className="mt-2 text-foreground/80 leading-relaxed">
+            Kassandra is mostly uplifted limestone and sedimentary coastal terrain, which gives the peninsula its alkaline soils, caves, rocky shelves, erosion-prone cliffs, and the bright turquoise shallows over white carbonate sand.
+          </p>
+        </section>
+
+        <section className="rounded-2xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
+          <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">A cultural landscape</p>
+          <h3 className="mt-1 font-serif text-xl">Not pristine wilderness</h3>
+          <p className="mt-2 text-sm opacity-90 leading-relaxed">
+            Ancient logging, grazing, terraced agriculture, olive cultivation, tourism, road building, recurrent fires, coastal development — all of it has shaped what grows here. The shore is better understood as a long-inhabited Mediterranean cultural landscape, where ecology and human history have been intertwined for thousands of years.
+          </p>
+        </section>
+      </div>
+
       {/* Zone jump nav */}
       <div className="px-5 max-w-3xl mx-auto mb-6">
         <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
