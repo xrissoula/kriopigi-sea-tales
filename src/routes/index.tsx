@@ -45,7 +45,7 @@ function Index() {
           Where pine forest meets a wine-dark sea.
         </h2>
         <p className="mt-4 text-muted-foreground leading-relaxed">
-          Kriopigi — "cold spring" — sits on the western Kassandra coast, a crescent of fine sand under Aleppo pines.
+          Kriopigi — "cold spring" — sits on the western Kassandra coast, a crescent of fine sand under Aleppo pines, looking out over what Homer called the <em>oînops póntos</em>, the wine-dark sea.
           This guide gathers what locals, scientists, and travelers have learned of its tides, meadows, and migrants.
         </p>
       </section>
