@@ -62,6 +62,47 @@ function Conservation() {
           </p>
         </section>
 
+        <section className="mt-12">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Beach life cycle</p>
+          <h2 className="font-serif text-3xl text-foreground mt-1">How a Mediterranean beach is built</h2>
+          <p className="mt-3 text-foreground/80 leading-relaxed">
+            The sand at Kriopigi is not a backdrop — it is the visible end of a long ecological conveyor belt that begins offshore in the <em>Posidonia oceanica</em> meadow. Understanding the cycle is the difference between a beach we use and a beach we keep.
+          </p>
+
+          <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
+            <img src={lifecycleDiagram} alt="Cross-section diagram showing the four zones of a Posidonia oceanica beach system: dry beach with egagropiles and banquettes, the sea/beach zone with dead mattes and ripple marks, the living Posidonia meadow exporting leaf litter, and the deep abyss where litter finally settles." loading="lazy" className="w-full object-contain bg-muted" />
+            <figcaption className="p-4 text-sm text-muted-foreground border-t border-border">
+              The four zones of a Posidonia beach system, from dune to deep water. Adapted from Boudouresque et al., <em>The necromass of the Posidonia oceanica seagrass meadow: fate, role, ecosystem services and vulnerability</em> (Hydrobiologia, 2016).
+            </figcaption>
+          </figure>
+
+          <div className="mt-6 space-y-4">
+            <Stage letter="a" title="The dry beach — egagropiles and banquettes">
+              The fibrous brown mats piled at the high-tide line are not rubbish. They are <em>banquettes</em>: dead Posidonia leaves woven by waves into dense berms that absorb storm energy and shield the sand behind them from erosion. The small felted balls scattered around them — <em>egagropiles</em> — are rolled fragments of the same leaf fibre. Bulldozing banquettes off the beach for tourist comfort is one of the single largest causes of shoreline retreat on Mediterranean coasts.
+            </Stage>
+            <Stage letter="b" title="Sea / beach zone — dead mattes and ripple marks">
+              Just offshore, where the sand meets the first underwater slope, you can often see the brown terraced edge of a <em>dead matte</em> — the compacted root-and-rhizome scaffolding left behind by past meadows. These mattes can be thousands of years old and continue to stabilise sediment long after the living plant is gone. Ripple marks in the shallow sand show how much water energy this zone is constantly absorbing.
+            </Stage>
+            <Stage letter="c" title="The living meadow — where the beach is manufactured">
+              The Posidonia meadow itself is the engine. Each plant sheds old leaves seasonally; those leaves are exported shoreward by waves (becoming banquettes) or seaward into deeper water. The meadow also traps suspended sediment, slows currents, and produces the calcium-carbonate sand grains — from broken shells, foraminifera, and calcareous algae living on the leaves — that eventually wash up as "white" Aegean sand.
+            </Stage>
+            <Stage letter="d" title="The abyss — long-term carbon storage">
+              A significant fraction of leaf litter never returns to shore. It sinks down the continental slope into deep water, where low oxygen and cold temperatures lock its carbon away for centuries. Mediterranean Posidonia meadows are among the most carbon-dense ecosystems on Earth — a single hectare can store more CO₂ than a hectare of Amazon rainforest.
+            </Stage>
+          </div>
+
+          <div className="mt-6 rounded-2xl bg-card border border-border p-5 shadow-soft">
+            <h3 className="font-serif text-xl text-foreground">What this means at Kriopigi</h3>
+            <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
+              The beach you walk on each summer is the upper visible slice of a system that runs from the banquette at your feet to the abyssal plain offshore. Anchor scars in the meadow, raked-away banquettes, pocketed shells, and runoff from the slope above all interrupt the same cycle at different points. Protecting any one zone protects the rest.
+            </p>
+          </div>
+
+          <p className="mt-5 text-xs text-muted-foreground italic leading-relaxed">
+            Sources: Boudouresque, C. F., Pergent, G., Pergent-Martini, C., Ruitton, S., Thibaut, T., &amp; Verlaque, M. (2016). <em>The necromass of the Posidonia oceanica seagrass meadow: fate, role, ecosystem services and vulnerability.</em> Hydrobiologia, 781(1), 25–42. Diagram adapted from the same paper. Carbon-storage comparison: Fourqurean et al. (2012), <em>Nature Geoscience</em>.
+          </p>
+        </section>
+
         <div className="mt-10 rounded-2xl bg-gradient-sea text-primary-foreground p-6 shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">Citizen science</p>
           <h3 className="font-serif text-2xl mt-1">Help us count the meadow</h3>
