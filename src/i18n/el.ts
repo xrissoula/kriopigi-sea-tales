@@ -6,12 +6,15 @@ import { elPages } from "./el.pages";
 import { elFlora } from "./el.flora";
 import { elGeology } from "./el.geology";
 import { elBiogeochemistry } from "./el.biogeochemistry";
+import { elAnthropology } from "./el.anthropology";
 
 export const el: Record<string, string> = {
   ...elPages,
   ...elFlora,
   ...elGeology,
   ...elBiogeochemistry,
+  ...elAnthropology,
+
 
   // --- Navigation / layout ---
   Home: "Αρχική",
