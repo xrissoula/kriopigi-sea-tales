@@ -75,7 +75,7 @@ function Conservation() {
           <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
             <img src={lifecycleDiagram} alt="Cross-section diagram showing the four zones of a Posidonia oceanica beach system: dry beach with egagropiles and banquettes, the sea/beach zone with dead mattes and ripple marks, the living Posidonia meadow exporting leaf litter, and the deep abyss where litter finally settles." loading="lazy" className="w-full object-contain bg-muted" />
             <figcaption className="p-4 text-sm text-muted-foreground border-t border-border">
-              The four zones of a Posidonia beach system, from dune to deep water. Diagram from Petrounias et al. (2023), <em>Posidonia oceanica Balls (Egagropili) from Kefalonia Island Evaluated as Alternative Biomass Source for Green Energy</em>, Journal of Marine Science and Engineering, 11(4), 749. Open access (CC BY 4.0).
+              {t("The four zones of a Posidonia beach system, from dune to deep water. Diagram from Petrounias et al. (2023), Posidonia oceanica Balls (Egagropili) from Kefalonia Island Evaluated as Alternative Biomass Source for Green Energy, Journal of Marine Science and Engineering, 11(4), 749. Open access (CC BY 4.0).")}
             </figcaption>
           </figure>
 
