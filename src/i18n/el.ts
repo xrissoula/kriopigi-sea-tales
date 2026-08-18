@@ -36,6 +36,8 @@ export const el: Record<string, string> = {
   "A living archive": "Ένα ζωντανό αρχείο",
   "Where pine forest meets a wine-dark sea.":
     "Όπου το πευκοδάσος συναντά την οινοπόρφυρη θάλασσα.",
+  "Kriopigi — \"cold spring\" — sits on the western Kassandra coast, a crescent of fine sand under Aleppo pines, looking out over what Homer called the oînops póntos, the wine-dark sea. This guide gathers what locals, scientists, and travelers have learned of its tides, meadows, and migrants.":
+    "Η Κρυοπηγή — από την «κρύα πηγή» που της έδωσε το όνομά της — απλώνεται στη δυτική ακτή της Κασσάνδρας, μια ημισέληνος από ψιλή άμμο κάτω από χαλέπια πεύκα, με θέα σε αυτό που ο Όμηρος αποκάλεσε οἶνοπα πόντον, τη σκοτεινή σαν κρασί θάλασσα. Αυτός ο οδηγός συγκεντρώνει όσα έχουν μάθει οι κάτοικοι, οι επιστήμονες και οι ταξιδιώτες για τις παλίρροιες, τα λιβάδια και τους εποχικούς επισκέπτες της.",
   "Interactive Map": "Διαδραστικός Χάρτης",
   "Trails, springs, dive points & access notes.":
     "Μονοπάτια, πηγές, σημεία κατάδυσης και σημειώσεις πρόσβασης.",
