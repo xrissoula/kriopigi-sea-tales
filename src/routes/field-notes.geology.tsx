@@ -147,7 +147,7 @@ function Geology() {
             hash="first-settlers"
             className="mt-4 block text-center text-[12px] uppercase tracking-[0.2em] text-muted-foreground hover:text-accent transition-colors"
           >
-            …or wanna wade out? <span className="normal-case tracking-normal italic">{t("Stay shallow with the humans →")}</span>
+            <span className="normal-case tracking-normal italic">{t("…or wanna wade out? Stay shallow with the humans →")}</span>
           </Link>
         </div>
       </div>
