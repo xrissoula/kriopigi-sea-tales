@@ -108,7 +108,7 @@ function Anthropology() {
           <h1 className="font-serif text-4xl text-primary-foreground">{t("Anthropological History")}</h1>
         </div>
       </div>
-      <PageHeader eyebrow="People of the cove" title="Eight thousand years on a thin coast" lead="From Neolithic foragers to amphora merchants to summer arrivals — every layer is still legible in the village above the bay." />
+      <PageHeader eyebrow={t("People of the cove")} title={t("Eight thousand years on a thin coast")} lead={t("From Neolithic foragers to amphora merchants to summer arrivals — every layer is still legible in the village above the bay.")} />
       <div className="px-5 max-w-2xl mx-auto pb-8 space-y-6">
         {periods.map((e, i) => (
           <article key={i} id={i === 0 ? "first-settlers" : undefined} className="relative pl-6 border-l-2 border-accent/40 scroll-mt-24">
