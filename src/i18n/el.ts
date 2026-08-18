@@ -53,6 +53,25 @@ export const el: Record<string, string> = {
     "Λιβάδια της Ποσειδωνίας και πώς να πατάμε ελαφρά.",
   Section: "Ενότητα",
 
+  // --- Field Notes (History) hub ---
+  "Field Notes": "ΣΗΜΕΙΩΣΕΙΣ ΠΕΔΙΟΥ",
+  "A chronological reading of the shore": "Μια χρονολογική ανάγνωση της ακτής",
+  "Three layers, in order: the rock beneath, the people upon it, and the life that returns each season.":
+    "Τρία διαδοχικά στρώματα: πρώτα ο βράχος που βρίσκεται από κάτω, έπειτα οι άνθρωποι που έζησαν πάνω του και τέλος η ζωή που επιστρέφει κάθε εποχή.",
+  "I · Deep Time": "I · ΒΑΘΥΣ ΧΡΟΝΟΣ",
+  "Geological & Natural History": "Γεωλογική & Φυσική Ιστορία",
+  "How tectonics, limestone, and the cold spring shaped the cove and its ecosystem.":
+    "Πώς οι τεκτονικές διεργασίες, ο ασβεστόλιθος και η κρύα πηγή διαμόρφωσαν τον όρμο και το οικοσύστημά του.",
+  "II · Human Time": "II · Η ΕΠΟΧΗ ΤΟΥ ΑΝΘΡΩΠΟΥ",
+  "Anthropological History": "Ανθρωπολογική Ιστορία",
+  "From the first settlers of Halkidiki through Byzantine villages to modern tourism.":
+    "Από τους πρώτους οικιστές της Χαλκιδικής, στα βυζαντινά χωριά και μέχρι τον σύγχρονο τουρισμό.",
+  "III · Living Shore": "III · Η ΖΩΝΤΑΝΗ ΑΚΤΗ",
+  "Living Shore": "Η ΖΩΝΤΑΝΗ ΑΚΤΗ",
+  "A field catalogue from the dune line outward — beach, surf, shallows, and deep water.":
+    "Ένας κατάλογος πεδίου που ακολουθεί την ακτή από τις αμμοθίνες προς τα ανοιχτά — παραλία, ζώνη κυματισμού, ρηχά και βαθιά νερά.",
+  "Read section →": "Διαβάστε την ενότητα →",
+
   // --- Snorkeling ---
   "Below the line": "Κάτω από την επιφάνεια",
   "Three coves, three worlds": "Τρεις κολπίσκοι, τρεις κόσμοι",
