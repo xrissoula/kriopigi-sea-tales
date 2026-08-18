@@ -22,9 +22,9 @@ export const elAnthropology: Record<string, string> = {
   "Greek colonists from Eretria found Mende and other coastal cities. The peninsula — then called Pallene — becomes famous for its wine, exported across the Aegean in distinctive amphorae.":
     "Έλληνες άποικοι από την Ερέτρια ιδρύουν τη Μένδη και άλλες παράκτιες πόλεις. Η χερσόνησος — τότε γνωστή ως Παλλήνη — γίνεται φημισμένη για το κρασί της, το οποίο εξάγεται σε ολόκληρο το Αιγαίο μέσα σε χαρακτηριστικούς αμφορείς.",
   "Pithamphora with floral motifs recovered from the cemetery at Mende.":
-    "Πιθαμφορέας με φυτικά διακοσμητικά μοτίβα από το νεκροταφείο της Μένδης.",
+    "Πιθαμφορέας με φυτικά διακοσμητικά μοτίβα από το νεκροταφείο της αρχαίας Μένδης.",
   "Pithamphora with floral motifs from the cemetery at Mende. From S. Moschonissioti, “Vases du cimetière de Mendè,” in Recherches récentes sur le monde hellénistique (Publications du Centre Jean Bérard), available via OpenEdition Books: https://books.openedition.org/pcjb/661.":
-    "Πιθαμφορέας με φυτικά διακοσμητικά μοτίβα από το νεκροταφείο της Μένδης. Από τη Σ. Μοσχονησιώτη, Vases du cimetière de Mendè.",
+    "Πιθαμφορέας με φυτικά διακοσμητικά μοτίβα από το νεκροταφείο της αρχαίας Μένδης. Πηγή: S. Moschonissioti, “Vases du cimetière de Mendè,” in Recherches récentes sur le monde hellénistique (Publications du Centre Jean Bérard), OpenEdition Books: https://books.openedition.org/pcjb/661.",
 
   "348 BCE": "348 π.Χ.",
   "Macedonian rule": "Η μακεδονική κυριαρχία",
