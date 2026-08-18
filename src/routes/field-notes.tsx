@@ -1,7 +1,7 @@
 import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
-import { Mountain, Users, Leaf, ArrowRight } from "lucide-react";
+import { Mountain, Users, Leaf } from "lucide-react";
 import posidonia from "@/assets/flora-fauna-damselfish.jpg";
 import tower from "@/assets/anthropology-tower.webp";
 import hero from "@/assets/hero-kriopigi.webp";
@@ -77,7 +77,7 @@ function FieldNotesLayout() {
                   <h2 className="mt-1 font-serif text-2xl text-foreground">{t(s.title)}</h2>
                   <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(s.desc)}</p>
                   <span className="mt-3 inline-flex items-center gap-1 text-sm text-accent">
-                    {t("Read section")} <ArrowRight size={14} />
+                    {t("Read section →")}
                   </span>
                 </div>
               </div>
