@@ -2,7 +2,10 @@
  * Greek translations, keyed by the exact English source string.
  * Any string without an entry falls back to English.
  */
+import { elPages } from "./el.pages";
+
 export const el: Record<string, string> = {
+  ...elPages,
   // --- Navigation / layout ---
   Home: "Αρχική",
   "Flora & Fauna": "Χλωρίδα & Πανίδα",
