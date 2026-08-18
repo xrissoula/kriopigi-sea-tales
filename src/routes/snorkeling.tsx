@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useT } from "@/i18n";
 import posidonia from "@/assets/posidonia.jpg";
 import turtle from "@/assets/turtle.jpg";
 
@@ -20,27 +21,28 @@ const sites = [
 ];
 
 function Snorkeling() {
+  const t = useT();
   return (
     <SiteLayout>
       <PageHeader eyebrow="Below the line" title="Three coves, three worlds" lead="Mask, fins, and a quiet kick are all you need. Always enter with a buddy and check the day's sea state." />
       <div className="px-5 max-w-4xl mx-auto grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {sites.map((s) => (
           <article key={s.name} className="rounded-2xl bg-card border border-border shadow-soft overflow-hidden">
-            <img src={s.img} alt={s.name} loading="lazy" className="w-full aspect-[4/3] object-cover" />
+            <img src={s.img} alt={t(s.name)} loading="lazy" className="w-full aspect-[4/3] object-cover" />
             <div className="p-5">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-accent">{s.level}</p>
-              <h2 className="font-serif text-2xl text-foreground mt-1">{s.name}</h2>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-accent">{t(s.level)}</p>
+              <h2 className="font-serif text-2xl text-foreground mt-1">{t(s.name)}</h2>
               <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
                 <div className="rounded-md bg-secondary/60 p-2">
-                  <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Depth</dt>
+                  <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("Depth")}</dt>
                   <dd className="text-foreground font-medium">{s.depth}</dd>
                 </div>
                 <div className="rounded-md bg-secondary/60 p-2">
-                  <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">Visibility</dt>
+                  <dt className="text-[10px] uppercase tracking-wider text-muted-foreground">{t("Visibility")}</dt>
                   <dd className="text-foreground font-medium">{s.vis}</dd>
                 </div>
               </dl>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.look}</p>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{t(s.look)}</p>
             </div>
           </article>
         ))}

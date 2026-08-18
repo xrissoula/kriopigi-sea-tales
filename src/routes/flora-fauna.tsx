@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useT } from "@/i18n";
 import posidonia from "@/assets/posidonia.jpg";
 
 import pineForestShore from "@/assets/pine-forest-shore.jpeg";
@@ -93,14 +94,15 @@ const zones: Zone[] = [
 ];
 
 function FloraFauna() {
+  const t = useT();
   return (
     <SiteLayout>
       <div className="relative h-64 overflow-hidden">
         <img src={posidonia} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="absolute inset-x-0 bottom-0 px-5 pb-6 max-w-3xl mx-auto">
-          <p className="text-[11px] uppercase tracking-[0.25em] text-primary-foreground/80">Living Shore</p>
-          <h1 className="font-serif text-4xl text-primary-foreground">Flora &amp; Fauna</h1>
+          <p className="text-[11px] uppercase tracking-[0.25em] text-primary-foreground/80">{t("Living Shore")}</p>
+          <h1 className="font-serif text-4xl text-primary-foreground">{t("Flora & Fauna")}</h1>
         </div>
       </div>
       <PageHeader eyebrow="Field Catalogue" title="From the pine line to the open sea" lead="Five zones, five ecologies — walk outward from the dune and the species change with the depth of the water." />
@@ -108,71 +110,53 @@ function FloraFauna() {
       {/* Ecosystem context */}
       <div className="px-5 max-w-3xl mx-auto mb-10 space-y-8">
         <section>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-accent">The bigger picture</p>
-          <h2 className="mt-1 font-serif text-2xl text-foreground">A Mediterranean mosaic</h2>
-          <p className="mt-3 text-foreground/80 leading-relaxed">
-            Kassandra — ancient Pallene — is a coastal ecosystem mosaic shaped by limestone geology, dry hot summers, mild wet winters, salt spray, fire, erosion, and thousands of years of human use. Around Kriopigi the landscape switches in just a few hundred metres: upland pine forest, Mediterranean shrubland, rocky coastal slopes, freshwater microhabitats, sandy and pebbled shore, and the shallow marine world beyond.
-          </p>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("The bigger picture")}</p>
+          <h2 className="mt-1 font-serif text-2xl text-foreground">{t("A Mediterranean mosaic")}</h2>
+          <p className="mt-3 text-foreground/80 leading-relaxed">{t("Kassandra — ancient Pallene — is a coastal ecosystem mosaic shaped by limestone geology, dry hot summers, mild wet winters, salt spray, fire, erosion, and thousands of years of human use. Around Kriopigi the landscape switches in just a few hundred metres: upland pine forest, Mediterranean shrubland, rocky coastal slopes, freshwater microhabitats, sandy and pebbled shore, and the shallow marine world beyond.")}</p>
         </section>
 
         <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
           <figure className="-mx-5 -mt-5 mb-5 overflow-hidden">
-            <img src={pineForestShore} alt="Aleppo pines silhouetted above the Kriopigi shoreline at dusk, with the Thermaic Gulf glowing pink behind their trunks." loading="lazy" className="w-full h-56 object-cover" />
-            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground border-b border-border bg-muted/30">Aleppo pine canopy along the bluff above Kriopigi at dusk.</figcaption>
+            <img src={pineForestShore} alt={t("Aleppo pines silhouetted above the Kriopigi shoreline at dusk, with the Thermaic Gulf glowing pink behind their trunks.")} loading="lazy" className="w-full h-56 object-cover" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground border-b border-border bg-muted/30">{t("Aleppo pine canopy along the bluff above Kriopigi at dusk.")}</figcaption>
           </figure>
-          <h3 className="font-serif text-xl text-foreground">The forest above the shore</h3>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Forest canopy</p>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-            Primarily Mediterranean conifer forest, dominated by <em>Aleppo pine (Pinus halepensis)</em>, locally mixed with <em>Turkish pine (Pinus brutia)</em>. Classic eastern-Mediterranean fire-adapted pines: resinous, drought-tolerant, fast colonisers of poor rocky soils.
-          </p>
-          <h3 className="mt-6 font-serif text-xl text-foreground">Maquis underneath</h3>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Dense understory</p>
+          <h3 className="font-serif text-xl text-foreground">{t("The forest above the shore")}</h3>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Forest canopy")}</p>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Primarily Mediterranean conifer forest, dominated by Aleppo pine (Pinus halepensis), locally mixed with Turkish pine (Pinus brutia). Classic eastern-Mediterranean fire-adapted pines: resinous, drought-tolerant, fast colonisers of poor rocky soils.")}</p>
+          <h3 className="mt-6 font-serif text-xl text-foreground">{t("Maquis underneath")}</h3>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Dense understory")}</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
-            <img src={maquisShrubland} alt="A sandy footpath descending through dense maquis shrubland to the turquoise shallows of a Kriopigi cove." loading="lazy" className="w-full h-auto object-contain bg-muted" />
-            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">Maquis flanking a path down to the cove.</figcaption>
+            <img src={maquisShrubland} alt={t("A sandy footpath descending through dense maquis shrubland to the turquoise shallows of a Kriopigi cove.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Maquis flanking a path down to the cove.")}</figcaption>
           </figure>
-          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
-            Dense evergreen <em>maquis</em> shrubland fills the understory — kermes oak, lentisk, arbutus, wild olive, myrtle, phillyrea, rosemary, thyme, sage. One of the defining ecosystems of the Mediterranean Basin.
-          </p>
-          <h3 className="mt-5 font-serif text-xl text-foreground">Phrygana on the dry edges</h3>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">Degraded / exposed dry edge ecology</p>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Dense evergreen maquis shrubland fills the understory — kermes oak, lentisk, arbutus, wild olive, myrtle, phillyrea, rosemary, thyme, sage. One of the defining ecosystems of the Mediterranean Basin.")}</p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">{t("Phrygana on the dry edges")}</h3>
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Degraded / exposed dry edge ecology")}</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
-            <img src={phryganaTortoise} alt="Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and an erosional drainage cut beside a dirt track, with a Boettger's tortoise picking its way across the bank." loading="lazy" className="w-full h-auto object-contain bg-muted" />
-            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">Phrygana scrub and a seasonal erosion channel above the shore — habitat for species like the Boettger's tortoise, just visible on the bank.</figcaption>
+            <img src={phryganaTortoise} alt={t("Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and an erosional drainage cut beside a dirt track, with a Boettger's tortoise picking its way across the bank.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore — habitat for species like the Boettger's tortoise, just visible on the bank.")}</figcaption>
           </figure>
-          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
-            Where soils thin and grazing pressure rises, maquis gives way to <em>phrygana</em>: lower, more open, thornier, more aromatic — heavily adapted to drought and goats. The exposed substrate, sparse scrub, and small drainage cuts that score these dry edges are part of the same picture: thin Mediterranean soils carrying episodic rain downhill, and edge habitat for reptiles like Hermann's / Boettger's tortoise (<em>Testudo hermanni boettgeri</em>) that thrive in this mosaic of rock, grass, and low cover.
-          </p>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Where soils thin and grazing pressure rises, maquis gives way to phrygana: lower, more open, thornier, more aromatic — heavily adapted to drought and goats. The exposed substrate, sparse scrub, and small drainage cuts that score these dry edges are part of the same picture: thin Mediterranean soils carrying episodic rain downhill, and edge habitat for reptiles like Hermann's / Boettger's tortoise (Testudo hermanni boettgeri) that thrive in this mosaic of rock, grass, and low cover.")}</p>
         </section>
 
         <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
-          <h3 className="font-serif text-xl text-foreground">The coast itself</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-            A patchwork of rocky littoral and pocket beach systems. Tidepool organisms, algae, limpets and sea snails on the rocks; crabs in the wrack; octopus dens in the cracks; juvenile fish sheltering in the shallows.
-          </p>
-          <h3 className="mt-5 font-serif text-xl text-foreground">Posidonia meadow offshore</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-            Underwater, the keystone habitat is the <em>Posidonia oceanica</em> meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. The meadows are biodiversity hotspots, fish nurseries, sediment stabilisers, and major carbon sinks.
-          </p>
-          <h3 className="mt-5 font-serif text-xl text-foreground">Why the water is so clear</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-            The famous turquoise comes partly from <em>oligotrophic</em> conditions: nutrient-poor water, low plankton density, high visibility — and lower overall productivity than colder seas.
-          </p>
+          <h3 className="font-serif text-xl text-foreground">{t("The coast itself")}</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("A patchwork of rocky littoral and pocket beach systems. Tidepool organisms, algae, limpets and sea snails on the rocks; crabs in the wrack; octopus dens in the cracks; juvenile fish sheltering in the shallows.")}</p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">{t("Posidonia meadow offshore")}</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. The meadows are biodiversity hotspots, fish nurseries, sediment stabilisers, and major carbon sinks.")}</p>
+          <h3 className="mt-5 font-serif text-xl text-foreground">{t("Why the water is so clear")}</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("The famous turquoise comes partly from oligotrophic conditions: nutrient-poor water, low plankton density, high visibility — and lower overall productivity than colder seas.")}</p>
         </section>
 
         <section>
-          <h3 className="font-serif text-xl text-foreground">Geology underfoot</h3>
-          <p className="mt-2 text-foreground/80 leading-relaxed">
-            Kassandra is mostly uplifted limestone and sedimentary coastal terrain, which gives the peninsula its alkaline soils, caves, rocky shelves, erosion-prone cliffs, and the bright turquoise shallows over white carbonate sand.
-          </p>
+          <h3 className="font-serif text-xl text-foreground">{t("Geology underfoot")}</h3>
+          <p className="mt-2 text-foreground/80 leading-relaxed">{t("Kassandra is mostly uplifted limestone and sedimentary coastal terrain, which gives the peninsula its alkaline soils, caves, rocky shelves, erosion-prone cliffs, and the bright turquoise shallows over white carbonate sand.")}</p>
         </section>
 
         <section className="rounded-2xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
-          <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">A cultural landscape</p>
-          <h3 className="mt-1 font-serif text-xl">Not pristine wilderness</h3>
-          <p className="mt-2 text-sm opacity-90 leading-relaxed">
-            Ancient logging, grazing, terraced agriculture, olive cultivation, tourism, road building, recurrent fires, coastal development — all of it has shaped what grows here. The shore is better understood as a long-inhabited Mediterranean cultural landscape, where ecology and human history have been intertwined for thousands of years.
-          </p>
+          <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("A cultural landscape")}</p>
+          <h3 className="mt-1 font-serif text-xl">{t("Not pristine wilderness")}</h3>
+          <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("Ancient logging, grazing, terraced agriculture, olive cultivation, tourism, road building, recurrent fires, coastal development — all of it has shaped what grows here. The shore is better understood as a long-inhabited Mediterranean cultural landscape, where ecology and human history have been intertwined for thousands of years.")}</p>
         </section>
       </div>
 
@@ -181,7 +165,7 @@ function FloraFauna() {
         <div className="flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
           {zones.map((z) => (
             <a key={z.id} href={`#${z.id}`} className="shrink-0 rounded-full border border-border bg-card px-3 py-1.5 text-xs text-foreground/80 hover:bg-muted transition-colors whitespace-nowrap">
-              {z.title}
+              {t(z.title)}
             </a>
           ))}
         </div>
@@ -192,12 +176,12 @@ function FloraFauna() {
           <section key={z.id} id={z.id} className="scroll-mt-20">
             <div className="flex items-baseline justify-between gap-3 border-b border-border pb-3">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{z.eyebrow}</p>
-                <h2 className="font-serif text-3xl text-foreground">{z.title}</h2>
+                <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t(z.eyebrow)}</p>
+                <h2 className="font-serif text-3xl text-foreground">{t(z.title)}</h2>
               </div>
-              <span className="text-xs text-muted-foreground whitespace-nowrap">{z.depth}</span>
+              <span className="text-xs text-muted-foreground whitespace-nowrap">{t(z.depth)}</span>
             </div>
-            <p className="mt-3 text-muted-foreground leading-relaxed">{z.lead}</p>
+            <p className="mt-3 text-muted-foreground leading-relaxed">{t(z.lead)}</p>
 
             <ul className="mt-5 grid gap-3">
               {z.species.map((s) => (
@@ -205,7 +189,7 @@ function FloraFauna() {
                   {s.img && (
                     <img
                       src={s.img}
-                      alt={`${s.common} (${s.sci})`}
+                      alt={`${t(s.common)} (${s.sci})`}
                       loading="lazy"
                       className="w-24 h-24 sm:w-28 sm:h-28 object-cover flex-shrink-0 bg-muted"
                     />
@@ -219,9 +203,9 @@ function FloraFauna() {
                       ) : (
                         <h3 className="font-serif italic text-base sm:text-lg text-foreground">{s.sci}</h3>
                       )}
-                      <span className="text-xs text-accent">{s.common}</span>
+                      <span className="text-xs text-accent">{t(s.common)}</span>
                     </div>
-                    <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{s.note}</p>
+                    <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t(s.note)}</p>
                   </div>
                 </li>
               ))}

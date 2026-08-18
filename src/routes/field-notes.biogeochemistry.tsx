@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useT } from "@/i18n";
 import { ArrowLeft } from "lucide-react";
 import hellenicSubduction from "@/assets/hellenic-subduction.jpg";
 import tectonicGraben from "@/assets/aegean-tectonic-graben.jpg";
@@ -63,6 +64,7 @@ const stages: Stage[] = [
 ];
 
 function Biogeochemistry() {
+  const t = useT();
   return (
     <SiteLayout>
       <PageHeader
@@ -72,19 +74,19 @@ function Biogeochemistry() {
       />
       <div className="px-5 max-w-3xl mx-auto pb-12">
         <Link to="/field-notes/geology" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
-          <ArrowLeft size={14} /> Back to Geology
+          <ArrowLeft size={14} /> {t("Back to Geology")}
         </Link>
 
         <div className="mt-8 space-y-8">
           {stages.map((s, i) => (
             <article key={i} className="relative pl-6 border-l-2 border-accent/40">
               <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-accent" />
-              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{s.eyebrow}</p>
-              <h2 className="mt-1 font-serif text-2xl text-foreground">{s.title}</h2>
-              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{s.body}</p>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t(s.eyebrow)}</p>
+              <h2 className="mt-1 font-serif text-2xl text-foreground">{t(s.title)}</h2>
+              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t(s.body)}</p>
               <figure className="mt-4 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
-                <img src={s.image} alt={s.alt} loading="lazy" className="w-full h-auto" />
-                <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{s.caption}</figcaption>
+                <img src={s.image} alt={t(s.alt)} loading="lazy" className="w-full h-auto" />
+                <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{t(s.caption)}</figcaption>
               </figure>
             </article>
           ))}

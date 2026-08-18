@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
+import { useLanguage } from "@/i18n";
 import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -19,11 +20,13 @@ export const Route = createFileRoute("/map")({
 mapboxgl.accessToken = "pk.eyJ1IjoieHJpc3NvdWxhIiwiYSI6ImNtcDBwaDZncjAwOW4ycW9ka2d0MDRucWMifQ.y-Ww8U9N4YjufwIFYyGtFQ";
 
 function MapPage() {
+  const { t, lang } = useLanguage();
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
 
   useEffect(() => {
-    if (map.current || !mapContainer.current) return;
+    if (!mapContainer.current) return;
+    map.current?.remove();
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
@@ -44,11 +47,11 @@ function MapPage() {
               alt="Posidonia oceanica"
               style="width:100%; height:90px; object-fit:cover; border-radius:8px; margin-bottom:8px; display:block;"
             />
-            <h3 style="margin:0 0 4px; font-size:13px; font-weight:600; letter-spacing:0.01em; color:#12343b;">Posidonia Meadow</h3>
+            <h3 style="margin:0 0 4px; font-size:13px; font-weight:600; letter-spacing:0.01em; color:#12343b;">${t("Posidonia Meadow")}</h3>
             <p style="font-size:11.5px; line-height:1.45; margin:0 0 6px; color:#3a4a4d;">
-              Endemic seagrass meadows stabilize sediment and shelter juvenile fish across the Aegean shelf.
+              ${t("Endemic seagrass meadows stabilize sediment and shelter juvenile fish across the Aegean shelf.")}
             </p>
-            <div style="font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase; opacity:0.6;">Ecology · Marine · Coast</div>
+            <div style="font-size:9.5px; letter-spacing:0.08em; text-transform:uppercase; opacity:0.6;">${t("Ecology · Marine · Coast")}</div>
           </div>
         `)
       )
@@ -58,15 +61,15 @@ function MapPage() {
       map.current?.remove();
       map.current = null;
     };
-  }, []);
+  }, [lang, t]);
 
   return (
     <SiteLayout>
       <div className="px-5 max-w-5xl mx-auto pt-4">
-        <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Spatial story</p>
-        <h1 className="font-serif text-3xl text-foreground">The Cove, Mapped</h1>
+        <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Spatial story")}</p>
+        <h1 className="font-serif text-3xl text-foreground">{t("The Cove, Mapped")}</h1>
         <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-          A field map of Kriopigi where geology, water, vegetation, marine life, and human history meet.
+          {t("A field map of Kriopigi where geology, water, vegetation, marine life, and human history meet.")}
         </p>
       </div>
 

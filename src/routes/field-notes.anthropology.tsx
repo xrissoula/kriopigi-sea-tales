@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useT } from "@/i18n";
 import { ArrowLeft } from "lucide-react";
 import elder from "@/assets/anthropology-tower.webp";
 import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
@@ -93,6 +94,7 @@ const periods: Period[] = [
 ];
 
 function Anthropology() {
+  const t = useT();
   return (
     <SiteLayout>
       <div className="relative h-64 overflow-hidden">
@@ -100,10 +102,10 @@ function Anthropology() {
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="absolute inset-x-0 bottom-0 px-5 pb-6 max-w-3xl mx-auto">
           <Link to="/field-notes" className="inline-flex items-center gap-1 text-xs text-primary-foreground/80 hover:text-primary-foreground">
-            <ArrowLeft size={14} /> Field Notes
+            <ArrowLeft size={14} /> {t("Field Notes")}
           </Link>
-          <p className="mt-2 text-[11px] uppercase tracking-[0.25em] text-primary-foreground/80">II · Human Time</p>
-          <h1 className="font-serif text-4xl text-primary-foreground">Anthropological History</h1>
+          <p className="mt-2 text-[11px] uppercase tracking-[0.25em] text-primary-foreground/80">{t("II · Human Time")}</p>
+          <h1 className="font-serif text-4xl text-primary-foreground">{t("Anthropological History")}</h1>
         </div>
       </div>
       <PageHeader eyebrow="People of the cove" title="Eight thousand years on a thin coast" lead="From Neolithic foragers to amphora merchants to summer arrivals — every layer is still legible in the village above the bay." />
@@ -111,15 +113,15 @@ function Anthropology() {
         {periods.map((e, i) => (
           <article key={i} id={i === 0 ? "first-settlers" : undefined} className="relative pl-6 border-l-2 border-accent/40 scroll-mt-24">
             <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-accent" />
-            <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
-            <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
-            <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{e.body}</p>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t(e.age)}</p>
+            <h2 className="mt-1 font-serif text-2xl text-foreground">{t(e.title)}</h2>
+            <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t(e.body)}</p>
             {e.image && (
               <figure className="mt-4 rounded-xl overflow-hidden border border-border bg-card shadow-soft">
-                <img src={e.image} alt={e.alt ?? ""} loading="lazy" className="w-full object-contain bg-[oklch(0.97_0.01_85)]" />
+                <img src={e.image} alt={t(e.alt ?? "")} loading="lazy" className="w-full object-contain bg-[oklch(0.97_0.01_85)]" />
                 {e.caption && (
                   <figcaption className="px-4 py-3 text-[11px] leading-relaxed text-muted-foreground border-t border-border">
-                    {e.caption}
+                    {t(e.caption)}
                   </figcaption>
                 )}
               </figure>
@@ -129,13 +131,13 @@ function Anthropology() {
                 <div className="grid grid-cols-2 gap-px bg-border">
                   {e.images.map((im, j) => (
                     <div key={j} className="bg-[oklch(0.97_0.01_85)] aspect-[3/4] flex items-center justify-center">
-                      <img src={im.src} alt={im.alt} loading="lazy" className="w-full h-full object-contain" />
+                      <img src={im.src} alt={t(im.alt)} loading="lazy" className="w-full h-full object-contain" />
                     </div>
                   ))}
                 </div>
                 {e.caption && (
                   <figcaption className="px-4 py-3 text-[11px] leading-relaxed text-muted-foreground border-t border-border">
-                    {e.caption}
+                    {t(e.caption)}
                   </figcaption>
                 )}
               </figure>

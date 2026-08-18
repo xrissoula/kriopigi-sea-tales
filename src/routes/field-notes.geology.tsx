@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useT } from "@/i18n";
 import { ArrowLeft } from "lucide-react";
 import hero from "@/assets/hero-kriopigi.webp";
 import timeScale from "@/assets/geologic-time-scale.webp";
@@ -32,6 +33,7 @@ const eras: Era[] = [
 ];
 
 function Geology() {
+  const t = useT();
   return (
     <SiteLayout>
       <div className="relative h-64 overflow-hidden">
@@ -39,100 +41,84 @@ function Geology() {
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="absolute inset-x-0 bottom-0 px-5 pb-6 max-w-3xl mx-auto">
           <Link to="/field-notes" className="inline-flex items-center gap-1 text-xs text-primary-foreground/80 hover:text-primary-foreground">
-            <ArrowLeft size={14} /> Field Notes
+            <ArrowLeft size={14} /> {t("Field Notes")}
           </Link>
-          <p className="mt-2 text-[11px] uppercase tracking-[0.25em] text-primary-foreground/80">I · Deep Time</p>
-          <h1 className="font-serif text-4xl text-primary-foreground">Geological &amp; Natural History</h1>
+          <p className="mt-2 text-[11px] uppercase tracking-[0.25em] text-primary-foreground/80">{t("I · Deep Time")}</p>
+          <h1 className="font-serif text-4xl text-primary-foreground">{t("Geological & Natural History")}</h1>
         </div>
       </div>
       <PageHeader eyebrow="Formation" title="How the cove was made" lead="Read downward through time — from a Triassic sea bed to the cold spring that still feeds the bay." />
       <div className="px-5 max-w-5xl mx-auto pb-8 grid lg:grid-cols-[260px_1fr] gap-8">
         <aside className="lg:sticky lg:top-20 lg:self-start">
           <figure className="rounded-lg overflow-hidden border border-border bg-card shadow-soft">
-            <img src={timeScale} alt="Geologic time scale, 650 million years ago to the present" className="w-full h-auto" />
-            <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">
-              Geologic time scale — 650 Mya to present. © Encyclopædia Britannica.
-            </figcaption>
+            <img src={timeScale} alt={t("Geologic time scale, 650 million years ago to the present")} className="w-full h-auto" />
+            <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{t("Geologic time scale — 650 Mya to present. © Encyclopædia Britannica.")}</figcaption>
           </figure>
         </aside>
         <div className="space-y-6 max-w-2xl">
           {eras.map((e, i) => (
             <article key={i} className="relative pl-6 border-l-2 border-accent/40">
               <span className="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-accent" />
-              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{e.age}</p>
-              <h2 className="mt-1 font-serif text-2xl text-foreground">{e.title}</h2>
-              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{e.body}</p>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t(e.age)}</p>
+              <h2 className="mt-1 font-serif text-2xl text-foreground">{t(e.title)}</h2>
+              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t(e.body)}</p>
               {e.image && (
                 <figure className="mt-4 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
-                  <img src={e.image} alt={e.caption ?? e.title} loading="lazy" className="w-full h-auto" />
+                  <img src={e.image} alt={t(e.caption ?? e.title)} loading="lazy" className="w-full h-auto" />
                   {e.caption && (
-                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{e.caption}</figcaption>
+                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{t(e.caption)}</figcaption>
                   )}
                 </figure>
               )}
               {e.image2 && (
                 <figure className="mt-4 rounded-lg overflow-hidden border border-border bg-card shadow-soft">
-                  <img src={e.image2} alt={e.caption2 ?? e.title} loading="lazy" className="w-full h-auto" />
+                  <img src={e.image2} alt={t(e.caption2 ?? e.title)} loading="lazy" className="w-full h-auto" />
                   {e.caption2 && (
-                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{e.caption2}</figcaption>
+                    <figcaption className="px-3 py-2 text-[11px] text-muted-foreground leading-snug">{t(e.caption2)}</figcaption>
                   )}
                 </figure>
               )}
               {i === eras.length - 1 && (
                 <div className="mt-6 space-y-6">
                   <div>
-                    <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Reading the maps</p>
-                    <h3 className="mt-1 font-serif text-xl text-foreground">The deep story beneath Kassandra</h3>
-                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">
-                      The colored zones above are not decoration — they are different tectonic <em>terranes</em>: chunks of crust with separate origins, compressed and welded together over hundreds of millions of years to build the Hellenides, the Greek mountain system. The Halkidiki peninsulas sit inside that collage, shaped by continental collision, mountain building, uplift, faulting, the closure of an ancient ocean, and erosion. The landscape you walk through is the surface expression of that history.
-                    </p>
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Reading the maps")}</p>
+                    <h3 className="mt-1 font-serif text-xl text-foreground">{t("The deep story beneath Kassandra")}</h3>
+                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("The colored zones above are not decoration — they are different tectonic terranes: chunks of crust with separate origins, compressed and welded together over hundreds of millions of years to build the Hellenides, the Greek mountain system. The Halkidiki peninsulas sit inside that collage, shaped by continental collision, mountain building, uplift, faulting, the closure of an ancient ocean, and erosion. The landscape you walk through is the surface expression of that history.")}</p>
                   </div>
 
                   <div className="rounded-xl border border-border bg-card p-5 shadow-soft space-y-5">
-                    <p className="text-[10px] uppercase tracking-[0.25em] text-accent">How geology shapes the coast today</p>
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("How geology shapes the coast today")}</p>
 
                     <div>
-                      <h4 className="font-serif text-lg text-foreground">1. Why the terrain is hilly and dissected</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
-                        Kassandra is uplifted, faulted terrain — steep slopes, gullies, drainage cuts, ridges, coves, and irregular shorelines. Mediterranean rains often arrive in intense bursts, and winter rainfall, erosion, sediment transport, and slope instability still actively shape it.
-                      </p>
+                      <h4 className="font-serif text-lg text-foreground">{t("1. Why the terrain is hilly and dissected")}</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Kassandra is uplifted, faulted terrain — steep slopes, gullies, drainage cuts, ridges, coves, and irregular shorelines. Mediterranean rains often arrive in intense bursts, and winter rainfall, erosion, sediment transport, and slope instability still actively shape it.")}</p>
                     </div>
 
                     <div>
-                      <h4 className="font-serif text-lg text-foreground">2. Why the soils are thin and dry</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
-                        Much of the peninsula sits on metamorphic and crystalline basement rocks with weathered rocky substrates. The result is nutrient-poor, thin, drought-prone, fast-draining soil — conditions that favour Aleppo pine, maquis, phrygana, and aromatic shrubs over lush temperate forest. That is why the vegetation reads sparse, resinous, silver-green, and drought-adapted.
-                      </p>
+                      <h4 className="font-serif text-lg text-foreground">{t("2. Why the soils are thin and dry")}</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Much of the peninsula sits on metamorphic and crystalline basement rocks with weathered rocky substrates. The result is nutrient-poor, thin, drought-prone, fast-draining soil — conditions that favour Aleppo pine, maquis, phrygana, and aromatic shrubs over lush temperate forest. That is why the vegetation reads sparse, resinous, silver-green, and drought-adapted.")}</p>
                     </div>
 
                     <div>
-                      <h4 className="font-serif text-lg text-foreground">3. Why the water is so clear</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
-                        Rocky, low-nutrient terrain means little sediment input and limited nutrient runoff. Combined with the oligotrophic conditions of the Aegean, the result is low turbidity and intense clarity — there are no large muddy river systems dumping fines into these shores.
-                      </p>
+                      <h4 className="font-serif text-lg text-foreground">{t("3. Why the water is so clear")}</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Rocky, low-nutrient terrain means little sediment input and limited nutrient runoff. Combined with the oligotrophic conditions of the Aegean, the result is low turbidity and intense clarity — there are no large muddy river systems dumping fines into these shores.")}</p>
                     </div>
 
                     <div>
-                      <h4 className="font-serif text-lg text-foreground">4. Why there are springs and cold-water pockets</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
-                        Faults and fractured bedrock channel groundwater. Rain infiltrates the rock and re-emerges as coastal springs, seepage zones, and cold-water upwellings — affecting salinity, temperature, nutrients, fish distribution, and seagrass productivity on a very local scale. <em>Krio pigi</em> — the cold spring — is one of these.
-                      </p>
+                      <h4 className="font-serif text-lg text-foreground">{t("4. Why there are springs and cold-water pockets")}</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Faults and fractured bedrock channel groundwater. Rain infiltrates the rock and re-emerges as coastal springs, seepage zones, and cold-water upwellings — affecting salinity, temperature, nutrients, fish distribution, and seagrass productivity on a very local scale. Krio pigi — the cold spring — is one of these.")}</p>
                     </div>
 
                     <div>
-                      <h4 className="font-serif text-lg text-foreground">5. Why the beaches alternate between sand, pebbles, and rock</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
-                        Different geological units weather differently. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs — each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.
-                      </p>
+                      <h4 className="font-serif text-lg text-foreground">{t("5. Why the beaches alternate between sand, pebbles, and rock")}</h4>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Different geological units weather differently. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs — each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.")}</p>
                     </div>
                   </div>
 
                   <div className="rounded-xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
-                    <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">The bigger idea</p>
-                    <h3 className="mt-1 font-serif text-xl">Ecology begins with geology</h3>
-                    <p className="mt-2 text-sm opacity-90 leading-relaxed">
-                      The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all emerge from the same handful of inputs: rock, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.
-                    </p>
+                    <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("The bigger idea")}</p>
+                    <h3 className="mt-1 font-serif text-xl">{t("Ecology begins with geology")}</h3>
+                    <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all emerge from the same handful of inputs: rock, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.")}</p>
                   </div>
                 </div>
               )}
@@ -145,17 +131,15 @@ function Geology() {
             <div className="aspect-[4/3] overflow-hidden bg-muted">
               <img
                 src={aegeanCirculation}
-                alt="Schematic of Aegean Sea upper circulation"
+                alt={t("Schematic of Aegean Sea upper circulation")}
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="p-5">
-              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">Continue · Part II</p>
-              <h3 className="mt-1 font-serif text-2xl text-foreground">Wanna dive deeper?</h3>
-              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">
-                Click here to learn about the Biogeochemistry of the Aegean.
-              </p>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Continue · Part II")}</p>
+              <h3 className="mt-1 font-serif text-2xl text-foreground">{t("Wanna dive deeper?")}</h3>
+              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("Click here to learn about the Biogeochemistry of the Aegean.")}</p>
             </div>
           </Link>
           <Link
@@ -163,7 +147,7 @@ function Geology() {
             hash="first-settlers"
             className="mt-4 block text-center text-[12px] uppercase tracking-[0.2em] text-muted-foreground hover:text-accent transition-colors"
           >
-            …or wanna wade out? <span className="normal-case tracking-normal italic">Stay shallow with the humans →</span>
+            …or wanna wade out? <span className="normal-case tracking-normal italic">{t("Stay shallow with the humans →")}</span>
           </Link>
         </div>
       </div>

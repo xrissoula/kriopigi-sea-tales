@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useLanguage } from "@/i18n";
 import elder from "@/assets/elder.jpg";
 import hero from "@/assets/hero-kriopigi.webp";
 import posidonia from "@/assets/posidonia.jpg";
@@ -35,8 +36,8 @@ const photosRaw: Photo[] = [
 
 const photos = [...photosRaw].sort((a, b) => a.date.localeCompare(b.date));
 
-const formatDate = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+const formatDate = (iso: string, lang: string) =>
+  new Date(iso).toLocaleDateString(lang === "el" ? "el-GR" : "en-GB", { month: "short", year: "numeric" });
 
 const groupedByYear = photos.reduce<Record<string, Photo[]>>((acc, p) => {
   const y = p.date.slice(0, 4);
@@ -45,6 +46,7 @@ const groupedByYear = photos.reduce<Record<string, Photo[]>>((acc, p) => {
 }, {});
 
 function OralHistory() {
+  const { t, lang } = useLanguage();
   return (
     <SiteLayout>
       <PageHeader
@@ -56,15 +58,15 @@ function OralHistory() {
       <div className="px-5 max-w-3xl mx-auto">
         {/* Section nav */}
         <div className="flex gap-2 mb-8 border-b border-border">
-          <a href="#voices" className="px-3 py-2 text-sm text-foreground border-b-2 border-accent -mb-px">Oral Histories</a>
-          <a href="#album" className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">Community Album</a>
+          <a href="#voices" className="px-3 py-2 text-sm text-foreground border-b-2 border-accent -mb-px">{t("Oral Histories")}</a>
+          <a href="#album" className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground">{t("Community Album")}</a>
         </div>
 
         {/* Oral Histories */}
         <section id="voices" className="scroll-mt-20">
           <div className="flex items-baseline justify-between mb-5">
-            <h2 className="font-serif text-3xl text-foreground">Oral Histories</h2>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-accent">Part I</span>
+            <h2 className="font-serif text-3xl text-foreground">{t("Oral Histories")}</h2>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Part I")}</span>
           </div>
           <div className="space-y-6">
             {stories.map((s) => (
@@ -79,10 +81,10 @@ function OralHistory() {
                     </button>
                   </div>
                   <div className="p-5">
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-accent">{s.role} · {s.length}</p>
-                    <h3 className="mt-1 font-serif text-2xl text-foreground">{s.name}</h3>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-accent">{t(s.role)} · {s.length}</p>
+                    <h3 className="mt-1 font-serif text-2xl text-foreground">{t(s.name)}</h3>
                     <blockquote className="mt-3 font-serif italic text-lg text-foreground/85 border-l-2 border-accent pl-4 leading-snug">
-                      "{s.quote}"
+                      "{t(s.quote)}"
                     </blockquote>
                   </div>
                 </div>
@@ -94,15 +96,15 @@ function OralHistory() {
         {/* Community Album */}
         <section id="album" className="scroll-mt-20 mt-16 pb-8">
           <div className="flex items-baseline justify-between mb-2">
-            <h2 className="font-serif text-3xl text-foreground">Community Album</h2>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-accent">Part II</span>
+            <h2 className="font-serif text-3xl text-foreground">{t("Community Album")}</h2>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Part II")}</span>
           </div>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.
+            {t("Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.")}
           </p>
 
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mb-4">
-            Sorted oldest → newest · scroll for recent
+            {t("Sorted oldest → newest · scroll for recent")}
           </p>
 
           <div className="space-y-8">
@@ -114,19 +116,19 @@ function OralHistory() {
                     <span className="font-serif text-2xl text-accent">{year}</span>
                     <span className="flex-1 h-px bg-border" />
                     <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                      {groupedByYear[year].length} {groupedByYear[year].length === 1 ? "photo" : "photos"}
+                      {groupedByYear[year].length} {groupedByYear[year].length === 1 ? t("photo") : t("photos")}
                     </span>
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {groupedByYear[year].map((p, i) => (
                       <figure key={i} className="group rounded-xl overflow-hidden bg-card border border-border shadow-soft">
                         <div className="aspect-square overflow-hidden">
-                          <img src={p.src} alt={p.caption} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                          <img src={p.src} alt={t(p.caption)} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                         </div>
                         <figcaption className="p-3">
-                          <p className="text-sm text-foreground leading-tight">{p.caption}</p>
+                          <p className="text-sm text-foreground leading-tight">{t(p.caption)}</p>
                           <p className="mt-1 text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
-                            {p.author} · {p.origin} · {formatDate(p.date)}
+                            {p.author} · {t(p.origin)} · {formatDate(p.date, lang)}
                           </p>
                         </figcaption>
                       </figure>
@@ -141,7 +143,7 @@ function OralHistory() {
             className="mt-6 flex items-center justify-center gap-2 rounded-xl border border-dashed border-border bg-muted/30 px-5 py-6 text-sm text-foreground/80 hover:bg-muted transition"
           >
             <Camera size={16} className="text-accent" />
-            Add your photo to the album
+            {t("Add your photo to the album")}
           </a>
         </section>
       </div>
