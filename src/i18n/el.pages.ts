@@ -111,7 +111,7 @@ export const elPages: Record<string, string> = {
   "Tread lightly. Watch closely.": "Πατήστε ελαφρά. Παρατηρήστε προσεκτικά.",
   "The Aegean is patient but not infinite. A few habits keep this coast intact for the next visitor — and the next century.":
     "Το Αιγαίο είναι υπομονετικό αλλά όχι ανεξάντλητο. Λίγες συνήθειες κρατούν αυτή την ακτή ακέραιη για τον επόμενο επισκέπτη — και τον επόμενο αιώνα.",
-  "Posidonia meadow": "Λιβάδι ποσειδωνίας",
+  "Posidonia meadow": "Λιβάδι της Ποσειδωνίας",
   "Posidonia oceanica meadows — a UNESCO-listed ecosystem — anchor sediment, oxygenate water, and shelter juvenile fish.":
     "Τα λιβάδια Posidonia oceanica — οικοσύστημα αναγνωρισμένο από την UNESCO — συγκρατούν το ίζημα, οξυγονώνουν το νερό και προστατεύουν τα νεαρά ψάρια.",
   "Anchor on sand, never on seagrass": "Αγκυροβολείτε σε άμμο, ποτέ σε ποσειδωνία",
