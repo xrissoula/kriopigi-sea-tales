@@ -5,11 +5,14 @@
 import { elPages } from "./el.pages";
 import { elFlora } from "./el.flora";
 import { elGeology } from "./el.geology";
+import { elBiogeochemistry } from "./el.biogeochemistry";
 
 export const el: Record<string, string> = {
   ...elPages,
   ...elFlora,
   ...elGeology,
+  ...elBiogeochemistry,
+
   // --- Navigation / layout ---
   Home: "Αρχική",
   "Flora & Fauna": "Χλωρίδα & Πανίδα",

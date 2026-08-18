@@ -68,9 +68,9 @@ function Biogeochemistry() {
   return (
     <SiteLayout>
       <PageHeader
-        eyebrow="Deep Time · II"
-        title="Biogeochemistry of the Aegean"
-        lead="From a subducting plate to dissolved oxygen — five layers of process that meet at the Kriopigi shore."
+        eyebrow={t("Deep Time · II")}
+        title={t("Biogeochemistry of the Aegean")}
+        lead={t("From a subducting plate to dissolved oxygen — five layers of process that meet at the Kriopigi shore.")}
       />
       <div className="px-5 max-w-3xl mx-auto pb-12">
         <Link to="/field-notes/geology" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
