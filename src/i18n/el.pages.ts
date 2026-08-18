@@ -57,7 +57,7 @@ export const elPages: Record<string, string> = {
   "The Cove, Mapped": "Ο κόλπος, χαρτογραφημένος",
   "A field map of Kriopigi where geology, water, vegetation, marine life, and human history meet.":
     "Ένας χάρτης πεδίου της Κρυοπηγής, όπου συναντιούνται γεωλογία, νερό, βλάστηση, θαλάσσια ζωή και ανθρώπινη ιστορία.",
-  "Posidonia Meadow": "Λιβάδι Ποσειδωνίας",
+  "Posidonia Meadow": "Λιβάδι της Ποσειδωνίας",
   "Endemic seagrass meadows stabilize sediment and shelter juvenile fish across the Aegean shelf.":
     "Τα ενδημικά λιβάδια ποσειδωνίας σταθεροποιούν το ίζημα και προσφέρουν καταφύγιο σε νεαρά ψάρια σε όλη την υφαλοκρηπίδα του Αιγαίου.",
   "Ecology · Marine · Coast": "Οικολογία · Θάλασσα · Ακτή",
