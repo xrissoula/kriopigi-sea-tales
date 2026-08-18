@@ -4,10 +4,12 @@
  */
 import { elPages } from "./el.pages";
 import { elFlora } from "./el.flora";
+import { elGeology } from "./el.geology";
 
 export const el: Record<string, string> = {
   ...elPages,
   ...elFlora,
+  ...elGeology,
   // --- Navigation / layout ---
   Home: "Αρχική",
   "Flora & Fauna": "Χλωρίδα & Πανίδα",
@@ -104,7 +106,7 @@ export const el: Record<string, string> = {
   "Over time, I became increasingly interested not only in the beauty of the landscape, but in the relationships beneath it: the geology that formed the peninsula, the Mediterranean ecosystems that thrive here, the springs and drainage channels that connect hillside to sea, the underwater Posidonia meadows offshore, and the layers of human history embedded throughout the region.":
     "Με τον καιρό, άρχισα να ενδιαφέρομαι όχι μόνο για την ομορφιά του τοπίου, αλλά και για τις σχέσεις που κρύβονται κάτω από αυτό: τη γεωλογία που διαμόρφωσε τη χερσόνησο, τα μεσογειακά οικοσυστήματα που ευδοκιμούν εδώ, τις πηγές και τα ρέματα που συνδέουν την πλαγιά με τη θάλασσα, τα υποθαλάσσια λιβάδια της Ποσειδωνίας ανοιχτά της ακτής και τα στρώματα ανθρώπινης ιστορίας που είναι διάσπαρτα σε όλη την περιοχή.",
   "My background in sailing, natural history, conservation, preservation, and storytelling shaped the beginning of this project. What started as personal field notes and photography gradually evolved into an attempt to document Kriopigi as a living coastal system — one shaped by climate, ecology, tectonics, memory, and human activity across thousands of years.":
-    "Το υπόβαθρό μου στην ιστιοπλοΐα, τη φυσική ιστορία, την προστασία, τη διατήρηση και τη διήγηση διαμόρφωσε την αρχή αυτού του έργου. Αυτό που ξεκίνησε ως προσωπικές σημειώσεις πεδίου και φωτογραφίες εξελίχθηκε σταδιακά σε μια προσπάθεια τεκμηρίωσης της Κρυοπηγής ως ζωντανού παράκτιου συστήματος — διαμορφωμένου από το κλίμα, την οικολογία, την τεκτονική, τη μνήμη και την ανθρώπινη δραστηριότητα επί χιλιάδες χρόνια.",
+    "Το υπόβαθρό μου στην ιστιοπλοΐα, τη φυσική ιστορία, την προστασία, τη διατήρηση και τη διήγηση διαμόρφωσε την αρχή αυτού του έργου. Αυτό που ξεκίνησε ως προσωπικές σημειώσεις πεδίου και φωτογραφίες εξελίχθηκε σταδιακά σε μια προσπάθεια τεκμηρίωσης της Κρυοπηγής ως ζωντανού παράκτιου συστήματος — διαμορφωμένου από το κλίμα, την οικολογία, τις τεκτονικές διεργασίες, τη μνήμη και την ανθρώπινη δραστηριότητα επί χιλιάδες χρόνια.",
   "The Kriopigi Shore Guide is an evolving natural history and cultural landscape project combining ecology, geology, oral history, photography, and geospatial storytelling. My hope is that it becomes both a long-term archive and an invitation to observe the coastline with greater depth, curiosity, and care.":
     "Ο Οδηγός Ακτής Κρυοπηγής είναι ένα εξελισσόμενο έργο φυσικής ιστορίας και πολιτισμικού τοπίου που συνδυάζει οικολογία, γεωλογία, προφορική ιστορία, φωτογραφία και γεωχωρική διήγηση. Ελπίδα μου είναι να γίνει τόσο ένα μακροπρόθεσμο αρχείο όσο και μια πρόσκληση να παρατηρήσουμε την ακτή με μεγαλύτερο βάθος, περιέργεια και φροντίδα.",
 };
