@@ -35,7 +35,7 @@ export const elPages: Record<string, string> = {
   "Citizen science": "Επιστήμη των πολιτών",
   "Add to the record": "Προσθέστε στο αρχείο",
   "What did you see? Even small notes — a jellyfish bloom, an unusual bird — become part of the long memory of the bay.":
-    "Τι είδατε; Ακόμη και μικρές σημειώσεις — μια έξαρση μεδουσών, ένα ασυνήθιστο πουλί — γίνονται μέρος της μακράς μνήμης του κόλπου.",
+    "Τι είδατε; Ακόμη και μικρές σημειώσεις — μια έξαρση μεδουσών, ένα ασυνήθιστο πουλί — γίνονται μέρος της μακράς μνήμης του όρμου.",
   "Thank you.": "Ευχαριστούμε.",
   "Your observation has been queued for review. The shore is wider for it.":
     "Η παρατήρησή σας καταχωρήθηκε προς έλεγχο. Η ακτή γίνεται πλουσιότερη χάρη σε αυτήν.",
@@ -84,7 +84,7 @@ export const elPages: Record<string, string> = {
   "When I was a child in 1998, the beach was significantly wider — there was so much more sand between the path and the water than there is today.":
     "Όταν ήμουν παιδί, το 1998, η παραλία ήταν σημαντικά πιο φαρδιά — υπήρχε πολύ περισσότερη άμμος ανάμεσα στο μονοπάτι και το νερό απ’ ό,τι σήμερα.",
   "Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.":
-    "Φωτογραφίες του κόλπου από ντόπιους και επισκέπτες — οι εποχές, ο καιρός, τα μικρά πράγματα που αξίζει να φωτογραφηθούν.",
+    "Φωτογραφίες του όρμου από ντόπιους και επισκέπτες — οι εποχές, ο καιρός, τα μικρά πράγματα που αξίζει να φωτογραφηθούν.",
   "Sorted oldest → newest · scroll for recent":
     "Ταξινόμηση από τα παλαιότερα → στα νεότερα · κυλήστε για τα πρόσφατα",
   photo: "φωτογραφία",
@@ -128,7 +128,7 @@ export const elPages: Record<string, string> = {
     "Τα άδεια κοχύλια δεν είναι σουβενίρ — είναι ενδιαίτημα και πρώτη ύλη. Ερημίτες κάβουροι εγκαθίστανται μέσα τους, μικρά ψάρια κρύβονται από κάτω τους, και με τον καιρό τα κύματα τα τρίβουν σε άμμο πλούσια σε ασβέστιο που χτίζει την ίδια την παραλία. Μια χούφτα κοχύλια που φεύγει κάθε καλοκαίρι γίνεται μέτρα χαμένης ακτογραμμής μέσα σε μια γενιά. Φωτογραφήστε τα. Αφήστε τα.",
   "Wear the shirt, skip the slick": "Φορέστε μπλούζα, αποφύγετε τη λιπαρή κρέμα",
   "Most conventional sunscreens shed oxybenzone, octinoxate, octocrylene, and homosalate into the water within minutes of swimming. These UV filters are documented endocrine disruptors in fish, contribute to coral and seagrass stress, and accumulate in nearshore sediments — exactly the calm, shallow water where Posidonia grows and juveniles shelter. The simplest fix is to cover up: a UPF 50 long-sleeve swim shirt, a wide-brimmed hat, and shade between 11 and 4 do more than any bottle. Where you do need cream, choose non-nano zinc oxide or titanium dioxide mineral sunscreens labeled reef-safe (and read the back — the label is unregulated). Apply 20 minutes before entering the water so it binds to skin instead of washing straight into the bay.":
-    "Τα περισσότερα συμβατικά αντηλιακά απελευθερώνουν οξυβενζόνη, οκτινοξικό, οκτοκρυλένιο και ομοσαλικό στο νερό μέσα σε λίγα λεπτά κολύμβησης. Αυτά τα φίλτρα UV είναι τεκμηριωμένοι ενδοκρινικοί διαταράκτες στα ψάρια, επιβαρύνουν κοράλλια και θαλάσσια φανερόγαμα και συσσωρεύονται στα παράκτια ιζήματα — ακριβώς στα ήρεμα, ρηχά νερά όπου φύεται η ποσειδωνία και καταφεύγουν τα νεαρά ψάρια. Η απλούστερη λύση είναι η κάλυψη: μια μπλούζα κολύμβησης UPF 50 με μακριά μανίκια, ένα πλατύγυρο καπέλο και σκιά μεταξύ 11 και 4 κάνουν περισσότερα από οποιοδήποτε μπουκάλι. Όπου χρειάζεστε κρέμα, επιλέξτε ορυκτά αντηλιακά με μη νανο-οξείδιο ψευδαργύρου ή διοξείδιο τιτανίου με σήμανση φιλικά προς τους υφάλους (και διαβάστε την πίσω ετικέτα — η σήμανση δεν είναι ρυθμισμένη). Απλώστε το 20 λεπτά πριν μπείτε στο νερό ώστε να δεσμευτεί στο δέρμα αντί να ξεπλυθεί κατευθείαν στον κόλπο.",
+    "Τα περισσότερα συμβατικά αντηλιακά απελευθερώνουν οξυβενζόνη, οκτινοξικό, οκτοκρυλένιο και ομοσαλικό στο νερό μέσα σε λίγα λεπτά κολύμβησης. Αυτά τα φίλτρα UV είναι τεκμηριωμένοι ενδοκρινικοί διαταράκτες στα ψάρια, επιβαρύνουν κοράλλια και θαλάσσια φανερόγαμα και συσσωρεύονται στα παράκτια ιζήματα — ακριβώς στα ήρεμα, ρηχά νερά όπου φύεται η Ποσειδωνία και καταφεύγουν τα νεαρά ψάρια. Η απλούστερη λύση είναι η κάλυψη: μια μπλούζα κολύμβησης UPF 50 με μακριά μανίκια, ένα πλατύγυρο καπέλο και σκιά μεταξύ 11 και 4 κάνουν περισσότερα από οποιοδήποτε μπουκάλι. Όπου χρειάζεστε κρέμα, επιλέξτε ορυκτά αντηλιακά με μη νανο-οξείδιο ψευδαργύρου ή διοξείδιο τιτανίου με σήμανση φιλικά προς τους υφάλους (και διαβάστε την πίσω ετικέτα — η σήμανση δεν είναι ρυθμισμένη). Απλώστε το 20 λεπτά πριν μπείτε στο νερό ώστε να δεσμευτεί στο δέρμα αντί να ξεπλυθεί κατευθείαν στον όρμο.",
   "Ridge to reef": "Από την κορυφογραμμή στον ύφαλο",
   "From hillside to sea": "Από την πλαγιά στη θάλασσα",
   "Rain falling on roads, gardens, farms, hotels, and hillsides above Kriopigi eventually moves downslope through gullies and seasonal drainage channels into the Aegean. Along the way it can carry sediments, fertilisers, herbicides, pesticides, plastics, oils, and organic waste into coastal waters and nearshore ecosystems.":
@@ -136,7 +136,7 @@ export const elPages: Record<string, string> = {
   "An overgrown hillside gully above Kriopigi at dusk, with a tall cypress on the ridge and the Aegean visible beyond — a seasonal drainage line connecting the village to the sea.":
     "Μια κατάφυτη ρεματιά στην πλαγιά πάνω από την Κρυοπηγή το σούρουπο, με ένα ψηλό κυπαρίσσι στην κορυφογραμμή και το Αιγαίο να φαίνεται πέρα — μια εποχική γραμμή απορροής που συνδέει το χωριό με τη θάλασσα.",
   "A vegetated gully on the slope above the bay. In dry months it looks like scrub; after the first autumn storms it becomes a pipeline from the village down to the shore.":
-    "Μια χορταριασμένη ρεματιά στην πλαγιά πάνω από τον κόλπο. Τους ξηρούς μήνες μοιάζει με θαμνότοπος· μετά τις πρώτες φθινοπωρινές καταιγίδες γίνεται αγωγός από το χωριό προς την ακτή.",
+    "Μια χορταριασμένη ρεματιά στην πλαγιά πάνω από τον όρμο. Τους ξηρούς μήνες μοιάζει με θαμνότοπος· μετά τις πρώτες φθινοπωρινές καταιγίδες γίνεται αγωγός από το χωριό προς την ακτή.",
   "Why it matters here": "Γιατί έχει σημασία εδώ",
   "Mediterranean coasts amplify runoff pulses: intense seasonal rain, dry compacted summer soils, steep slopes, thin soils, wildfire-disturbed ground, and dense tourism infrastructure all funnel water — and whatever it picks up — quickly into the sea.":
     "Οι μεσογειακές ακτές ενισχύουν τις αιχμές απορροής: έντονες εποχικές βροχές, ξηρά συμπιεσμένα καλοκαιρινά εδάφη, απότομες πλαγιές, λεπτά εδάφη, καμένη γη και πυκνές τουριστικές υποδομές διοχετεύουν γρήγορα το νερό — και ό,τι παρασύρει — στη θάλασσα.",
