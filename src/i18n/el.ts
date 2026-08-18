@@ -3,9 +3,11 @@
  * Any string without an entry falls back to English.
  */
 import { elPages } from "./el.pages";
+import { elFlora } from "./el.flora";
 
 export const el: Record<string, string> = {
   ...elPages,
+  ...elFlora,
   // --- Navigation / layout ---
   Home: "Αρχική",
   "Flora & Fauna": "Χλωρίδα & Πανίδα",

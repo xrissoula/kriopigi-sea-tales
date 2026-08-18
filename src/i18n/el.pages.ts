@@ -57,7 +57,7 @@ export const elPages: Record<string, string> = {
   "The Cove, Mapped": "Ο κόλπος, χαρτογραφημένος",
   "A field map of Kriopigi where geology, water, vegetation, marine life, and human history meet.":
     "Ένας χάρτης πεδίου της Κρυοπηγής, όπου συναντιούνται γεωλογία, νερό, βλάστηση, θαλάσσια ζωή και ανθρώπινη ιστορία.",
-  "Posidonia Meadow": "Λιβάδι Ποσειδωνίας",
+  "Posidonia Meadow": "Λιβάδι της Ποσειδωνίας",
   "Endemic seagrass meadows stabilize sediment and shelter juvenile fish across the Aegean shelf.":
     "Τα ενδημικά λιβάδια ποσειδωνίας σταθεροποιούν το ίζημα και προσφέρουν καταφύγιο σε νεαρά ψάρια σε όλη την υφαλοκρηπίδα του Αιγαίου.",
   "Ecology · Marine · Coast": "Οικολογία · Θάλασσα · Ακτή",
@@ -111,7 +111,7 @@ export const elPages: Record<string, string> = {
   "Tread lightly. Watch closely.": "Πατήστε ελαφρά. Παρατηρήστε προσεκτικά.",
   "The Aegean is patient but not infinite. A few habits keep this coast intact for the next visitor — and the next century.":
     "Το Αιγαίο είναι υπομονετικό αλλά όχι ανεξάντλητο. Λίγες συνήθειες κρατούν αυτή την ακτή ακέραιη για τον επόμενο επισκέπτη — και τον επόμενο αιώνα.",
-  "Posidonia meadow": "Λιβάδι ποσειδωνίας",
+  "Posidonia meadow": "Λιβάδι της Ποσειδωνίας",
   "Posidonia oceanica meadows — a UNESCO-listed ecosystem — anchor sediment, oxygenate water, and shelter juvenile fish.":
     "Τα λιβάδια Posidonia oceanica — οικοσύστημα αναγνωρισμένο από την UNESCO — συγκρατούν το ίζημα, οξυγονώνουν το νερό και προστατεύουν τα νεαρά ψάρια.",
   "Anchor on sand, never on seagrass": "Αγκυροβολείτε σε άμμο, ποτέ σε ποσειδωνία",
