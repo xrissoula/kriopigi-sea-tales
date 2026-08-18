@@ -59,7 +59,7 @@ export const elPages: Record<string, string> = {
     "Ένας χάρτης πεδίου της Κρυοπηγής, όπου συναντιούνται γεωλογία, νερό, βλάστηση, θαλάσσια ζωή και ανθρώπινη ιστορία.",
   "Posidonia Meadow": "Λιβάδι της Ποσειδωνίας",
   "Endemic seagrass meadows stabilize sediment and shelter juvenile fish across the Aegean shelf.":
-    "Τα ενδημικά λιβάδια ποσειδωνίας σταθεροποιούν το ίζημα και προσφέρουν καταφύγιο σε νεαρά ψάρια σε όλη την υφαλοκρηπίδα του Αιγαίου.",
+    "Τα ενδημικά λιβάδια της Ποσειδωνίας σταθεροποιούν το ίζημα και προσφέρουν καταφύγιο σε νεαρά ψάρια σε όλη την υφαλοκρηπίδα του Αιγαίου.",
   "Ecology · Marine · Coast": "Οικολογία · Θάλασσα · Ακτή",
 
   // --- Oral history ---
@@ -113,7 +113,7 @@ export const elPages: Record<string, string> = {
     "Το Αιγαίο είναι υπομονετικό αλλά όχι ανεξάντλητο. Λίγες συνήθειες κρατούν αυτή την ακτή ακέραιη για τον επόμενο επισκέπτη — και τον επόμενο αιώνα.",
   "Posidonia meadow": "Λιβάδι της Ποσειδωνίας",
   "Posidonia oceanica meadows — a UNESCO-listed ecosystem — anchor sediment, oxygenate water, and shelter juvenile fish.":
-    "Τα λιβάδια Posidonia oceanica — οικοσύστημα αναγνωρισμένο από την UNESCO — συγκρατούν το ίζημα, οξυγονώνουν το νερό και προστατεύουν τα νεαρά ψάρια.",
+    "Τα λιβάδια της Ποσειδωνίας (Posidonia oceanica) — οικοσύστημα αναγνωρισμένο από την UNESCO — συγκρατούν το ίζημα, οξυγονώνουν το νερό και προστατεύουν τα νεαρά ψάρια.",
   "Anchor on sand, never on seagrass": "Αγκυροβολείτε σε άμμο, ποτέ σε ποσειδωνία",
   "A single boat anchor can clear a meter-wide scar that takes a century to regrow.":
     "Μία μόνο άγκυρα μπορεί να ανοίξει μια ουλή ενός μέτρου που χρειάζεται έναν αιώνα για να ξαναφυτρώσει.",
@@ -122,7 +122,7 @@ export const elPages: Record<string, string> = {
     "Από τον Απρίλιο έως τον Ιούλιο, γλάροι και θαλασσοκόρακες μεγαλώνουν τα μικρά τους στα ακρωτήρια. Μείνετε κάτω από το σημασμένο μονοπάτι.",
   "Carry out what you carry in": "Πάρτε μαζί σας ό,τι φέρατε",
   "There is no bin on the trail. Plastic on the strand will be in the meadow by morning.":
-    "Δεν υπάρχει κάδος στο μονοπάτι. Ένα πλαστικό στην ακτή θα βρίσκεται στο λιβάδι μέχρι το πρωί.",
+    "Δεν υπάρχει κάδος στο μονοπάτι. Ένα πλαστικό στην ακτή θα βρίσκεται στο λιβάδι της Ποσειδωνίας μέχρι το πρωί.",
   "Leave the shells where they lie": "Αφήστε τα κοχύλια εκεί που βρίσκονται",
   "Empty shells are not souvenirs — they are habitat and raw material. Hermit crabs move into them, small fish shelter beneath them, and over time waves grind them into the calcium-rich sand that builds the beach itself. A pocketful of shells removed each summer becomes meters of lost shoreline over a generation. Photograph them. Leave them.":
     "Τα άδεια κοχύλια δεν είναι σουβενίρ — είναι ενδιαίτημα και πρώτη ύλη. Ερημίτες κάβουροι εγκαθίστανται μέσα τους, μικρά ψάρια κρύβονται από κάτω τους, και με τον καιρό τα κύματα τα τρίβουν σε άμμο πλούσια σε ασβέστιο που χτίζει την ίδια την παραλία. Μια χούφτα κοχύλια που φεύγει κάθε καλοκαίρι γίνεται μέτρα χαμένης ακτογραμμής μέσα σε μια γενιά. Φωτογραφήστε τα. Αφήστε τα.",
@@ -147,9 +147,9 @@ export const elPages: Record<string, string> = {
   "Beach life cycle": "Ο κύκλος ζωής της παραλίας",
   "How a Mediterranean beach is built": "Πώς χτίζεται μια μεσογειακή παραλία",
   "The sand at Kriopigi is not a backdrop — it is the visible end of a long ecological conveyor belt that begins offshore in the Posidonia oceanica meadow. Understanding the cycle is the difference between a beach we use and a beach we keep.":
-    "Η άμμος στην Κρυοπηγή δεν είναι σκηνικό — είναι το ορατό άκρο μιας μακράς οικολογικής αλυσίδας που ξεκινά ανοιχτά, στο λιβάδι Posidonia oceanica. Η κατανόηση αυτού του κύκλου είναι η διαφορά ανάμεσα σε μια παραλία που χρησιμοποιούμε και σε μια παραλία που διατηρούμε.",
+    "Η άμμος στην Κρυοπηγή δεν είναι σκηνικό — είναι το ορατό άκρο μιας μακράς οικολογικής αλυσίδας που ξεκινά ανοιχτά, στο λιβάδι της Ποσειδωνίας (Posidonia oceanica). Η κατανόηση αυτού του κύκλου είναι η διαφορά ανάμεσα σε μια παραλία που χρησιμοποιούμε και σε μια παραλία που διατηρούμε.",
   "Cross-section diagram showing the four zones of a Posidonia oceanica beach system: dry beach with egagropiles and banquettes, the sea/beach zone with dead mattes and ripple marks, the living Posidonia meadow exporting leaf litter, and the deep abyss where litter finally settles.":
-    "Διάγραμμα τομής που δείχνει τις τέσσερις ζώνες ενός συστήματος παραλίας ποσειδωνίας: ξηρή παραλία με εγαγρόπιλα και μπανκέτες, ζώνη θάλασσας/παραλίας με νεκρές μάτες και κυματοειδείς σχηματισμούς, το ζωντανό λιβάδι ποσειδωνίας που εξάγει φυλλόστρωμα, και η άβυσσος όπου καταλήγει.",
+    "Διάγραμμα τομής που δείχνει τις τέσσερις ζώνες ενός συστήματος παραλίας-λιβαδιού της Ποσειδωνίας: ξηρή παραλία με εγαγρόπιλα και μπανκέτες, ζώνη θάλασσας/παραλίας με νεκρές μάτες και κυματοειδείς σχηματισμούς, το ζωντανό λιβάδι της Ποσειδωνίας που εξάγει φυλλόστρωμα, και η άβυσσος όπου καταλήγει.",
   "The dry beach — egagropiles and banquettes":
     "Η ξηρή παραλία — εγαγρόπιλα και μπανκέτες",
   "The fibrous brown mats piled at the high-tide line are not rubbish. They are banquettes: dead Posidonia leaves woven by waves into dense berms that absorb storm energy and shield the sand behind them from erosion. The small felted balls scattered around them — egagropiles — are rolled fragments of the same leaf fibre. Bulldozing banquettes off the beach for tourist comfort is one of the single largest causes of shoreline retreat on Mediterranean coasts.":
@@ -161,14 +161,14 @@ export const elPages: Record<string, string> = {
   "The living meadow — where the beach is manufactured":
     "Το ζωντανό λιβάδι — εκεί όπου κατασκευάζεται η παραλία",
   'The Posidonia meadow itself is the engine. Each plant sheds old leaves seasonally; those leaves are exported shoreward by waves (becoming banquettes) or seaward into deeper water. The meadow also traps suspended sediment, slows currents, and produces the calcium-carbonate sand grains — from broken shells, foraminifera, and calcareous algae living on the leaves — that eventually wash up as "white" Aegean sand.':
-    "Το ίδιο το λιβάδι ποσειδωνίας είναι η μηχανή. Κάθε φυτό ρίχνει εποχικά τα παλιά του φύλλα· τα κύματα τα μεταφέρουν προς την ακτή (σχηματίζοντας μπανκέτες) ή προς τα βαθιά. Το λιβάδι παγιδεύει επίσης αιωρούμενο ίζημα, επιβραδύνει τα ρεύματα και παράγει τους κόκκους άμμου από ανθρακικό ασβέστιο — από σπασμένα κοχύλια, τρηματοφόρα και ασβεστολιθικά φύκη που ζουν στα φύλλα — που τελικά καταλήγουν στη «λευκή» άμμο του Αιγαίου.",
+    "Το ίδιο το λιβάδι της Ποσειδωνίας είναι η μηχανή. Κάθε φυτό ρίχνει εποχικά τα παλιά του φύλλα· τα κύματα τα μεταφέρουν προς την ακτή (σχηματίζοντας μπανκέτες) ή προς τα βαθιά. Το λιβάδι παγιδεύει επίσης αιωρούμενο ίζημα, επιβραδύνει τα ρεύματα και παράγει τους κόκκους άμμου από ανθρακικό ασβέστιο — από σπασμένα κοχύλια, τρηματοφόρα και ασβεστολιθικά φύκη που ζουν στα φύλλα — που τελικά καταλήγουν στη «λευκή» άμμο του Αιγαίου.",
   "The abyss — long-term carbon storage": "Η άβυσσος — μακροχρόνια αποθήκευση άνθρακα",
   "A significant fraction of leaf litter never returns to shore. It sinks down the continental slope into deep water, where low oxygen and cold temperatures lock its carbon away for centuries. Mediterranean Posidonia meadows are among the most carbon-dense ecosystems on Earth — a single hectare can store more CO₂ than a hectare of Amazon rainforest.":
-    "Σημαντικό μέρος του φυλλοστρώματος δεν επιστρέφει ποτέ στην ακτή. Βυθίζεται στην ηπειρωτική κατωφέρεια, όπου το χαμηλό οξυγόνο και οι χαμηλές θερμοκρασίες κλειδώνουν τον άνθρακά του για αιώνες. Τα μεσογειακά λιβάδια ποσειδωνίας είναι από τα πιο πλούσια σε άνθρακα οικοσυστήματα της Γης — ένα εκτάριο μπορεί να αποθηκεύσει περισσότερο CO₂ από ένα εκτάριο τροπικού δάσους του Αμαζονίου.",
+    "Σημαντικό μέρος του φυλλοστρώματος δεν επιστρέφει ποτέ στην ακτή. Βυθίζεται στην ηπειρωτική κατωφέρεια, όπου το χαμηλό οξυγόνο και οι χαμηλές θερμοκρασίες κλειδώνουν τον άνθρακά του για αιώνες. Τα μεσογειακά λιβάδια της Ποσειδωνίας είναι από τα πιο πλούσια σε άνθρακα οικοσυστήματα της Γης — ένα εκτάριο μπορεί να αποθηκεύσει περισσότερο CO₂ από ένα εκτάριο τροπικού δάσους του Αμαζονίου.",
   "What this means at Kriopigi": "Τι σημαίνει αυτό στην Κρυοπηγή",
   "The beach you walk on each summer is the upper visible slice of a system that runs from the banquette at your feet to the abyssal plain offshore. Anchor scars in the meadow, raked-away banquettes, pocketed shells, and runoff from the slope above all interrupt the same cycle at different points. Protecting any one zone protects the rest.":
-    "Η παραλία που περπατάτε κάθε καλοκαίρι είναι η ανώτερη ορατή φέτα ενός συστήματος που εκτείνεται από τη μπανκέτα στα πόδια σας ως την αβυσσική πεδιάδα ανοιχτά. Οι ουλές από άγκυρες στο λιβάδι, οι μπανκέτες που απομακρύνονται, τα κοχύλια στην τσέπη και η απορροή από την πλαγιά διακόπτουν τον ίδιο κύκλο σε διαφορετικά σημεία. Προστατεύοντας μία ζώνη, προστατεύετε όλες τις υπόλοιπες.",
-  "Help us count the meadow": "Βοηθήστε μας να μετρήσουμε το λιβάδι",
+    "Η παραλία που περπατάτε κάθε καλοκαίρι είναι η ανώτερη ορατή φέτα ενός συστήματος που εκτείνεται από τη μπανκέτα στα πόδια σας ως την αβυσσική πεδιάδα ανοιχτά. Οι ουλές από άγκυρες στο λιβάδι της Ποσειδωνίας, οι μπανκέτες που απομακρύνονται, τα κοχύλια στην τσέπη και η απορροή από την πλαγιά διακόπτουν τον ίδιο κύκλο σε διαφορετικά σημεία. Προστατεύοντας μία ζώνη, προστατεύετε όλες τις υπόλοιπες.",
+  "Help us count the meadow": "Βοηθήστε μας να μετρήσουμε το λιβάδι της Ποσειδωνίας",
   "Submit your underwater photos via the observation form — researchers at AUTh use them to map yearly seagrass extent.":
     "Στείλτε τις υποβρύχιες φωτογραφίες σας μέσω της φόρμας παρατήρησης — ερευνητές του ΑΠΘ τις χρησιμοποιούν για να χαρτογραφούν την ετήσια έκταση των λιβαδιών.",
   "You can also log sightings on": "Μπορείτε επίσης να καταγράφετε παρατηρήσεις στο",

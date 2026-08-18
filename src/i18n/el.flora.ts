@@ -113,8 +113,35 @@ export const elFlora: Record<string, string> = {
     "Ενδημικό θαλάσσιο φυτό της Μεσογείου· ένα μόνο μέτρο λιβαδιού μπορεί να είναι ηλικίας άνω των εκατό ετών.",
   "Noble pen shell": "Πίνα",
   "Critically endangered fan mussel anchored in the meadow; report sightings.":
-    "Κρισίμως κινδυνεύον δίθυρο μαλάκιο που ζει αγκυρωμένο στο λιβάδι· αναφέρετε τυχόν παρατηρήσεις του.",
+    "Κρισίμως κινδυνεύον δίθυρο μαλάκιο που ζει αγκυρωμένο στο λιβάδι της Ποσειδωνίας· αναφέρετε τυχόν παρατηρήσεις του.",
   "Common octopus": "Κοινό χταπόδι",
   "Dens between rocks at the meadow's edge; shell middens betray the entrance.":
-    "Φωλιάζει ανάμεσα στους βράχους στο όριο του λιβαδιού· τα σωρευμένα κελύφη έξω από την κρυψώνα του προδίδουν την παρουσία του.",
+    "Φωλιάζει ανάμεσα στους βράχους στο όριο του λιβαδιού της Ποσειδωνίας· τα σωρευμένα κελύφη έξω από την κρυψώνα του προδίδουν την παρουσία του.",
+
+  "Peacock wrasse": "Πράσινος χειλούς",
+  "Males turn iridescent blue-green during spring courtship over the meadow.":
+    "Τα αρσενικά αποκτούν έντονα γαλαζοπράσινα ιριδίζοντα χρώματα κατά την ανοιξιάτικη περίοδο του ζευγαρώματος πάνω από τα λιβάδια της Ποσειδωνίας.",
+  "Common cuttlefish": "Κοινή σουπιά",
+  "Lays grape-like egg clusters on Posidonia leaves in late spring.":
+    "Αποθέτει στα τέλη της άνοιξης συστάδες αυγών που μοιάζουν με μικρά τσαμπιά στα φύλλα της Ποσειδωνίας.",
+
+  "Deep Water & Offshore": "Βαθιά Νερά & Ανοιχτό Πέλαγος",
+  "15 m and beyond": "15 μ. και βαθύτερα",
+  "Beyond the meadow's outer edge — coralligenous reefs, pelagic visitors, and migratory megafauna.":
+    "Πέρα από το εξωτερικό όριο του λιβαδιού της Ποσειδωνίας εκτείνονται οι κοραλλιγενείς ύφαλοι, τα πελαγικά είδη που επισκέπτονται την περιοχή και η μεταναστευτική θαλάσσια μεγαπανίδα.",
+  "Loggerhead sea turtle": "Χελώνα καρέτα",
+  "Seen surfacing in the bay May–October; juveniles forage on the meadow.":
+    "Εμφανίζεται στην επιφάνεια του κόλπου από τον Μάιο έως τον Οκτώβριο· τα νεαρά άτομα αναζητούν τροφή στα λιβάδια της Ποσειδωνίας.",
+  "Common bottlenose dolphin": "Ρινοδέλφινο",
+  "Pods of 4–10 transit the gulf; occasional inshore feeding at dawn.":
+    "Κοπάδια 4–10 ατόμων διασχίζουν τον κόλπο· περιστασιακά πλησιάζουν την ακτή για να τραφούν τις πρώτες πρωινές ώρες.",
+  "Atlantic bluefin tuna": "Ερυθρός τόνος του Ατλαντικού",
+  "Migratory; offshore boils visible from the headland on calm summer mornings.":
+    "Μεταναστευτικό είδος· τις ήρεμες καλοκαιρινές πρωινές ώρες μπορούν να διακριθούν από το ακρωτήριο οι χαρακτηριστικές αναταράξεις στην επιφάνεια που προκαλούν τα κοπάδια του καθώς κυνηγούν.",
+  "Violescent sea-whip": "Βιολετί γοργονία",
+  "Coralligenous gorgonian on deeper rocky outcrops; fragile, never anchor near.":
+    "Γοργονία των κοραλλιγενών υφάλων που ζει σε βαθύτερες βραχώδεις εξάρσεις· ιδιαίτερα εύθραυστη, γι’ αυτό δεν πρέπει ποτέ να αγκυροβολούμε κοντά της.",
+  "Small-spotted catshark": "Μικρόστικτος γαλέος",
+  "Harmless benthic shark; egg cases ('mermaid's purses') wash up after storms.":
+    "Ακίνδυνος βενθικός καρχαρίας· οι χαρακτηριστικές θήκες των αυγών του («το πορτοφόλι της γοργόνας») συχνά ξεβράζονται στις ακτές μετά από καταιγίδες.",
 };
