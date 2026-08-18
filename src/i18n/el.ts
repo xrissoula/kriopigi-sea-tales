@@ -7,6 +7,7 @@ import { elFlora } from "./el.flora";
 import { elGeology } from "./el.geology";
 import { elBiogeochemistry } from "./el.biogeochemistry";
 import { elAnthropology } from "./el.anthropology";
+import { elConservation } from "./el.conservation";
 
 export const el: Record<string, string> = {
   ...elPages,
@@ -14,6 +15,8 @@ export const el: Record<string, string> = {
   ...elGeology,
   ...elBiogeochemistry,
   ...elAnthropology,
+  ...elConservation,
+
 
 
   // --- Navigation / layout ---
