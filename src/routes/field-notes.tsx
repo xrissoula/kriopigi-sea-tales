@@ -1,5 +1,6 @@
 import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
+import { useT } from "@/i18n";
 import { Mountain, Users, Leaf, ArrowRight } from "lucide-react";
 import posidonia from "@/assets/flora-fauna-damselfish.jpg";
 import tower from "@/assets/anthropology-tower.webp";
@@ -43,6 +44,7 @@ const sections = [
 ];
 
 function FieldNotesLayout() {
+  const t = useT();
   const { pathname } = useLocation();
   const isHub = pathname === "/field-notes" || pathname === "/field-notes/";
   if (!isHub) return <Outlet />;
@@ -70,12 +72,12 @@ function FieldNotesLayout() {
                 <div className="p-5">
                   <div className="flex items-center gap-2 text-accent">
                     <Icon size={16} />
-                    <span className="text-[10px] uppercase tracking-[0.25em]">{s.eyebrow}</span>
+                    <span className="text-[10px] uppercase tracking-[0.25em]">{t(s.eyebrow)}</span>
                   </div>
-                  <h2 className="mt-1 font-serif text-2xl text-foreground">{s.title}</h2>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <h2 className="mt-1 font-serif text-2xl text-foreground">{t(s.title)}</h2>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(s.desc)}</p>
                   <span className="mt-3 inline-flex items-center gap-1 text-sm text-accent">
-                    Read section <ArrowRight size={14} />
+                    {t("Read section")} <ArrowRight size={14} />
                   </span>
                 </div>
               </div>
