@@ -42,7 +42,7 @@ export const el: Record<string, string> = {
   "A field guide to the": "Ένας οδηγός πεδίου για την",
   "Kriopigi shore": "ακτή της Κρυοπηγής",
   "Walk the cove with us — through species, stories, and the slow language of the Aegean.":
-    "Περπατήστε μαζί μας στον κόλπο — μέσα από είδη, ιστορίες και την αργή γλώσσα του Αιγαίου.",
+    "Περπατήστε μαζί μας στον όρμο, μέσα από είδη, ιστορίες και την αργή γλώσσα του Αιγαίου.",
   "Open the map": "Άνοιγμα χάρτη",
   "Aerial view of Kriopigi Beach at golden hour":
     "Αεροφωτογραφία της παραλίας Κρυοπηγής στο χρυσό φως",
@@ -111,7 +111,7 @@ export const el: Record<string, string> = {
   "Birdwatching at dawn in a meadow above Kriopigi Beach, near my house in the Amparoudes.":
     "Παρατήρηση πουλιών την αυγή σε ένα λιβάδι πάνω από την παραλία Κρυοπηγής, κοντά στο σπίτι μου στους Αμπαρούδες.",
   "My name is Christina Anthemides-Kelley, and I am a Greek-American writer, sailor, and lifelong visitor to Kriopigi and the Kassandra peninsula. My family has deep roots in Greece, and I have spent much of my life returning to this coastline — swimming its coves, walking its forest paths, observing its seasonal changes, and slowly developing a deeper curiosity about the systems that shape it.":
-    "Ονομάζομαι Χριστίνα Ανθεμίδη-Κέλλυ και είμαι Ελληνοαμερικανίδα συγγραφέας, ιστιοπλόος και δια βίου επισκέπτρια της Κρυοπηγής και της χερσονήσου της Κασσάνδρας. Η οικογένειά μου έχει βαθιές ρίζες στην Ελλάδα και έχω περάσει μεγάλο μέρος της ζωής μου επιστρέφοντας σε αυτή την ακτή — κολυμπώντας στους κόλπους της, περπατώντας τα δασικά μονοπάτια της, παρατηρώντας τις εποχικές αλλαγές της και αναπτύσσοντας σιγά σιγά μια βαθύτερη περιέργεια για τα συστήματα που τη διαμορφώνουν.",
+    "Ονομάζομαι Χριστίνα Ανθεμίδη-Κέλλυ και είμαι Ελληνοαμερικανίδα συγγραφέας, ιστιοπλόος και δια βίου επισκέπτρια της Κρυοπηγής και της χερσονήσου της Κασσάνδρας. Η οικογένειά μου έχει βαθιές ρίζες στην Ελλάδα και έχω περάσει μεγάλο μέρος της ζωής μου επιστρέφοντας σε αυτή την ακτή — κολυμπώντας στους όρμους της, περπατώντας τα δασικά μονοπάτια της, παρατηρώντας τις εποχικές αλλαγές της και αναπτύσσοντας σιγά σιγά μια βαθύτερη περιέργεια για τα συστήματα που τη διαμορφώνουν.",
   "Over time, I became increasingly interested not only in the beauty of the landscape, but in the relationships beneath it: the geology that formed the peninsula, the Mediterranean ecosystems that thrive here, the springs and drainage channels that connect hillside to sea, the underwater Posidonia meadows offshore, and the layers of human history embedded throughout the region.":
     "Με τον καιρό, άρχισα να ενδιαφέρομαι όχι μόνο για την ομορφιά του τοπίου, αλλά και για τις σχέσεις που κρύβονται κάτω από αυτό: τη γεωλογία που διαμόρφωσε τη χερσόνησο, τα μεσογειακά οικοσυστήματα που ευδοκιμούν εδώ, τις πηγές και τα ρέματα που συνδέουν την πλαγιά με τη θάλασσα, τα υποθαλάσσια λιβάδια της Ποσειδωνίας ανοιχτά της ακτής και τα στρώματα ανθρώπινης ιστορίας που είναι διάσπαρτα σε όλη την περιοχή.",
   "My background in sailing, natural history, conservation, preservation, and storytelling shaped the beginning of this project. What started as personal field notes and photography gradually evolved into an attempt to document Kriopigi as a living coastal system — one shaped by climate, ecology, tectonics, memory, and human activity across thousands of years.":

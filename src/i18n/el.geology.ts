@@ -4,7 +4,7 @@ export const elGeology: Record<string, string> = {
   Formation: "Δημιουργία",
   "How the cove was made": "Πώς σχηματίστηκε ο όρμος",
   "Read downward through time — from a Triassic sea bed to the cold spring that still feeds the bay.":
-    "Ακολουθήστε την ιστορία προς τα πίσω στον χρόνο — από τον βυθό μιας θάλασσας της Τριασικής Περιόδου έως την κρύα πηγή που εξακολουθεί να τροφοδοτεί τον κόλπο σήμερα.",
+    "Ακολουθήστε την ιστορία προς τα πίσω στον χρόνο: από τον βυθό μιας θάλασσας της Τριασικής Περιόδου έως την κρύα πηγή που εξακολουθεί να τροφοδοτεί τον όρμο σήμερα.",
   "Geologic time scale, 650 million years ago to the present":
     "Γεωλογική κλίμακα χρόνου — από πριν από 650 εκατομμύρια χρόνια έως σήμερα",
 
@@ -33,14 +33,14 @@ export const elGeology: Record<string, string> = {
   "~12,000 ya · Holocene": "~12.000 χρόνια πριν · Ολόκαινο",
   "The modern shoreline": "Η σύγχρονη ακτογραμμή",
   "Post-glacial sea-level rise floods the lower valleys. Aleppo pine (Pinus halepensis) colonises the slopes; Posidonia oceanica meadows establish on the sandy shelf, stabilising the bay.":
-    "Η άνοδος της στάθμης της θάλασσας μετά την τελευταία παγετώδη περίοδο πλημμυρίζει τις χαμηλές κοιλάδες. Η χαλέπιος πεύκη (Pinus halepensis) εξαπλώνεται στις πλαγιές, ενώ τα λιβάδια της Posidonia oceanica εγκαθίστανται πάνω στην αμμώδη υφαλοκρηπίδα, σταθεροποιώντας τον κόλπο.",
+    "Η άνοδος της στάθμης της θάλασσας μετά την τελευταία παγετώδη περίοδο πλημμυρίζει τις χαμηλές κοιλάδες. Η χαλέπιος πεύκη (Pinus halepensis) εξαπλώνεται στις πλαγιές, ενώ τα λιβάδια της Ποσειδωνίας (Posidonia oceanica) εγκαθίστανται πάνω στην αμμώδη υφαλοκρηπίδα, σταθεροποιώντας τον όρμο.",
   "Holocene world — continents in their familiar outlines after post-glacial seas rose to today's coastline.":
     "Ο κόσμος του Ολοκαίνου — οι ήπειροι αποκτούν τις γνώριμες μορφές τους, καθώς η θάλασσα ανεβαίνει στη σημερινή της στάθμη μετά το τέλος της τελευταίας παγετώδους περιόδου.",
 
   Today: "Σήμερα",
   "A living equilibrium": "Μια ζωντανή ισορροπία",
   "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2–3°C in summer — a microclimate that shelters juvenile fish and keeps the seagrass meadow productive.":
-    "Η κρύα πηγή εξακολουθεί να αναβλύζει κάτω από την άμμο, μειώνοντας τη θερμοκρασία των ρηχών νερών κατά 2–3°C το καλοκαίρι. Δημιουργεί έτσι ένα μικροκλίμα που προσφέρει καταφύγιο στα νεαρά ψάρια και διατηρεί παραγωγικό το λιβάδι της Ποσειδωνίας.",
+    "Η κρύα πηγή εξακολουθεί να αναβλύζει κάτω από την άμμο και έχει παρατηρηθεί ότι μειώνει τη θερμοκρασία των ρηχών νερών κατά 2–3°C το καλοκαίρι. Δημιουργεί έτσι ένα μικροκλίμα που ευνοεί τα νεαρά ψάρια και διατηρεί παραγωγικό το λιβάδι της Ποσειδωνίας.",
 
   // --- Reading the maps ---
   "Reading the maps": "Διαβάζοντας τους χάρτες",

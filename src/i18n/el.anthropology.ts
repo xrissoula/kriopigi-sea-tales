@@ -5,7 +5,7 @@ export const elAnthropology: Record<string, string> = {
   "People of the cove": "Οι άνθρωποι της ακτής",
   "Eight thousand years on a thin coast": "Οκτώ χιλιάδες χρόνια σε μια στενή λωρίδα ακτής",
   "From Neolithic foragers to amphora merchants to summer arrivals — every layer is still legible in the village above the bay.":
-    "Από τους νεολιθικούς τροφοσυλλέκτες και τους εμπόρους αμφορέων έως τους σημερινούς καλοκαιρινούς επισκέπτες — κάθε εποχή παραμένει ακόμη ορατή στο χωριό πάνω από τον όρμο.",
+    "Από τους νεολιθικούς τροφοσυλλέκτες και τους εμπόρους αμφορέων έως τους σημερινούς καλοκαιρινούς επισκέπτες: κάθε εποχή παραμένει ακόμη ορατή στο χωριό πάνω από τον όρμο.",
 
   // --- Timeline ---
   "~6500 BCE": "~6500 π.Χ.",
