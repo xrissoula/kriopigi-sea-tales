@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import hellenicSubduction from "@/assets/hellenic-subduction.jpg";
 import tectonicGraben from "@/assets/aegean-tectonic-graben.jpg";
 import bathymetry from "@/assets/aegean-bathymetry.webp";
@@ -90,6 +90,12 @@ function Biogeochemistry() {
               </figure>
             </article>
           ))}
+        </div>
+
+        <div className="mt-10 pt-6 border-t border-border">
+          <Link to="/field-notes/anthropology" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
+            {t("Continue to Anthropological History")} <ArrowRight size={14} />
+          </Link>
         </div>
       </div>
     </SiteLayout>

@@ -6,6 +6,7 @@ export const elBiogeochemistry: Record<string, string> = {
   "From a subducting plate to dissolved oxygen — five layers of process that meet at the Kriopigi shore.":
     "Από μια καταβυθιζόμενη τεκτονική πλάκα μέχρι το διαλυμένο οξυγόνο — πέντε επίπεδα διεργασιών που συναντώνται στις ακτές της Κρυοπηγής.",
   "Back to Geology": "Επιστροφή στη Γεωλογία",
+  "Continue to Anthropological History": "Συνέχεια στην Ανθρωπολογική Ιστορία",
 
   // --- Stages ---
   "Tectonic foundation": "Το τεκτονικό υπόβαθρο",
