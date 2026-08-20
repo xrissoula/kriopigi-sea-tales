@@ -30,10 +30,10 @@ export const elGeology: Record<string, string> = {
   "Late Miocene world — rivers, lakes, and coastal plains spread across what is now Kassandra, depositing the sediments beneath modern Kriopigi.":
     "Ο κόσμος του Ύστερου Μειοκαίνου — ποτάμια, λίμνες και παράκτιες πεδιάδες εξαπλώνονταν σε όλη την έκταση της σημερινής Κασσάνδρας, αποθέτοντας τα ιζήματα κάτω από τη σύγχρονη Κρυοπηγή.",
   "Sculpting the coast": "Η διαμόρφωση της ακτογραμμής",
-  "Sea level fluctuations and karst dissolution carve coves and headlands. Freshwater percolating through fractured limestone emerges as cold springs along the shore — krio pigi, the cold spring.":
-    "Οι διακυμάνσεις της στάθμης της θάλασσας και η καρστική διάβρωση σμιλεύουν όρμους και ακρωτήρια. Το γλυκό νερό που διηθείται μέσα από τον ρηγματωμένο ασβεστόλιθο αναβλύζει κατά μήκος της ακτής ως ψυχρές πηγές — η κρύα πηγή που έδωσε στην Κρυοπηγή το όνομά της.",
-  "Pliocene world — continents in nearly modern positions; the Mediterranean settles into its present basin.":
-    "Ο κόσμος του Πλειοκαίνου — οι ήπειροι βρίσκονται σχεδόν στις σημερινές τους θέσεις και η Μεσόγειος αποκτά τη σύγχρονη μορφή της.",
+  "Continued uplift, faulting, changing sea levels, and erosion gradually sculpt the Kassandra peninsula. Streams cut valleys into the young sediments, waves carve pocket coves and low cliffs, and beaches shift as sand and gravel move along the shore. Groundwater flowing through fractured rocks emerges locally as coastal springs — including the cold spring that gave Kriopigi its name.":
+    "Συνεχής ανύψωση, ρηγμάτωση, μεταβαλλόμενες στάθμες θάλασσας και διάβρωση σμιλεύουν σταδιακά τη χερσόνησο της Κασσάνδρας. Τα ρυάκια χαράσσουν κοιλάδες στα νεαρά ιζήματα, τα κύματα λαξεύουν μικρούς όρμους και χαμηλούς γκρεμούς, ενώ οι παραλίες μετακινούνται καθώς η άμμος και τα χαλίκια περιπλανιούνται κατά μήκος της ακτής. Το υπόγειο νερό που ρέει μέσα από ρηγματωμένα πετρώματα αναβλύζει τοπικά ως παράκτιες πηγές — ανάμεσά τους και η κρύα πηγή που έδωσε στην Κρυοπηγή το όνομά της.",
+  "Late Pliocene world — the Mediterranean approaches its modern form while continued uplift and erosion shape the landscape of Kassandra.":
+    "Ο κόσμος του Ύστερου Πλειοκαίνου — η Μεσόγειος αποκτά τη σύγχρονη μορφή της, ενώ η συνεχής ανύψωση και διάβρωση διαμορφώνουν το τοπίο της Κασσάνδρας.",
 
   "~12,000 ya · Holocene": "~12.000 χρόνια πριν · Ολόκαινο",
   "The modern shoreline": "Η σύγχρονη ακτογραμμή",
