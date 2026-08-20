@@ -34,17 +34,17 @@ export const Route = createFileRoute("/field-notes/anthropology")({
 
 const periods: Period[] = [
   {
-    age: "~6500 BCE",
-    title: "First settlers",
-    body: "Neolithic communities arrive in Halkidiki, drawn to springs, sheltered coves, and the rich Thermaic Gulf. Stone tools and ceramics from this period are found across the Kassandra peninsula.",
+    age: "5300–4500 BCE · Late Neolithic",
+    title: "Early settled communities",
+    body: "By the Late Neolithic, settled communities were established in Halkidiki. At Olynthus, north of Kassandra, excavations have revealed houses, pottery, stone tools, figurines, and weaving equipment dating to roughly 5300–4500 BCE, evidence of an established farming world in the region.",
     image: olynthusPlan,
     alt: "General plan of the southern projection of the Megali Toumba at Olynthus, showing Byzantine, Prehistoric, Classical, and unexcavated remains.",
-    caption: "General plan of the southern projection of the Megali Toumba at Olynthus. From G. E. Mylonas, Excavations at Olynthus, Part I: The Neolithic Settlement (Johns Hopkins University Studies in Archaeology No. 6, ed. D. M. Robinson; Baltimore: The Johns Hopkins Press / London: Humphrey Milford / Oxford University Press, 1929).",
+    caption: "General plan of the southern projection of the Megali Toumba at Olynthus — a site in Halkidiki between the Kassandra and Sithonia peninsulas, not on Kassandra itself. From G. E. Mylonas, Excavations at Olynthus, Part I: The Neolithic Settlement (Johns Hopkins University Studies in Archaeology No. 6, ed. D. M. Robinson; Baltimore: The Johns Hopkins Press / London: Humphrey Milford / Oxford University Press, 1929).",
   },
   {
-    age: "~700 BCE",
-    title: "Ancient Mende & Eretrian colonies",
-    body: "Greek colonists from Eretria found Mende and other coastal cities. The peninsula — then called Pallene — becomes famous for its wine, exported across the Aegean in distinctive amphorae.",
+    age: "8th century BCE",
+    title: "Ancient Mende & the Eretrian colonies",
+    body: "Eretrian settlers established Mende as one of the important cities of Pallene, the ancient name of the Kassandra peninsula. By the Archaic and Classical periods, Mende was renowned for its wine, which was exported widely in locally produced transport amphorae.",
     image: mendePithamphora,
     alt: "Pithamphora with floral motifs recovered from the cemetery at Mende.",
     caption: "Pithamphora with floral motifs from the cemetery at Mende. From S. Moschonissioti, “Vases du cimetière de Mendè,” in Recherches récentes sur le monde hellénistique (Publications du Centre Jean Bérard), available via OpenEdition Books: https://books.openedition.org/pcjb/661.",
@@ -52,7 +52,7 @@ const periods: Period[] = [
   {
     age: "348 BCE",
     title: "Macedonian rule",
-    body: "Philip II of Macedon destroys Olynthos and consolidates Halkidiki under Macedonian control. The region's harbours feed Alexander's campaigns.",
+    body: "Philip II of Macedon destroys Olynthus in 348 BCE, breaking the power of the Chalcidian League and strengthening Macedonian control over Halkidiki. Mende was also destroyed or severely damaged during Philip's campaigns and subsequently declined as regional power shifted elsewhere.",
     image: philipII,
     alt: "Small ivory head identified as a portrait of Philip II of Macedon, recovered from the royal tumulus at Aigai (Vergina).",
     caption: "Ivory portrait head identified as Philip II of Macedon, recovered from Tomb II of the Great Tumulus at Aigai (modern Vergina), the royal necropolis of the Macedonian kings.",
@@ -60,15 +60,20 @@ const periods: Period[] = [
   {
     age: "Byzantine era",
     title: "Monastic landscape",
-    body: "Mount Athos to the east becomes the spiritual heart of Orthodoxy. Kassandra's villages live by fishing, olives, and beekeeping; the cold spring at Kriopigi serves caravans crossing the peninsula.",
+    body: "Mount Athos to the east develops into one of the great monastic centers of the Orthodox world. Across Halkidiki, agriculture, pastoralism, fishing, woodland use, and monastic estates shaped everyday life through the Byzantine and later Ottoman periods.",
     image: greatLavra,
     alt: "The fortified arsanas (sea-gate tower) of the Great Lavra monastery rising above the rocks on the Athos peninsula.",
     caption: "The Great Lavra (Megisti Lavra), founded in 963 CE by St. Athanasios the Athonite — the oldest and first-ranked of the twenty monasteries of Mount Athos.",
   },
   {
+    age: "1430–1821",
+    title: "Ottoman Kassandra",
+    body: "After the fall of Thessaloniki in 1430, Halkidiki passed under Ottoman rule. Kassandra's villages were organised around agriculture, livestock, timber, and fishing, with taxation and land arrangements that included monastic estates and, elsewhere in Halkidiki, the semi-autonomous mining communities of Mademochoria. Settlement remained concentrated inland and on the hillsides rather than on the open shore.",
+  },
+  {
     age: "1821 onward",
-    title: "Revolution & rebuilding",
-    body: "Kassandra rises in the Greek War of Independence and is devastated in 1821. Villages are slowly resettled through the 19th century by refugees and returning families.",
+    title: "Revolution, destruction & return",
+    body: "Kassandra became one of the principal centers of the 1821 uprising in Halkidiki. After months of resistance, Ottoman forces broke through the peninsula's defenses in November 1821 in the event remembered locally as the “Destruction of Kassandra.” Settlements were burned, inhabitants were killed, captured, or displaced, and the peninsula suffered severe depopulation before communities gradually recovered during the decades that followed.",
     image: greekRevolution,
     alt: "Hand-coloured lithograph depicting a battle scene from the Greek War of Independence, with Greek fighters in fustanella confronting Ottoman troops on a hillside.",
     caption: "Scene from the Greek War of Independence (1821), from the series of folk lithographs commissioned by General Yannis Makriyannis and painted by Panagiotis Zografos (1836–1839) to illustrate Makriyannis' Memoirs.",
@@ -76,7 +81,7 @@ const periods: Period[] = [
   {
     age: "1923",
     title: "Population exchange",
-    body: "Following the Greco–Turkish war, refugees from Asia Minor settle across Halkidiki, reshaping the demographics, cuisine, and music of the coast.",
+    body: "Following the Greco–Turkish War and the 1923 compulsory population exchange, refugees from Asia Minor and other former Ottoman territories were settled across Macedonia, including Halkidiki. Their arrival reshaped the region's settlement pattern and added new communities to the peninsula's social and cultural landscape.",
     image: refugees1923,
     alt: "Black-and-white photograph of Greek refugees from Asia Minor disembarking with their bundled belongings at the waterfront of Thessaloniki, c. 1923.",
     caption: "Greek refugees from Asia Minor arriving by caïque at the port of Thessaloniki in the wake of the 1923 Convention Concerning the Exchange of Greek and Turkish Populations. Photographer unknown; widely reproduced from the interwar press archive (see Margaret21, “Greek refugees from Smyrna arriving at Thessaloniki 1923”: https://margaret21.com/2015/02/18/nation-swap-house-swap/greek-refugees-from-smyrna-arriving-at-thessaloniki-1923/).",
@@ -84,7 +89,7 @@ const periods: Period[] = [
   {
     age: "1960s–today",
     title: "The tourist coast",
-    body: "Paved roads reach Kassandra; Kriopigi grows from a fishing hamlet into a summer destination. Pine-shaded campsites and small hotels replace tobacco fields, while the shoreline absorbs new pressures.",
+    body: "Improved roads and the rapid growth of Greek coastal tourism transformed Kassandra during the second half of the 20th century. Kriopigi expanded from its older hillside settlement into a major summer destination, while hotels, rented rooms, campsites, restaurants, and other tourism infrastructure spread toward the coast below. The change was rapid: published tourism data record 171 accommodation places in Kriopigi in 1976 and more than 2,200 by 1992. Tourism brought new livelihoods and development, while also increasing seasonal pressure on the shoreline and surrounding ecosystems.",
     images: [
       { src: halkidikiBrochure, alt: "Vintage Greek National Tourism Organisation fold-out brochure for Macedonia / Halkidiki, with sun-bleached coastal photographs." },
       { src: olympicAirlines, alt: "1960s Olympic Airways magazine advertisement showing a stylised passenger reading a newspaper above a clock-wheel, with the Acropolis and the White Tower of Thessaloniki at the base." },
@@ -108,7 +113,7 @@ function Anthropology() {
           <h1 className="font-serif text-4xl text-primary-foreground">{t("Anthropological History")}</h1>
         </div>
       </div>
-      <PageHeader eyebrow={t("People of the cove")} title={t("Eight thousand years on a thin coast")} lead={t("From Neolithic foragers to amphora merchants to summer arrivals — every layer is still legible in the village above the bay.")} />
+      <PageHeader eyebrow={t("People of the cove")} title={t("Eight thousand years on a thin coast")} lead={t("From Neolithic communities to amphora merchants to modern summer arrivals — layers of human history remain visible across Kassandra and in the village above the bay.")} />
       <div className="px-5 max-w-2xl mx-auto pb-8 space-y-6">
         {periods.map((e, i) => (
           <article key={i} id={i === 0 ? "first-settlers" : undefined} className="relative pl-6 border-l-2 border-accent/40 scroll-mt-24">
