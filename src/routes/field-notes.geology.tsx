@@ -85,7 +85,7 @@ function Geology() {
                   <div>
                     <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Reading the maps")}</p>
                     <h3 className="mt-1 font-serif text-xl text-foreground">{t("The deep story beneath Kassandra")}</h3>
-                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("The colored zones above are not decoration — they are different tectonic terranes: chunks of crust with separate origins, compressed and welded together over hundreds of millions of years to build the Hellenides, the Greek mountain system. The Halkidiki peninsulas sit inside that collage, shaped by continental collision, mountain building, uplift, faulting, the closure of an ancient ocean, and erosion. The landscape you walk through is the surface expression of that history.")}</p>
+                    <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("The colored zones above are not decoration — they represent different tectonic terranes: fragments of crust with separate geological origins that were compressed and welded together over hundreds of millions of years during the formation of the Hellenides, Greece’s mountain system. The Halkidiki peninsulas occupy the southern margin of this tectonic collage, shaped by continental collision, mountain building, uplift, faulting, the closure of the ancient Tethys Ocean, and millions of years of erosion. The landscape you walk through today is the surface expression of that deep geological history.")}</p>
                   </div>
 
                   <div className="rounded-xl border border-border bg-card p-5 shadow-soft space-y-5">
@@ -93,34 +93,34 @@ function Geology() {
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("1. Why the terrain is hilly and dissected")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Kassandra is uplifted, faulted terrain — steep slopes, gullies, drainage cuts, ridges, coves, and irregular shorelines. Mediterranean rains often arrive in intense bursts, and winter rainfall, erosion, sediment transport, and slope instability still actively shape it.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Kassandra is an uplifted, faulted peninsula characterized by steep slopes, gullies, drainage cuts, ridges, coves, and irregular shorelines. Mediterranean rainfall often arrives in intense bursts, and winter erosion, sediment transport, and slope instability continue to shape the landscape today.")}</p>
                     </div>
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("2. Why the soils are thin and dry")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Much of the peninsula sits on metamorphic and crystalline basement rocks with weathered rocky substrates. The result is nutrient-poor, thin, drought-prone, fast-draining soil — conditions that favour Aleppo pine, maquis, phrygana, and aromatic shrubs over lush temperate forest. That is why the vegetation reads sparse, resinous, silver-green, and drought-adapted.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Around Kriopigi, the landscape is developed largely on Neogene and Quaternary sediments resting above older geological basement. The resulting soils are generally thin, well-drained, and prone to summer drought, favoring Aleppo pine, Mediterranean maquis, phrygana, and aromatic shrubs rather than dense temperate forest. These conditions give the landscape its characteristic open, resinous, silver-green appearance.")}</p>
                     </div>
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("3. Why the water is so clear")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Rocky, low-nutrient terrain means little sediment input and limited nutrient runoff. Combined with the oligotrophic conditions of the Aegean, the result is low turbidity and intense clarity — there are no large muddy river systems dumping fines into these shores.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Low sediment input from the peninsula, together with the naturally oligotrophic waters of the Aegean Sea, results in exceptionally clear water. Without large muddy rivers delivering suspended sediment, light penetrates deeply into the coastal waters, supporting extensive seagrass meadows.")}</p>
                     </div>
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("4. Why there are springs and cold-water pockets")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Faults and fractured bedrock channel groundwater. Rain infiltrates the rock and re-emerges as coastal springs, seepage zones, and cold-water upwellings — affecting salinity, temperature, nutrients, fish distribution, and seagrass productivity on a very local scale. Krio pigi — the cold spring — is one of these.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Faults, fractures, and permeable sedimentary layers channel groundwater through the peninsula. Rainwater infiltrates the subsurface and re-emerges as coastal springs, seepage zones, and localized cold-water upwellings, creating small-scale differences in temperature, salinity, nutrients, fish distribution, and seagrass productivity. Kriopigi — “the cold spring” — takes its name from one of these freshwater sources.")}</p>
                     </div>
 
                     <div>
                       <h4 className="font-serif text-lg text-foreground">{t("5. Why the beaches alternate between sand, pebbles, and rock")}</h4>
-                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Different geological units weather differently. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs — each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.")}</p>
+                      <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">{t("Different rock types and sedimentary deposits erode at different rates. Within a few hundred metres the coast can shift through rocky shelves, pocket coves, coarse gravel beaches, sandy sections, cliffs, and submerged reefs — each one a readout of the rock beneath, the wave exposure above, and the sediment supply between.")}</p>
                     </div>
                   </div>
 
                   <div className="rounded-xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
                     <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("The bigger idea")}</p>
                     <h3 className="mt-1 font-serif text-xl">{t("Ecology begins with geology")}</h3>
-                    <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all emerge from the same handful of inputs: rock, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.")}</p>
+                    <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all arise from the same fundamental processes: geology, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.")}</p>
                   </div>
                 </div>
               )}
