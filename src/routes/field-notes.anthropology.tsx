@@ -7,6 +7,7 @@ import olynthusPlan from "@/assets/olynthus-megali-toumba.jpg";
 import mendePithamphora from "@/assets/mende-pithamphora.jpg";
 import philipII from "@/assets/philip-ii-vergina.webp";
 import greatLavra from "@/assets/great-lavra-athos.jpg";
+import ottomanMap from "@/assets/ottoman-chalcidique-map.jpg.asset.json";
 import greekRevolution from "@/assets/greek-revolution.jpg";
 import refugees1923 from "@/assets/refugees-1923.jpg";
 import halkidikiBrochure from "@/assets/halkidiki-brochure.jpeg";
