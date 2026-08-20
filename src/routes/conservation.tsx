@@ -25,16 +25,16 @@ function Conservation() {
         <figure className="rounded-2xl overflow-hidden shadow-deep">
           <img src={posidonia} alt={t("Posidonia meadow")} loading="lazy" className="w-full aspect-[16/9] object-cover" />
           <figcaption className="p-4 bg-card text-sm text-muted-foreground border border-t-0 border-border rounded-b-2xl">
-            {t("Posidonia oceanica meadows — a UNESCO-listed ecosystem — anchor sediment, oxygenate water, and shelter juvenile fish.")}
+            {t("Posidonia oceanica meadows — a priority habitat protected under the EU Habitats Directive — stabilize sediment, provide structurally complex habitat, and support rich coastal biodiversity.")}
           </figcaption>
         </figure>
 
         <div className="mt-8 space-y-4">
-          <Tenet icon={Leaf} title="Anchor on sand, never on seagrass" body="A single boat anchor can clear a meter-wide scar that takes a century to regrow." />
-          <Tenet icon={AlertTriangle} title="Give nesting cliffs space" body="From April to July, gulls and shags raise young on the headlands. Stay below the marked path." />
-          <Tenet icon={HandHeart} title="Carry out what you carry in" body="There is no bin on the trail. Plastic on the strand will be in the meadow by morning." />
-          <Tenet icon={Shell} title="Leave the shells where they lie" body="Empty shells are not souvenirs — they are habitat and raw material. Hermit crabs move into them, small fish shelter beneath them, and over time waves grind them into the calcium-rich sand that builds the beach itself. A pocketful of shells removed each summer becomes meters of lost shoreline over a generation. Photograph them. Leave them." />
-          <Tenet icon={Sun} title="Wear the shirt, skip the slick" body="Most conventional sunscreens shed oxybenzone, octinoxate, octocrylene, and homosalate into the water within minutes of swimming. These UV filters are documented endocrine disruptors in fish, contribute to coral and seagrass stress, and accumulate in nearshore sediments — exactly the calm, shallow water where Posidonia grows and juveniles shelter. The simplest fix is to cover up: a UPF 50 long-sleeve swim shirt, a wide-brimmed hat, and shade between 11 and 4 do more than any bottle. Where you do need cream, choose non-nano zinc oxide or titanium dioxide mineral sunscreens labeled reef-safe (and read the back — the label is unregulated). Apply 20 minutes before entering the water so it binds to skin instead of washing straight into the bay." />
+          <Tenet icon={Leaf} title="Anchor on sand, never on seagrass" body="A single anchor can uproot shoots and cut persistent scars through a Posidonia meadow. Because Posidonia oceanica grows and recolonizes very slowly, heavily damaged areas can take decades or even longer to recover." />
+          <Tenet icon={AlertTriangle} title="Give nesting cliffs space" body="Coastal cliffs and headlands can provide nesting habitat for seabirds during spring and early summer. Give nesting birds plenty of space and stay on established paths." />
+          <Tenet icon={HandHeart} title="Carry out what you carry in" body="There is no bin on the trail. Litter left along the shore can easily be carried into the sea by wind, runoff, and waves." />
+          <Tenet icon={Shell} title="Leave the shells where they lie" body="Empty shells are not just souvenirs — they remain part of the coastal ecosystem. They provide shelter for hermit crabs and other small organisms, and as they break down they contribute biogenic carbonate to beach sediments. Photograph them and leave them where they are." />
+          <Tenet icon={Sun} title="Wear the shirt, use less sunscreen" body="Some ultraviolet-filter ingredients used in sunscreens have been detected in coastal waters and sediments, and laboratory and field studies indicate that certain compounds can affect marine organisms at sufficient concentrations. Environmental effects vary by chemical, formulation, concentration, and exposure, so labels such as “reef-safe” should not be treated as a scientifically regulated guarantee. The simplest way to reduce both UV exposure and the amount of sunscreen entering the sea is physical protection: wear a UPF swim shirt, use a hat and shade when practical, and apply broad-spectrum sunscreen to exposed skin according to the product directions." />
         </div>
 
         <section className="mt-10">
