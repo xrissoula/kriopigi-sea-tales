@@ -6,7 +6,14 @@ export const elBiogeochemistry: Record<string, string> = {
   "From a subducting plate to dissolved oxygen — five layers of process that meet at the Kriopigi shore.":
     "Από μια καταβυθιζόμενη τεκτονική πλάκα μέχρι το διαλυμένο οξυγόνο — πέντε επίπεδα διεργασιών που συναντώνται στις ακτές της Κρυοπηγής.",
   "Back to Geology": "Επιστροφή στη Γεωλογία",
-  "Continue to Anthropological History": "Συνέχεια στην Ανθρωπολογική Ιστορία",
+
+  // --- Continue card ---
+  "Continue · II · Human Time": "Συνέχεια · II · Ανθρώπινος Χρόνος",
+  "Tired of the geology? How about archaeology?": "Κουραστήκατε από τη γεωλογία; Τι λέτε για αρχαιολογία;",
+  "Click here to learn about the Anthropological History of Kriopigi.":
+    "Πατήστε εδώ για να εξερευνήσετε την Ανθρωπολογική Ιστορία της Κρυοπηγής.",
+  "The fortified arsanas (sea-gate tower) of the Great Lavra monastery":
+    "Το οχυρωμένο αρσανάς (πύργος της θαλάσσιας πύλης) της Μονής Μεγίστης Λαύρας",
 
   // --- Stages ---
   "Tectonic foundation": "Το τεκτονικό υπόβαθρο",

@@ -1,12 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import hellenicSubduction from "@/assets/hellenic-subduction.jpg";
 import tectonicGraben from "@/assets/aegean-tectonic-graben.jpg";
 import bathymetry from "@/assets/aegean-bathymetry.webp";
 import aegeanCirculation from "@/assets/aegean-circulation.png";
 import levantineOxygen from "@/assets/levantine-oxygen.png";
+import anthropologyTower from "@/assets/anthropology-tower.webp";
 
 export const Route = createFileRoute("/field-notes/biogeochemistry")({
   head: () => ({
@@ -93,8 +94,23 @@ function Biogeochemistry() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-border">
-          <Link to="/field-notes/anthropology" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
-            {t("Continue to Anthropological History")} <ArrowRight size={14} />
+          <Link
+            to="/field-notes/anthropology"
+            className="group block rounded-xl overflow-hidden border border-border bg-card shadow-soft hover:shadow-deep transition"
+          >
+            <div className="aspect-[4/3] overflow-hidden bg-muted">
+              <img
+                src={anthropologyTower}
+                alt={t("The fortified arsanas (sea-gate tower) of the Great Lavra monastery")}
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="p-5">
+              <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Continue · II · Human Time")}</p>
+              <h3 className="mt-1 font-serif text-2xl text-foreground">{t("Tired of the geology? How about archaeology?")}</h3>
+              <p className="mt-2 text-[15px] text-foreground/80 leading-relaxed">{t("Click here to learn about the Anthropological History of Kriopigi.")}</p>
+            </div>
           </Link>
         </div>
       </div>
