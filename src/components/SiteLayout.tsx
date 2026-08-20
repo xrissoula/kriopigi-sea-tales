@@ -11,16 +11,18 @@ export function LanguageToggle() {
         type="button"
         onClick={() => setLang("en")}
         aria-pressed={lang === "en"}
-        className={`px-2.5 py-1 transition-colors ${lang === "en" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+        className={`px-2.5 py-1 flex items-center gap-1 transition-colors ${lang === "en" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"}`}
       >
+        <span aria-hidden="true">🇬🇧</span>
         EN
       </button>
       <button
         type="button"
         onClick={() => setLang("el")}
         aria-pressed={lang === "el"}
-        className={`px-2.5 py-1 transition-colors ${lang === "el" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+        className={`px-2.5 py-1 flex items-center gap-1 transition-colors ${lang === "el" ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"}`}
       >
+        <span aria-hidden="true">🇬🇷</span>
         ΕΛ
       </button>
     </div>
