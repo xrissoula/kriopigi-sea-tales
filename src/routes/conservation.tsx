@@ -69,7 +69,7 @@ function Conservation() {
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Beach life cycle")}</p>
           <h2 className="font-serif text-3xl text-foreground mt-1">{t("How a Mediterranean beach is built")}</h2>
           <p className="mt-3 text-foreground/80 leading-relaxed">
-            {t("The sand at Kriopigi is not a backdrop — it is the visible end of a long ecological conveyor belt that begins offshore in the Posidonia oceanica meadow. Understanding the cycle is the difference between a beach we use and a beach we keep.")}
+            {t("The sand at Kriopigi is part of a connected coastal sediment system shaped by erosion on land, waves and currents, biological carbonate production, and the Posidonia oceanica meadow offshore. Understanding those connections is the difference between a beach we use and a beach we keep.")}
           </p>
 
           <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
