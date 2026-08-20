@@ -10,7 +10,7 @@ export const elGeology: Record<string, string> = {
 
   // --- Timeline ---
   "~250 Mya · Triassic": "~250 εκατ. χρόνια πριν · Τριασική Περίοδος",
-  "An ancient sea bed": "Ένας αρχαίος θαλάσσιος πυθμένας",
+  "An ancient ocean beneath future Kriopigi": "Ένας αρχαίος ωκεανός κάτω από τη μελλοντική Κρυοπηγή",
   "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone.":
     "Η ανθρακική πλατφόρμα που αργότερα θα αποτελούσε το υπόβαθρο της Χαλκιδικής σχηματίζεται ως θαλάσσιο ίζημα στον θερμό ωκεανό της Τηθύος. Αμέτρητοι σκελετοί κοραλλιών, μαλακίων και πλαγκτονικών οργανισμών συσσωρεύονται και συμπιέζονται, δημιουργώντας τον ασβεστόλιθο.",
   "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf.":
