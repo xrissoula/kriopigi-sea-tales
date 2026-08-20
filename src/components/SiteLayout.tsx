@@ -44,7 +44,7 @@ const nav = [
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
