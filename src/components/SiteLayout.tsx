@@ -54,7 +54,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               {lang === "el" ? "ΟΑΚ" : "KS"}
             </span>
             <div className="leading-tight">
-              <div className="font-serif text-lg text-foreground">Kriopigi</div>
+              <div className="font-serif text-lg text-foreground">{t("Kriopigi")}</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">{t("Shore Guide")}</div>
             </div>
           </Link>
