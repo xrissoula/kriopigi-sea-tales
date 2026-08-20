@@ -23,7 +23,12 @@ export const elGeology: Record<string, string> = {
   "Eocene world — Africa drifts north into Eurasia, closing the Tethys and crumpling the Hellenic arc into being.":
     "Ο κόσμος του Ηωκαίνου — η Αφρική κινείται προς την Ευρασία, η Τηθύς κλείνει και το Ελληνικό Τόξο αρχίζει να διαμορφώνεται.",
 
-  "~5 Mya · Pliocene": "~5 εκατ. χρόνια πριν · Πλειόκαινο",
+  "~10–5 Ma · Late Miocene": "~10–5 εκατ. χρόνια πριν · Ύστερο Μειόκαινο",
+  "The landscape beneath Kriopigi takes shape": "Το τοπίο κάτω από την Κρυοπηγή παίρνει μορφή",
+  "Rivers, lakes, floodplains and shallow coastal environments deposited thick layers of sand, gravel, clay, marl and limestone across what is now Kassandra. Around modern Kriopigi these Late Miocene sediments preserve fossil mammals and other terrestrial life, making the village itself part of the peninsula's paleontological record.":
+    "Ποτάμια, λίμνες, πεδιάδες πλημμυρών και ρηχά παράκτια περιβάλλοντα απόθεσαν παχιά στρώματα άμμου, χαλικιού, αργίλου, μάργας και ασβεστόλιθου σε όλη την έκταση της σημερινής Κασσάνδρας. Κοντά στη σύγχρονη Κρυοπηγή, αυτά τα υστερομειοκαινικά ιζήματα φυλάσσουν απολιθωμένα θηλαστικά και άλλα χερσαία είδη, καθιστώντας το ίδιο το χωριό μέρος του παλαιοντολογικού αρχείου της χερσονήσου.",
+  "Late Miocene world — rivers, lakes, and coastal plains spread across what is now Kassandra, depositing the sediments beneath modern Kriopigi.":
+    "Ο κόσμος του Ύστερου Μειοκαίνου — ποτάμια, λίμνες και παράκτιες πεδιάδες εξαπλώνονταν σε όλη την έκταση της σημερινής Κασσάνδρας, αποθέτοντας τα ιζήματα κάτω από τη σύγχρονη Κρυοπηγή.",
   "Sculpting the coast": "Η διαμόρφωση της ακτογραμμής",
   "Sea level fluctuations and karst dissolution carve coves and headlands. Freshwater percolating through fractured limestone emerges as cold springs along the shore — krio pigi, the cold spring.":
     "Οι διακυμάνσεις της στάθμης της θάλασσας και η καρστική διάβρωση σμιλεύουν όρμους και ακρωτήρια. Το γλυκό νερό που διηθείται μέσα από τον ρηγματωμένο ασβεστόλιθο αναβλύζει κατά μήκος της ακτής ως ψυχρές πηγές — η κρύα πηγή που έδωσε στην Κρυοπηγή το όνομά της.",
