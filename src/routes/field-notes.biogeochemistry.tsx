@@ -32,7 +32,7 @@ const stages: Stage[] = [
   {
     eyebrow: "Back-arc extension",
     title: "Graben, volcanoes, and a stretched crust",
-    body: "Behind the arc, the Aegean crust pulls apart. The North Aegean and Skyros basins open as tectonic graben, while the volcanic arc — Methana, Milos, Santorini, Nisyros — punches through the thinned crust. This extensional architecture sets the depth and shape of every basin water mass that follows.",
+    body: "Behind the arc, the Aegean crust pulls apart. The North Aegean and Skyros basins open as tectonic graben, while the volcanic arc — Methana, Milos, Santorini, Nisyros — punches through the thinned crust. This extensional architecture largely determines the depth and geometry of the basins that guide modern water circulation.",
     image: tectonicGraben,
     alt: "Map of tectonic graben and volcanism in the Aegean, Greece",
     caption: "Active tectonic graben and the Aegean volcanic arc. After Papanikolaou, Nomikou & Lampridou (2025), 'Tectonic graben and volcanism in the Aegean, Greece', Geological Society, London, Special Publications 560.",
@@ -40,7 +40,7 @@ const stages: Stage[] = [
   {
     eyebrow: "Bathymetry",
     title: "The basins water settles into",
-    body: "Tectonics and erosion together carved a complex bottom: the deep North Aegean trough, the Athos and Sporades basins, the Chios and Skyros depressions. Halkidiki sits at the rim — a shallow shelf flanking the Athos Basin — which is why local circulation is so sensitive to the deep flows arriving from the south.",
+    body: "Tectonics and erosion together carved a complex bottom: the deep North Aegean trough, the Athos and Sporades basins, the Chios and Skyros depressions. Halkidiki occupies a shallow continental shelf bordering the Athos Basin, where local circulation reflects interactions between shelf waters, regional currents, and the deeper Aegean basins.",
     image: bathymetry,
     alt: "Bathymetric map of the Aegean Sea showing major basins",
     caption: "Bottom topography of the Aegean Sea. Map adapted from Karageorgis (1995).",
@@ -48,7 +48,7 @@ const stages: Stage[] = [
   {
     eyebrow: "Surface circulation",
     title: "How water moves through the Aegean",
-    body: "Cool, fresher Black Sea water enters from the Dardanelles and sweeps west and south along the Greek coast; warmer, saltier Levantine water pushes north along the Turkish side. The resulting cyclonic and anticyclonic gyres deliver nutrients to the Halkidiki shelf and flush the bays on a seasonal rhythm.",
+    body: "Cool, fresher Black Sea water enters from the Dardanelles and sweeps west and south along the Greek coast; warmer, saltier Levantine water pushes north along the Turkish side. The interaction between fresher Black Sea water and warmer, saltier Levantine water helps shape seasonal fronts, mixing, and circulation around Halkidiki, flushing coastal bays and influencing the distribution of nutrients.",
     image: aegeanCirculation,
     alt: "Schematic of Aegean Sea upper circulation",
     caption: "Schematic representation of the Aegean Sea upper circulation (following Theocharis et al., 1993 & 1999; Theocharis & Georgopoulos, 1993; Zodiatis, 1994; Zervakis & Georgopoulos, 2002).",
@@ -56,7 +56,7 @@ const stages: Stage[] = [
   {
     eyebrow: "Biogeochemistry",
     title: "Oxygen, nutrients, and the open Mediterranean",
-    body: "Aegean water that exits south through the Cretan straits feeds Levantine Intermediate Water — the oxygen and nutrient supply for the broader Eastern Mediterranean. The Rhodes Gyre, just downstream, is one of the basin's main 'oxygen pumps' in winter. The chemistry of the water at Kriopigi is one node in this much larger circulation.",
+    body: "Water exchanged through the Cretan Straits links the Aegean to the wider Eastern Mediterranean. These exchanges contribute to the formation and transformation of intermediate and deep water masses, including Levantine Intermediate Water, which plays a major role in ventilating the eastern Mediterranean. The Rhodes Gyre, farther to the southeast, is one of the basin's principal sites of winter deep-water formation and oxygenation. The chemistry of the water at Kriopigi is one node within this much larger circulation.",
     image: levantineOxygen,
     alt: "Map of dissolved oxygen and circulation in the Levantine Sea",
     caption: "Dissolved oxygen and circulation in the Levantine Basin. From Habib et al. (2026), 'Dissolved oxygen budget in the Levantine Sea: a coupled physical-biogeochemical modelling approach', Biogeosciences 23, 2939–2958, https://doi.org/10.5194/bg-23-2939-2026 (CC BY 4.0).",
