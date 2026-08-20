@@ -17,9 +17,9 @@ export const elGeology: Record<string, string> = {
     "Η Πανγαία κατά την Τριασική Περίοδο, με τον ωκεανό της Τηθύος να ανοίγεται στα ανατολικά. Η μελλοντική Χαλκιδική βρισκόταν στο βόρειο περιθώριό του.",
 
   "~50 Mya · Eocene": "~50 εκατ. χρόνια πριν · Ηώκαινο",
-  "Tectonic uplift": "Τεκτονική ανύψωση",
-  "The collision of the African and Eurasian plates lifts the Hellenic peninsula. The Kassandra ridge emerges as a long limestone spine, faulted and folded by ongoing compression.":
-    "Η σύγκρουση της αφρικανικής και της ευρασιατικής πλάκας ανυψώνει τον ελλαδικό χώρο. Η οροσειρά της Κασσάνδρας αναδύεται ως μια μακριά ασβεστολιθική ράχη, παραμορφωμένη από ρήγματα και πτυχώσεις που προκαλεί η συνεχιζόμενη συμπίεση.",
+  "Building the Hellenides": "Η δημιουργία των Ελληνίδων Οροσειρών",
+  "As the African Plate continued moving northward, it collided with Eurasia, compressing and uplifting the rocks that now form Greece. This mountain-building episode created the Hellenides and established the structural framework on which the Halkidiki peninsulas would later develop.":
+    "Καθώς η αφρικανική πλάκα συνέχισε να κινείται προς τα βόρεια, συγκρούστηκε με την ευρασιατική, συμπιέζοντας και ανυψώνοντας τα πετρώματα που σχηματίζουν σήμερα την Ελλάδα. Αυτό το επεισόδιο ορογένεσης δημιούργησε τις Ελληνίδες Οροσειρές και καθιέρωσε το δομικό πλαίσιο πάνω στο οποίο θα αναπτύσσονταν αργότερα οι χερσόνησοι της Χαλκιδικής.",
   "Eocene world — Africa drifts north into Eurasia, closing the Tethys and crumpling the Hellenic arc into being.":
     "Ο κόσμος του Ηωκαίνου — η Αφρική κινείται προς την Ευρασία, η Τηθύς κλείνει και το Ελληνικό Τόξο αρχίζει να διαμορφώνεται.",
 
