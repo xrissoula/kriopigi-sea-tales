@@ -41,7 +41,7 @@ function Conservation() {
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Ridge to reef")}</p>
           <h2 className="font-serif text-3xl text-foreground mt-1">{t("From hillside to sea")}</h2>
           <p className="mt-3 text-foreground/80 leading-relaxed">
-            {t("Rain falling on roads, gardens, farms, hotels, and hillsides above Kriopigi eventually moves downslope through gullies and seasonal drainage channels into the Aegean. Along the way it can carry sediments, fertilisers, herbicides, pesticides, plastics, oils, and organic waste into coastal waters and nearshore ecosystems.")}
+            {t("During rainfall events, water from roads, gardens, developed land, agricultural areas, and hillsides above Kriopigi can move downslope through gullies and seasonal drainage channels toward the Aegean. Along the way it can carry sediments, fertilisers, herbicides, pesticides, plastics, oils, and organic waste into coastal waters and nearshore ecosystems.")}
           </p>
           <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
             <img src={gullyRunoff} alt={t("An overgrown hillside gully above Kriopigi at dusk, with a tall cypress on the ridge and the Aegean visible beyond — a seasonal drainage line connecting the village to the sea.")} loading="lazy" className="w-full aspect-[4/3] object-cover" />
