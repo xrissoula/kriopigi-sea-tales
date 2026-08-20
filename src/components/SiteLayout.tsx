@@ -50,7 +50,9 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
-            <span className="w-8 h-8 rounded-full bg-gradient-sea grid place-items-center text-primary-foreground text-xs font-semibold shadow-soft">KS</span>
+            <span className="w-8 h-8 rounded-full bg-gradient-sea grid place-items-center text-primary-foreground text-xs font-semibold shadow-soft">
+              {lang === "el" ? "ΟΑΚ" : "KS"}
+            </span>
             <div className="leading-tight">
               <div className="font-serif text-lg text-foreground">Kriopigi</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground -mt-0.5">{t("Shore Guide")}</div>
