@@ -21,6 +21,7 @@ export const el: Record<string, string> = {
 
   // --- Navigation / layout ---
   Home: "Αρχική",
+  Kriopigi: "Κρυοπηγή",
   "Flora & Fauna": "Χλωρίδα & Πανίδα",
   Map: "Χάρτης",
   History: "Ιστορία",
