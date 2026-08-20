@@ -102,7 +102,7 @@ function Conservation() {
         <div className="mt-10 rounded-2xl bg-gradient-sea text-primary-foreground p-6 shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("Citizen science")}</p>
           <h3 className="font-serif text-2xl mt-1">{t("Help us count the meadow")}</h3>
-          <p className="mt-2 text-sm opacity-90">{t("Submit your underwater photos via the observation form — researchers at AUTh use them to map yearly seagrass extent.")}</p>
+          <p className="mt-2 text-sm opacity-90">{t("Submit underwater photographs through the observation form to help build a local visual record of the meadow’s extent and condition over time.")}</p>
           <p className="mt-3 text-sm opacity-90">
             {t("You can also log sightings on")}{" "}
             <a
@@ -113,7 +113,7 @@ function Conservation() {
             >
               iNaturalist
             </a>
-            {" "}{t("— a global citizen-science platform where your geotagged photos are identified by experts and pooled into open biodiversity data used by researchers worldwide.")}
+            {" "}{t("— a global citizen-science platform where observations can be identified and reviewed by the community and, when they meet data-quality criteria, contribute to biodiversity datasets used in research and conservation.")}
           </p>
         </div>
       </div>
