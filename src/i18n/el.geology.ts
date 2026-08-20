@@ -11,8 +11,8 @@ export const elGeology: Record<string, string> = {
   // --- Timeline ---
   "~250 Mya · Triassic": "~250 εκατ. χρόνια πριν · Τριασική Περίοδος",
   "An ancient ocean beneath future Kriopigi": "Ένας αρχαίος ωκεανός κάτω από τη μελλοντική Κρυοπηγή",
-  "The carbonate platform that would become Halkidiki's bedrock accumulates as marine sediment in the warm Tethys Ocean — countless coral, mollusc, and plankton skeletons compacted into limestone.":
-    "Η ανθρακική πλατφόρμα που αργότερα θα αποτελούσε το υπόβαθρο της Χαλκιδικής σχηματίζεται ως θαλάσσιο ίζημα στον θερμό ωκεανό της Τηθύος. Αμέτρητοι σκελετοί κοραλλιών, μαλακίων και πλαγκτονικών οργανισμών συσσωρεύονται και συμπιέζονται, δημιουργώντας τον ασβεστόλιθο.",
+  "Beneath Kassandra lie much older rocks that formed in the warm Tethys Ocean during the Mesozoic Era. Marine sediments, volcanic rocks, and fragments of ancient oceanic crust were later caught up in the collision between Africa and Eurasia, becoming part of the geological basement beneath the peninsula. Today these rocks are exposed mainly in southern Kassandra and at depth beneath younger sediments.":
+    "Κάτω από την Κασσάνδρα βρίσκονται πολύ παλαιότερα πετρώματα που σχηματίστηκαν στον θερμό ωκεανό της Τηθύος κατά τη Μεσοζωική Εποχή. Θαλάσσια ιζήματα, ηφαιστειακά πετρώματα και θραύσματα αρχαίου ωκεανικού φλοιού ενεπλάκησαν αργότερα στη σύγκρουση μεταξύ Αφρικής και Ευρασίας, γινόμενα μέρος του γεωλογικού υποβάθρου κάτω από τη χερσόνησο. Σήμερα αυτά τα πετρώματα είναι ορατά κυρίως στη νότια Κασσάνδρα και σε βάθος κάτω από νεότερα ιζήματα.",
   "Pangaea in the Triassic, with the Tethys Ocean opening to the east — the future Halkidiki lay along its northern shelf.":
     "Η Πανγαία κατά την Τριασική Περίοδο, με τον ωκεανό της Τηθύος να ανοίγεται στα ανατολικά. Η μελλοντική Χαλκιδική βρισκόταν στο βόρειο περιθώριό του.",
 
