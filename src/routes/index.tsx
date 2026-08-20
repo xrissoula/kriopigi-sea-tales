@@ -49,7 +49,7 @@ function Index() {
           {t("Where pine forest meets a wine-dark sea.")}
         </h2>
         <p className="mt-4 text-muted-foreground leading-relaxed">
-          {t("Kriopigi — \"cold spring\" — sits on the western Kassandra coast, a crescent of fine sand under Aleppo pines, looking out over what Homer called the oînops póntos, the wine-dark sea. This guide gathers what locals, scientists, and travelers have learned of its tides, meadows, and migrants.")}
+          {t("Kriopigi — \"cold spring\" — sits on the eastern Kassandra coast, on the Toronean Gulf, a crescent of fine sand under Aleppo pines, looking out over what Homer called the oînops póntos, the wine-dark sea. This guide gathers what locals, scientists, and travelers have learned of its tides, meadows, and migrants.")}
         </p>
       </section>
 
