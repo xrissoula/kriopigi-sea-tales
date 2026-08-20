@@ -39,15 +39,19 @@ export const elAnthropology: Record<string, string> = {
   "Monastic landscape": "Το μοναστικό τοπίο",
   "Mount Athos to the east develops into one of the great monastic centers of the Orthodox world. Across Halkidiki, agriculture, pastoralism, fishing, woodland use, and monastic estates shaped everyday life through the Byzantine and later Ottoman periods.":
     "Το Άγιο Όρος, στα ανατολικά, εξελίσσεται σε ένα από τα μεγάλα μοναστικά κέντρα του ορθόδοξου κόσμου. Σε ολόκληρη τη Χαλκιδική, η γεωργία, η κτηνοτροφία, η αλιεία, η χρήση των δασών και τα μοναστηριακά μετόχια διαμόρφωσαν την καθημερινή ζωή κατά τη βυζαντινή και, αργότερα, την οθωμανική περίοδο.",
+  "The fortified arsanas (sea-gate tower) of the Great Lavra monastery rising above the rocks on the Athos peninsula.":
+    "Ο οχυρωμένος αρσανάς της Μεγίστης Λαύρας υψώνεται πάνω από τα βράχια του Άθω.",
+  "The Great Lavra (Megisti Lavra), founded in 963 CE by St. Athanasios the Athonite — the oldest and first-ranked of the twenty monasteries of Mount Athos.":
+    "Η Μονή Μεγίστης Λαύρας ιδρύθηκε το 963 μ.Χ. από τον Άγιο Αθανάσιο τον Αθωνίτη και αποτελεί την αρχαιότερη και πρώτη στην ιεραρχία από τις είκοσι μονές του Αγίου Όρους.",
 
   "1430–1821": "1430–1821",
   "Ottoman Kassandra": "Η οθωμανική Κασσάνδρα",
   "After the fall of Thessaloniki in 1430, Halkidiki passed under Ottoman rule. Kassandra's villages were organised around agriculture, livestock, timber, and fishing, with taxation and land arrangements that included monastic estates and, elsewhere in Halkidiki, the semi-autonomous mining communities of Mademochoria. Settlement remained concentrated inland and on the hillsides rather than on the open shore.":
     "Μετά την άλωση της Θεσσαλονίκης το 1430, η Χαλκιδική περνά υπό οθωμανική κυριαρχία. Τα χωριά της Κασσάνδρας οργανώνονται γύρω από τη γεωργία, την κτηνοτροφία, την ξυλεία και την αλιεία, μέσα σε ένα καθεστώς φορολογίας και γαιοκτησίας που περιλάμβανε μοναστηριακά μετόχια και, σε άλλα μέρη της Χαλκιδικής, τις ημιαυτόνομες μεταλλευτικές κοινότητες των Μαντεμοχωρίων. Οι οικισμοί παραμένουν συγκεντρωμένοι στην ενδοχώρα και στις πλαγιές, και όχι στην ανοιχτή ακτή.",
-  "The fortified arsanas (sea-gate tower) of the Great Lavra monastery rising above the rocks on the Athos peninsula.":
-    "Ο οχυρωμένος αρσανάς της Μεγίστης Λαύρας υψώνεται πάνω από τα βράχια του Άθω.",
-  "The Great Lavra (Megisti Lavra), founded in 963 CE by St. Athanasios the Athonite — the oldest and first-ranked of the twenty monasteries of Mount Athos.":
-    "Η Μονή Μεγίστης Λαύρας ιδρύθηκε το 963 μ.Χ. από τον Άγιο Αθανάσιο τον Αθωνίτη και αποτελεί την αρχαιότερη και πρώτη στην ιεραρχία από τις είκοσι μονές του Αγίου Όρους.",
+  "Hand-drawn French cartographic manuscript of the southeastern Chalcidice peninsula with the Athos and Longos peninsulas, showing coastlines, rivers, and place names.":
+    "Χειρόγραφο γαλλικό χαρτογραφικό έργο της νοτιοανατολικής Χαλκιδικής με τις χερσονήσους του Άθω και του Λόγγου, που απεικονίζει ακτογραμμές, ποτάμια και τοπωνύμια.",
+  "Hand-drawn French manuscript map of the southeastern Chalcidice peninsula (with the Athos and Longos peninsulas), preserved in the Bibliothèque nationale de France, département Cartes et plans, GE D-17278.":
+    "Χειρόγραφο γαλλικό χάρτη της νοτιοανατολικής Χαλκιδικής (με τις χερσονήσους του Άθω και του Λόγγου), που φυλάσσεται στη Bibliothèque nationale de France, département Cartes et plans, GE D-17278.",
 
   "1821 onward": "Από το 1821",
   "Revolution, destruction & return": "Επανάσταση, καταστροφή και επιστροφή",
