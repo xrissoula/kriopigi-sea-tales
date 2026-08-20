@@ -24,7 +24,7 @@ const stages: Stage[] = [
   {
     eyebrow: "Tectonic foundation",
     title: "A subducting plate beneath the sea",
-    body: "This slow convergence drives the tectonic evolution of the region, creating the basins, volcanic arc, and seafloor topography that in turn influence circulation and the chemistry of the water column.",
+    body: "The Aegean sits above the Hellenic Subduction System, where the African plate dives beneath Eurasia along a curved trench south of Crete. This slow convergence drives the tectonic evolution of the region, creating the basins, volcanic arc, and seafloor topography that in turn influence circulation and the chemistry of the water column.",
     image: hellenicSubduction,
     alt: "Map of the Hellenic Subduction System in the Eastern Mediterranean showing trenches, earthquakes and mud volcanoes",
     caption: "The Hellenic Subduction System in the Eastern Mediterranean. After Mouslopoulou et al. (2025), Tectonics 44, e2025TC008943.",
