@@ -37,10 +37,10 @@ export const elGeology: Record<string, string> = {
 
   "~12,000 ya · Holocene": "~12.000 χρόνια πριν · Ολόκαινο",
   "The modern shoreline": "Η σύγχρονη ακτογραμμή",
-  "Post-glacial sea-level rise floods the lower valleys. Aleppo pine (Pinus halepensis) colonises the slopes; Posidonia oceanica meadows establish on the sandy shelf, stabilising the bay.":
-    "Η άνοδος της στάθμης της θάλασσας μετά την τελευταία παγετώδη περίοδο πλημμυρίζει τις χαμηλές κοιλάδες. Η χαλέπιος πεύκη (Pinus halepensis) εξαπλώνεται στις πλαγιές, ενώ τα λιβάδια της Ποσειδωνίας (Posidonia oceanica) εγκαθίστανται πάνω στην αμμώδη υφαλοκρηπίδα, σταθεροποιώντας τον όρμο.",
-  "Holocene world — continents in their familiar outlines after post-glacial seas rose to today's coastline.":
-    "Ο κόσμος του Ολοκαίνου — οι ήπειροι αποκτούν τις γνώριμες μορφές τους, καθώς η θάλασσα ανεβαίνει στη σημερινή της στάθμη μετά το τέλος της τελευταίας παγετώδους περιόδου.",
+  "As glaciers melted after the last Ice Age, rising seas flooded the lower valleys and brought the coastline close to its modern position. Over the following millennia, Aleppo pine (Pinus halepensis) spread across the hillsides while extensive meadows of Posidonia oceanica became established on the shallow sandy shelf, stabilizing sediments and creating one of the Mediterranean’s most important marine habitats. By the late Holocene, the bay at Kriopigi had taken on much of the form visitors recognize today.":
+    "Καθώς οι παγετώνες έλιωναν μετά την τελευταία εποχή των παγετώνων, η ανερχόμενη στάθμη της θάλασσας πλημμύριζε τις χαμηλές κοιλάδες και μετέφερε την ακτογραμμή κοντά στη σημερινή της θέση. Στα χιλιετία που ακολούθησαν, η χαλέπιος πεύκη (Pinus halepensis) εξαπλώθηκε στις πλαγιές, ενώ εκτενή λιβάδια της Ποσειδωνίας (Posidonia oceanica) εγκαταστάθηκαν στη ρηχή αμμώδη υφαλοκρηπίδα, σταθεροποιώντας τα ιζήματα και δημιουργώντας ένα από τα σημαντικότερα θαλάσσια οικοσυστήματα της Μεσογείου. Προς το τέλος του Ολοκαίνου, ο όρμος της Κρυοπηγής είχε πάρει πολλά από τα χαρακτηριστικά που αναγνωρίζουν οι επισκέπτες σήμερα.",
+  "Holocene world — rising seas reshape coastlines as the Mediterranean approaches its modern form.":
+    "Ο κόσμος του Ολοκαίνου — η άνοδος της στάθμης της θάλασσας ανασχηματίζει τις ακτογραμμές, ενώ η Μεσόγειος πλησιάζει το σημερινό της γεωγραφικό σχήμα.",
 
   Today: "Σήμερα",
   "A living equilibrium": "Μια ζωντανή ισορροπία",
