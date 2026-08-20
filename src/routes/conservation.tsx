@@ -53,10 +53,10 @@ function Conservation() {
           <div className="mt-5 rounded-2xl bg-card border border-border p-5 shadow-soft">
             <h3 className="font-serif text-xl text-foreground">{t("Why it matters here")}</h3>
             <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-              {t("Mediterranean coasts amplify runoff pulses: intense seasonal rain, dry compacted summer soils, steep slopes, thin soils, wildfire-disturbed ground, and dense tourism infrastructure all funnel water — and whatever it picks up — quickly into the sea.")}
+              {t("Mediterranean climates can produce intense runoff pulses after long dry periods. Steep slopes, compacted or disturbed soils, roads, development, wildfire, and other land-use changes can accelerate the movement of water and sediment toward the coast.")}
             </p>
             <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
-              {t("In an enclosed, oligotrophic system like parts of the Aegean, even moderate nutrient inputs can shift nearshore ecology: algal growth, turbidity, seagrass stress, altered nutrient balance, coastal erosion, bacterial contamination, and local biodiversity changes.")}
+              {t("In naturally oligotrophic coastal waters, increased nutrient and sediment inputs can alter nearshore conditions by promoting algal growth, increasing turbidity, stressing seagrass, and changing local ecological communities. Runoff can also transport microbial contaminants and other pollutants depending on the surrounding land use.")}
             </p>
           </div>
 
