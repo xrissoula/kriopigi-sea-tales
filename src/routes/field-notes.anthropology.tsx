@@ -70,6 +70,9 @@ const periods: Period[] = [
     age: "1430–1821",
     title: "Ottoman Kassandra",
     body: "After the fall of Thessaloniki in 1430, Halkidiki passed under Ottoman rule. Kassandra's villages were organised around agriculture, livestock, timber, and fishing, with taxation and land arrangements that included monastic estates and, elsewhere in Halkidiki, the semi-autonomous mining communities of Mademochoria. Settlement remained concentrated inland and on the hillsides rather than on the open shore.",
+    image: ottomanMap.url,
+    alt: "Hand-drawn French cartographic manuscript of the southeastern Chalcidice peninsula with the Athos and Longos peninsulas, showing coastlines, rivers, and place names.",
+    caption: "Hand-drawn French manuscript map of the southeastern Chalcidice peninsula (with the Athos and Longos peninsulas), preserved in the Bibliothèque nationale de France, département Cartes et plans, GE D-17278.",
   },
   {
     age: "1821 onward",
