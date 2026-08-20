@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import hellenicSubduction from "@/assets/hellenic-subduction.jpg";
 import tectonicGraben from "@/assets/aegean-tectonic-graben.jpg";
 import bathymetry from "@/assets/aegean-bathymetry.webp";
