@@ -74,8 +74,8 @@ export const elGeology: Record<string, string> = {
   // --- Closing ---
   "The bigger idea": "Η μεγάλη εικόνα",
   "Ecology begins with geology": "Η οικολογία ξεκινά από τη γεωλογία",
-  "The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all emerge from the same handful of inputs: rock, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.":
-    "Τα δάση, οι θαμνώνες, οι πηγές, οι διαφορετικοί τύποι παραλιών, η διάβρωση, η διαύγεια του νερού και τα θαλάσσια οικοσυστήματα γύρω από την Κρυοπηγή έχουν κοινή αφετηρία: το πέτρωμα, τις τεκτονικές διεργασίες, το κλίμα, την κίνηση του νερού και τον χρόνο. Αν διαβάσετε την ακτή μέσα από αυτό το πρίσμα, παύει να είναι απλώς ένα όμορφο τοπίο· γίνεται ένα ζωντανό σύστημα.",
+  "The forests, shrubs, springs, beach types, erosion patterns, water clarity, and marine habitats around Kriopigi all arise from the same fundamental processes: geology, tectonics, climate, water movement, and time. Read the coast that way and it stops being scenery — it becomes a system.":
+    "Τα δάση, οι θάμνωνες, οι πηγές, οι τύποι παραλιών, η διάβρωση, η διαύγεια του νερού και τα θαλάσσια οικοσυστήματα γύρω από την Κρυοπηγή προκύπτουν όλα από τις ίδιες θεμελιώδεις διεργασίες: γεωλογία, τεκτονική, κλίμα, κίνηση του νερού και χρόνος. Αν διαβάσετε την ακτή μέσα από αυτό το πρίσμα, παύει να είναι απλώς ένα όμορφο τοπίο· γίνεται ένα ζωντανό σύστημα.",
 
   "Schematic of Aegean Sea upper circulation":
     "Σχηματική απεικόνιση της επιφανειακής κυκλοφορίας του Αιγαίου",
