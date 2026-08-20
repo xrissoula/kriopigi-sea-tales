@@ -25,23 +25,23 @@ function Conservation() {
         <figure className="rounded-2xl overflow-hidden shadow-deep">
           <img src={posidonia} alt={t("Posidonia meadow")} loading="lazy" className="w-full aspect-[16/9] object-cover" />
           <figcaption className="p-4 bg-card text-sm text-muted-foreground border border-t-0 border-border rounded-b-2xl">
-            {t("Posidonia oceanica meadows — a UNESCO-listed ecosystem — anchor sediment, oxygenate water, and shelter juvenile fish.")}
+            {t("Posidonia oceanica meadows — a priority habitat protected under the EU Habitats Directive — stabilize sediment, provide structurally complex habitat, and support rich coastal biodiversity.")}
           </figcaption>
         </figure>
 
         <div className="mt-8 space-y-4">
-          <Tenet icon={Leaf} title="Anchor on sand, never on seagrass" body="A single boat anchor can clear a meter-wide scar that takes a century to regrow." />
-          <Tenet icon={AlertTriangle} title="Give nesting cliffs space" body="From April to July, gulls and shags raise young on the headlands. Stay below the marked path." />
-          <Tenet icon={HandHeart} title="Carry out what you carry in" body="There is no bin on the trail. Plastic on the strand will be in the meadow by morning." />
-          <Tenet icon={Shell} title="Leave the shells where they lie" body="Empty shells are not souvenirs — they are habitat and raw material. Hermit crabs move into them, small fish shelter beneath them, and over time waves grind them into the calcium-rich sand that builds the beach itself. A pocketful of shells removed each summer becomes meters of lost shoreline over a generation. Photograph them. Leave them." />
-          <Tenet icon={Sun} title="Wear the shirt, skip the slick" body="Most conventional sunscreens shed oxybenzone, octinoxate, octocrylene, and homosalate into the water within minutes of swimming. These UV filters are documented endocrine disruptors in fish, contribute to coral and seagrass stress, and accumulate in nearshore sediments — exactly the calm, shallow water where Posidonia grows and juveniles shelter. The simplest fix is to cover up: a UPF 50 long-sleeve swim shirt, a wide-brimmed hat, and shade between 11 and 4 do more than any bottle. Where you do need cream, choose non-nano zinc oxide or titanium dioxide mineral sunscreens labeled reef-safe (and read the back — the label is unregulated). Apply 20 minutes before entering the water so it binds to skin instead of washing straight into the bay." />
+          <Tenet icon={Leaf} title="Anchor on sand, never on seagrass" body="A single anchor can uproot shoots and cut persistent scars through a Posidonia meadow. Because Posidonia oceanica grows and recolonizes very slowly, heavily damaged areas can take decades or even longer to recover." />
+          <Tenet icon={AlertTriangle} title="Give nesting cliffs space" body="Coastal cliffs and headlands can provide nesting habitat for seabirds during spring and early summer. Give nesting birds plenty of space and stay on established paths." />
+          <Tenet icon={HandHeart} title="Carry out what you carry in" body="There is no bin on the trail. Litter left along the shore can easily be carried into the sea by wind, runoff, and waves." />
+          <Tenet icon={Shell} title="Leave the shells where they lie" body="Empty shells are not just souvenirs — they remain part of the coastal ecosystem. They provide shelter for hermit crabs and other small organisms, and as they break down they contribute biogenic carbonate to beach sediments. Photograph them and leave them where they are." />
+          <Tenet icon={Sun} title="Wear the shirt, use less sunscreen" body="Some ultraviolet-filter ingredients used in sunscreens have been detected in coastal waters and sediments, and laboratory and field studies indicate that certain compounds can affect marine organisms at sufficient concentrations. Environmental effects vary by chemical, formulation, concentration, and exposure, so labels such as “reef-safe” should not be treated as a scientifically regulated guarantee. The simplest way to reduce both UV exposure and the amount of sunscreen entering the sea is physical protection: wear a UPF swim shirt, use a hat and shade when practical, and apply broad-spectrum sunscreen to exposed skin according to the product directions." />
         </div>
 
         <section className="mt-10">
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Ridge to reef")}</p>
           <h2 className="font-serif text-3xl text-foreground mt-1">{t("From hillside to sea")}</h2>
           <p className="mt-3 text-foreground/80 leading-relaxed">
-            {t("Rain falling on roads, gardens, farms, hotels, and hillsides above Kriopigi eventually moves downslope through gullies and seasonal drainage channels into the Aegean. Along the way it can carry sediments, fertilisers, herbicides, pesticides, plastics, oils, and organic waste into coastal waters and nearshore ecosystems.")}
+            {t("During rainfall events, water from roads, gardens, developed land, agricultural areas, and hillsides above Kriopigi can move downslope through gullies and seasonal drainage channels toward the Aegean. Along the way it can carry sediments, fertilisers, herbicides, pesticides, plastics, oils, and organic waste into coastal waters and nearshore ecosystems.")}
           </p>
           <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
             <img src={gullyRunoff} alt={t("An overgrown hillside gully above Kriopigi at dusk, with a tall cypress on the ridge and the Aegean visible beyond — a seasonal drainage line connecting the village to the sea.")} loading="lazy" className="w-full aspect-[4/3] object-cover" />
@@ -53,10 +53,10 @@ function Conservation() {
           <div className="mt-5 rounded-2xl bg-card border border-border p-5 shadow-soft">
             <h3 className="font-serif text-xl text-foreground">{t("Why it matters here")}</h3>
             <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-              {t("Mediterranean coasts amplify runoff pulses: intense seasonal rain, dry compacted summer soils, steep slopes, thin soils, wildfire-disturbed ground, and dense tourism infrastructure all funnel water — and whatever it picks up — quickly into the sea.")}
+              {t("Mediterranean climates can produce intense runoff pulses after long dry periods. Steep slopes, compacted or disturbed soils, roads, development, wildfire, and other land-use changes can accelerate the movement of water and sediment toward the coast.")}
             </p>
             <p className="mt-3 text-sm text-foreground/80 leading-relaxed">
-              {t("In an enclosed, oligotrophic system like parts of the Aegean, even moderate nutrient inputs can shift nearshore ecology: algal growth, turbidity, seagrass stress, altered nutrient balance, coastal erosion, bacterial contamination, and local biodiversity changes.")}
+              {t("In naturally oligotrophic coastal waters, increased nutrient and sediment inputs can alter nearshore conditions by promoting algal growth, increasing turbidity, stressing seagrass, and changing local ecological communities. Runoff can also transport microbial contaminants and other pollutants depending on the surrounding land use.")}
             </p>
           </div>
 
@@ -69,7 +69,7 @@ function Conservation() {
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Beach life cycle")}</p>
           <h2 className="font-serif text-3xl text-foreground mt-1">{t("How a Mediterranean beach is built")}</h2>
           <p className="mt-3 text-foreground/80 leading-relaxed">
-            {t("The sand at Kriopigi is not a backdrop — it is the visible end of a long ecological conveyor belt that begins offshore in the Posidonia oceanica meadow. Understanding the cycle is the difference between a beach we use and a beach we keep.")}
+            {t("The sand at Kriopigi is part of a connected coastal sediment system shaped by erosion on land, waves and currents, biological carbonate production, and the Posidonia oceanica meadow offshore. Understanding those connections is the difference between a beach we use and a beach we keep.")}
           </p>
 
           <figure className="mt-5 rounded-2xl overflow-hidden shadow-soft border border-border bg-card">
@@ -80,29 +80,29 @@ function Conservation() {
           </figure>
 
           <div className="mt-6 space-y-4">
-            <Stage letter="a" title="The dry beach — egagropiles and banquettes" body={"The fibrous brown mats piled at the high-tide line are not rubbish. They are banquettes: dead Posidonia leaves woven by waves into dense berms that absorb storm energy and shield the sand behind them from erosion. The small felted balls scattered around them — egagropiles — are rolled fragments of the same leaf fibre. Bulldozing banquettes off the beach for tourist comfort is one of the single largest causes of shoreline retreat on Mediterranean coasts."} />
-            <Stage letter="b" title="Sea / beach zone — dead mattes and ripple marks" body={"Just offshore, where the sand meets the first underwater slope, you can often see the brown terraced edge of a dead matte — the compacted root-and-rhizome scaffolding left behind by past meadows. These mattes can be thousands of years old and continue to stabilise sediment long after the living plant is gone. Ripple marks in the shallow sand show how much water energy this zone is constantly absorbing."} />
-            <Stage letter="c" title="The living meadow — where the beach is manufactured" body={"The Posidonia meadow itself is the engine. Each plant sheds old leaves seasonally; those leaves are exported shoreward by waves (becoming banquettes) or seaward into deeper water. The meadow also traps suspended sediment, slows currents, and produces the calcium-carbonate sand grains — from broken shells, foraminifera, and calcareous algae living on the leaves — that eventually wash up as \"white\" Aegean sand."} />
-            <Stage letter="d" title="The abyss — long-term carbon storage" body={"A significant fraction of leaf litter never returns to shore. It sinks down the continental slope into deep water, where low oxygen and cold temperatures lock its carbon away for centuries. Mediterranean Posidonia meadows are among the most carbon-dense ecosystems on Earth — a single hectare can store more CO₂ than a hectare of Amazon rainforest."} />
+            <Stage letter="a" title="The dry beach — egagropiles and banquettes" body={"The fibrous brown mats piled at the high-tide line are not rubbish. They are banquettes: dead Posidonia leaves woven by waves into dense berms that can shelter the sand behind them from waves and storms. The small felted balls scattered around them — egagropiles — are rolled fragments of the same leaf fibre. Mechanical removal of banquettes can remove trapped sediment, reduce natural protection from waves and storms, and accelerate erosion on vulnerable Mediterranean beaches."} />
+            <Stage letter="b" title="Sea / beach zone — dead mattes and ripple marks" body={"Where former Posidonia meadow has died back, compacted layers of old rhizomes, roots, and trapped sediment can remain as dead matte. These structures may persist for very long periods and can continue to influence seabed stability even after the living shoots are gone. Ripple marks in the shallow sand show how much water energy this zone is constantly absorbing."} />
+            <Stage letter="c" title="The living meadow — part of the sediment cycle" body={"The Posidonia meadow is an important part of the coastal sediment system. The plants shed old leaves seasonally; some are transported shoreward and contribute to banquettes, while others move offshore. Within the meadow, leaves and rhizomes slow water movement and trap suspended particles. Shells, foraminifera, calcareous algae, and other organisms associated with the meadow also produce biogenic carbonate that can contribute to nearby beach sediments."} />
+            <Stage letter="d" title="Long-term carbon storage" body={"Much of the long-term carbon associated with Posidonia oceanica is stored beneath the meadow itself. Roots, rhizomes, organic matter, and trapped sediments accumulate into thick matte deposits that can preserve carbon for centuries to millennia. Some detached plant material is also transported away from the meadow and may ultimately be buried in deeper marine sediments. Posidonia meadows are therefore important Mediterranean blue-carbon ecosystems."} />
           </div>
 
           <div className="mt-6 rounded-2xl bg-card border border-border p-5 shadow-soft">
             <h3 className="font-serif text-xl text-foreground">{t("What this means at Kriopigi")}</h3>
             <p className="mt-2 text-sm text-foreground/80 leading-relaxed">
-              {t("The beach you walk on each summer is the upper visible slice of a system that runs from the banquette at your feet to the abyssal plain offshore. Anchor scars in the meadow, raked-away banquettes, pocketed shells, and runoff from the slope above all interrupt the same cycle at different points. Protecting any one zone protects the rest.")}
+              {t("The beach you walk on each summer is part of a connected system extending from the slopes and shoreline to the shallow seabed and Posidonia meadow offshore. Anchor damage, removal of beach-cast vegetation, litter and shell collecting, and polluted or sediment-rich runoff can each affect different parts of that connected coastal system. Protecting any one zone protects the rest.")}
             </p>
           </div>
 
           <p className="mt-5 text-xs text-muted-foreground italic leading-relaxed">
             {t("Source:")}{" "}Petrounias, P., Giannakopoulou, P. P., Rogkala, A., Antoniou, N., Koutsovitis, P., Zygouri, E., Krassakis, P., Islam, I., &amp; Koukouzas, N. (2023). <em>Posidonia oceanica Balls (Egagropili) from Kefalonia Island Evaluated as Alternative Biomass Source for Green Energy.</em> Journal of Marine Science and Engineering, 11(4), 749.{" "}
-            <a href="https://doi.org/10.3390/jmse11040749" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">https://doi.org/10.3390/jmse11040749</a>. {t("Carbon-storage comparison:")}{" "}Fourqurean et al. (2012), <em>Nature Geoscience</em>.
+            <a href="https://doi.org/10.3390/jmse11040749" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">https://doi.org/10.3390/jmse11040749</a>. {t("Blue-carbon context:")}{" "}Fourqurean et al. (2012), <em>Nature Geoscience</em>.
           </p>
         </section>
 
         <div className="mt-10 rounded-2xl bg-gradient-sea text-primary-foreground p-6 shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("Citizen science")}</p>
           <h3 className="font-serif text-2xl mt-1">{t("Help us count the meadow")}</h3>
-          <p className="mt-2 text-sm opacity-90">{t("Submit your underwater photos via the observation form — researchers at AUTh use them to map yearly seagrass extent.")}</p>
+          <p className="mt-2 text-sm opacity-90">{t("Submit underwater photographs through the observation form to help build a local visual record of the meadow’s extent and condition over time.")}</p>
           <p className="mt-3 text-sm opacity-90">
             {t("You can also log sightings on")}{" "}
             <a
@@ -113,7 +113,7 @@ function Conservation() {
             >
               iNaturalist
             </a>
-            {" "}{t("— a global citizen-science platform where your geotagged photos are identified by experts and pooled into open biodiversity data used by researchers worldwide.")}
+            {" "}{t("— a global citizen-science platform where observations can be identified and reviewed by the community and, when they meet data-quality criteria, contribute to biodiversity datasets used in research and conservation.")}
           </p>
         </div>
       </div>

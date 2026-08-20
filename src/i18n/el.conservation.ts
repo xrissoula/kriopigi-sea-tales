@@ -5,6 +5,6 @@ export const elConservation: Record<string, string> = {
 
   // Bibliography labels
   "Source:": "Πηγή:",
-  "Carbon-storage comparison:": "Σύγκριση αποθήκευσης άνθρακα:",
+  "Blue-carbon context:": "Πλαίσιο «μπλε άνθρακα»:",
 };
 
