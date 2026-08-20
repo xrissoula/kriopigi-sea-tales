@@ -91,6 +91,12 @@ function Biogeochemistry() {
             </article>
           ))}
         </div>
+
+        <div className="mt-10 pt-6 border-t border-border">
+          <Link to="/field-notes/anthropology" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
+            {t("Continue to Anthropological History")} <ArrowRight size={14} />
+          </Link>
+        </div>
       </div>
     </SiteLayout>
   );
