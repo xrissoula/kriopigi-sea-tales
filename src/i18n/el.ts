@@ -9,6 +9,7 @@ import { elBiogeochemistry } from "./el.biogeochemistry";
 import { elAnthropology } from "./el.anthropology";
 import { elConservation } from "./el.conservation";
 import { elSnorkel } from "./el.snorkel";
+import { elSea } from "./el.sea";
 
 export const el: Record<string, string> = {
   ...elPages,
@@ -18,6 +19,7 @@ export const el: Record<string, string> = {
   ...elAnthropology,
   ...elConservation,
   ...elSnorkel,
+  ...elSea,
 
 
 
