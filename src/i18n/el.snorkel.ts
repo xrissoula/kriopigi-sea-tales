@@ -3,9 +3,9 @@ export const elSnorkel: Record<string, string> = {
   // --- Hero / header ---
   "Snorkel Journey": "ΤΟ ΤΑΞΙΔΙ ΤΗΣ ΚΑΤΑΔΥΣΗΣ",
   "What will you discover as you swim farther from shore?":
-    "Τι θα ανακαλύψετε όσο απομακρύνεστε από την ακτή;",
+    "Τι θα ανακαλύψετε καθώς απομακρύνεστε από την ακτή;",
   "Kriopigi has no famous dive sites. It has something better: you can walk in off the sand and watch the ecosystem change beneath you. Read this as one continuous swim, from dry sand to open blue.":
-    "Η Κρυοπηγή δεν έχει διάσημα σημεία κατάδυσης. Έχει κάτι καλύτερο: μπαίνετε από την άμμο και βλέπετε το οικοσύστημα να αλλάζει κάτω από εσάς. Διαβάστε τη σελίδα ως μια συνεχή κολύμβηση, από την ξερή άμμο έως το ανοιχτό μπλε.",
+    "Η Κρυοπηγή δεν έχει καθιερωμένα «σημεία κατάδυσης». Κι αυτό ίσως είναι το καλύτερο: μπαίνετε στο νερό από την παραλία και παρακολουθείτε το οικοσύστημα να αλλάζει καθώς απομακρύνεστε από την ακτή. Ακολουθήστε τη διαδρομή από την ξηρή άμμο μέχρι το ανοιχτό γαλάζιο, σαν να κολυμπάτε προς τα έξω.",
   "Posidonia meadow in shallow water off Kriopigi":
     "Λιβάδι Ποσειδωνίας σε ρηχά νερά ανοιχτά της Κρυοπηγής",
   "Look for": "Αναζητήστε",
