@@ -50,7 +50,37 @@ function About() {
           <p>
             {t("The Kriopigi Shore Guide is an evolving natural history and cultural landscape project combining ecology, geology, oral history, photography, and geospatial storytelling. My hope is that it becomes both a long-term archive and an invitation to observe the coastline with greater depth, curiosity, and care.")}
           </p>
-        </div>
+        <section className="mt-14 pt-10 border-t border-border/40">
+          <h2 className="text-sm font-semibold tracking-wide uppercase text-muted-foreground mb-6">
+            {t("Project facts")}
+          </h2>
+          <dl className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div>
+              <dt className="text-xs text-muted-foreground">{t("Project start")}</dt>
+              <dd className="text-lg font-medium text-foreground">2025</dd>
+            </div>
+            <div>
+              <dt className="text-xs text-muted-foreground">{t("First published")}</dt>
+              <dd className="text-lg font-medium text-foreground">2026</dd>
+            </div>
+            <div className="col-span-2 sm:col-span-1">
+              <dt className="text-xs text-muted-foreground">{t("Species recorded")}</dt>
+              <dd className="text-lg font-medium text-foreground">{t("54 (and counting)")}</dd>
+            </div>
+            <div className="col-span-2 sm:col-span-1">
+              <dt className="text-xs text-muted-foreground">{t("iNaturalist observations")}</dt>
+              <dd className="text-lg font-medium text-foreground">{t("48 confirmed")}</dd>
+            </div>
+            <div>
+              <dt className="text-xs text-muted-foreground">{t("Last updated")}</dt>
+              <dd className="text-lg font-medium text-foreground">{t("August 2026")}</dd>
+            </div>
+            <div>
+              <dt className="text-xs text-muted-foreground">{t("Status")}</dt>
+              <dd className="text-lg font-medium text-foreground">{t("Ongoing")}</dd>
+            </div>
+          </dl>
+        </section>
       </div>
     </SiteLayout>
   );
