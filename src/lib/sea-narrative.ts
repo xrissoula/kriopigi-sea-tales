@@ -60,27 +60,33 @@ export function snorkelOutlook(waveHeight: number | null, windKmh: number | null
   };
 }
 
+/** Short, translatable description of wind strength. */
+export function windPhrase(windKmh: number | null): string {
+  const kn = knots(windKmh);
+  if (kn == null) return "wind unavailable";
+  if (kn <= 6) return "light air";
+  if (kn <= 14) return "a steady breeze";
+  if (kn <= 21) return "a fresh wind";
+  return "a strong wind";
+}
+
 export function naturalistNote(d: SeaConditions, season: Season): string[] {
   const state = seaState(d.current.waveHeight);
-  const kn = knots(d.current.windSpeed);
-  const dir = compass(d.current.windDirection);
   const out: string[] = [];
-
-  const windPhrase =
-    kn == null ? "" : kn <= 6 ? `light ${dir} air` : kn <= 14 ? `a steady ${dir} breeze` : `a fresh ${dir} wind`;
 
   if (state === "glassy" || state === "calm")
     out.push(
-      `Low swell and ${windPhrase || "little wind"} make today good conditions for observing fish, and the edge of the Posidonia meadow is often clearly visible from the surface.`,
+      "Low swell and light wind make today good conditions for observing fish, and the edge of the Posidonia meadow is often clearly visible from the surface.",
     );
   else if (state === "moderate")
     out.push(
-      `A moderate sea with ${windPhrase || "some wind"} means surge around the rocks and suspended sand that may reduce visibility, especially in the first few metres.`,
+      "A moderate sea means surge around the rocks and suspended sand that may reduce visibility, especially in the first few metres.",
     );
   else
     out.push(
-      `A rough sea with ${windPhrase || "strong wind"} makes the shoreline uncomfortable for beginners; watch the water from land rather than entering it.`,
+      "A rough sea makes the shoreline uncomfortable for beginners; today is better spent watching the water from land than entering it.",
     );
+
 
   if (season === "spring")
     out.push(
