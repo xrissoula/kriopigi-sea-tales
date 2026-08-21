@@ -308,7 +308,7 @@ function Snorkeling() {
                       aria-hidden="true"
                       className="mt-[3px] w-3.5 h-3.5 rounded-[3px] border border-accent/60 flex-shrink-0"
                     />
-                    <span>{t(h)}</span>
+                    <SpeciesPhrase phrase={h} />
                   </li>
                 ))}
               </ul>
@@ -334,7 +334,13 @@ function Snorkeling() {
           {lookClosely.map((s) => (
             <li key={s.sci} className="rounded-2xl bg-card border border-border shadow-soft p-5">
               <h3 className="font-serif text-xl text-foreground">{t(s.name)}</h3>
-              <p className="text-xs italic text-muted-foreground">{s.sci}</p>
+              <Link
+                to="/flora-fauna"
+                hash={speciesSlug(s.sci)}
+                className="text-xs italic text-muted-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+              >
+                {s.sci}
+              </Link>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(s.what)}</p>
               <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-accent">{t("Look closely")}</p>
               <p className="mt-1 text-sm text-foreground/90 leading-relaxed">{t(s.look)}</p>
@@ -358,7 +364,7 @@ function Snorkeling() {
                 {tier.items.map((it) => (
                   <li key={it} className="flex gap-2.5 text-sm text-foreground/90">
                     <span aria-hidden="true" className="mt-[5px] w-2.5 h-2.5 rounded-full border border-accent/60 flex-shrink-0" />
-                    <span>{t(it)}</span>
+                    <SpeciesPhrase phrase={it} />
                   </li>
                 ))}
               </ul>
