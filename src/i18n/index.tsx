@@ -21,10 +21,26 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("en");
 
   // Read the stored preference after hydration to avoid SSR mismatches.
+  // If no preference is stored, default to Greek for Greek timezone or browser language.
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY);
-      if (stored === "el" || stored === "en") setLangState(stored);
+      if (stored === "el" || stored === "en") {
+        setLangState(stored);
+        return;
+      }
+
+      const isGreekTimezone =
+        Intl.DateTimeFormat().resolvedOptions().timeZone === "Europe/Athens";
+      const browserLangs = navigator.languages?.length
+        ? navigator.languages
+        : [navigator.language];
+      const isGreekBrowserLang = browserLangs.some((l) =>
+        l.toLowerCase().startsWith("el")
+      );
+      if (isGreekTimezone || isGreekBrowserLang) {
+        setLangState("el");
+      }
     } catch {
       /* ignore */
     }
