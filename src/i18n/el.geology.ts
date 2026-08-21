@@ -45,7 +45,7 @@ export const elGeology: Record<string, string> = {
   Today: "Σήμερα",
   "A living equilibrium": "Μια ζωντανή ισορροπία",
   "The cold spring still surfaces beneath the sand, lowering nearshore temperatures by 2–3°C in summer — a microclimate that shelters juvenile fish and keeps the seagrass meadow productive.":
-    "Η κρύα πηγή εξακολουθεί να αναβλύζει κάτω από την άμμο και έχει παρατηρηθεί ότι μειώνει τη θερμοκρασία των ρηχών νερών κατά 2–3°C το καλοκαίρι. Δημιουργεί έτσι ένα μικροκλίμα που ευνοεί τα νεαρά ψάρια και διατηρεί παραγωγικό το λιβάδι της Ποσειδωνίας.",
+    "Η ιστορική κρύα πηγή εξακολουθεί να αποτελεί χαρακτηριστικό της Κρυοπηγής. Όπου τα υπόγεια γλυκά νερά εκφορτίζονται στη θάλασσα, μπορούν να δημιουργήσουν τοπικές διαφορές στη θερμοκρασία και την αλατότητα, επηρεάζοντας τις συνθήκες των ρηχών παράκτιων οικοσυστημάτων.",
 
   // --- Reading the maps ---
   "Reading the maps": "Διαβάζοντας τους χάρτες",
