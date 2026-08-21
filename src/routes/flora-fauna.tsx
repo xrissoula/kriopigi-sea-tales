@@ -22,6 +22,8 @@ export const Route = createFileRoute("/flora-fauna")({
 type Species = { sci: string; common: string; note: string; status: "confirmed" | "expected"; expectedContext?: "suitable habitat" | "offshore" | "deeper habitat"; img?: string; wiki?: string };
 type Zone = { id: string; eyebrow: string; title: string; depth: string; lead: string; species: Species[] };
 
+const W = "https://en.wikipedia.org/wiki/";
+
 const zones: Zone[] = [
   {
     id: "dune",
@@ -30,10 +32,24 @@ const zones: Zone[] = [
     depth: "Above the high tide line",
     lead: "The terrestrial fringe — sand-binding plants and the Aleppo pine canopy that shades the shore.",
     species: [
-      { sci: "Pinus halepensis", common: "Aleppo pine", note: "Dominant canopy tree; its resin perfumes the shoreline on hot summer afternoons.", status: "confirmed", wiki: "https://en.wikipedia.org/wiki/Pinus_halepensis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg/330px-%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg" },
-      { sci: "Eryngium maritimum", common: "Sea holly", note: "Spiny blue-grey leaves anchor the upper dunes and bloom with metallic-blue flowers in summer.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Eryngium_maritimum", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Eryngium_maritimum_-_geograph.org.uk_-_496275.jpg/330px-Eryngium_maritimum_-_geograph.org.uk_-_496275.jpg" },
-      { sci: "Cakile maritima", common: "Sea rocket", note: "Fast-growing pioneer of the strand line; pale lilac flowers appear above the sand in spring and summer.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Cakile_maritima", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cakile_maritima_Rad%C3%A8s_beach.jpg/330px-Cakile_maritima_Rad%C3%A8s_beach.jpg" },
-      { sci: "Larus michahellis", common: "Yellow-legged gull", note: "Large coastal gull that patrols beaches and cliffs, calling loudly throughout the day.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Yellow-legged_gull", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Yellow-legged_Gull_2023-10-10.jpg/330px-Yellow-legged_Gull_2023-10-10.jpg" },
+      { sci: "Pinus halepensis", common: "Aleppo pine", note: "Dominant canopy tree; its resin perfumes the shoreline on hot summer afternoons.", status: "expected", wiki: W + "Pinus_halepensis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg/330px-%CE%A7%CE%B1%CE%BB%CE%AD%CF%80%CE%B9%CE%BF%CF%82_%CF%80%CE%B5%CF%8D%CE%BA%CE%B7_%CE%A3%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF_1963.jpg" },
+      { sci: "Eryngium maritimum", common: "Sea holly", note: "Spiny blue-grey leaves anchor the upper dunes and bloom with metallic-blue flowers in summer.", status: "expected", wiki: W + "Eryngium_maritimum", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Eryngium_maritimum_-_geograph.org.uk_-_496275.jpg/330px-Eryngium_maritimum_-_geograph.org.uk_-_496275.jpg" },
+      { sci: "Cakile maritima", common: "Sea rocket", note: "Fast-growing pioneer of the strand line; pale lilac flowers appear above the sand in spring and summer.", status: "expected", wiki: W + "Cakile_maritima", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cakile_maritima_Rad%C3%A8s_beach.jpg/330px-Cakile_maritima_Rad%C3%A8s_beach.jpg" },
+      { sci: "Larus michahellis", common: "Yellow-legged gull", note: "Large coastal gull that patrols beaches and cliffs, calling loudly throughout the day.", status: "expected", wiki: W + "Yellow-legged_gull", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Yellow-legged_Gull_2023-10-10.jpg/330px-Yellow-legged_Gull_2023-10-10.jpg" },
+      { sci: "Testudo hermanni boettgeri", common: "Boettger's tortoise", note: "Slow-moving tortoise of dry scrub and open woodland, often active during the cooler parts of the day.", status: "confirmed", wiki: W + "Hermann%27s_tortoise" },
+      { sci: "Mediodactylus kotschyi", common: "Kotschy's gecko", note: "Small, well-camouflaged gecko that shelters in rocks, crevices and stonework during the day.", status: "confirmed", wiki: W + "Mediodactylus_kotschyi" },
+      { sci: "Hemidactylus turcicus", common: "Mediterranean house gecko", note: "Nocturnal gecko often seen hunting insects on walls and around lights after sunset.", status: "confirmed", wiki: W + "Mediterranean_house_gecko" },
+      { sci: "Phylloscopus trochilus", common: "Willow warbler", note: "Small migratory warbler that moves restlessly through foliage while searching for insects.", status: "confirmed", wiki: W + "Willow_warbler" },
+      { sci: "Curruca curruca", common: "Lesser whitethroat", note: "Secretive migratory warbler of shrubs and woodland edges, usually noticed first by its call.", status: "confirmed", wiki: W + "Lesser_whitethroat" },
+      { sci: "Corvus cornix", common: "Hooded crow", note: "Highly adaptable grey-and-black crow seen foraging from pine forest to shoreline.", status: "confirmed", wiki: W + "Hooded_crow" },
+      { sci: "Streptopelia decaocto", common: "Eurasian collared dove", note: "Familiar pale dove of villages and woodland edges, recognized by its narrow black neck collar.", status: "confirmed", wiki: W + "Eurasian_collared_dove" },
+      { sci: "Apis mellifera", common: "Western honey bee", note: "Common flower visitor carrying pollen between wildflowers throughout the warmer months.", status: "confirmed", wiki: W + "Western_honey_bee" },
+      { sci: "Episyrphus balteatus", common: "Marmalade hover fly", note: "Small orange-banded hover fly that hovers over flowers while feeding on nectar and pollen.", status: "confirmed", wiki: W + "Episyrphus_balteatus" },
+      { sci: "Malva sylvestris", common: "Common mallow", note: "Purple-flowered Mediterranean herb of sunny disturbed ground, pathsides and open scrub.", status: "confirmed", wiki: W + "Malva_sylvestris" },
+      { sci: "Convolvulus arvensis", common: "Field bindweed", note: "Low twining plant with pale funnel-shaped flowers, common in open and disturbed ground.", status: "confirmed", wiki: W + "Convolvulus_arvensis" },
+      { sci: "Cichorium pumilum", common: "Wild endive", note: "Low Mediterranean chicory with blue flowers that open across sunny dry ground.", status: "confirmed", wiki: W + "Cichorium" },
+      { sci: "Decticus albifrons", common: "White-faced bush-cricket", note: "Large Mediterranean bush-cricket of dry grass and scrub, often heard before it is seen.", status: "confirmed", wiki: W + "Decticus" },
+      { sci: "Eupholidoptera smyrnensis", common: "Smyrnean bush-cricket", note: "Robust bush-cricket of warm Mediterranean scrub, active among low vegetation in summer.", status: "confirmed", wiki: W + "Eupholidoptera" },
     ],
   },
   {
@@ -43,10 +59,10 @@ const zones: Zone[] = [
     depth: "0 – 0.5 m",
     lead: "The wet sand and breaking surf — turnover habitat for crabs, isopods, and shorebirds.",
     species: [
-      { sci: "Ocypode cursor", common: "Tufted ghost crab", note: "Fast, pale crab that vanishes into deep burrows above the surf line.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Ocypode_cursor", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Ocypode_cursor_1.jpg/330px-Ocypode_cursor_1.jpg" },
-      { sci: "Tylos europaeus", common: "Beach isopod", note: "Nocturnal scavenger that recycles stranded seaweed along the upper beach.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Tylos_(crustacean)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tylos_punctatus_dorsal.jpg/330px-Tylos_punctatus_dorsal.jpg" },
-      { sci: "Charadrius alexandrinus", common: "Kentish plover", note: "Tiny shorebird that nests directly on open sand; give nesting areas plenty of space in spring.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Kentish_plover", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kentish_Plover_Charadrius_alexandrinus%2C_India.jpg/330px-Kentish_Plover_Charadrius_alexandrinus%2C_India.jpg" },
-      { sci: "Donax trunculus", common: "Wedge clam", note: "Lives buried beneath wet sand, filtering seawater as waves wash overhead.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Donax_trunculus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Donax_trunculus_MHNT.jpg/330px-Donax_trunculus_MHNT.jpg" },
+      { sci: "Ocypode cursor", common: "Tufted ghost crab", note: "Fast, pale crab that vanishes into deep burrows above the surf line.", status: "expected", wiki: W + "Ocypode_cursor", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Ocypode_cursor_1.jpg/330px-Ocypode_cursor_1.jpg" },
+      { sci: "Tylos europaeus", common: "Beach isopod", note: "Nocturnal scavenger that recycles stranded seaweed along the upper beach.", status: "expected", wiki: W + "Tylos_(crustacean)", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tylos_punctatus_dorsal.jpg/330px-Tylos_punctatus_dorsal.jpg" },
+      { sci: "Charadrius alexandrinus", common: "Kentish plover", note: "Tiny shorebird that nests directly on open sand or fine shingle; give nesting areas plenty of space in spring.", status: "expected", wiki: W + "Kentish_plover", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kentish_Plover_Charadrius_alexandrinus%2C_India.jpg/330px-Kentish_Plover_Charadrius_alexandrinus%2C_India.jpg" },
+      { sci: "Donax trunculus", common: "Wedge clam", note: "Lives buried beneath wet sand, filtering seawater as waves wash overhead.", status: "expected", wiki: W + "Donax_trunculus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Donax_trunculus_MHNT.jpg/330px-Donax_trunculus_MHNT.jpg" },
     ],
   },
   {
@@ -54,13 +70,20 @@ const zones: Zone[] = [
     eyebrow: "Zone 3",
     title: "Shallow Water",
     depth: "0.5 – 5 m",
-    lead: "Sun-warmed sand and rocky patches — nursery ground for juveniles and the inner edge of the seagrass meadow.",
+    lead: "Sun-warmed sand, scattered rocks and the inner edge of the seagrass meadow support many of the fish most easily seen by snorkelers.",
     species: [
-      { sci: "Atherina hepsetus", common: "Mediterranean sand smelt", note: "Silvery schools shimmer just below the surface over calm, shallow water.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Atherina_hepsetus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Atherina_hepsetus_449181144.jpg/330px-Atherina_hepsetus_449181144.jpg" },
-      { sci: "Diplodus vulgaris", common: "Common two-banded seabream", note: "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.", status: "confirmed", wiki: "https://en.wikipedia.org/wiki/Diplodus_vulgaris", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg/330px-Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg" },
-      { sci: "Sarpa salpa", common: "Salema", note: "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.", status: "confirmed", wiki: "https://en.wikipedia.org/wiki/Salema_porgy", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sarpa_salpa_.jpg/330px-Sarpa_salpa_.jpg" },
-      { sci: "Hippocampus hippocampus", common: "Short-snouted seahorse", note: "Master of camouflage that clings to algae and seagrass with its curled tail.", status: "expected", expectedContext: "suitable habitat", wiki: "https://en.wikipedia.org/wiki/Hippocampus_hippocampus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/330px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg" },
-      { sci: "Holothuria tubulosa", common: "Cotton-spinner sea cucumber", note: "Slow-moving recycler that cleans sandy bottoms by feeding on organic sediments.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Holothuria_tubulosa", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Holothuria_tubulosa_Banyuls.jpg/330px-Holothuria_tubulosa_Banyuls.jpg" },
+      { sci: "Atherina hepsetus", common: "Mediterranean sand smelt", note: "Silvery schools shimmer just below the surface over calm, shallow water.", status: "expected", wiki: W + "Atherina_hepsetus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Atherina_hepsetus_449181144.jpg/330px-Atherina_hepsetus_449181144.jpg" },
+      { sci: "Diplodus vulgaris", common: "Common two-banded seabream", note: "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.", status: "confirmed", wiki: W + "Diplodus_vulgaris", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg/330px-Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg" },
+      { sci: "Sarpa salpa", common: "Salema", note: "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.", status: "confirmed", wiki: W + "Salema_porgy", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sarpa_salpa_.jpg/330px-Sarpa_salpa_.jpg" },
+      { sci: "Dicentrarchus labrax", common: "European seabass", note: "Streamlined predator that cruises shallow coastal water, often near rocks and sandy edges.", status: "confirmed", wiki: W + "European_bass" },
+      { sci: "Sparus aurata", common: "Gilthead seabream", note: "Recognizable by the golden band between its eyes; feeds over sand, rock and seagrass.", status: "confirmed", wiki: W + "Gilt-head_bream" },
+      { sci: "Diplodus sargus", common: "White seabream", note: "Robust silver seabream with dark vertical markings, commonly feeding around rocky shallows.", status: "confirmed", wiki: W + "White_seabream" },
+      { sci: "Oblada melanura", common: "Saddled seabream", note: "Silver schooling fish easily recognized by the black saddle-shaped patch near its tail.", status: "confirmed", wiki: W + "Oblada_melanura" },
+      { sci: "Lithognathus mormyrus", common: "Striped seabream", note: "Slender seabream with narrow vertical stripes, usually feeding over sandy and mixed bottoms.", status: "confirmed", wiki: W + "Lithognathus_mormyrus" },
+      { sci: "Chromis chromis", common: "Mediterranean damselfish", note: "Small dark fish often hovering in loose groups above rocks and reef habitat.", status: "confirmed", wiki: W + "Chromis_chromis" },
+      { sci: "Serranus scriba", common: "Painted comber", note: "Colourful ambush predator that waits close to rocks before darting after small prey.", status: "confirmed", wiki: W + "Painted_comber" },
+      { sci: "Hippocampus hippocampus", common: "Short-snouted seahorse", note: "Master of camouflage that clings to algae and seagrass with its curled tail.", status: "expected", expectedContext: "suitable habitat", wiki: W + "Hippocampus_hippocampus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/330px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg" },
+      { sci: "Holothuria tubulosa", common: "Cotton-spinner sea cucumber", note: "Slow-moving recycler that feeds on organic material within sandy and mixed seabeds.", status: "expected", wiki: W + "Holothuria_tubulosa", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Holothuria_tubulosa_Banyuls.jpg/330px-Holothuria_tubulosa_Banyuls.jpg" },
     ],
   },
   {
@@ -68,13 +91,17 @@ const zones: Zone[] = [
     eyebrow: "Zone 4",
     title: "Posidonia Meadow",
     depth: "5 – 15 m",
-    lead: "The Mediterranean's lungs — endemic seagrass beds that oxygenate the bay and shelter its biodiversity.",
+    lead: "An endemic Mediterranean seagrass meadow forming one of the coast's richest habitats, with shelter, feeding grounds and complex structure for marine life.",
     species: [
-      { sci: "Posidonia oceanica", common: "Neptune grass", note: "A true flowering plant that forms underwater meadows supporting countless Mediterranean species.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Posidonia_oceanica", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Posidonia_oceanica_%28L%29.jpg/330px-Posidonia_oceanica_%28L%29.jpg" },
-      { sci: "Pinna nobilis", common: "Noble pen shell", note: "The Mediterranean’s largest bivalve; now critically endangered and fully protected.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Pinna_nobilis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Pinnidae_-_Pinna_nobilis.jpg/330px-Pinnidae_-_Pinna_nobilis.jpg" },
-      { sci: "Octopus vulgaris", common: "Common octopus", note: "Empty shells piled outside a rocky crevice often reveal an occupied den.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Common_octopus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/330px-Octopus2.jpg" },
-      { sci: "Symphodus tinca", common: "Peacock wrasse", note: "Males develop brilliant breeding colours in spring while defending territories.", status: "confirmed", wiki: "https://en.wikipedia.org/wiki/Symphodus_tinca", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Symphodus_tinca_m%C3%A2le_avec_des_femelles_%28Linnaeus%2C_1758%29.jpg/330px-Symphodus_tinca_m%C3%A2le_avec_des_femelles_%28Linnaeus%2C_1758%29.jpg" },
-      { sci: "Sepia officinalis", common: "Common cuttlefish", note: "Master of camouflage that changes colour in an instant and lays grape-like egg clusters on seagrass.", status: "expected", wiki: "https://en.wikipedia.org/wiki/Common_cuttlefish", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sepia_com%C3%BAn_%28Sepia_officinalis%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_62.jpg/330px-Sepia_com%C3%BAn_%28Sepia_officinalis%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_62.jpg" },
+      { sci: "Posidonia oceanica", common: "Neptune grass", note: "A true flowering plant that forms long-lived underwater meadows supporting diverse Mediterranean marine life.", status: "expected", wiki: W + "Posidonia_oceanica", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Posidonia_oceanica_%28L%29.jpg/330px-Posidonia_oceanica_%28L%29.jpg" },
+      { sci: "Pinna nobilis", common: "Noble pen shell", note: "The Mediterranean’s largest bivalve; now critically endangered and fully protected.", status: "expected", wiki: W + "Pinna_nobilis", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Pinnidae_-_Pinna_nobilis.jpg/330px-Pinnidae_-_Pinna_nobilis.jpg" },
+      { sci: "Octopus vulgaris", common: "Common octopus", note: "Empty shells piled outside a rocky crevice often reveal an occupied den.", status: "expected", wiki: W + "Common_octopus", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/330px-Octopus2.jpg" },
+      { sci: "Symphodus tinca", common: "Peacock wrasse", note: "Large colourful wrasse; males become especially vivid during the breeding season.", status: "confirmed", wiki: W + "Symphodus_tinca", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Symphodus_tinca_m%C3%A2le_avec_des_femelles_%28Linnaeus%2C_1758%29.jpg/330px-Symphodus_tinca_m%C3%A2le_avec_des_femelles_%28Linnaeus%2C_1758%29.jpg" },
+      { sci: "Coris julis", common: "Mediterranean rainbow wrasse", note: "Fast, colourful wrasse that darts across rocky and vegetated bottoms searching for small prey.", status: "confirmed", wiki: W + "Coris_julis" },
+      { sci: "Thalassoma pavo", common: "Ornate wrasse", note: "Brilliantly coloured, fast-moving wrasse most often seen over sunlit rocky habitat.", status: "confirmed", wiki: W + "Thalassoma_pavo" },
+      { sci: "Symphodus roissali", common: "Five-spotted wrasse", note: "Small patterned wrasse that searches algae, rocks and seagrass for tiny invertebrates.", status: "confirmed", wiki: W + "Symphodus_roissali" },
+      { sci: "Epinephelus marginatus", common: "Dusky grouper", note: "Heavy-bodied ambush predator that shelters around rocky ledges, crevices and reef habitat.", status: "confirmed", wiki: W + "Dusky_grouper" },
+      { sci: "Sepia officinalis", common: "Common cuttlefish", note: "Master of camouflage that can change colour rapidly and attaches dark egg clusters to vegetation and other structures.", status: "expected", wiki: W + "Common_cuttlefish", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Sepia_com%C3%BAn_%28Sepia_officinalis%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_62.jpg/330px-Sepia_com%C3%BAn_%28Sepia_officinalis%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-21%2C_DD_62.jpg" },
     ],
   },
   {
@@ -84,22 +111,24 @@ const zones: Zone[] = [
     depth: "15 m and beyond",
     lead: "Beyond the meadow's outer edge — coralligenous reefs, pelagic visitors, and migratory megafauna.",
     species: [
-      { sci: "Caretta caretta", common: "Loggerhead sea turtle", note: "Wide-ranging marine turtle that occasionally passes offshore during seasonal movements.", status: "expected", expectedContext: "offshore", wiki: "https://en.wikipedia.org/wiki/Loggerhead_sea_turtle", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Loggerhead_sea_turtle.jpg/330px-Loggerhead_sea_turtle.jpg" },
-      { sci: "Tursiops truncatus", common: "Common bottlenose dolphin", note: "Social pods regularly travel along the coast, sometimes approaching surprisingly close to shore.", status: "confirmed", wiki: "https://en.wikipedia.org/wiki/Common_bottlenose_dolphin", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tursiops_truncatus_01-cropped.jpg/330px-Tursiops_truncatus_01-cropped.jpg" },
-      { sci: "Thunnus thynnus", common: "Atlantic bluefin tuna", note: "Powerful migratory predator that occasionally passes offshore in open water.", status: "expected", expectedContext: "offshore", wiki: "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/330px-Bluefin-big.jpg" },
-      { sci: "Paramuricea clavata", common: "Violescent sea-whip", note: "Deep-water gorgonian coral forming fragile underwater forests on rocky reefs.", status: "expected", expectedContext: "deeper habitat", wiki: "https://en.wikipedia.org/wiki/Paramuricea_clavata", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Paramuricea_clavata_%28Risso%2C_1826%29_3.jpg/330px-Paramuricea_clavata_%28Risso%2C_1826%29_3.jpg" },
-      { sci: "Scyliorhinus canicula", common: "Small-spotted catshark", note: "Harmless bottom-dwelling shark whose egg cases sometimes wash onto beaches after storms.", status: "expected", expectedContext: "offshore", wiki: "https://en.wikipedia.org/wiki/Small-spotted_catshark", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Scyliorhinus_canicula.jpg/330px-Scyliorhinus_canicula.jpg" },
+      { sci: "Caretta caretta", common: "Loggerhead sea turtle", note: "Wide-ranging marine turtle that may pass through northern Aegean coastal and offshore waters.", status: "expected", expectedContext: "offshore", wiki: W + "Loggerhead_sea_turtle", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Loggerhead_sea_turtle.jpg/330px-Loggerhead_sea_turtle.jpg" },
+      { sci: "Tursiops truncatus", common: "Common bottlenose dolphin", note: "Social coastal dolphin that travels in groups through the gulf and occasionally approaches shore.", status: "confirmed", wiki: W + "Common_bottlenose_dolphin", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tursiops_truncatus_01-cropped.jpg/330px-Tursiops_truncatus_01-cropped.jpg" },
+      { sci: "Phalacrocorax carbo sinensis", common: "Continental great cormorant", note: "Large diving waterbird that swims low in the water and pursues fish beneath the surface.", status: "confirmed", wiki: W + "Great_cormorant" },
+      { sci: "Thunnus thynnus", common: "Atlantic bluefin tuna", note: "Powerful migratory predator of open water that may pass offshore during seasonal movements.", status: "expected", expectedContext: "offshore", wiki: W + "Atlantic_bluefin_tuna", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/330px-Bluefin-big.jpg" },
+      { sci: "Paramuricea clavata", common: "Violescent sea-whip", note: "Large gorgonian that forms fragile branching colonies on deeper Mediterranean rocky reefs.", status: "expected", expectedContext: "deeper habitat", wiki: W + "Paramuricea_clavata", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Paramuricea_clavata_%28Risso%2C_1826%29_3.jpg/330px-Paramuricea_clavata_%28Risso%2C_1826%29_3.jpg" },
+      { sci: "Scyliorhinus canicula", common: "Small-spotted catshark", note: "Small bottom-dwelling shark whose tough egg cases may occasionally wash ashore.", status: "expected", expectedContext: "offshore", wiki: W + "Small-spotted_catshark", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Scyliorhinus_canicula.jpg/330px-Scyliorhinus_canicula.jpg" },
     ],
   },
 ];
 
 function statusLabel(s: Species): string {
-  if (s.status === "confirmed") return "✅ Confirmed on iNaturalist";
+  if (s.status === "confirmed") return "Confirmed on iNaturalist";
   if (s.expectedContext === "suitable habitat") return "Expected in suitable habitat";
   if (s.expectedContext === "offshore") return "Expected offshore";
   if (s.expectedContext === "deeper habitat") return "Expected in deeper habitat";
   return "Expected in this habitat";
 }
+
 
 function FloraFauna() {
   const t = useT();
@@ -219,8 +248,8 @@ function FloraFauna() {
                       <span className="text-xs text-accent">{t(s.common)}</span>
                     </div>
                     <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t(s.note)}</p>
-                    <p className="mt-2 text-xs text-muted-foreground flex items-center gap-1.5">
-                      {s.status === "confirmed" ? <span>✅</span> : <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/60" />}
+                    <p className={`mt-2 text-xs flex items-center gap-1 ${s.status === "confirmed" ? "text-accent" : "text-muted-foreground"}`}>
+                      {s.status === "confirmed" ? <span aria-hidden>✓</span> : <span aria-hidden className="w-1 h-1 rounded-full bg-muted-foreground/60" />}
                       {t(statusLabel(s))}
                     </p>
                   </div>
@@ -228,7 +257,24 @@ function FloraFauna() {
               ))}
             </ul>
 
+            {z.id === "meadow" && (
+              <div className="mt-5 rounded-xl border border-dashed border-border bg-muted/30 p-4">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Plankton & Open Water")}</p>
+                <div className="mt-1 flex items-baseline justify-between gap-3 flex-wrap">
+                  <a href="https://en.wikipedia.org/wiki/Noctiluca_scintillans" target="_blank" rel="noopener noreferrer" className="font-serif italic text-base sm:text-lg text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+                    Noctiluca scintillans
+                  </a>
+                  <span className="text-xs text-accent">{t("Sea sparkle")}</span>
+                </div>
+                <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t("A single-celled planktonic dinoflagellate — neither animal nor plant — whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.")}</p>
+                <p className="mt-2 text-xs text-accent flex items-center gap-1">
+                  <span aria-hidden>✓</span>
+                  {t("Confirmed on iNaturalist")}
+                </p>
+              </div>
+            )}
           </section>
+
         ))}
       </div>
     </SiteLayout>
