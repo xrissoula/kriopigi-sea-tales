@@ -20,7 +20,7 @@ export const elAnthropology: Record<string, string> = {
   "8th century BCE": "8ος αιώνας π.Χ.",
   "Ancient Mende & the Eretrian colonies": "Η αρχαία Μένδη και οι αποικίες της Ερέτριας",
   "Eretrian settlers established Mende as one of the important cities of Pallene, the ancient name of the Kassandra peninsula. By the Archaic and Classical periods, Mende was renowned for its wine, which was exported widely in locally produced transport amphorae.":
-    "Άποικοι από την Ερέτρια ίδρυσαν τη Μένδη, μία από τις σημαντικές πόλεις της Παλλήνης — της αρχαίας ονομασίας της χερσονήσου της Κασσάνδρας. Κατά την Αρχαϊκή και την Κλασική περίοδο, η Μένδη ήταν φημισμένη για το κρασί της, το οποίο εξαγόταν ευρέως σε εμπορικούς αμφορείς τοπικής παραγωγής.",
+    "Άποικοι από την Ερέτρια ίδρυσαν τη Μένδη, μία από τις σημαντικές πόλεις της Παλλήνης — της αρχαίας ονομασίας της χερσονήσου της Κασσάνδρας. Κατά την Αρχαϊκή και την Κλασική περίοδο, η Μένδη ήταν φημισμένη για το κρασί της, το οποίο εξαγόταν σε ολόκληρο το Αιγαίο και τη Μεσόγειο μέσα σε χαρακτηριστικούς αμφορείς της Μένδης.",
   "Pithamphora with floral motifs recovered from the cemetery at Mende.":
     "Πιθαμφορέας με φυτικά διακοσμητικά μοτίβα από το νεκροταφείο της αρχαίας Μένδης.",
   "Pithamphora with floral motifs from the cemetery at Mende. From S. Moschonissioti, “Vases du cimetière de Mendè,” in Recherches récentes sur le monde hellénistique (Publications du Centre Jean Bérard), available via OpenEdition Books: https://books.openedition.org/pcjb/661.":
