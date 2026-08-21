@@ -123,7 +123,7 @@ const zones: Zone[] = [
 ];
 
 function statusLabel(s: Species): string {
-  if (s.status === "confirmed") return "Confirmed on iNaturalist";
+  if (s.status === "confirmed") return "Observed at Kriopigi";
   if (s.expectedContext === "suitable habitat") return "Expected in suitable habitat";
   if (s.expectedContext === "offshore") return "Expected offshore";
   if (s.expectedContext === "deeper habitat") return "Expected in deeper habitat";
