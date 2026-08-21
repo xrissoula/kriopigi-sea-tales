@@ -6,6 +6,7 @@ import posidonia from "@/assets/posidonia.jpg";
 import pineForestShore from "@/assets/pine-forest-shore.jpeg";
 import maquisShrubland from "@/assets/maquis-shrubland.jpeg";
 import phryganaTortoise from "@/assets/phrygana-tortoise.jpeg";
+import eupholidoptera from "@/assets/eupholidoptera-smyrnensis.jpg.asset.json";
 
 export const Route = createFileRoute("/flora-fauna")({
   head: () => ({
