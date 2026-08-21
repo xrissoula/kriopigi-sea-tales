@@ -71,18 +71,9 @@ export const elPages: Record<string, string> = {
   "Community Album": "Άλμπουμ της Κοινότητας",
   "Part I": "Μέρος Α΄",
   "Part II": "Μέρος Β΄",
-  "Yiannis, b. 1942": "Γιάννης, γ. 1942",
-  Fisherman: "Ψαράς",
-  "When I was a boy, you could see your shadow on the seabed at ten meters. We measured weather not by forecast, but by the smell of the pines.":
-    "Όταν ήμουν παιδί, έβλεπες τη σκιά σου στον βυθό στα δέκα μέτρα. Τον καιρό δεν τον μετρούσαμε με πρόγνωση, αλλά με τη μυρωδιά των πεύκων.",
-  "Maria, b. 1955": "Μαρία, γ. 1955",
-  Beekeeper: "Μελισσοκόμος",
-  "The thyme on the headland blooms three days after the first cicada. My grandmother taught me to listen for it.":
-    "Το θυμάρι στο ακρωτήρι ανθίζει τρεις μέρες μετά το πρώτο τζιτζίκι. Η γιαγιά μου με έμαθε να το ακούω.",
-  "Anonymous, b. 1994": "Ανώνυμη, γ. 1994",
-  Visitor: "Επισκέπτρια",
-  "When I was a child in 1998, the beach was significantly wider — there was so much more sand between the path and the water than there is today.":
-    "Όταν ήμουν παιδί, το 1998, η παραλία ήταν σημαντικά πιο φαρδιά — υπήρχε πολύ περισσότερη άμμος ανάμεσα στο μονοπάτι και το νερό απ’ ό,τι σήμερα.",
+  "Coming soon": "Έρχεται σύντομα",
+  "First recordings are being collected and verified.":
+    "Τα πρώτα ηχογραφήματα συλλέγονται και επαληθεύονται.",
   "Pictures of the cove submitted by locals and visitors — the seasons, the weather, the small things worth pointing a camera at.":
     "Φωτογραφίες του όρμου από ντόπιους και επισκέπτες — οι εποχές, ο καιρός, τα μικρά πράγματα που αξίζει να φωτογραφηθούν.",
   "Sorted oldest → newest · scroll for recent":
@@ -93,10 +84,8 @@ export const elPages: Record<string, string> = {
   visitor: "επισκέπτης",
   "The shore in summer — beach was much wider then":
     "Η ακτή το καλοκαίρι — η παραλία ήταν τότε πολύ πιο φαρδιά",
-  "The old stone tower": "Ο παλιός πέτρινος πύργος",
-  "Damselfish over the reef": "Καστανόψαρα πάνω από τον ύφαλο",
-  "Posidonia at four meters": "Ποσειδωνία στα τέσσερα μέτρα",
   "Add your photo to the album": "Προσθέστε τη φωτογραφία σας στο άλμπουμ",
+
 
   // --- Snorkeling extras ---
   "1–4 m": "1–4 μ.",

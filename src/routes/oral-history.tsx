@@ -1,13 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useLanguage } from "@/i18n";
-import elder from "@/assets/elder.jpg";
-import hero from "@/assets/hero-kriopigi.webp";
-import posidonia from "@/assets/posidonia.jpg";
 import kriopigi1998 from "@/assets/kriopigi-1998.jpg";
-import damselfish from "@/assets/flora-fauna-damselfish.jpg";
-import tower from "@/assets/anthropology-tower.webp";
-import { Play, Camera } from "lucide-react";
+import { Camera } from "lucide-react";
 
 export const Route = createFileRoute("/oral-history")({
   head: () => ({
@@ -19,19 +14,10 @@ export const Route = createFileRoute("/oral-history")({
   component: OralHistory,
 });
 
-const stories = [
-  { name: "Yiannis, b. 1942", role: "Fisherman", quote: "When I was a boy, you could see your shadow on the seabed at ten meters. We measured weather not by forecast, but by the smell of the pines.", length: "12:04" },
-  { name: "Maria, b. 1955", role: "Beekeeper", quote: "The thyme on the headland blooms three days after the first cicada. My grandmother taught me to listen for it.", length: "08:31" },
-  { name: "Anonymous, b. 1994", role: "Visitor", quote: "When I was a child in 1998, the beach was significantly wider — there was so much more sand between the path and the water than there is today.", length: "03:47" },
-];
-
 type Photo = { src: string; caption: string; author: string; origin: "local" | "visitor"; date: string };
 
 const photosRaw: Photo[] = [
   { src: kriopigi1998, caption: "The shore in summer — beach was much wider then", author: "Anonymous", origin: "visitor", date: "1998-07-15" },
-  { src: tower, caption: "The old stone tower", author: "D. Marinos", origin: "local", date: "2019-06-02" },
-  { src: damselfish, caption: "Damselfish over the reef", author: "Luca P. (IT)", origin: "visitor", date: "2024-08-21" },
-  { src: posidonia, caption: "Posidonia at four meters", author: "Eleni V.", origin: "local", date: "2022-07-30" },
 ];
 
 const photos = [...photosRaw].sort((a, b) => a.date.localeCompare(b.date));
@@ -68,28 +54,11 @@ function OralHistory() {
             <h2 className="font-serif text-3xl text-foreground">{t("Oral Histories")}</h2>
             <span className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Part I")}</span>
           </div>
-          <div className="space-y-6">
-            {stories.map((s) => (
-              <article key={s.name} className="rounded-2xl overflow-hidden shadow-soft bg-card border border-border">
-                <div className="grid sm:grid-cols-[160px_1fr]">
-                  <div className="relative h-40 sm:h-auto">
-                    <img src={elder} alt="" loading="lazy" className="w-full h-full object-cover sepia-[0.3]" />
-                    <button className="absolute inset-0 grid place-items-center bg-black/20 hover:bg-black/30 transition">
-                      <span className="w-12 h-12 rounded-full bg-accent text-accent-foreground grid place-items-center shadow-deep">
-                        <Play size={18} fill="currentColor" />
-                      </span>
-                    </button>
-                  </div>
-                  <div className="p-5">
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-accent">{t(s.role)} · {s.length}</p>
-                    <h3 className="mt-1 font-serif text-2xl text-foreground">{t(s.name)}</h3>
-                    <blockquote className="mt-3 font-serif italic text-lg text-foreground/85 border-l-2 border-accent pl-4 leading-snug">
-                      "{t(s.quote)}"
-                    </blockquote>
-                  </div>
-                </div>
-              </article>
-            ))}
+          <div className="rounded-2xl border border-dashed border-border bg-muted/30 px-6 py-12 text-center">
+            <p className="font-serif text-2xl text-foreground/80">{t("Coming soon")}</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {t("First recordings are being collected and verified.")}
+            </p>
           </div>
         </section>
 
