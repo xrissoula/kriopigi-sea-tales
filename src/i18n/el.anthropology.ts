@@ -38,7 +38,7 @@ export const elAnthropology: Record<string, string> = {
   "Byzantine era": "Βυζαντινή περίοδος",
   "Monastic landscape": "Το μοναστικό τοπίο",
   "Mount Athos to the east develops into one of the great monastic centers of the Orthodox world. Across Halkidiki, agriculture, pastoralism, fishing, woodland use, and monastic estates shaped everyday life through the Byzantine and later Ottoman periods.":
-    "Το Άγιο Όρος, στα ανατολικά, εξελίσσεται σε ένα από τα μεγάλα μοναστικά κέντρα του ορθόδοξου κόσμου. Σε ολόκληρη τη Χαλκιδική, η γεωργία, η κτηνοτροφία, η αλιεία, η χρήση των δασών και τα μοναστηριακά μετόχια διαμόρφωσαν την καθημερινή ζωή κατά τη βυζαντινή και, αργότερα, την οθωμανική περίοδο.",
+    "Από τον 10ο αιώνα και έπειτα, το Άγιο Όρος εξελίσσεται σε ένα από τα σημαντικότερα μοναστικά κέντρα του ορθόδοξου κόσμου. Σε ολόκληρη τη Χαλκιδική, η γεωργία, η κτηνοτροφία, η αλιεία, η χρήση των δασών και τα μοναστηριακά μετόχια διαμόρφωσαν την καθημερινή ζωή κατά τη βυζαντινή και, αργότερα, την οθωμανική περίοδο.",
   "The fortified arsanas (sea-gate tower) of the Great Lavra monastery rising above the rocks on the Athos peninsula.":
     "Ο οχυρωμένος αρσανάς της Μεγίστης Λαύρας υψώνεται πάνω από τα βράχια του Άθω.",
   "The Great Lavra (Megisti Lavra), founded in 963 CE by St. Athanasios the Athonite — the oldest and first-ranked of the twenty monasteries of Mount Athos.":
