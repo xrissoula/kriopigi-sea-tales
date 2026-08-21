@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { speciesSlug } from "@/lib/species";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
 import posidonia from "@/assets/posidonia.jpg";
