@@ -75,81 +75,88 @@ export const elFlora: Record<string, string> = {
 
   // --- Species ---
   "Aleppo pine": "Χαλέπιος πεύκη",
-  "Dominant overstory; resin scents the beach in summer heat.":
-    "Το κυρίαρχο δέντρο του τοπίου· το άρωμα της ρητίνης γεμίζει την παραλία τις ζεστές μέρες του καλοκαιριού.",
+  "Dominant canopy tree; its resin perfumes the shoreline on hot summer afternoons.":
+    "Κυρίαρχο δέντρο της κόμης· η ρητίνη του αρωματίζει την ακτή τις ζεστές καλοκαιρινές απογευματινές.",
   "Sea holly": "Αγκαθωτό γαϊδουράγκαθο της θάλασσας",
-  "Spiny blue-grey rosettes stabilising the upper sand.":
-    "Αγκαθωτές γλαυκογάλαζες ροζέτες που συγκρατούν την άνω ζώνη της άμμου.",
+  "Spiny blue-grey leaves anchor the upper dunes and bloom with metallic-blue flowers in summer.":
+    "Αγκαθωτά γλαυκογάλαζα φύλλα σταθεροποιούν τις ανώτερες αμμοθίνες και ανθίζουν με μεταλλικά μπλε άνθη το καλοκαίρι.",
   "Sea rocket": "Παράκτια ρόκα",
-  "Pioneer succulent on the strand line; pale lilac flowers.":
-    "Πρωτοπόρο παχύφυτο της γραμμής των ξεβρασμάτων, με ανοιχτολιλά άνθη.",
+  "Fast-growing pioneer of the strand line; pale lilac flowers appear above the sand in spring and summer.":
+    "Ταχέως αναπτυσσόμενο πρωτοπόρο φυτό της γραμμής ξεβρασμάτων· ανοιχτολιλά άνθη εμφανίζονται πάνω από την άμμο την άνοιξη και το καλοκαίρι.",
   "Yellow-legged gull": "Ασημόγλαρος",
-  "Nests on the cliffs above the cove; vocal at dawn.":
-    "Φωλιάζει στους βράχους πάνω από τον όρμο και ακούγεται έντονα τα ξημερώματα.",
+  "Large coastal gull that patrols beaches and cliffs, calling loudly throughout the day.":
+    "Μεγάλο παράκτιο γλάρο που περιπολεί παραλίες και βράχια, φωνάζοντας δυνατά όλη μέρα.",
 
   "Tufted ghost crab": "Φαντασματάκι της άμμου",
-  "Pale, fast; visible at dusk near burrow entrances on the upper beach.":
-    "Ανοιχτόχρωμο και εξαιρετικά γρήγορο· εμφανίζεται κυρίως το σούρουπο κοντά στις εισόδους των λαγουμιών του.",
+  "Fast, pale crab that vanishes into deep burrows above the surf line.":
+    "Γρήγορο, ανοιχτόχρωμο καβούρι που εξαφανίζεται σε βαθιά λαγούμια πάνω από τη γραμμή του κύματος.",
   "Beach isopod": "Παράκτιο ισόποδο",
-  "Nocturnal scavenger of stranded seaweed — a sign of a healthy strand line.":
-    "Νυχτόβιο αποικοδομητικό που τρέφεται με τα ξεβρασμένα φύκια — ένδειξη μιας υγιούς ακτογραμμής.",
+  "Nocturnal scavenger that recycles stranded seaweed along the upper beach.":
+    "Νυχτόβιο αποικοδομητικό που ανακυκλώνει τα ξεβρασμένα φύκια κατά μήκος της ανώτερης παραλίας.",
   "Kentish plover": "Θαλασσοσφυριχτής",
-  "Small shorebird; nests directly on shingle. Keep clear May–July.":
-    "Μικρό παρυδάτιο πουλί που φωλιάζει απευθείας πάνω στο χαλίκι. Αποφύγετε την ενόχληση από τον Μάιο έως τον Ιούλιο.",
+  "Tiny shorebird that nests directly on open sand; give nesting areas plenty of space in spring.":
+    "Μικρό παρυδάτιο πουλί που φωλιάζει απευθείας στην ανοιχτή άμμο· αφήστε άφθονο χώρο στις περιοχές φωλιάσματος την άνοιξη.",
   "Wedge clam": "Σφήνα (Donax)",
-  "Filter-feeder in the swash zone; tiny triangular shells wash up after storms.":
-    "Διηθηματοφάγο δίθυρο της ζώνης του κυματισμού· τα μικρά τριγωνικά όστρακά του συχνά ξεβράζονται μετά τις καταιγίδες.",
+  "Lives buried beneath wet sand, filtering seawater as waves wash overhead.":
+    "Ζει θαμμένο κάτω από την υγρή άμμο, φιλτράροντας το θαλασσινό νερό καθώς τα κύματα περνούν από πάνω.",
 
   "Mediterranean sand smelt": "Αθερίνα",
-  "Silvery shoals near the surface; often the first fish snorkellers see.":
-    "Ασημένια κοπάδια κοντά στην επιφάνεια· συχνά είναι τα πρώτα ψάρια που βλέπουν οι κολυμβητές με μάσκα.",
-  "Common two-banded sea bream": "Δίγραμμος σαργός",
-  "Curious juveniles around rocks; two dark bands on a silver body.":
-    "Περίεργα νεαρά άτομα γύρω από τους βράχους, με δύο χαρακτηριστικές μαύρες ζώνες πάνω στο ασημί σώμα.",
-  "Salema porgy": "Σάλπα",
-  "Schools of 20–60 graze seagrass tips at the meadow's edge.":
-    "Κοπάδια των 20–60 ατόμων που βόσκουν τις κορυφές της Ποσειδωνίας.",
+  "Silvery schools shimmer just below the surface over calm, shallow water.":
+    "Ασημένια κοπάδια λάμπουν λίγο κάτω από την επιφάνεια σε ήρεμα, ρηχά νερά.",
+  "Common two-banded seabream": "Δίγραμμος σαργός",
+  "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.":
+    "Αναγνωρίσιμο από δύο έντονες μαύρες ζώνες· νεαρά άτομα συναθροίζονται γύρω από βράχια και φυκοβολιά.",
+  "Salema": "Σάλπα",
+  "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.":
+    "Κοπάδια βοσκόβια τρέφονται με φύκια και φύλλα φυκοβολιάς κατά μήκος του ορίου του λιβαδιού.",
   "Short-snouted seahorse": "Κοντόρυγχος ιππόκαμπος",
-  "Rare but resident; clings to algae among shallow rocks.":
-    "Σπάνιο αλλά μόνιμο είδος· αγκιστρώνεται σε φύκια και θαλάσσια βλάστηση στα ρηχά.",
+  "Master of camouflage that clings to algae and seagrass with its curled tail.":
+    "Άρχοντας του καμουφλάζ που αγκιστρώνεται σε φύκια και φυκοβολιά με τη στριφτή του ουρά.",
   "Cotton-spinner sea cucumber": "Θαλάσσιο αγγούρι",
-  "Slow detritivore on sandy bottoms; do not lift from the substrate.":
-    "Βραδυκίνητος αποικοδομητής των αμμωδών βυθών· μην τον σηκώνετε από το υπόστρωμα.",
+  "Slow-moving recycler that cleans sandy bottoms by feeding on organic sediments.":
+    "Βραδυκίνητος ανακυκλωτής που καθαρίζει τους αμμώδεις βυθούς τρεφόμενο με οργανικά ιζήματα.",
 
   "Neptune grass": "Ποσειδωνία",
-  "Endemic seagrass; one meter of meadow can be over 100 years old.":
-    "Ενδημικό θαλάσσιο φυτό της Μεσογείου· ένα μόνο μέτρο λιβαδιού μπορεί να είναι ηλικίας άνω των εκατό ετών.",
+  "A true flowering plant that forms underwater meadows supporting countless Mediterranean species.":
+    "Ένα αληθινό ανθοφόρο φυτό που σχηματίζει υποθαλάσσια λιβάδια στηρίζοντας αμέτρητα μεσογειακά είδη.",
   "Noble pen shell": "Πίνα",
-  "Critically endangered fan mussel anchored in the meadow; report sightings.":
-    "Κρισίμως κινδυνεύον δίθυρο μαλάκιο που ζει αγκυρωμένο στο λιβάδι της Ποσειδωνίας· αναφέρετε τυχόν παρατηρήσεις του.",
+  "The Mediterranean’s largest bivalve; now critically endangered and fully protected.":
+    "Το μεγαλύτερο δίθυρο της Μεσογείου· πλέον κρισίμως κινδυνεύον και πλήρως προστατευόμενο.",
   "Common octopus": "Κοινό χταπόδι",
-  "Dens between rocks at the meadow's edge; shell middens betray the entrance.":
-    "Φωλιάζει ανάμεσα στους βράχους στο όριο του λιβαδιού της Ποσειδωνίας· τα σωρευμένα κελύφη έξω από την κρυψώνα του προδίδουν την παρουσία του.",
+  "Empty shells piled outside a rocky crevice often reveal an occupied den.":
+    "Σωροί από άδεια κελύφη έξω από μια βραχώδη σχισμή συχνά αποκαλύπτουν ένα κατοικημένο λαγούμι.",
 
   "Peacock wrasse": "Πράσινος χειλούς",
-  "Males turn iridescent blue-green during spring courtship over the meadow.":
-    "Τα αρσενικά αποκτούν έντονα γαλαζοπράσινα ιριδίζοντα χρώματα κατά την ανοιξιάτικη περίοδο του ζευγαρώματος πάνω από τα λιβάδια της Ποσειδωνίας.",
+  "Males develop brilliant breeding colours in spring while defending territories.":
+    "Τα αρσενικά αναπτύσσουν λαμπρά αναπαραγωγικά χρώματα την άνοιξη καθώς υπερασπίζονται τα εδάφη τους.",
   "Common cuttlefish": "Κοινή σουπιά",
-  "Lays grape-like egg clusters on Posidonia leaves in late spring.":
-    "Αποθέτει στα τέλη της άνοιξης συστάδες αυγών που μοιάζουν με μικρά τσαμπιά στα φύλλα της Ποσειδωνίας.",
+  "Master of camouflage that changes colour in an instant and lays grape-like egg clusters on seagrass.":
+    "Άρχοντας του καμουφλάζ που αλλάζει χρώμα σε μια στιγμή και αποθέτει σταφυλοειδείς συστάδες αυγών σε φυκοβολιά.",
 
   "Deep Water & Offshore": "Βαθιά Νερά & Ανοιχτό Πέλαγος",
   "15 m and beyond": "15 μ. και βαθύτερα",
   "Beyond the meadow's outer edge — coralligenous reefs, pelagic visitors, and migratory megafauna.":
     "Πέρα από το εξωτερικό όριο του λιβαδιού της Ποσειδωνίας εκτείνονται οι κοραλλιγενείς ύφαλοι, τα πελαγικά είδη που επισκέπτονται την περιοχή και η μεταναστευτική θαλάσσια μεγαπανίδα.",
   "Loggerhead sea turtle": "Χελώνα καρέτα",
-  "Seen surfacing in the bay May–October; juveniles forage on the meadow.":
-    "Εμφανίζεται στην επιφάνεια του όρμου από τον Μάιο έως τον Οκτώβριο· τα νεαρά άτομα αναζητούν τροφή στα λιβάδια της Ποσειδωνίας.",
+  "Wide-ranging marine turtle that occasionally passes offshore during seasonal movements.":
+    "Θαλάσσια χελώνα μεγάλης εμβέλειας που περνά περιστασιακά από τα ανοιχτά κατά τις εποχιακές μετακινήσεις της.",
   "Common bottlenose dolphin": "Ρινοδέλφινο",
-  "Pods of 4–10 transit the gulf; occasional inshore feeding at dawn.":
-    "Κοπάδια 4–10 ατόμων διασχίζουν τον Τορωναίο κόλπο· περιστασιακά πλησιάζουν την ακτή για να τραφούν τις πρώτες πρωινές ώρες.",
+  "Social pods regularly travel along the coast, sometimes approaching surprisingly close to shore.":
+    "Κοινωνικά κοπάδια ταξιδεύουν τακτικά κατά μήκος της ακτής, μερικές φορές πλησιάζοντας εκπληκτικά κοντά στην ακτή.",
   "Atlantic bluefin tuna": "Ερυθρός τόνος του Ατλαντικού",
-  "Migratory; offshore boils visible from the headland on calm summer mornings.":
-    "Μεταναστευτικό είδος· τις ήρεμες καλοκαρινές πρωινές ώρες μπορούν να διακριθούν από το ακρωτήριο οι χαρακτηριστικές αναταράξεις στην επιφάνεια που προκαλούν τα κοπάδια του καθώς κυνηγούν.",
+  "Powerful migratory predator that occasionally passes offshore in open water.":
+    "Ισχυρός μεταναστευτικός θηρευτής που περνά περιστασιακά από τα ανοιχτά σε ανοιχτά νερά.",
   "Violescent sea-whip": "Βιολετί γοργονία",
-  "Coralligenous gorgonian on deeper rocky outcrops; fragile, never anchor near.":
-    "Γοργονία των κοραλλιγενών υφάλων που ζει σε βαθύτερες βραχώδεις εξάρσεις· ιδιαίτερα εύθραυστη, γι’ αυτό δεν πρέπει ποτέ να αγκυροβολούμε κοντά της.",
+  "Deep-water gorgonian coral forming fragile underwater forests on rocky reefs.":
+    "Βαθυνόμενη γοργονία κοραλλιού που σχηματίζει εύθραυστα υποθαλάσσια δάση σε βραχώδεις υφάλους.",
   "Small-spotted catshark": "Μικρόστικτος γαλέος",
-  "Harmless benthic shark; egg cases ('mermaid's purses') wash up after storms.":
-    "Ακίνδυνος βενθικός καρχαρίας· οι χαρακτηριστικές θήκες των αυγών του («το πορτοφόλι της γοργόνας») συχνά ξεβράζονται στις ακτές μετά από καταιγίδες.",
+  "Harmless bottom-dwelling shark whose egg cases sometimes wash onto beaches after storms.":
+    "Ακίνδυνος βενθικός καρχαρίας των οποίων οι θήκες αυγών ξεβράζονται μερικές φορές στις παραλίες μετά από καταιγίδες.",
+
+  // --- Observation badges ---
+  "✅ Confirmed on iNaturalist": "✅ Επιβεβαιωμένο στο iNaturalist",
+  "Expected in this habitat": "Αναμενόμενο σε αυτό το ενδιαίτημα",
+  "Expected in suitable habitat": "Αναμενόμενο σε κατάλληλο ενδιαίτημα",
+  "Expected offshore": "Αναμενόμενο στα ανοιχτά",
+  "Expected in deeper habitat": "Αναμενόμενο σε βαθύτερο ενδιαίτημα",
 };
