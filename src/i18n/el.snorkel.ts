@@ -157,9 +157,9 @@ export const elSnorkel: Record<string, string> = {
 
   // --- Tiers ---
   "Reward curiosity": "ΑΝΤΑΜΕΙΨΤΕ ΤΗΝ ΠΕΡΙΕΡΓΕΙΑ",
-  "Three levels of attention": "Τρία επίπεδα προσοχής",
+  "Three levels of attention": "Τρία επίπεδα παρατήρησης",
   "Not a collection to complete. Three tiers of patience — most swimmers finish the first on their first morning, and the last is a matter of luck.":
-    "Δεν είναι συλλογή προς συμπλήρωση. Είναι τρία επίπεδα υπομονής — οι περισσότεροι ολοκληρώνουν το πρώτο από το πρώτο πρωινό, ενώ το τελευταίο είναι ζήτημα τύχης.",
+    "Δεν είναι λίστα που πρέπει να συμπληρώσετε. Είναι τρία επίπεδα παρατήρησης: το πρώτο είναι σχεδόν βέβαιο σε μια ήρεμη μέρα, το δεύτερο θέλει χρόνο και υπομονή, ενώ το τρίτο είναι καθαρά θέμα τύχης.",
   "First Snorkel": "Πρώτη βουτιά",
   "Almost certain on any calm day.": "Σχεδόν βέβαια σε κάθε ήρεμη μέρα.",
   "a wrasse": "μια χειλού",
