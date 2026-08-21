@@ -86,25 +86,9 @@ export const el: Record<string, string> = {
     "Ένας κατάλογος πεδίου που ακολουθεί την ακτή από τις αμμοθίνες προς τα ανοιχτά — παραλία, ζώνη κυματισμού, ρηχά και βαθιά νερά.",
   "Read section →": "Διαβάστε την ενότητα →",
 
-  // --- Snorkeling ---
-  "Below the line": "Κάτω από την επιφάνεια",
-  "Three coves, three worlds": "Τρεις κολπίσκοι, τρεις κόσμοι",
-  "Mask, fins, and a quiet kick are all you need. Always enter with a buddy and check the day's sea state.":
-    "Μάσκα, πέδιλα και ήρεμες κινήσεις είναι όλα όσα χρειάζεστε. Μπαίνετε πάντα με συνοδό και ελέγχετε την κατάσταση της θάλασσας.",
-  "North Cove": "Βόρειος Κολπίσκος",
-  "Old Harbor Wall": "Παλιός Λιμενοβραχίονας",
-  "South Pinnacle": "Νότια Ύφαλη Κορυφή",
-  Beginner: "Αρχάριοι",
-  Intermediate: "Μέσο επίπεδο",
-  Advanced: "Προχωρημένοι",
   Depth: "Βάθος",
   Visibility: "Ορατότητα",
-  "Wrasse, salema, sea hares grazing the seagrass tips.":
-    "Χειλούδες, σάλπες και θαλάσσιοι λαγοί που βόσκουν στις κορυφές των φυκιών.",
-  "Octopus dens between blocks; occasional moray.":
-    "Φωλιές χταποδιών ανάμεσα στους ογκόλιθους· περιστασιακά σμέρνα.",
-  "Damselfish clouds over rocky reef; rare scorpionfish.":
-    "Σμήνη καστανόψαρων πάνω από βραχώδη ύφαλο· σπάνια σκορπίνα.",
+
 
   // --- About ---
   "A naturalist's notebook for a familiar shore":
