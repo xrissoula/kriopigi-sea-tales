@@ -193,16 +193,16 @@ export const elFlora: Record<string, string> = {
     "Ένα αληθινό ανθοφόρο φυτό που σχηματίζει μακρόβια υποθαλάσσια λιβάδια, στηρίζοντας πλούσια μεσογειακή θαλάσσια ζωή.",
   "Noble pen shell": "Πίνα",
   "The Mediterranean’s largest bivalve; now critically endangered and fully protected.":
-    "Το μεγαλύτερο δίθυρο της Μεσογείου· πλέον κρισίμως κινδυνεύον και πλήρως προστατευόμενο.",
+    "Κρισίμως κινδυνεύον ενδημικό δίθυρο της Μεσογείου, σήμερα αυστηρά προστατευόμενο.",
   "Common octopus": "Κοινό χταπόδι",
   "Empty shells piled outside a rocky crevice often reveal an occupied den.":
-    "Σωροί από άδεια κελύφη έξω από μια βραχώδη σχισμή συχνά αποκαλύπτουν ένα κατοικημένο λαγούμι.",
+    "Κεφαλόποδο που αλλάζει στιγμιαία χρώμα και υφή· σωροί από άδεια κελύφη έξω από μια βραχώδη σχισμή συχνά αποκαλύπτουν ένα κατοικημένο λαγούμι.",
   "Peacock wrasse": "Πράσινος χειλούς",
   "Large colourful wrasse; males become especially vivid during the breeding season.":
     "Μεγάλος πολύχρωμος χειλούς· τα αρσενικά γίνονται ιδιαίτερα έντονα την περίοδο αναπαραγωγής.",
   "Mediterranean rainbow wrasse": "Γύλος",
   "Fast, colourful wrasse that darts across rocky and vegetated bottoms searching for small prey.":
-    "Γρήγορος, πολύχρωμος χειλούς που διασχίζει βραχώδεις και φυτοκαλυμμένους βυθούς αναζητώντας μικρή λεία.",
+    "Ζωηρόχρωμος, δραστήριος χειλούς που διασχίζει βραχώδεις και φυτοκαλυμμένους βυθούς αναζητώντας μικρή λεία.",
   "Ornate wrasse": "Χρωματιστός χειλούς",
   "Brilliantly coloured, fast-moving wrasse most often seen over sunlit rocky habitat.":
     "Εντυπωσιακά χρωματιστός, ταχύς χειλούς που συναντάται συνήθως σε ηλιόλουστους βραχώδεις βυθούς.",
@@ -211,10 +211,11 @@ export const elFlora: Record<string, string> = {
     "Μικρός χειλούς με σχέδια που ψάχνει φύκια, βράχια και φυκοβολιά για μικροσκοπικά ασπόνδυλα.",
   "Dusky grouper": "Ροφός",
   "Heavy-bodied ambush predator that shelters around rocky ledges, crevices and reef habitat.":
-    "Βαρύσωμος θηρευτής ενέδρας που καταφεύγει σε βραχώδεις εξοχές, σχισμές και υφάλους.",
+    "Μεγάλος θηρευτής ενέδρας που καταφεύγει σε βραχώδεις εξοχές, σχισμές και υφάλους.",
   "Common cuttlefish": "Κοινή σουπιά",
   "Master of camouflage that can change colour rapidly and attaches dark egg clusters to vegetation and other structures.":
-    "Άρχοντας του καμουφλάζ που αλλάζει χρώμα ακαριαία και προσκολλά σκούρες συστάδες αυγών σε βλάστηση και άλλες δομές.",
+    "Αλλάζει στιγμιαία χρώμα και σχέδια στο δέρμα της· προσκολλά μαύρες συστάδες αυγών σε φύκια και άλλες επιφάνειες.",
+
 
   // --- Plankton & open water ---
   "Plankton & Open Water": "Πλαγκτόν & Ανοιχτά Νερά",
