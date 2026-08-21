@@ -248,8 +248,8 @@ function FloraFauna() {
                       <span className="text-xs text-accent">{t(s.common)}</span>
                     </div>
                     <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t(s.note)}</p>
-                    <p className="mt-2 text-xs text-muted-foreground flex items-center gap-1.5">
-                      {s.status === "confirmed" ? <span>✅</span> : <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/60" />}
+                    <p className={`mt-2 text-xs flex items-center gap-1 ${s.status === "confirmed" ? "text-accent" : "text-muted-foreground"}`}>
+                      {s.status === "confirmed" ? <span aria-hidden>✓</span> : <span aria-hidden className="w-1 h-1 rounded-full bg-muted-foreground/60" />}
                       {t(statusLabel(s))}
                     </p>
                   </div>
@@ -257,7 +257,24 @@ function FloraFauna() {
               ))}
             </ul>
 
+            {z.id === "meadow" && (
+              <div className="mt-5 rounded-xl border border-dashed border-border bg-muted/30 p-4">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Plankton & Open Water")}</p>
+                <div className="mt-1 flex items-baseline justify-between gap-3 flex-wrap">
+                  <a href="https://en.wikipedia.org/wiki/Noctiluca_scintillans" target="_blank" rel="noopener noreferrer" className="font-serif italic text-base sm:text-lg text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
+                    Noctiluca scintillans
+                  </a>
+                  <span className="text-xs text-accent">{t("Sea sparkle")}</span>
+                </div>
+                <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t("A single-celled planktonic dinoflagellate — neither animal nor plant — whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.")}</p>
+                <p className="mt-2 text-xs text-accent flex items-center gap-1">
+                  <span aria-hidden>✓</span>
+                  {t("Confirmed on iNaturalist")}
+                </p>
+              </div>
+            )}
           </section>
+
         ))}
       </div>
     </SiteLayout>
