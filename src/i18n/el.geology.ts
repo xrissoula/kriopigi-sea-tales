@@ -79,10 +79,10 @@ export const elGeology: Record<string, string> = {
 
   "Schematic of Aegean Sea upper circulation":
     "Σχηματική απεικόνιση της επιφανειακής κυκλοφορίας του Αιγαίου",
-  "Continue · Part II": "Συνέχεια · Μέρος II",
-  "Wanna dive deeper?": "Θέλετε να εμβαθύνετε;",
+  "Continue · Part II": "ΣΥΝΕΧΕΙΑ · ΜΕΡΟΣ II",
+  "Wanna dive deeper?": "Θέλετε να πάτε πιο βαθιά;",
   "Click here to learn about the Biogeochemistry of the Aegean.":
     "Πατήστε εδώ για να εξερευνήσετε τη βιογεωχημεία του Αιγαίου.",
   "…or wanna wade out? Stay shallow with the humans →":
-    "…ή προτιμάτε να μείνετε στα ρηχά; Συνεχίστε στην ιστορία των ανθρώπων →",
+    "…ή προτιμάτε να μείνετε στα ρηχά; Συνεχίστε στην ιστορία των ανθρώπων που έζησαν εδώ →",
 };
