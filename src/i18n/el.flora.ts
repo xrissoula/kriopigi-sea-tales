@@ -31,8 +31,8 @@ export const elFlora: Record<string, string> = {
 
   "Phrygana on the dry edges": "Τα φρύγανα στις ξηρές παρυφές",
   "Degraded / exposed dry edge ecology": "Ξηρά και εκτεθειμένα οικοσυστήματα παρυφών",
-  "Phrygana scrub and a seasonal erosion channel above the shore.":
-    "Φρύγανα και ένα εποχικό αυλάκι διάβρωσης πάνω από την ακτή.",
+  "Phrygana scrub and a seasonal erosion channel above the shore—typical habitat for Boettger’s tortoise (Testudo hermanni boettgeri), which is occasionally encountered in these dry, open Mediterranean slopes.":
+    "Φρύγανα και ένα εποχικό αυλάκι διάβρωσης πάνω από την ακτή—τυπικό ενδιαίτημα για τη χελώνα Boettger (Testudo hermanni boettgeri), η οποία συναντάται περιστασιακά σε αυτούς τους ξηρούς, ανοιχτούς μεσογειακούς πρόποδες.",
   "Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and a small erosional drainage cut beside a dirt track.":
     "Φρυγανότοπος στις ξηρές παρυφές πάνω από την Κρυοπηγή: λεπτό βραχώδες έδαφος, αραιοί ξηροθερμικοί θάμνοι και ένα μικρό αυλάκι διάβρωσης δίπλα σε χωματόδρομο.",
   "Where soils are shallower, conditions drier and more exposed, or where repeated fire and grazing maintain a lower shrub community, maquis gives way to phrygana. Phrygana is a natural and widespread Mediterranean ecosystem of low, aromatic, often thorny shrubs; human activity often expands or maintains it, but it is not simply degraded maquis. On the dry slopes above Kriopigi, it forms an important transition zone between forest and open coast.":

@@ -134,7 +134,7 @@ function FloraFauna() {
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Degraded / exposed dry edge ecology")}</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
             <img src={phryganaTortoise} alt={t("Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and a small erosional drainage cut beside a dirt track.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
-            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore.")}</figcaption>
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore—typical habitat for Boettger’s tortoise (Testudo hermanni boettgeri), which is occasionally encountered in these dry, open Mediterranean slopes.")}</figcaption>
           </figure>
           <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Where soils are shallower, conditions drier and more exposed, or where repeated fire and grazing maintain a lower shrub community, maquis gives way to phrygana. Phrygana is a natural and widespread Mediterranean ecosystem of low, aromatic, often thorny shrubs; human activity often expands or maintains it, but it is not simply degraded maquis. On the dry slopes above Kriopigi, it forms an important transition zone between forest and open coast.")}</p>
         </section>
