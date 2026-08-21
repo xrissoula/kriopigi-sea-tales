@@ -79,19 +79,19 @@ export const elSnorkel: Record<string, string> = {
   "Rocky Patches": "Βραχώδεις κηλίδες",
   "3–7 m, scattered blocks and reef": "3–7 μ., διάσπαρτοι ογκόλιθοι και ύφαλος",
   "Every rock becomes interesting. Search the cracks rather than the open water.":
-    "Κάθε βράχος γίνεται ενδιαφέρων. Ψάξτε στις σχισμές και όχι στο ανοιχτό νερό.",
+    "Κάθε βράχος κρύβει κάτι. Κοιτάξτε μέσα στις σχισμές και γύρω από τις προεξοχές, όχι μόνο στο ανοιχτό νερό.",
   "an octopus den": "μια φωλιά χταποδιού",
   "a peacock wrasse in breeding colour": "ένα χειλού σε αναπαραγωγικό χρωματισμό",
   "a rainbow wrasse": "μια γύλα",
   "a five-spotted wrasse": "μια πεντάστικτη χειλού",
-  "a dusky grouper holding its ground": "μια ροφός που δεν κουνιέται από τη θέση της",
+  "a dusky grouper holding its ground": "ένα ροφό που δεν κουνιέται από τη θέση του",
   "damselfish clouding above the reef":
-    "σμήνη καστανόψαρων σαν σύννεφο πάνω από τον ύφαλο",
+    "κοπάδια καστανόψαρων σαν σύννεφο πάνω από τον ύφαλο",
   "a stone crusted with algae and encrusting sponge":
     "μια πέτρα καλυμμένη με φύκια και επιφλοιωτικό σπόγγο",
   "a nudibranch grazing a rock face": "ένα γυμνοβράγχιο που βόσκει σε βραχώδη επιφάνεια",
   "Look for neat piles of empty shells outside a crack in the rocks. They often reveal an occupied octopus den.":
-    "Αναζητήστε τακτικούς σωρούς από άδεια κοχύλια μπροστά σε μια σχισμή των βράχων. Συχνά προδίδουν μια κατοικημένη φωλιά χταποδιού.",
+    "Αναζητήστε μικρούς σωρούς από άδεια κοχύλια μπροστά από μια σχισμή στα βράχια. Συχνά προδίδουν την είσοδο μιας κατοικημένης φωλιάς χταποδιού.",
 
   // --- Zone 5 ---
   "Zone 5": "ΖΩΝΗ 5",
