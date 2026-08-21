@@ -21,14 +21,14 @@ export const elSnorkel: Record<string, string> = {
     "Η εξερεύνηση ξεκινά πριν μπείτε καν στο νερό. Περπατήστε αργά κατά μήκος της γραμμής του κύματος και η παραλία παύει να φαίνεται άδεια.",
   "ghost crab burrows in the dry sand": "φωλιές αμμοκάβουρων στην ξερή άμμο",
   "sea rocket flowering above the wrack": "θαλάσσιο ερύσιμο ανθισμένο πάνω από τα εκβράσματα",
-  "sea holly with its blue-grey spines": "θαλάσσιο ηρύγγιο με τα γαλαζογκρίζα αγκάθια του",
+  "sea holly with its blue-grey spines": "αγκαθωτό γαϊδουράγκαθο της θάλασσας με τα γαλαζογκρίζα αγκάθια του",
   "gulls working the shallows": "γλάροι που ψαρεύουν στα ρηχά",
   "wave-worn shells and sea-tumbled pottery":
     "κοχύλια φθαρμένα από το κύμα και θραύσματα κεραμικών λειασμένα από τη θάλασσα",
   "beach wrack alive with tiny isopods":
     "εκβράσματα που σφύζουν από μικροσκοπικά ισόποδα",
   "Lift only with your eyes. Leave every shell, crab and flower where you found it.":
-    "Σηκώστε τα μόνο με τα μάτια. Αφήστε κάθε κοχύλι, κάβουρα και λουλούδι εκεί που το βρήκατε.",
+    "Σηκώστε τα μόνο με το βλέμμα. Αφήστε κάθε κοχύλι, καβούρι και λουλούδι εκεί όπου το βρήκατε.",
 
   // --- Zone 2 ---
   "Zone 2": "ΖΩΝΗ 2",
