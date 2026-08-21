@@ -279,7 +279,9 @@ function FloraFauna() {
                   <span aria-hidden>✓</span>
                   {t("Confirmed on iNaturalist")}
                 </p>
+                </div>
               </div>
+
             )}
           </section>
 
