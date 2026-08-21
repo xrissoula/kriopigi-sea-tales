@@ -49,7 +49,7 @@ const zones: Zone[] = [
       { sci: "Convolvulus arvensis", common: "Field bindweed", note: "Low twining plant with pale funnel-shaped flowers, common in open and disturbed ground.", status: "confirmed", wiki: W + "Convolvulus_arvensis" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Convolvulus_arvensis_in_Aveyron_%282%29.jpg/330px-Convolvulus_arvensis_in_Aveyron_%282%29.jpg" },
       { sci: "Cichorium pumilum", common: "Wild endive", note: "Low Mediterranean chicory with blue flowers that open across sunny dry ground.", status: "confirmed", wiki: W + "Cichorium" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Cichorium_pumilum.jpg/330px-Cichorium_pumilum.jpg" },
       { sci: "Decticus albifrons", common: "White-faced bush-cricket", note: "Large Mediterranean bush-cricket of dry grass and scrub, often heard before it is seen.", status: "confirmed", wiki: W + "Decticus" , img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Decticus_albifrons_Porto_Covo_July_2016-1.jpg/330px-Decticus_albifrons_Porto_Covo_July_2016-1.jpg" },
-      { sci: "Eupholidoptera smyrnensis", common: "Smyrnean bush-cricket", note: "Robust bush-cricket of warm Mediterranean scrub, active among low vegetation in summer.", status: "confirmed", wiki: W + "Eupholidoptera" },
+      { sci: "Eupholidoptera smyrnensis", common: "Smyrnean bush-cricket", note: "Robust bush-cricket of warm Mediterranean scrub, active among low vegetation in summer.", status: "confirmed", wiki: W + "Eupholidoptera" , img: eupholidoptera.url },
     ],
   },
   {
