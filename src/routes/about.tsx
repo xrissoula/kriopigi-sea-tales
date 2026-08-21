@@ -50,6 +50,8 @@ function About() {
           <p>
             {t("The Kriopigi Shore Guide is an evolving natural history and cultural landscape project combining ecology, geology, oral history, photography, and geospatial storytelling. My hope is that it becomes both a long-term archive and an invitation to observe the coastline with greater depth, curiosity, and care.")}
           </p>
+        </div>
+
         <section className="mt-14 pt-10 border-t border-border/40">
           <h2 className="text-sm font-semibold tracking-wide uppercase text-muted-foreground mb-6">
             {t("Project facts")}
