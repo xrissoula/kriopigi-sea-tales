@@ -9,9 +9,9 @@ export const elAnthropology: Record<string, string> = {
 
   // --- Timeline ---
   "5300–4500 BCE · Late Neolithic": "5300–4500 π.Χ. · Νεότερη Νεολιθική",
-  "Early settled communities": "Οι πρώτες μόνιμες κοινότητες",
+  "Early settled communities": "Οι πρώτοι μόνιμοι οικισμοί",
   "By the Late Neolithic, settled communities were established in Halkidiki. At Olynthus, north of Kassandra, excavations have revealed houses, pottery, stone tools, figurines, and weaving equipment dating to roughly 5300–4500 BCE, evidence of an established farming world in the region.":
-    "Κατά τη Νεότερη Νεολιθική, μόνιμες κοινότητες είχαν εγκατασταθεί στη Χαλκιδική. Στην Όλυνθο, βόρεια της Κασσάνδρας, οι ανασκαφές έφεραν στο φως οικίες, κεραμική, λίθινα εργαλεία, ειδώλια και υφαντικά εργαλεία που χρονολογούνται περίπου στο 5300–4500 π.Χ. — μαρτυρία ενός εδραιωμένου γεωργικού κόσμου στην περιοχή.",
+    "Κατά τη Νεότερη Νεολιθική είχαν ήδη αναπτυχθεί μόνιμοι οικισμοί σε ολόκληρη τη Χαλκιδική. Στην προϊστορική Όλυνθο, βορειοανατολικά της Κασσάνδρας, οι ανασκαφές έφεραν στο φως οικίες, κεραμική, λίθινα εργαλεία, ειδώλια και υφαντικά εργαλεία που χρονολογούνται περίπου στο 5300–4500 π.Χ. — μαρτυρία ενός εδραιωμένου γεωργικού κόσμου στην περιοχή.",
   "General plan of the southern projection of the Megali Toumba at Olynthus, showing Byzantine, Prehistoric, Classical, and unexcavated remains.":
     "Γενική κάτοψη της νότιας προέκτασης της Μεγάλης Τούμπας στην Όλυνθο, όπου διακρίνονται βυζαντινά, προϊστορικά, κλασικά και μη ανασκαμμένα κατάλοιπα.",
   "General plan of the southern projection of the Megali Toumba at Olynthus — a site in Halkidiki between the Kassandra and Sithonia peninsulas, not on Kassandra itself. From G. E. Mylonas, Excavations at Olynthus, Part I: The Neolithic Settlement (Johns Hopkins University Studies in Archaeology No. 6, ed. D. M. Robinson; Baltimore: The Johns Hopkins Press / London: Humphrey Milford / Oxford University Press, 1929).":
