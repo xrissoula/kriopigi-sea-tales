@@ -129,29 +129,29 @@ export const elSnorkel: Record<string, string> = {
 
   // --- Look Closely ---
   "Look Closely": "ΚΟΙΤΑΞΤΕ ΠΡΟΣΕΚΤΙΚΑ",
-  "Five things worth waiting for": "Πέντε πράγματα που αξίζει να περιμένετε",
+  "Five things worth waiting for": "Πέντε πράγματα που αξίζει να αναζητήσετε",
   "Knowing a species' name is the easy part. These small observation challenges are what turn a swim into a field session.":
-    "Το όνομα ενός είδους είναι το εύκολο μέρος. Αυτές οι μικρές προκλήσεις παρατήρησης είναι που μετατρέπουν μια βουτιά σε εργασία πεδίου.",
+    "Το να αναγνωρίσετε ένα είδος είναι μόνο η αρχή. Αυτές οι μικρές προκλήσεις παρατήρησης είναι που μετατρέπουν μια απλή βουτιά σε πραγματική εξερεύνηση πεδίου.",
   "Peacock wrasse": "Χειλού",
   "The males flash electric green and blue through the spring.":
     "Τα αρσενικά αστράφτουν σε ηλεκτρικό πράσινο και μπλε κατά την άνοιξη.",
   "Their colours shift as they turn toward the sun.":
-    "Τα χρώματά τους αλλάζουν καθώς στρέφονται προς τον ήλιο.",
+    "Παρατηρήστε πώς τα χρώματα και οι αντανακλάσεις αλλάζουν καθώς το ψάρι στρέφει το σώμα του.",
   Octopus: "Χταπόδι",
-  "Often invisible until it moves.": "Συχνά αόρατο μέχρι να κινηθεί.",
+  "Often invisible until it moves.": "Αόρατο μέχρι να κινηθεί.",
   "Empty shell piles often reveal the entrance to its den.":
     "Οι σωροί από άδεια κοχύλια συχνά προδίδουν την είσοδο της φωλιάς του.",
   "Sea cucumber": "Θαλάσσιο αγγούρι",
   "Slow recycler of the seabed.": "Αργός ανακυκλωτής του βυθού.",
   "You will often see neat strings of cleaned sand behind it.":
-    "Συχνά θα δείτε πίσω του τακτικές κορδέλες από καθαρισμένη άμμο.",
+    "Συχνά αφήνει πίσω του χαρακτηριστικές λωρίδες επεξεργασμένης άμμου.",
   Salema: "Σάλπα",
   "One of the few herbivorous fish in the Mediterranean.":
     "Ένα από τα λίγα φυτοφάγα ψάρια της Μεσογείου.",
   "Watch them bite individual Posidonia leaves one after another.":
-    "Παρατηρήστε τις να δαγκώνουν τα φύλλα της Ποσειδωνίας ένα προς ένα.",
+    "Παρατηρήστε το κοπάδι να τσιμπολογά ένα-ένα τα φύλλα της Ποσειδωνίας.",
   Cuttlefish: "Σουπιά",
-  "Master of camouflage.": "Μετρ της παραλλαγής.",
+  "Master of camouflage.": "Μάστορας στο καμουφλάζ.",
   "Stay still for thirty seconds and watch waves of colour travel across its skin.":
     "Μείνετε ακίνητοι για τριάντα δευτερόλεπτα και δείτε κύματα χρώματος να διατρέχουν το δέρμα της.",
 
