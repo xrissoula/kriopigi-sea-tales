@@ -228,7 +228,7 @@ function FloraFauna() {
 
             <ul className="mt-5 grid gap-3">
               {z.species.map((s) => (
-                <li key={s.sci} className="rounded-xl bg-card border border-border shadow-soft overflow-hidden flex gap-3">
+                <li key={s.sci} id={speciesSlug(s.sci)} className="scroll-mt-24 rounded-xl bg-card border border-border shadow-soft overflow-hidden flex gap-3">
                   {s.img && (
                     <img
                       src={s.img}
