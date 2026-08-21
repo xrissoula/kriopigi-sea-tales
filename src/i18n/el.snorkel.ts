@@ -98,16 +98,16 @@ export const elSnorkel: Record<string, string> = {
   "The Underwater Forest": "Το υποβρύχιο δάσος",
   "Posidonia meadow, 5–12 m": "Λιβάδι Ποσειδωνίας, 5–12 μ.",
   "Slow down. Stop kicking. Let the meadow come alive around you — nothing here rewards speed.":
-    "Επιβραδύνετε. Σταματήστε να κλωτσάτε. Αφήστε το λιβάδι να ζωντανέψει γύρω σας — εδώ τίποτα δεν ανταμείβει την ταχύτητα.",
+    "Επιβραδύνετε. Σταματήστε για λίγο να χτυπάτε τα πέδιλα. Αφήστε το λιβάδι να ζωντανέψει γύρω σας — εδώ, όσο πιο αργά κινείστε, τόσο περισσότερα θα δείτε.",
   "salema grazing the leaves": "σάλπες που βόσκουν τα φύλλα",
   "a cuttlefish changing colour": "μια σουπιά που αλλάζει χρώμα",
   "a seahorse holding onto a blade": "ένα ιππόκαμπο γαντζωμένο σε ένα φύλλο",
   "a noble pen shell standing upright in the sand":
-    "μια πίννα στητή μέσα στην άμμο",
+    "μια πίνα όρθια μέσα στην άμμο",
   "juvenile sea bass among the shoots": "νεαρά λαβράκια ανάμεσα στους βλαστούς",
-  "a wrasse sleeping among the leaves": "μια χειλού που κοιμάται μέσα στα φύλλα",
+  "a wrasse sleeping among the leaves": "μια χειλού κρυμμένη ανάμεσα στα φύλλα",
   "Hover, do not swim. Thirty still seconds is worth more than thirty metres of kicking.":
-    "Μείνετε αιωρούμενοι, μην κολυμπάτε. Τριάντα δευτερόλεπτα ακινησίας αξίζουν περισσότερο από τριάντα μέτρα κολύμβησης.",
+    "Μείνετε για λίγο ακίνητοι πάνω από το λιβάδι αντί να συνεχίσετε αμέσως την κολύμβηση. Τριάντα δευτερόλεπτα ηρεμίας συχνά αποκαλύπτουν περισσότερα από τριάντα μέτρα βιαστικής κολύμβησης.",
 
   // --- Zone 6 ---
   "Zone 6": "ΖΩΝΗ 6",
