@@ -17,11 +17,23 @@ const LanguageContext = createContext<Ctx>({
 
 const STORAGE_KEY = "kriopigi-lang";
 
+async function fetchCountryCode(): Promise<string | null> {
+  try {
+    const res = await fetch("https://api.country.is/", {
+      method: "GET",
+      headers: { accept: "application/json" },
+    });
+    if (!res.ok) return null;
+    const data = (await res.json()) as { country?: string };
+    return data.country ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("en");
 
-  // Read the stored preference after hydration to avoid SSR mismatches.
-  // If no preference is stored, default to Greek for Greek timezone or browser language.
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY);
@@ -29,21 +41,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         setLangState(stored);
         return;
       }
-
-      const isGreekTimezone =
-        Intl.DateTimeFormat().resolvedOptions().timeZone === "Europe/Athens";
-      const browserLangs = navigator.languages?.length
-        ? navigator.languages
-        : [navigator.language];
-      const isGreekBrowserLang = browserLangs.some((l) =>
-        l.toLowerCase().startsWith("el")
-      );
-      if (isGreekTimezone || isGreekBrowserLang) {
-        setLangState("el");
-      }
     } catch {
       /* ignore */
     }
+
+    fetchCountryCode().then((code) => {
+      setLangState(code === "GR" ? "el" : "en");
+    });
   }, []);
 
   useEffect(() => {
@@ -76,3 +80,4 @@ export function useLanguage() {
 export function useT() {
   return useContext(LanguageContext).t;
 }
+
