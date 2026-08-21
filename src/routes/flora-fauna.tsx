@@ -105,60 +105,65 @@ function FloraFauna() {
           <h1 className="font-serif text-4xl text-primary-foreground">{t("Flora & Fauna")}</h1>
         </div>
       </div>
-      <PageHeader eyebrow="Field Catalogue" title="From the pine line to the open sea" lead="Five zones, five ecologies — walk outward from the dune and the species change with the depth of the water." />
+      <PageHeader eyebrow="Field Catalogue" title="From the pine line to the open sea" lead="Walk from the pine forest above Kriopigi to the open Mediterranean and, within a few hundred metres, the landscape changes repeatedly. Forest becomes shrubland, shrubland gives way to rocky and sandy shore, and beneath the surface entirely different biological communities take over. This page follows that journey from land to sea." />
 
       {/* Ecosystem context */}
       <div className="px-5 max-w-3xl mx-auto mb-10 space-y-8">
         <section>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("The bigger picture")}</p>
           <h2 className="mt-1 font-serif text-2xl text-foreground">{t("A Mediterranean mosaic")}</h2>
-          <p className="mt-3 text-foreground/80 leading-relaxed">{t("Kassandra — ancient Pallene — is a coastal ecosystem mosaic shaped by limestone geology, dry hot summers, mild wet winters, salt spray, fire, erosion, and thousands of years of human use. Around Kriopigi the landscape switches in just a few hundred metres: upland pine forest, Mediterranean shrubland, rocky coastal slopes, freshwater microhabitats, sandy and pebbled shore, and the shallow marine world beyond.")}</p>
+          <p className="mt-3 text-foreground/80 leading-relaxed">{t("Kriopigi sits at the edge of a small but unusually diverse coastal landscape. In a few hundred metres, the land rises from the shore through Aleppo pine forest, maquis shrubland, and sun-baked phrygana, while the sea offers rocky ledges, sandy pockets, and beds of Posidonia oceanica. This mosaic exists because the area combines a Mediterranean climate, limestone geology, varied topography, freshwater runoff, and thousands of years of human land use. The result is an unusually high number of habitats packed into a very small area, and with them, a wide range of species.")}</p>
         </section>
 
         <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
           <figure className="-mx-5 -mt-5 mb-5 overflow-hidden">
-            <img src={pineForestShore} alt={t("Aleppo pines silhouetted above the Kriopigi shoreline at dusk, with the Thermaic Gulf glowing pink behind their trunks.")} loading="lazy" className="w-full h-56 object-cover" />
+            <img src={pineForestShore} alt={t("Aleppo pines silhouetted above the Kriopigi shoreline at dusk, with the Toronean Gulf glowing pink behind their trunks.")} loading="lazy" className="w-full h-56 object-cover" />
             <figcaption className="px-5 py-2 text-[11px] text-muted-foreground border-b border-border bg-muted/30">{t("Aleppo pine canopy along the bluff above Kriopigi at dusk.")}</figcaption>
           </figure>
           <h3 className="font-serif text-xl text-foreground">{t("The forest above the shore")}</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Forest canopy")}</p>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Primarily Mediterranean conifer forest, dominated by Aleppo pine (Pinus halepensis), locally mixed with Turkish pine (Pinus brutia). Classic eastern-Mediterranean fire-adapted pines: resinous, drought-tolerant, fast colonisers of poor rocky soils.")}</p>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("The slopes above Kriopigi are dominated by Aleppo pine (Pinus halepensis), one of the defining trees of the eastern Mediterranean. In places it mixes with Turkish pine (Pinus brutia), forming an open, fire-adapted forest well suited to dry limestone soils.")}</p>
           <h3 className="mt-6 font-serif text-xl text-foreground">{t("Maquis underneath")}</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Dense understory")}</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
             <img src={maquisShrubland} alt={t("A sandy footpath descending through dense maquis shrubland to the turquoise shallows of a Kriopigi cove.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
             <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Maquis flanking a path down to the cove.")}</figcaption>
           </figure>
-          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Dense evergreen maquis shrubland fills the understory — kermes oak, lentisk, arbutus, wild olive, myrtle, phillyrea, rosemary, thyme, sage. One of the defining ecosystems of the Mediterranean Basin.")}</p>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Beneath the pines grows dense evergreen maquis — a tangle of kermes oak, lentisk, strawberry tree, wild olive, myrtle, rosemary, sage and thyme. These aromatic shrubs form one of the characteristic ecosystems of the Mediterranean Basin and provide shelter and food for countless insects, reptiles and birds.")}</p>
           <h3 className="mt-5 font-serif text-xl text-foreground">{t("Phrygana on the dry edges")}</h3>
           <p className="text-[10px] uppercase tracking-[0.25em] text-accent mt-1">{t("Degraded / exposed dry edge ecology")}</p>
           <figure className="mt-3 -mx-5 overflow-hidden">
-            <img src={phryganaTortoise} alt={t("Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and an erosional drainage cut beside a dirt track, with a Boettger's tortoise picking its way across the bank.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
-            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore — habitat for species like the Boettger's tortoise, just visible on the bank.")}</figcaption>
+            <img src={phryganaTortoise} alt={t("Dry-edge phrygana habitat above Kriopigi: thin rocky soil, sparse drought-adapted scrub, and a small erosional drainage cut beside a dirt track.")} loading="lazy" className="w-full h-auto object-contain bg-muted" />
+            <figcaption className="px-5 py-2 text-[11px] text-muted-foreground bg-muted/30 border-y border-border">{t("Phrygana scrub and a seasonal erosion channel above the shore.")}</figcaption>
           </figure>
-          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Where soils thin and grazing pressure rises, maquis gives way to phrygana: lower, more open, thornier, more aromatic — heavily adapted to drought and goats. The exposed substrate, sparse scrub, and small drainage cuts that score these dry edges are part of the same picture: thin Mediterranean soils carrying episodic rain downhill, and edge habitat for reptiles like Hermann's / Boettger's tortoise (Testudo hermanni boettgeri) that thrive in this mosaic of rock, grass, and low cover.")}</p>
+          <p className="mt-3 text-sm text-foreground/80 leading-relaxed">{t("Where soils are shallower, conditions drier and more exposed, or where repeated fire and grazing maintain a lower shrub community, maquis gives way to phrygana. Phrygana is a natural and widespread Mediterranean ecosystem of low, aromatic, often thorny shrubs; human activity often expands or maintains it, but it is not simply degraded maquis. On the dry slopes above Kriopigi, it forms an important transition zone between forest and open coast.")}</p>
         </section>
 
         <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
           <h3 className="font-serif text-xl text-foreground">{t("The coast itself")}</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("A patchwork of rocky littoral and pocket beach systems. Tidepool organisms, algae, limpets and sea snails on the rocks; crabs in the wrack; octopus dens in the cracks; juvenile fish sheltering in the shallows.")}</p>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Rocky ledges, tide pools and small pocket beaches create dozens of microhabitats. Crevices provide shelter from waves and predators, while algae, encrusting organisms and accumulated wrack support diverse communities of molluscs, crustaceans, fishes and other marine life.")}</p>
           <h3 className="mt-5 font-serif text-xl text-foreground">{t("Posidonia meadow offshore")}</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. The meadows are biodiversity hotspots, fish nurseries, sediment stabilisers, and major carbon sinks.")}</p>
-          <h3 className="mt-5 font-serif text-xl text-foreground">{t("Why the water is so clear")}</h3>
-          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("The famous turquoise comes partly from oligotrophic conditions: nutrient-poor water, low plankton density, high visibility — and lower overall productivity than colder seas.")}</p>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. Its meadows stabilise sediments, improve water clarity, store large amounts of carbon, and provide habitat and refuge for countless marine organisms. They are among the Mediterranean's most important coastal habitats, supporting many juvenile fishes and invertebrates.")}</p>
         </section>
 
         <section>
-          <h3 className="font-serif text-xl text-foreground">{t("Geology underfoot")}</h3>
-          <p className="mt-2 text-foreground/80 leading-relaxed">{t("Kassandra is mostly uplifted limestone and sedimentary coastal terrain, which gives the peninsula its alkaline soils, caves, rocky shelves, erosion-prone cliffs, and the bright turquoise shallows over white carbonate sand.")}</p>
+          <h3 className="font-serif text-xl text-foreground">{t("Why is biodiversity so high here?")}</h3>
+          <p className="mt-2 text-foreground/80 leading-relaxed">{t("Kriopigi combines many habitats in a very small area. Pine forest, maquis, phrygana, rocky shore, sandy patches, Posidonia meadows, freshwater seepage, and the boundaries between them all create a range of ecological niches. Each habitat supports a different set of species, and their closeness allows many plants and animals to coexist in a narrow strip of coast. This habitat diversity, more than any single factor, explains why the shoreline is so rich in life.")}</p>
         </section>
 
         <section className="rounded-2xl bg-gradient-sea p-5 text-primary-foreground shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">{t("A cultural landscape")}</p>
           <h3 className="mt-1 font-serif text-xl">{t("Not pristine wilderness")}</h3>
-          <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("Ancient logging, grazing, terraced agriculture, olive cultivation, tourism, road building, recurrent fires, coastal development — all of it has shaped what grows here. The shore is better understood as a long-inhabited Mediterranean cultural landscape, where ecology and human history have been intertwined for thousands of years.")}</p>
+          <p className="mt-2 text-sm opacity-90 leading-relaxed">{t("Kriopigi is not untouched wilderness. It is a Mediterranean cultural landscape shaped by millennia of forestry, grazing, agriculture, fire, settlement and tourism. These influences have altered the ecosystems here without erasing their ecological value. Understanding the shore means recognising that human history and natural history are intertwined, and that the landscape we see today is the result of both.")}</p>
+        </section>
+
+        <section className="rounded-2xl bg-card border border-border p-5 shadow-soft">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Life Around Kriopigi")}</p>
+          <h3 className="mt-1 font-serif text-xl text-foreground">{t("A field catalogue begins")}</h3>
+          <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t("These habitats support a remarkable variety of organisms, from orchids and Mediterranean shrubs to migratory birds, reptiles, reef fishes and dolphins. The catalogue below highlights species photographed in and around Kriopigi. Most observations are linked directly to iNaturalist records, and each species page will eventually include links to additional identification resources and references.")}</p>
         </section>
       </div>
+
 
       {/* Zone jump nav */}
       <div className="px-5 max-w-3xl mx-auto mb-6">
