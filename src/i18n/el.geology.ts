@@ -4,7 +4,7 @@ export const elGeology: Record<string, string> = {
   Formation: "Δημιουργία",
   "How the cove was made": "Πώς σχηματίστηκε ο όρμος",
   "Read downward through time — from a Triassic sea bed to the cold spring that still feeds the bay.":
-    "Ακολουθήστε την ιστορία προς τα πίσω στον χρόνο: από τον βυθό μιας θάλασσας της Τριασικής Περιόδου έως την κρύα πηγή που εξακολουθεί να τροφοδοτεί τον όρμο σήμερα.",
+    "Ακολουθήστε την ιστορία του τόπου πίσω στον χρόνο — από τον πυθμένα ενός αρχαίου ωκεανού έως την κρύα πηγή που συνεχίζει να τροφοδοτεί τον όρμο σήμερα.",
   "Geologic time scale, 650 million years ago to the present":
     "Γεωλογική κλίμακα χρόνου — από πριν από 650 εκατομμύρια χρόνια έως σήμερα",
 
