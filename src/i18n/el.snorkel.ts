@@ -61,7 +61,7 @@ export const elSnorkel: Record<string, string> = {
   "Sandy Bottom": "Αμμώδης βυθός",
   "2–5 m below you": "2–5 μ. κάτω από εσάς",
   "Now you are floating. This is where you start slowing down — the sand looks blank until you give it time.":
-    "Τώρα επιπλέετε. Εδώ αρχίζετε να επιβραδύνετε — η άμμος φαίνεται άδεια μέχρι να της δώσετε χρόνο.",
+    "Τώρα επιπλέετε. Εδώ αξίζει να επιβραδύνετε — η άμμος μοιάζει άδεια μόνο μέχρι να της δώσετε λίγο χρόνο.",
   "a salema school grazing": "ένα κοπάδι σάλπες που βόσκει",
   "a two-banded seabream": "ένα σαργό",
   "a white seabream": "μια μελανούρα",
