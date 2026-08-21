@@ -260,7 +260,7 @@ function FloraFauna() {
             </ul>
 
             {z.id === "meadow" && (
-              <div className="mt-5 rounded-xl border border-dashed border-border bg-muted/30 p-4 flex gap-3">
+              <div id={speciesSlug("Noctiluca scintillans")} className="scroll-mt-24 mt-5 rounded-xl border border-dashed border-border bg-muted/30 p-4 flex gap-3">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Noctiluca_scintillans_varias.jpg/330px-Noctiluca_scintillans_varias.jpg"
                   alt={`${t("Sea sparkle")} (Noctiluca scintillans)`}
