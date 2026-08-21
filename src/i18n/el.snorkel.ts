@@ -182,9 +182,9 @@ export const elSnorkel: Record<string, string> = {
 
   // --- iNaturalist block ---
   "Log what you saw": "ΚΑΤΑΓΡΑΨΤΕ ΟΣΑ ΕΙΔΑΤΕ",
-  "Your swim can become a record": "Η βουτιά σας μπορεί να γίνει καταγραφή",
+  "Your swim can become a record": "Η παρατήρησή σας μπορεί να γίνει επιστημονική καταγραφή",
   "Photograph anything you cannot name and upload it to iNaturalist — a free platform where naturalists help confirm identifications. Each verified photo turns a holiday sighting into an occurrence record for this stretch of coast.":
-    "Φωτογραφίστε ό,τι δεν μπορείτε να αναγνωρίσετε και ανεβάστε το στο iNaturalist — μια δωρεάν πλατφόρμα όπου φυσιοδίφες επιβεβαιώνουν τις ταυτοποιήσεις. Κάθε επιβεβαιωμένη φωτογραφία μετατρέπει μια καλοκαιρινή παρατήρηση σε επιστημονική καταγραφή για αυτό το κομμάτι της ακτής.",
+    "Φωτογραφίστε ό,τι δεν μπορείτε να αναγνωρίσετε και ανεβάστε το στο iNaturalist — μια δωρεάν πλατφόρμα όπου η κοινότητα βοηθά στην ταυτοποίηση των ειδών. Κάθε επιβεβαιωμένη παρατήρηση μετατρέπει μια καλοκαιρινή συνάντηση σε χρήσιμη καταγραφή για αυτό το κομμάτι της ακτής.",
   "Open iNaturalist →": "Ανοίξτε το iNaturalist →",
 
   // --- Species card status ---
