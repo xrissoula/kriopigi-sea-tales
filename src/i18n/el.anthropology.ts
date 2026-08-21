@@ -5,7 +5,7 @@ export const elAnthropology: Record<string, string> = {
   "People of the cove": "Οι άνθρωποι της ακτής",
   "Eight thousand years on a thin coast": "Οκτώ χιλιάδες χρόνια σε μια στενή λωρίδα ακτής",
   "From Neolithic communities to amphora merchants to modern summer arrivals — layers of human history remain visible across Kassandra and in the village above the bay.":
-    "Από τις νεολιθικές κοινότητες και τους εμπόρους αμφορέων έως τους σημερινούς καλοκαιρινούς επισκέπτες: στρώματα ανθρώπινης ιστορίας παραμένουν ορατά σε ολόκληρη την Κασσάνδρα και στο χωριό πάνω από τον όρμο.",
+    "Από τους πρώτους νεολιθικούς οικισμούς έως τη σύγχρονη τουριστική Κρυοπηγή, περισσότερα από οκτώ χιλιάδες χρόνια ανθρώπινης παρουσίας έχουν αφήσει το αποτύπωμά τους στην Κασσάνδρα.",
 
   // --- Timeline ---
   "5300–4500 BCE · Late Neolithic": "5300–4500 π.Χ. · Νεότερη Νεολιθική",
