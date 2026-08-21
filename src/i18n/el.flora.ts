@@ -146,43 +146,44 @@ export const elFlora: Record<string, string> = {
 
   // --- Zone 3 ---
   "Sun-warmed sand, scattered rocks and the inner edge of the seagrass meadow support many of the fish most easily seen by snorkelers.":
-    "Ζεστός αμμώδης βυθός, διάσπαρτοι βράχοι και το εσωτερικό όριο του λιβαδιού της Ποσειδωνίας φιλοξενούν πολλά από τα ψάρια που βλέπει πιο εύκολα όποιος κάνει κατάδυση με αναπνευστήρα.",
+    "Οι ζεστοί αμμώδεις βυθοί, οι διάσπαρτοι βράχοι και το εσωτερικό όριο του λιβαδιού της Ποσειδωνίας φιλοξενούν πολλά από τα ψάρια που συναντά κανείς εύκολα κάνοντας κατάδυση με αναπνευστήρα.",
   "Mediterranean sand smelt": "Αθερίνα",
   "Silvery schools shimmer just below the surface over calm, shallow water.":
-    "Ασημένια κοπάδια λάμπουν λίγο κάτω από την επιφάνεια σε ήρεμα, ρηχά νερά.",
+    "Ασημένιο κοπαδόψαρο που αστράφτει λίγο κάτω από την επιφάνεια σε ήρεμα, ρηχά νερά.",
   "Common two-banded seabream": "Δίγραμμος σαργός",
   "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.":
-    "Αναγνωρίσιμο από δύο έντονες μαύρες ζώνες· νεαρά άτομα συναθροίζονται γύρω από βράχια και φυκοβολιά.",
+    "Σαργός που ξεχωρίζει από τις δύο χαρακτηριστικές μαύρες ζώνες του· τα νεαρά άτομα συναθροίζονται γύρω από βράχια και Ποσειδωνία.",
   "Salema": "Σάλπα",
   "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.":
-    "Κοπάδια βοσκόβια τρέφονται με φύκια και φύλλα φυκοβολιάς κατά μήκος του ορίου του λιβαδιού.",
+    "Βοσκόψαρο που κινείται σε μεγάλα κοπάδια και βόσκει φύκια και φύλλα Ποσειδωνίας στα όρια του λιβαδιού.",
   "European seabass": "Λαβράκι",
   "Streamlined predator that cruises shallow coastal water, often near rocks and sandy edges.":
-    "Αεροδυναμικός θηρευτής που περιδιαβαίνει τα ρηχά παράκτια νερά, συχνά κοντά σε βράχια και αμμώδη όρια.",
+    "Γρήγορος παράκτιος θηρευτής που περιδιαβαίνει τα ρηχά παράκτια νερά, συχνά κοντά σε βράχια και αμμώδη όρια.",
   "Gilthead seabream": "Τσιπούρα",
   "Recognizable by the golden band between its eyes; feeds over sand, rock and seagrass.":
-    "Αναγνωρίσιμη από τη χρυσή ταινία ανάμεσα στα μάτια· τρέφεται πάνω από άμμο, βράχο και φυκοβολιά.",
+    "Τσιπούρα που αναγνωρίζεται από τη χρυσή ταινία ανάμεσα στα μάτια· τρέφεται πάνω από άμμο, βράχο και φυκοβολιά.",
   "White seabream": "Σαργός",
   "Robust silver seabream with dark vertical markings, commonly feeding around rocky shallows.":
-    "Εύρωστος ασημένιος σπάρος με σκούρες κατακόρυφες γραμμώσεις, που τρέφεται συνήθως στα βραχώδη ρηχά.",
+    "Εύρωστος ασημένιος σαργός με σκούρες κατακόρυφες γραμμώσεις, που τρέφεται συνήθως στα βραχώδη ρηχά.",
   "Saddled seabream": "Μελανούρι",
   "Silver schooling fish easily recognized by the black saddle-shaped patch near its tail.":
     "Ασημένιο κοπαδιάρικο ψάρι, εύκολα αναγνωρίσιμο από τη μαύρη κηλίδα σχήματος σέλας κοντά στην ουρά.",
   "Striped seabream": "Μουρμούρα",
   "Slender seabream with narrow vertical stripes, usually feeding over sandy and mixed bottoms.":
-    "Λεπτόσωμος σπάρος με στενές κατακόρυφες ρίγες, που τρέφεται συνήθως σε αμμώδεις και μικτούς βυθούς.",
+    "Λεπτόσωμος σαργός με στενές κατακόρυφες ρίγες, που τρέφεται συνήθως σε αμμώδεις και μικτούς βυθούς.",
   "Mediterranean damselfish": "Καστανόψαρο",
   "Small dark fish often hovering in loose groups above rocks and reef habitat.":
-    "Μικρό σκουρόχρωμο ψάρι που συχνά αιωρείται σε χαλαρές ομάδες πάνω από βράχια και υφάλους.",
+    "Μικρό σκουρόχρωμο ψάρι που συχνά αιωρείται σε μικρά κοπάδια πάνω από βράχια και υφάλους.",
   "Painted comber": "Πέρκα γραμματική",
   "Colourful ambush predator that waits close to rocks before darting after small prey.":
     "Πολύχρωμος θηρευτής ενέδρας που περιμένει κοντά στα βράχια πριν ορμήσει σε μικρή λεία.",
   "Short-snouted seahorse": "Κοντόρυγχος ιππόκαμπος",
   "Master of camouflage that clings to algae and seagrass with its curled tail.":
-    "Άρχοντας του καμουφλάζ που αγκιστρώνεται σε φύκια και φυκοβολιά με τη στριφτή του ουρά.",
+    "Δάσκαλος του καμουφλάζ που αγκιστρώνεται σε φύκια και φυκοβολιά με τη στριφτή του ουρά.",
   "Cotton-spinner sea cucumber": "Θαλάσσιο αγγούρι",
   "Slow-moving recycler that feeds on organic material within sandy and mixed seabeds.":
     "Βραδυκίνητος ανακυκλωτής που τρέφεται με οργανικό υλικό μέσα σε αμμώδεις και μικτούς βυθούς.",
+
 
   // --- Zone 4 ---
   "An endemic Mediterranean seagrass meadow forming one of the coast's richest habitats, with shelter, feeding grounds and complex structure for marine life.":
@@ -192,16 +193,16 @@ export const elFlora: Record<string, string> = {
     "Ένα αληθινό ανθοφόρο φυτό που σχηματίζει μακρόβια υποθαλάσσια λιβάδια, στηρίζοντας πλούσια μεσογειακή θαλάσσια ζωή.",
   "Noble pen shell": "Πίνα",
   "The Mediterranean’s largest bivalve; now critically endangered and fully protected.":
-    "Το μεγαλύτερο δίθυρο της Μεσογείου· πλέον κρισίμως κινδυνεύον και πλήρως προστατευόμενο.",
+    "Κρισίμως κινδυνεύον ενδημικό δίθυρο της Μεσογείου, σήμερα αυστηρά προστατευόμενο.",
   "Common octopus": "Κοινό χταπόδι",
   "Empty shells piled outside a rocky crevice often reveal an occupied den.":
-    "Σωροί από άδεια κελύφη έξω από μια βραχώδη σχισμή συχνά αποκαλύπτουν ένα κατοικημένο λαγούμι.",
+    "Κεφαλόποδο που αλλάζει στιγμιαία χρώμα και υφή· σωροί από άδεια κελύφη έξω από μια βραχώδη σχισμή συχνά αποκαλύπτουν ένα κατοικημένο λαγούμι.",
   "Peacock wrasse": "Πράσινος χειλούς",
   "Large colourful wrasse; males become especially vivid during the breeding season.":
     "Μεγάλος πολύχρωμος χειλούς· τα αρσενικά γίνονται ιδιαίτερα έντονα την περίοδο αναπαραγωγής.",
   "Mediterranean rainbow wrasse": "Γύλος",
   "Fast, colourful wrasse that darts across rocky and vegetated bottoms searching for small prey.":
-    "Γρήγορος, πολύχρωμος χειλούς που διασχίζει βραχώδεις και φυτοκαλυμμένους βυθούς αναζητώντας μικρή λεία.",
+    "Ζωηρόχρωμος, δραστήριος χειλούς που διασχίζει βραχώδεις και φυτοκαλυμμένους βυθούς αναζητώντας μικρή λεία.",
   "Ornate wrasse": "Χρωματιστός χειλούς",
   "Brilliantly coloured, fast-moving wrasse most often seen over sunlit rocky habitat.":
     "Εντυπωσιακά χρωματιστός, ταχύς χειλούς που συναντάται συνήθως σε ηλιόλουστους βραχώδεις βυθούς.",
@@ -210,10 +211,11 @@ export const elFlora: Record<string, string> = {
     "Μικρός χειλούς με σχέδια που ψάχνει φύκια, βράχια και φυκοβολιά για μικροσκοπικά ασπόνδυλα.",
   "Dusky grouper": "Ροφός",
   "Heavy-bodied ambush predator that shelters around rocky ledges, crevices and reef habitat.":
-    "Βαρύσωμος θηρευτής ενέδρας που καταφεύγει σε βραχώδεις εξοχές, σχισμές και υφάλους.",
+    "Μεγάλος θηρευτής ενέδρας που καταφεύγει σε βραχώδεις εξοχές, σχισμές και υφάλους.",
   "Common cuttlefish": "Κοινή σουπιά",
   "Master of camouflage that can change colour rapidly and attaches dark egg clusters to vegetation and other structures.":
-    "Άρχοντας του καμουφλάζ που αλλάζει χρώμα ακαριαία και προσκολλά σκούρες συστάδες αυγών σε βλάστηση και άλλες δομές.",
+    "Αλλάζει στιγμιαία χρώμα και σχέδια στο δέρμα της· προσκολλά μαύρες συστάδες αυγών σε φύκια και άλλες επιφάνειες.",
+
 
   // --- Plankton & open water ---
   "Plankton & Open Water": "Πλαγκτόν & Ανοιχτά Νερά",
@@ -231,19 +233,20 @@ export const elFlora: Record<string, string> = {
     "Θαλάσσια χελώνα μεγάλης εμβέλειας που μπορεί να περάσει από τα παράκτια και ανοιχτά νερά του βόρειου Αιγαίου.",
   "Common bottlenose dolphin": "Ρινοδέλφινο",
   "Social coastal dolphin that travels in groups through the gulf and occasionally approaches shore.":
-    "Κοινωνικό παράκτιο δελφίνι που ταξιδεύει σε ομάδες μέσα στον κόλπο και περιστασιακά πλησιάζει την ακτή.",
+    "Κοινωνικό παράκτιο δελφίνι που ζει και ταξιδεύει σε ομάδες μέσα στον κόλπο και περιστασιακά πλησιάζει την ακτή.",
   "Continental great cormorant": "Κορμοράνος",
   "Large diving waterbird that swims low in the water and pursues fish beneath the surface.":
     "Μεγάλο καταδυόμενο υδρόβιο πτηνό που κολυμπά χαμηλά στο νερό και καταδιώκει ψάρια κάτω από την επιφάνεια.",
   "Atlantic bluefin tuna": "Ερυθρός τόνος του Ατλαντικού",
   "Powerful migratory predator of open water that may pass offshore during seasonal movements.":
     "Ισχυρός μεταναστευτικός θηρευτής των ανοιχτών νερών που μπορεί να περάσει από τα ανοιχτά κατά τις εποχιακές μετακινήσεις.",
-  "Violescent sea-whip": "Βιολετί γοργονία",
+  "Violescent sea-whip": "Μωβ γοργονία",
   "Large gorgonian that forms fragile branching colonies on deeper Mediterranean rocky reefs.":
     "Μεγάλη γοργονία που σχηματίζει εύθραυστες διακλαδισμένες αποικίες σε βαθύτερους βραχώδεις υφάλους της Μεσογείου.",
   "Small-spotted catshark": "Μικρόστικτος γαλέος",
   "Small bottom-dwelling shark whose tough egg cases may occasionally wash ashore.":
     "Μικρός βενθικός καρχαρίας, του οποίου οι σκληρές θήκες αυγών ξεβράζονται περιστασιακά στην ακτή.",
+
 
   // --- Observation badges ---
   "Confirmed on iNaturalist": "Επιβεβαιωμένο στο iNaturalist",
