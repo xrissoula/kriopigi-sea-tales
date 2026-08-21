@@ -43,7 +43,7 @@ export const elFlora: Record<string, string> = {
     "Βραχώδεις εξάρσεις, φυσικές λεκάνες και μικροί κόλποι αμμου δημιουργούν δεκάδες μικροενδιαιτήματα για πλήθος οργανισμών. Οι σχισμές προσφέρουν προστασία από τα κύματα και τους θηρευτές, ενώ τα φύκια, οι οργανισμοί που προσκολλώνται στους βράχους και τα συσσωρευμένα ξεβρασμένα φύκια στηρίζουν ποικίλες κοινότητες μαλακίων, καρκινοειδών, ψαριών και άλλων θαλάσσιων οργανισμών.",
   "Posidonia meadow offshore": "Το λιβάδι της Ποσειδωνίας στα ανοιχτά",
   "Underwater, the keystone habitat is the Posidonia oceanica meadow. This is not seaweed — it is a true marine flowering plant endemic to the Mediterranean. Its meadows stabilise sediments, improve water clarity, store large amounts of carbon, and provide habitat and refuge for countless marine organisms. They are among the Mediterranean's most important coastal habitats, supporting many juvenile fishes and invertebrates.":
-    "Κάτω από την επιφάνεια, το κλειδικό ενδιαίτημα είναι το λιβάδι της Ποσειδωνίας (Posidonia oceanica). Δεν πρόκειται για φύκι, αλλά για ένα αληθινό θαλάσσιο ανθοφόρο φυτό, ενδημικό της Μεσογείου. Τα λιβάδια της σταθεροποιούν τα ιζήματα, βελτιώνουν τη διαύγεια του νερού, αποθηκεύουν μεγάλες ποσότητες άνθρακα και παρέχουν ενδιαίτημα και καταφύγιο σε αμέτρητους θαλάσσιους οργανισμούς. Ανήκουν στα σημαντικότερα παράκτια οικοσυστήματα της Μεσογείου, στηρίζοντας πολλά νεαρά ψάρια και ασπόνδυλα.",
+    "Κάτω από την επιφάνεια, το κλειδικό ενδιαίτημα είναι το λιβάδι της Ποσειδωνίας (Posidonia oceanica). Δεν πρόκειται για φύκι, αλλά για ένα αληθινό θαλάσσιο ανθοφόρο φυτό, ενδημικό της Μεσογείου. Τα λιβάδια της σταθεροποιούν τα ιζήματα, βελτιώνουν τη διαύγεια του νερού, δεσμεύουν μεγάλες ποσότητες άνθρακα και παρέχουν ενδιαίτημα και καταφύγιο σε αμέτρητους θαλάσσιους οργανισμούς. Θεωρούνται από τα σημαντικότερα παράκτια οικοσυστήματα της Μεσογείου, στηρίζοντας πολλά νεαρά ψάρια και ασπόνδυλα.",
 
   "Why is biodiversity so high here?": "Γιατί είναι τόσο υψηλή η βιοποικιλότητα εδώ;",
   "Kriopigi combines many habitats in a very small area. Pine forest, maquis, phrygana, rocky shore, sandy patches, Posidonia meadows, freshwater seepage, and the boundaries between them all create a range of ecological niches. Each habitat supports a different set of species, and their closeness allows many plants and animals to coexist in a narrow strip of coast. This habitat diversity, more than any single factor, explains why the shoreline is so rich in life.":
@@ -52,10 +52,10 @@ export const elFlora: Record<string, string> = {
   "A cultural landscape": "Πολιτισμικό τοπίο",
   "Not pristine wilderness": "Όχι μια ανέγγιχτη φύση",
   "Kriopigi is not untouched wilderness. It is a Mediterranean cultural landscape shaped by millennia of forestry, grazing, agriculture, fire, settlement and tourism. These influences have altered the ecosystems here without erasing their ecological value. Understanding the shore means recognising that human history and natural history are intertwined, and that the landscape we see today is the result of both.":
-    "Η Κρυοπηγή δεν είναι ανέγγιχτη ερημιά. Είναι ένα μεσογειακό πολιτισμικό τοπίο διαμορφωμένο από χιλιετίες υλοτομίας, βόσκησης, γεωργίας, πυρκαγιών, εγκατάστασης ανθρώπων και τουρισμού. Αυτές οι επιδράσεις έχουν αλλάξει τα οικοσυστήματα εδώ χωρίς να εξαλείψουν την οικολογική τους αξία. Η κατανόηση της ακτής σημαίνει την αναγνώριση ότι η ανθρώπινη ιστορία και η φυσική ιστορία είναι συνυφασμένες, και ότι το τοπίο που βλέπουμε σήμερα είναι αποτέλεσμα και των δύο.",
+    "Η Κρυοπηγή δεν είναι ανέγγιχτη ερημιά. Είναι ένα μεσογειακό πολιτισμικό τοπίο διαμορφωμένο από χιλιετίες υλοτομίας, βόσκησης, γεωργίας, πυρκαγιών, οικιστικής ανάπτυξης και τουρισμού. Αυτές οι επιδράσεις έχουν αλλάξει τα οικοσυστήματα εδώ χωρίς να εξαλείψουν την οικολογική τους αξία. Η κατανόηση της ακτής σημαίνει την αναγνώριση ότι η ιστορία του ανθρώπου και η φυσική ιστορία είναι συνυφασμένες, και ότι το τοπίο που βλέπουμε σήμερα είναι αποτέλεσμα και των δύο.",
 
   "Life Around Kriopigi": "Η ζωή γύρω από την Κρυοπηγή",
-  "A field catalogue begins": "Ξεκινάει ο κατάλογος πεδίου",
+  "A field catalogue begins": "Οδηγός αναγνώρισης ειδών",
   "These habitats support a remarkable variety of organisms, from orchids and Mediterranean shrubs to migratory birds, reptiles, reef fishes and dolphins. The catalogue below highlights species photographed in and around Kriopigi. Most observations are linked directly to iNaturalist records, and each species page will eventually include links to additional identification resources and references.":
     "Αυτοί οι βιότοποι φιλοξενούν μια αξιοσημείωτη ποικιλία οργανισμών, από ορχιδέες και μεσογειακούς θάμνους έως μεταναστευτικά πτηνά, ερπετά, ψάρια των υφάλων και δελφίνια. Ο κατάλογος παρακάτω επισημαίνει είδη που φωτογραφήθηκαν στην Κρυοπηγή και τη γύρω περιοχή. Οι περισσότερες παρατηρήσεις συνδέονται απευθείας με καρτέλες iNaturalist, και κάθε σελίδα είδους θα περιλαμβάνει στο μέλλον συνδέσμους σε πρόσθετους πόρους αναγνώρισης και αναφορές.",
 
@@ -95,7 +95,7 @@ export const elFlora: Record<string, string> = {
     "Νυχτόβιο αποικοδομητικό που ανακυκλώνει τα ξεβρασμένα φύκια κατά μήκος της ανώτερης παραλίας.",
   "Kentish plover": "Θαλασσοσφυριχτής",
   "Tiny shorebird that nests directly on open sand or fine shingle; give nesting areas plenty of space in spring.":
-    "Μικρό παρυδάτιο πουλί που φωλιάζει απευθείας στην ανοιχτή άμμο ή σε λεπτό χαλίκι· αφήστε άφθονο χώρο στις περιοχές φωλιάσματος την άνοιξη.",
+    "Μικρό παρυδάτιο πουλί που φωλιάζει απευθείας στην ανοιχτή άμμο ή σε λεπτό χαλίκι· αποφύγετε να πλησιάζετε τις θέσεις φωλεοποίησης την άνοιξη.",
   "Wedge clam": "Σφήνα (Donax)",
   "Lives buried beneath wet sand, filtering seawater as waves wash overhead.":
     "Ζει θαμμένο κάτω από την υγρή άμμο, φιλτράροντας το θαλασσινό νερό καθώς τα κύματα περνούν από πάνω.",
@@ -124,7 +124,7 @@ export const elFlora: Record<string, string> = {
     "Γνώριμο ανοιχτόχρωμο περιστέρι των χωριών και των δασικών παρυφών, αναγνωρίσιμο από το στενό μαύρο κολάρο στον λαιμό.",
   "Western honey bee": "Μέλισσα",
   "Common flower visitor carrying pollen between wildflowers throughout the warmer months.":
-    "Συνηθισμένος επισκέπτης των ανθέων που μεταφέρει γύρη ανάμεσα στα αγριολούλουδα όλους τους ζεστούς μήνες.",
+    "Συχνός επισκέπτης των ανθέων και σημαντικός επικονιαστής των αγριολούλουδων τους ζεστούς μήνες.",
   "Marmalade hover fly": "Συρφίδα με πορτοκαλί ζώνες",
   "Small orange-banded hover fly that hovers over flowers while feeding on nectar and pollen.":
     "Μικρή συρφίδα με πορτοκαλί ζώνες που αιωρείται πάνω από τα άνθη τρεφόμενη με νέκταρ και γύρη.",
