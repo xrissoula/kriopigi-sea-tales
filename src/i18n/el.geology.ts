@@ -26,7 +26,7 @@ export const elGeology: Record<string, string> = {
   "~10–5 Ma · Late Miocene": "~10–5 εκατ. χρόνια πριν · Ύστερο Μειόκαινο",
   "The landscape beneath Kriopigi takes shape": "Το τοπίο κάτω από την Κρυοπηγή παίρνει μορφή",
   "Rivers, lakes, floodplains and shallow coastal environments deposited thick layers of sand, gravel, clay, marl and limestone across what is now Kassandra. Around modern Kriopigi these Late Miocene sediments preserve fossil mammals and other terrestrial life, making the village itself part of the peninsula's paleontological record.":
-    "Ποτάμια, λίμνες, πεδιάδες πλημμυρών και ρηχά παράκτια περιβάλλοντα απόθεσαν παχιά στρώματα άμμου, χαλικιού, αργίλου, μάργας και ασβεστόλιθου σε όλη την έκταση της σημερινής Κασσάνδρας. Κοντά στη σύγχρονη Κρυοπηγή, αυτά τα υστερομειοκαινικά ιζήματα φυλάσσουν απολιθωμένα θηλαστικά και άλλα χερσαία είδη, καθιστώντας το ίδιο το χωριό μέρος του παλαιοντολογικού αρχείου της χερσονήσου.",
+    "Ποτάμια, λίμνες, πεδιάδες πλημμυρών και ρηχά παράκτια περιβάλλοντα απόθεσαν παχιά στρώματα άμμου, χαλικιού, αργίλου, μάργας και ασβεστόλιθου σε όλη την έκταση της σημερινής Κασσάνδρας. Κοντά στη σύγχρονη Κρυοπηγή, αυτά τα υστερομειοκαινικά ιζήματα φυλάσσουν απολιθωμένα θηλαστικά και άλλα χερσαία είδη, καθιστώντας την περιοχή της σημερινής Κρυοπηγής μέρος του παλαιοντολογικού αρχείου της Κασσάνδρας.",
   "Late Miocene world — rivers, lakes, and coastal plains spread across what is now Kassandra, depositing the sediments beneath modern Kriopigi.":
     "Ο κόσμος του Ύστερου Μειοκαίνου — ποτάμια, λίμνες και παράκτιες πεδιάδες εξαπλώνονταν σε όλη την έκταση της σημερινής Κασσάνδρας, αποθέτοντας τα ιζήματα κάτω από τη σύγχρονη Κρυοπηγή.",
   "Sculpting the coast": "Η διαμόρφωση της ακτογραμμής",
