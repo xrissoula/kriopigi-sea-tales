@@ -224,7 +224,7 @@ const lookClosely: LookClosely[] = [
   },
   {
     name: "Sea cucumber",
-    sci: "Holothuria spp.",
+    sci: "Holothuria tubulosa",
     what: "Slow recycler of the seabed.",
     look: "You will often see neat strings of cleaned sand behind it.",
   },
