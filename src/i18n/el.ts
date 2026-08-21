@@ -107,4 +107,15 @@ export const el: Record<string, string> = {
     "Η εμπειρία μου στην ιστιοπλοΐα, τη φυσική ιστορία, την προστασία, τη διατήρηση και τη διήγηση στάθηκε η αφετηρία αυτού του έργου. Αυτό που ξεκίνησε ως προσωπικές σημειώσεις πεδίου και φωτογραφίες εξελίχθηκε με τον καιρό σε μια προσπάθεια τεκμηρίωσης της Κρυοπηγής σε ένα ζωντανό παράκτιο σύστημα — που διαμορφώνεται από το κλίμα, την οικολογία, τις τεκτονικές διεργασίες, τη μνήμη και την ανθρώπινη δραστηριότητα επί χιλιάδες χρόνια.",
   "The Kriopigi Shore Guide is an evolving natural history and cultural landscape project combining ecology, geology, oral history, photography, and geospatial storytelling. My hope is that it becomes both a long-term archive and an invitation to observe the coastline with greater depth, curiosity, and care.":
     "Ο Οδηγός Ακτής Κρυοπηγής είναι ένα έργο φυσικής ιστορίας και πολιτισμικού τοπίου που εξελίσσεται διαρκώς, συνδυάζει οικολογία, γεωλογία, προφορική ιστορία, φωτογραφία και χαρτογράφηση του τόπου. Ελπίζω να γίνει τόσο ένα μακροπρόθεσμο αρχείο όσο και μια πρόσκληση να παρατηρούμε αυτή την ακτή με περισσότερη προσοχή, περιέργεια και φροντίδα.",
+  "Project facts": "Στοιχεία του έργου",
+  "Project start": "Έναρξη έργου",
+  "First published": "Πρώτη δημοσίευση",
+  "Species recorded": "Είδη που έχουν καταγραφεί",
+  "54 (and counting)": "54 (και συνεχίζουν να αυξάνονται)",
+  "iNaturalist observations": "Παρατηρήσεις στο iNaturalist",
+  "48 confirmed": "48 επιβεβαιωμένες",
+  "Last updated": "Τελευταία ενημέρωση",
+  "August 2026": "Αύγουστος 2026",
+  "Status": "Κατάσταση",
+  "Ongoing": "Σε συνεχή εξέλιξη",
 };
