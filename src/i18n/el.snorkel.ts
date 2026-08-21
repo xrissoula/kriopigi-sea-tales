@@ -114,7 +114,7 @@ export const elSnorkel: Record<string, string> = {
   "Blue Water": "Ανοιχτό μπλε",
   "Beyond the meadow edge": "Πέρα από το όριο του λιβαδιού",
   "You leave the meadow and everything suddenly becomes enormous. Sightings become rarer and far less predictable.":
-    "Αφήνετε το λιβάδι και όλα ξαφνικά γίνονται απέραντα. Οι παρατηρήσεις σπανίζουν και γίνονται πολύ λιγότερο προβλέψιμες.",
+    "Πέρα από το λιβάδι, ο ορίζοντας ανοίγει και το τοπίο αλλάζει ξανά. Οι συναντήσεις γίνονται πιο σπάνιες και πολύ λιγότερο προβλέψιμες.",
   "a bottlenose dolphin passing offshore":
     "ένα ρινοδέλφινο που περνά ανοιχτά",
   "tuna cutting through a bait ball":
@@ -123,9 +123,9 @@ export const elSnorkel: Record<string, string> = {
     "μια καρέτα που ανεβαίνει στην επιφάνεια για να ανασάνει",
   "sea sparkle glowing in the wake after dark":
     "θαλάσσια λάμψη που φωσφορίζει στο νερό μετά το σούρουπο",
-  "Before you go out": "Πριν βγείτε ανοιχτά",
+  "Before you go out": "Πριν βγείτε στα ανοιχτά",
   "Always swim with a buddy, stay inside the swim area, and check the day's sea state before leaving the meadow behind.":
-    "Κολυμπάτε πάντα με συνοδό, μένετε μέσα στη ζώνη κολύμβησης και ελέγχετε την κατάσταση της θάλασσας πριν αφήσετε πίσω το λιβάδι.",
+    "Κολυμπάτε πάντα με παρέα, παραμένετε μέσα στην καθορισμένη ζώνη κολύμβησης και ελέγχετε τις συνθήκες της θάλασσας πριν απομακρυνθείτε από την ακτή.",
 
   // --- Look Closely ---
   "Look Closely": "ΚΟΙΤΑΞΤΕ ΠΡΟΣΕΚΤΙΚΑ",
