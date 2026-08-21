@@ -76,7 +76,7 @@ export const elFlora: Record<string, string> = {
   // --- Species ---
   "Aleppo pine": "Χαλέπιος πεύκη",
   "Dominant overstory; resin scents the beach in summer heat.":
-    "Το κυρίαρχο δέντρο του τοπίου· το άρωμα της ρητίνης γεμίζει την παραλία τις ζεστές μέρες του καλοκαίριού.",
+    "Το κυρίαρχο δέντρο του τοπίου· το άρωμα της ρητίνης γεμίζει την παραλία τις ζεστές μέρες του καλοκαιριού.",
   "Sea holly": "Αγκαθωτό γαϊδουράγκαθο της θάλασσας",
   "Spiny blue-grey rosettes stabilising the upper sand.":
     "Αγκαθωτές γλαυκογάλαζες ροζέτες που συγκρατούν την άνω ζώνη της άμμου.",
