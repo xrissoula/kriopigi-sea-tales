@@ -35,7 +35,7 @@ export const elSnorkel: Record<string, string> = {
   "The First Meter": "Το πρώτο μέτρο",
   "Water to your knees": "Νερό μέχρι τα γόνατα",
   "The moment you step in, things become alive. Stand still for a minute and the shallows fill back in around your ankles.":
-    "Μόλις μπείτε στο νερό, τα πάντα ζωντανεύουν. Μείνετε ακίνητοι για ένα λεπτό και τα ρηχά γεμίζουν ξανά γύρω από τους αστραγάλους σας.",
+    "Μόλις μπείτε στο νερό, όλα γύρω σας ζωντανεύουν. Μείνετε ακίνητοι για ένα λεπτό και η ζωή θα επιστρέψει γύρω από τους αστραγάλους σας.",
   "tiny mullet darting away from your shadow":
     "μικροσκοπικοί κέφαλοι που τινάζονται μακριά από τη σκιά σας",
   "schools of sand smelt shimmering in the light":
@@ -54,7 +54,7 @@ export const elSnorkel: Record<string, string> = {
     "μια μικρή χειλού που εξετάζει τα πέδιλά σας",
   "What people say here": "Τι λένε όλοι εδώ",
   "“There are way more fish here than I expected.” Almost everyone says it in the first two minutes.":
-    "«Έχει πολύ περισσότερα ψάρια απ’ όσα περίμενα.» Σχεδόν όλοι το λένε μέσα στα δύο πρώτα λεπτά.",
+    "«Έχει πολύ περισσότερα ψάρια απ’ όσα περίμενα.» Είναι από τα πρώτα πράγματα που προσέχει κανείς μόλις μπει στο νερό.",
 
   // --- Zone 3 ---
   "Zone 3": "ΖΩΝΗ 3",
