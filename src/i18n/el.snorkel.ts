@@ -1,0 +1,192 @@
+/** Greek translations for the Snorkel Journey page. */
+export const elSnorkel: Record<string, string> = {
+  // --- Hero / header ---
+  "Snorkel Journey": "ΤΟ ΤΑΞΙΔΙ ΤΗΣ ΚΑΤΑΔΥΣΗΣ",
+  "What will you discover as you swim farther from shore?":
+    "Τι θα ανακαλύψετε όσο απομακρύνεστε από την ακτή;",
+  "Kriopigi has no famous dive sites. It has something better: you can walk in off the sand and watch the ecosystem change beneath you. Read this as one continuous swim, from dry sand to open blue.":
+    "Η Κρυοπηγή δεν έχει διάσημα σημεία κατάδυσης. Έχει κάτι καλύτερο: μπαίνετε από την άμμο και βλέπετε το οικοσύστημα να αλλάζει κάτω από εσάς. Διαβάστε τη σελίδα ως μια συνεχή κολύμβηση, από την ξερή άμμο έως το ανοιχτό μπλε.",
+  "Posidonia meadow in shallow water off Kriopigi":
+    "Λιβάδι Ποσειδωνίας σε ρηχά νερά ανοιχτά της Κρυοπηγής",
+  "Look for": "Αναζητήστε",
+  "Can you find…": "Μπορείτε να βρείτε…",
+  "Look closely": "Κοιτάξτε προσεκτικά",
+  "Tiny tip": "Μικρή συμβουλή",
+
+  // --- Zone 1 ---
+  "Zone 1": "ΖΩΝΗ 1",
+  "The Shoreline": "Η ακτογραμμή",
+  "Before your mask even goes on": "Πριν ακόμη φορέσετε τη μάσκα",
+  "The swim starts on dry sand. Walk the strand line slowly and the beach stops looking empty.":
+    "Η κολύμβηση ξεκινά στην ξερή άμμο. Περπατήστε αργά στη γραμμή του κύματος και η παραλία παύει να φαίνεται άδεια.",
+  "ghost crab burrows in the dry sand": "φωλιές αμμοκάβουρων στην ξερή άμμο",
+  "sea rocket flowering above the wrack": "θαλάσσιο ερύσιμο ανθισμένο πάνω από τα εκβράσματα",
+  "sea holly with its blue-grey spines": "θαλάσσιο ηρύγγιο με τα γαλαζογκρίζα αγκάθια του",
+  "gulls working the shallows": "γλάροι που ψαρεύουν στα ρηχά",
+  "wave-worn shells and sea-tumbled pottery":
+    "κοχύλια φθαρμένα από το κύμα και θραύσματα κεραμικών λειασμένα από τη θάλασσα",
+  "beach wrack alive with tiny isopods":
+    "εκβράσματα που σφύζουν από μικροσκοπικά ισόποδα",
+  "Lift only with your eyes. Leave every shell, crab and flower where you found it.":
+    "Σηκώστε τα μόνο με τα μάτια. Αφήστε κάθε κοχύλι, κάβουρα και λουλούδι εκεί που το βρήκατε.",
+
+  // --- Zone 2 ---
+  "Zone 2": "ΖΩΝΗ 2",
+  "The First Meter": "Το πρώτο μέτρο",
+  "Water to your knees": "Νερό μέχρι τα γόνατα",
+  "The moment you step in, things become alive. Stand still for a minute and the shallows fill back in around your ankles.":
+    "Μόλις μπείτε στο νερό, τα πάντα ζωντανεύουν. Μείνετε ακίνητοι για ένα λεπτό και τα ρηχά γεμίζουν ξανά γύρω από τους αστραγάλους σας.",
+  "tiny mullet darting away from your shadow":
+    "μικροσκοπικοί κέφαλοι που τινάζονται μακριά από τη σκιά σας",
+  "schools of sand smelt shimmering in the light":
+    "κοπάδια αθερίνας που αστράφτουν στο φως",
+  "juvenile sea bream in the warm edge water":
+    "νεαρές τσιπούρες στο ζεστό νερό της άκρης",
+  "hermit crabs hauling borrowed shells":
+    "ερημίτες κάβουροι που σέρνουν δανεικά κοχύλια",
+  "transparent shrimp, visible only by their eyes":
+    "διάφανες γαρίδες, που τις προδίδουν μόνο τα μάτια τους",
+  "sea cucumbers on the ripple crests":
+    "θαλάσσια αγγούρια στις κορυφές των αμμώδων κυματισμών",
+  "swimming crabs buried to the eyes":
+    "κολυμβητικοί κάβουροι θαμμένοι μέχρι τα μάτια",
+  "a little wrasse investigating your fins":
+    "μια μικρή χειλού που εξετάζει τα πέδιλά σας",
+  "What people say here": "Τι λένε όλοι εδώ",
+  "“There are way more fish here than I expected.” Almost everyone says it in the first two minutes.":
+    "«Έχει πολύ περισσότερα ψάρια απ’ όσα περίμενα.» Σχεδόν όλοι το λένε μέσα στα δύο πρώτα λεπτά.",
+
+  // --- Zone 3 ---
+  "Zone 3": "ΖΩΝΗ 3",
+  "Sandy Bottom": "Αμμώδης βυθός",
+  "2–5 m below you": "2–5 μ. κάτω από εσάς",
+  "Now you are floating. This is where you start slowing down — the sand looks blank until you give it time.":
+    "Τώρα επιπλέετε. Εδώ αρχίζετε να επιβραδύνετε — η άμμος φαίνεται άδεια μέχρι να της δώσετε χρόνο.",
+  "a salema school grazing": "ένα κοπάδι σάλπες που βόσκει",
+  "a two-banded seabream": "ένα σαργό",
+  "a white seabream": "μια μελανούρα",
+  "a striped seabream": "μια μουρμούρα",
+  "a painted comber sitting perfectly still": "μια πέρκα εντελώς ακίνητη",
+  "a buried weever (look carefully — only the eyes show)":
+    "μια θαμμένη δράκαινα (κοιτάξτε προσεκτικά — φαίνονται μόνο τα μάτια)",
+  "a sea cucumber and the clean sand behind it":
+    "ένα θαλάσσιο αγγούρι και την καθαρή άμμο που αφήνει πίσω του",
+  "a sand smelt shoal turning together":
+    "ένα κοπάδι αθερίνας που στρίβει σαν ένα σώμα",
+
+  // --- Zone 4 ---
+  "Zone 4": "ΖΩΝΗ 4",
+  "Rocky Patches": "Βραχώδεις κηλίδες",
+  "3–7 m, scattered blocks and reef": "3–7 μ., διάσπαρτοι ογκόλιθοι και ύφαλος",
+  "Every rock becomes interesting. Search the cracks rather than the open water.":
+    "Κάθε βράχος γίνεται ενδιαφέρων. Ψάξτε στις σχισμές και όχι στο ανοιχτό νερό.",
+  "an octopus den": "μια φωλιά χταποδιού",
+  "a peacock wrasse in breeding colour": "ένα χειλού σε αναπαραγωγικό χρωματισμό",
+  "a rainbow wrasse": "μια γύλα",
+  "a five-spotted wrasse": "μια πεντάστικτη χειλού",
+  "a dusky grouper holding its ground": "μια ροφός που δεν κουνιέται από τη θέση της",
+  "damselfish clouding above the reef":
+    "σμήνη καστανόψαρων σαν σύννεφο πάνω από τον ύφαλο",
+  "a stone crusted with algae and encrusting sponge":
+    "μια πέτρα καλυμμένη με φύκια και επιφλοιωτικό σπόγγο",
+  "a nudibranch grazing a rock face": "ένα γυμνοβράγχιο που βόσκει σε βραχώδη επιφάνεια",
+  "Look for neat piles of empty shells outside a crack in the rocks. They often reveal an occupied octopus den.":
+    "Αναζητήστε τακτικούς σωρούς από άδεια κοχύλια μπροστά σε μια σχισμή των βράχων. Συχνά προδίδουν μια κατοικημένη φωλιά χταποδιού.",
+
+  // --- Zone 5 ---
+  "Zone 5": "ΖΩΝΗ 5",
+  "The Underwater Forest": "Το υποβρύχιο δάσος",
+  "Posidonia meadow, 5–12 m": "Λιβάδι Ποσειδωνίας, 5–12 μ.",
+  "Slow down. Stop kicking. Let the meadow come alive around you — nothing here rewards speed.":
+    "Επιβραδύνετε. Σταματήστε να κλωτσάτε. Αφήστε το λιβάδι να ζωντανέψει γύρω σας — εδώ τίποτα δεν ανταμείβει την ταχύτητα.",
+  "salema grazing the leaves": "σάλπες που βόσκουν τα φύλλα",
+  "a cuttlefish changing colour": "μια σουπιά που αλλάζει χρώμα",
+  "a seahorse holding onto a blade": "ένα ιππόκαμπο γαντζωμένο σε ένα φύλλο",
+  "a noble pen shell standing upright in the sand":
+    "μια πίννα στητή μέσα στην άμμο",
+  "juvenile sea bass among the shoots": "νεαρά λαβράκια ανάμεσα στους βλαστούς",
+  "a wrasse sleeping among the leaves": "μια χειλού που κοιμάται μέσα στα φύλλα",
+  "Hover, do not swim. Thirty still seconds is worth more than thirty metres of kicking.":
+    "Μείνετε αιωρούμενοι, μην κολυμπάτε. Τριάντα δευτερόλεπτα ακινησίας αξίζουν περισσότερο από τριάντα μέτρα κολύμβησης.",
+
+  // --- Zone 6 ---
+  "Zone 6": "ΖΩΝΗ 6",
+  "Blue Water": "Ανοιχτό μπλε",
+  "Beyond the meadow edge": "Πέρα από το όριο του λιβαδιού",
+  "You leave the meadow and everything suddenly becomes enormous. Sightings become rarer and far less predictable.":
+    "Αφήνετε το λιβάδι και όλα ξαφνικά γίνονται απέραντα. Οι παρατηρήσεις σπανίζουν και γίνονται πολύ λιγότερο προβλέψιμες.",
+  "a bottlenose dolphin passing offshore":
+    "ένα ρινοδέλφινο που περνά ανοιχτά",
+  "tuna cutting through a bait ball":
+    "τόνους που σκίζουν ένα κοπάδι μικρών ψαριών",
+  "a loggerhead turtle surfacing to breathe":
+    "μια καρέτα που ανεβαίνει στην επιφάνεια για να ανασάνει",
+  "sea sparkle glowing in the wake after dark":
+    "θαλάσσια λάμψη που φωσφορίζει στο νερό μετά το σούρουπο",
+  "Before you go out": "Πριν βγείτε ανοιχτά",
+  "Always swim with a buddy, stay inside the swim area, and check the day's sea state before leaving the meadow behind.":
+    "Κολυμπάτε πάντα με συνοδό, μένετε μέσα στη ζώνη κολύμβησης και ελέγχετε την κατάσταση της θάλασσας πριν αφήσετε πίσω το λιβάδι.",
+
+  // --- Look Closely ---
+  "Look Closely": "ΚΟΙΤΑΞΤΕ ΠΡΟΣΕΚΤΙΚΑ",
+  "Five things worth waiting for": "Πέντε πράγματα που αξίζει να περιμένετε",
+  "Knowing a species' name is the easy part. These small observation challenges are what turn a swim into a field session.":
+    "Το όνομα ενός είδους είναι το εύκολο μέρος. Αυτές οι μικρές προκλήσεις παρατήρησης είναι που μετατρέπουν μια βουτιά σε εργασία πεδίου.",
+  "Peacock wrasse": "Χειλού",
+  "The males flash electric green and blue through the spring.":
+    "Τα αρσενικά αστράφτουν σε ηλεκτρικό πράσινο και μπλε κατά την άνοιξη.",
+  "Their colours shift as they turn toward the sun.":
+    "Τα χρώματά τους αλλάζουν καθώς στρέφονται προς τον ήλιο.",
+  Octopus: "Χταπόδι",
+  "Often invisible until it moves.": "Συχνά αόρατο μέχρι να κινηθεί.",
+  "Empty shell piles often reveal the entrance to its den.":
+    "Οι σωροί από άδεια κοχύλια συχνά προδίδουν την είσοδο της φωλιάς του.",
+  "Sea cucumber": "Θαλάσσιο αγγούρι",
+  "Slow recycler of the seabed.": "Αργός ανακυκλωτής του βυθού.",
+  "You will often see neat strings of cleaned sand behind it.":
+    "Συχνά θα δείτε πίσω του τακτικές κορδέλες από καθαρισμένη άμμο.",
+  Salema: "Σάλπα",
+  "One of the few herbivorous fish in the Mediterranean.":
+    "Ένα από τα λίγα φυτοφάγα ψάρια της Μεσογείου.",
+  "Watch them bite individual Posidonia leaves one after another.":
+    "Παρατηρήστε τις να δαγκώνουν τα φύλλα της Ποσειδωνίας ένα προς ένα.",
+  Cuttlefish: "Σουπιά",
+  "Master of camouflage.": "Μετρ της παραλλαγής.",
+  "Stay still for thirty seconds and watch waves of colour travel across its skin.":
+    "Μείνετε ακίνητοι για τριάντα δευτερόλεπτα και δείτε κύματα χρώματος να διατρέχουν το δέρμα της.",
+
+  // --- Tiers ---
+  "Reward curiosity": "ΑΝΤΑΜΕΙΨΤΕ ΤΗΝ ΠΕΡΙΕΡΓΕΙΑ",
+  "Three levels of attention": "Τρία επίπεδα προσοχής",
+  "Not a collection to complete. Three tiers of patience — most swimmers finish the first on their first morning, and the last is a matter of luck.":
+    "Δεν είναι συλλογή προς συμπλήρωση. Είναι τρία επίπεδα υπομονής — οι περισσότεροι ολοκληρώνουν το πρώτο από το πρώτο πρωινό, ενώ το τελευταίο είναι ζήτημα τύχης.",
+  "First Snorkel": "Πρώτη βουτιά",
+  "Almost certain on any calm day.": "Σχεδόν βέβαια σε κάθε ήρεμη μέρα.",
+  "a wrasse": "μια χειλού",
+  "a seabream": "ένα σπαρίδι",
+  "a school of fish": "ένα κοπάδι ψαριών",
+  "a sea cucumber": "ένα θαλάσσιο αγγούρι",
+  "Careful Observer": "Προσεκτικός παρατηρητής",
+  "For swimmers who stop moving and watch.":
+    "Για όσους σταματούν να κινούνται και παρατηρούν.",
+  "a grazing salema": "μια σάλπα που βόσκει",
+  "a pen shell": "μια πίννα",
+  "a cuttlefish": "μια σουπιά",
+  "Lucky Day": "Μέρα με τύχη",
+  "Rare, unplannable, worth remembering.":
+    "Σπάνια, απρόβλεπτα, αξέχαστα.",
+  "a seahorse": "ένας ιππόκαμπος",
+  "a dolphin": "ένα δελφίνι",
+  "a loggerhead turtle": "μια καρέτα",
+  "sea sparkle after dark": "θαλάσσια λάμψη μετά το σούρουπο",
+
+  // --- iNaturalist block ---
+  "Log what you saw": "ΚΑΤΑΓΡΑΨΤΕ ΟΣΑ ΕΙΔΑΤΕ",
+  "Your swim can become a record": "Η βουτιά σας μπορεί να γίνει καταγραφή",
+  "Photograph anything you cannot name and upload it to iNaturalist — a free platform where naturalists help confirm identifications. Each verified photo turns a holiday sighting into an occurrence record for this stretch of coast.":
+    "Φωτογραφίστε ό,τι δεν μπορείτε να αναγνωρίσετε και ανεβάστε το στο iNaturalist — μια δωρεάν πλατφόρμα όπου φυσιοδίφες επιβεβαιώνουν τις ταυτοποιήσεις. Κάθε επιβεβαιωμένη φωτογραφία μετατρέπει μια καλοκαιρινή παρατήρηση σε επιστημονική καταγραφή για αυτό το κομμάτι της ακτής.",
+  "Open iNaturalist →": "Ανοίξτε το iNaturalist →",
+
+  // --- Species card status ---
+  "Observed at Kriopigi": "Καταγεγραμμένο στην Κρυοπηγή",
+};

@@ -123,7 +123,7 @@ const zones: Zone[] = [
 ];
 
 function statusLabel(s: Species): string {
-  if (s.status === "confirmed") return "Confirmed on iNaturalist";
+  if (s.status === "confirmed") return "Observed at Kriopigi";
   if (s.expectedContext === "suitable habitat") return "Expected in suitable habitat";
   if (s.expectedContext === "offshore") return "Expected offshore";
   if (s.expectedContext === "deeper habitat") return "Expected in deeper habitat";
@@ -278,7 +278,7 @@ function FloraFauna() {
                 <p className="mt-1.5 text-sm text-foreground/75 leading-relaxed">{t("A single-celled planktonic dinoflagellate — neither animal nor plant — whose blooms can produce blue bioluminescent flashes when the water is disturbed at night.")}</p>
                 <p className="mt-2 text-xs text-accent flex items-center gap-1">
                   <span aria-hidden>✓</span>
-                  {t("Confirmed on iNaturalist")}
+                  {t("Observed at Kriopigi")}
                 </p>
                 </div>
               </div>
