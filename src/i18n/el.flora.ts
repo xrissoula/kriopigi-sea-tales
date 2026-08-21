@@ -146,43 +146,44 @@ export const elFlora: Record<string, string> = {
 
   // --- Zone 3 ---
   "Sun-warmed sand, scattered rocks and the inner edge of the seagrass meadow support many of the fish most easily seen by snorkelers.":
-    "Ζεστός αμμώδης βυθός, διάσπαρτοι βράχοι και το εσωτερικό όριο του λιβαδιού της Ποσειδωνίας φιλοξενούν πολλά από τα ψάρια που βλέπει πιο εύκολα όποιος κάνει κατάδυση με αναπνευστήρα.",
+    "Οι ζεστοί αμμώδεις βυθοί, οι διάσπαρτοι βράχοι και το εσωτερικό όριο του λιβαδιού της Ποσειδωνίας φιλοξενούν πολλά από τα ψάρια που συναντά κανείς εύκολα κάνοντας κατάδυση με αναπνευστήρα.",
   "Mediterranean sand smelt": "Αθερίνα",
   "Silvery schools shimmer just below the surface over calm, shallow water.":
-    "Ασημένια κοπάδια λάμπουν λίγο κάτω από την επιφάνεια σε ήρεμα, ρηχά νερά.",
+    "Ασημένιο κοπαδόψαρο που αστράφτει λίγο κάτω από την επιφάνεια σε ήρεμα, ρηχά νερά.",
   "Common two-banded seabream": "Δίγραμμος σαργός",
   "Recognizable by two bold black bands; juveniles gather around rocks and seagrass.":
-    "Αναγνωρίσιμο από δύο έντονες μαύρες ζώνες· νεαρά άτομα συναθροίζονται γύρω από βράχια και φυκοβολιά.",
+    "Σαργός που ξεχωρίζει από τις δύο χαρακτηριστικές μαύρες ζώνες του· τα νεαρά άτομα συναθροίζονται γύρω από βράχια και Ποσειδωνία.",
   "Salema": "Σάλπα",
   "Herbivorous schools graze algae and seagrass leaves along the meadow’s edge.":
-    "Κοπάδια βοσκόβια τρέφονται με φύκια και φύλλα φυκοβολιάς κατά μήκος του ορίου του λιβαδιού.",
+    "Βοσκόψαρο που κινείται σε μεγάλα κοπάδια και βόσκει φύκια και φύλλα Ποσειδωνίας στα όρια του λιβαδιού.",
   "European seabass": "Λαβράκι",
   "Streamlined predator that cruises shallow coastal water, often near rocks and sandy edges.":
-    "Αεροδυναμικός θηρευτής που περιδιαβαίνει τα ρηχά παράκτια νερά, συχνά κοντά σε βράχια και αμμώδη όρια.",
+    "Γρήγορος παράκτιος θηρευτής που περιδιαβαίνει τα ρηχά παράκτια νερά, συχνά κοντά σε βράχια και αμμώδη όρια.",
   "Gilthead seabream": "Τσιπούρα",
   "Recognizable by the golden band between its eyes; feeds over sand, rock and seagrass.":
-    "Αναγνωρίσιμη από τη χρυσή ταινία ανάμεσα στα μάτια· τρέφεται πάνω από άμμο, βράχο και φυκοβολιά.",
+    "Τσιπούρα που αναγνωρίζεται από τη χρυσή ταινία ανάμεσα στα μάτια· τρέφεται πάνω από άμμο, βράχο και φυκοβολιά.",
   "White seabream": "Σαργός",
   "Robust silver seabream with dark vertical markings, commonly feeding around rocky shallows.":
-    "Εύρωστος ασημένιος σπάρος με σκούρες κατακόρυφες γραμμώσεις, που τρέφεται συνήθως στα βραχώδη ρηχά.",
+    "Εύρωστος ασημένιος σαργός με σκούρες κατακόρυφες γραμμώσεις, που τρέφεται συνήθως στα βραχώδη ρηχά.",
   "Saddled seabream": "Μελανούρι",
   "Silver schooling fish easily recognized by the black saddle-shaped patch near its tail.":
     "Ασημένιο κοπαδιάρικο ψάρι, εύκολα αναγνωρίσιμο από τη μαύρη κηλίδα σχήματος σέλας κοντά στην ουρά.",
   "Striped seabream": "Μουρμούρα",
   "Slender seabream with narrow vertical stripes, usually feeding over sandy and mixed bottoms.":
-    "Λεπτόσωμος σπάρος με στενές κατακόρυφες ρίγες, που τρέφεται συνήθως σε αμμώδεις και μικτούς βυθούς.",
+    "Λεπτόσωμος σαργός με στενές κατακόρυφες ρίγες, που τρέφεται συνήθως σε αμμώδεις και μικτούς βυθούς.",
   "Mediterranean damselfish": "Καστανόψαρο",
   "Small dark fish often hovering in loose groups above rocks and reef habitat.":
-    "Μικρό σκουρόχρωμο ψάρι που συχνά αιωρείται σε χαλαρές ομάδες πάνω από βράχια και υφάλους.",
+    "Μικρό σκουρόχρωμο ψάρι που συχνά αιωρείται σε μικρά κοπάδια πάνω από βράχια και υφάλους.",
   "Painted comber": "Πέρκα γραμματική",
   "Colourful ambush predator that waits close to rocks before darting after small prey.":
     "Πολύχρωμος θηρευτής ενέδρας που περιμένει κοντά στα βράχια πριν ορμήσει σε μικρή λεία.",
   "Short-snouted seahorse": "Κοντόρυγχος ιππόκαμπος",
   "Master of camouflage that clings to algae and seagrass with its curled tail.":
-    "Άρχοντας του καμουφλάζ που αγκιστρώνεται σε φύκια και φυκοβολιά με τη στριφτή του ουρά.",
+    "Δάσκαλος του καμουφλάζ που αγκιστρώνεται σε φύκια και φυκοβολιά με τη στριφτή του ουρά.",
   "Cotton-spinner sea cucumber": "Θαλάσσιο αγγούρι",
   "Slow-moving recycler that feeds on organic material within sandy and mixed seabeds.":
     "Βραδυκίνητος ανακυκλωτής που τρέφεται με οργανικό υλικό μέσα σε αμμώδεις και μικτούς βυθούς.",
+
 
   // --- Zone 4 ---
   "An endemic Mediterranean seagrass meadow forming one of the coast's richest habitats, with shelter, feeding grounds and complex structure for marine life.":
