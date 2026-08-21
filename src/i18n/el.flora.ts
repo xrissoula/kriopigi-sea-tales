@@ -233,19 +233,20 @@ export const elFlora: Record<string, string> = {
     "Θαλάσσια χελώνα μεγάλης εμβέλειας που μπορεί να περάσει από τα παράκτια και ανοιχτά νερά του βόρειου Αιγαίου.",
   "Common bottlenose dolphin": "Ρινοδέλφινο",
   "Social coastal dolphin that travels in groups through the gulf and occasionally approaches shore.":
-    "Κοινωνικό παράκτιο δελφίνι που ταξιδεύει σε ομάδες μέσα στον κόλπο και περιστασιακά πλησιάζει την ακτή.",
+    "Κοινωνικό παράκτιο δελφίνι που ζει και ταξιδεύει σε ομάδες μέσα στον κόλπο και περιστασιακά πλησιάζει την ακτή.",
   "Continental great cormorant": "Κορμοράνος",
   "Large diving waterbird that swims low in the water and pursues fish beneath the surface.":
     "Μεγάλο καταδυόμενο υδρόβιο πτηνό που κολυμπά χαμηλά στο νερό και καταδιώκει ψάρια κάτω από την επιφάνεια.",
   "Atlantic bluefin tuna": "Ερυθρός τόνος του Ατλαντικού",
   "Powerful migratory predator of open water that may pass offshore during seasonal movements.":
     "Ισχυρός μεταναστευτικός θηρευτής των ανοιχτών νερών που μπορεί να περάσει από τα ανοιχτά κατά τις εποχιακές μετακινήσεις.",
-  "Violescent sea-whip": "Βιολετί γοργονία",
+  "Violescent sea-whip": "Μωβ γοργονία",
   "Large gorgonian that forms fragile branching colonies on deeper Mediterranean rocky reefs.":
     "Μεγάλη γοργονία που σχηματίζει εύθραυστες διακλαδισμένες αποικίες σε βαθύτερους βραχώδεις υφάλους της Μεσογείου.",
   "Small-spotted catshark": "Μικρόστικτος γαλέος",
   "Small bottom-dwelling shark whose tough egg cases may occasionally wash ashore.":
     "Μικρός βενθικός καρχαρίας, του οποίου οι σκληρές θήκες αυγών ξεβράζονται περιστασιακά στην ακτή.",
+
 
   // --- Observation badges ---
   "Confirmed on iNaturalist": "Επιβεβαιωμένο στο iNaturalist",
