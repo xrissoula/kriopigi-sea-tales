@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { speciesSlug } from "@/lib/species";
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
 import posidonia from "@/assets/posidonia.jpg";
@@ -142,6 +143,70 @@ const zones: Zone[] = [
   },
 ];
 
+/** Maps checklist phrases on this page to species entries on /flora-fauna. */
+const linkedSpecies: Record<string, string> = {
+  "ghost crab burrows in the dry sand": "Ocypode cursor",
+  "sea rocket flowering above the wrack": "Cakile maritima",
+  "sea holly with its blue-grey spines": "Eryngium maritimum",
+  "gulls working the shallows": "Larus michahellis",
+  "beach wrack alive with tiny isopods": "Tylos europaeus",
+  "schools of sand smelt shimmering in the light": "Atherina hepsetus",
+  "juvenile sea bream in the warm edge water": "Sparus aurata",
+  "sea cucumbers on the ripple crests": "Holothuria tubulosa",
+  "a little wrasse investigating your fins": "Coris julis",
+  "a salema school grazing": "Sarpa salpa",
+  "a two-banded seabream": "Diplodus vulgaris",
+  "a white seabream": "Diplodus sargus",
+  "a striped seabream": "Lithognathus mormyrus",
+  "a painted comber sitting perfectly still": "Serranus scriba",
+  "a sea cucumber and the clean sand behind it": "Holothuria tubulosa",
+  "a sand smelt shoal turning together": "Atherina hepsetus",
+  "an octopus den": "Octopus vulgaris",
+  "a peacock wrasse in breeding colour": "Symphodus tinca",
+  "a rainbow wrasse": "Coris julis",
+  "a five-spotted wrasse": "Symphodus roissali",
+  "a dusky grouper holding its ground": "Epinephelus marginatus",
+  "damselfish clouding above the reef": "Chromis chromis",
+  "salema grazing the leaves": "Sarpa salpa",
+  "a cuttlefish changing colour": "Sepia officinalis",
+  "a seahorse holding onto a blade": "Hippocampus hippocampus",
+  "a noble pen shell standing upright in the sand": "Pinna nobilis",
+  "juvenile sea bass among the shoots": "Dicentrarchus labrax",
+  "a wrasse sleeping among the leaves": "Coris julis",
+  "a bottlenose dolphin passing offshore": "Tursiops truncatus",
+  "tuna cutting through a bait ball": "Thunnus thynnus",
+  "a loggerhead turtle surfacing to breathe": "Caretta caretta",
+  "sea sparkle glowing in the wake after dark": "Noctiluca scintillans",
+  // Reward tiers
+  "a wrasse": "Coris julis",
+  "a seabream": "Diplodus vulgaris",
+  "a school of fish": "Atherina hepsetus",
+  "a sea cucumber": "Holothuria tubulosa",
+  "a grazing salema": "Sarpa salpa",
+  "a pen shell": "Pinna nobilis",
+  "a cuttlefish": "Sepia officinalis",
+  "a seahorse": "Hippocampus hippocampus",
+  "a dolphin": "Tursiops truncatus",
+  "a loggerhead turtle": "Caretta caretta",
+  "sea sparkle after dark": "Noctiluca scintillans",
+};
+
+function SpeciesPhrase({ phrase }: { phrase: string }) {
+  const t = useT();
+  const sci = linkedSpecies[phrase];
+  if (!sci) return <span>{t(phrase)}</span>;
+  return (
+    <Link
+      to="/flora-fauna"
+      hash={speciesSlug(sci)}
+      className="underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+      title={sci}
+    >
+      {t(phrase)}
+    </Link>
+  );
+}
+
 type LookClosely = { name: string; sci: string; what: string; look: string };
 
 const lookClosely: LookClosely[] = [
@@ -159,7 +224,7 @@ const lookClosely: LookClosely[] = [
   },
   {
     name: "Sea cucumber",
-    sci: "Holothuria spp.",
+    sci: "Holothuria tubulosa",
     what: "Slow recycler of the seabed.",
     look: "You will often see neat strings of cleaned sand behind it.",
   },
@@ -243,7 +308,7 @@ function Snorkeling() {
                       aria-hidden="true"
                       className="mt-[3px] w-3.5 h-3.5 rounded-[3px] border border-accent/60 flex-shrink-0"
                     />
-                    <span>{t(h)}</span>
+                    <SpeciesPhrase phrase={h} />
                   </li>
                 ))}
               </ul>
@@ -269,7 +334,13 @@ function Snorkeling() {
           {lookClosely.map((s) => (
             <li key={s.sci} className="rounded-2xl bg-card border border-border shadow-soft p-5">
               <h3 className="font-serif text-xl text-foreground">{t(s.name)}</h3>
-              <p className="text-xs italic text-muted-foreground">{s.sci}</p>
+              <Link
+                to="/flora-fauna"
+                hash={speciesSlug(s.sci)}
+                className="text-xs italic text-muted-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+              >
+                {s.sci}
+              </Link>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(s.what)}</p>
               <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-accent">{t("Look closely")}</p>
               <p className="mt-1 text-sm text-foreground/90 leading-relaxed">{t(s.look)}</p>
@@ -293,7 +364,7 @@ function Snorkeling() {
                 {tier.items.map((it) => (
                   <li key={it} className="flex gap-2.5 text-sm text-foreground/90">
                     <span aria-hidden="true" className="mt-[5px] w-2.5 h-2.5 rounded-full border border-accent/60 flex-shrink-0" />
-                    <span>{t(it)}</span>
+                    <SpeciesPhrase phrase={it} />
                   </li>
                 ))}
               </ul>
