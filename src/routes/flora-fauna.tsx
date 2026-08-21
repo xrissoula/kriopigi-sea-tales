@@ -258,9 +258,17 @@ function FloraFauna() {
             </ul>
 
             {z.id === "meadow" && (
-              <div className="mt-5 rounded-xl border border-dashed border-border bg-muted/30 p-4">
+              <div className="mt-5 rounded-xl border border-dashed border-border bg-muted/30 p-4 flex gap-3">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Noctiluca_scintillans_varias.jpg/330px-Noctiluca_scintillans_varias.jpg"
+                  alt={`${t("Sea sparkle")} (Noctiluca scintillans)`}
+                  loading="lazy"
+                  className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-lg flex-shrink-0 bg-muted"
+                />
+                <div className="flex-1 min-w-0">
                 <p className="text-[10px] uppercase tracking-[0.25em] text-accent">{t("Plankton & Open Water")}</p>
                 <div className="mt-1 flex items-baseline justify-between gap-3 flex-wrap">
+
                   <a href="https://en.wikipedia.org/wiki/Noctiluca_scintillans" target="_blank" rel="noopener noreferrer" className="font-serif italic text-base sm:text-lg text-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent">
                     Noctiluca scintillans
                   </a>
