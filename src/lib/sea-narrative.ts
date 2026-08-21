@@ -235,13 +235,16 @@ export function likelySpecies(d: SeaConditions, season: Season): LikelySpecies[]
   return list.slice(0, 4);
 }
 
-export function daySummary(day: { waveHeight: number | null; windSpeed: number | null; windDirection: number | null }): string {
+export function daySummary(day: { waveHeight: number | null; windSpeed: number | null }): string {
   const state = seaState(day.waveHeight);
-  const dir = compass(day.windDirection);
   const kn = knots(day.windSpeed) ?? 0;
-  const wind = kn <= 6 ? `light ${dir} air` : kn <= 14 ? `a moderate ${dir} breeze` : `a strong ${dir} wind`;
-  if (state === "rough") return `Building sea with ${wind}; snorkeling is not recommended.`;
-  if (state === "moderate") return `${wind[0].toUpperCase() + wind.slice(1)} with a lively surface; sheltered coves remain the best option.`;
-  if (state === "calm") return `${wind[0].toUpperCase() + wind.slice(1)} and low swell; good conditions over the meadow.`;
-  return `Near-glassy water with ${wind}; likely the clearest viewing of the week.`;
+  if (state === "rough") return "Building sea and strong wind; snorkeling is not recommended.";
+  if (state === "moderate")
+    return "A lively surface with moderate wind; snorkeling remains good inside the sheltered coves.";
+  if (state === "calm")
+    return kn >= 15
+      ? "Low swell but a firm breeze; the water stays workable close inshore."
+      : "Light wind and low swell; good conditions over the meadow.";
+  return "Near-glassy water; likely the clearest viewing of the week.";
+
 }
