@@ -18,7 +18,7 @@ export const elSnorkel: Record<string, string> = {
   "The Shoreline": "Η ακτογραμμή",
   "Before your mask even goes on": "Πριν ακόμη φορέσετε τη μάσκα",
   "The swim starts on dry sand. Walk the strand line slowly and the beach stops looking empty.":
-    "Η κολύμβηση ξεκινά στην ξερή άμμο. Περπατήστε αργά στη γραμμή του κύματος και η παραλία παύει να φαίνεται άδεια.",
+    "Η εξερεύνηση ξεκινά πριν μπείτε καν στο νερό. Περπατήστε αργά κατά μήκος της γραμμής του κύματος και η παραλία παύει να φαίνεται άδεια.",
   "ghost crab burrows in the dry sand": "φωλιές αμμοκάβουρων στην ξερή άμμο",
   "sea rocket flowering above the wrack": "θαλάσσιο ερύσιμο ανθισμένο πάνω από τα εκβράσματα",
   "sea holly with its blue-grey spines": "θαλάσσιο ηρύγγιο με τα γαλαζογκρίζα αγκάθια του",
