@@ -14,6 +14,7 @@ import {
   naturalistNote,
   seasonOf,
   snorkelOutlook,
+  windPhrase,
 } from "@/lib/sea-narrative";
 
 const seaQuery = queryOptions({
@@ -115,6 +116,7 @@ function Conditions() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] opacity-75">{t("Wind")}</p>
               <p className="opacity-95">{windKn != null ? `${windKn} kn ${compass(c.windDirection)}` : "—"}</p>
+              <p className="text-[11px] opacity-70">{t(windPhrase(c.windSpeed))}</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] opacity-75">{t("Wave height")}</p>
@@ -171,7 +173,7 @@ function Conditions() {
               icon={Wind}
               label="Wind"
               value={windKn != null ? `${windKn} kn` : "—"}
-              note={c.windDirection != null ? `from ${compass(c.windDirection)}` : undefined}
+              note={c.windDirection != null ? `${compass(c.windDirection)} · ${t(windPhrase(c.windSpeed))}` : undefined}
             />
             <Stat icon={Thermometer} label="Air temperature" value={c.airTemp != null ? `${c.airTemp.toFixed(1)}°C` : "—"} />
             <Stat icon={CloudSun} label="Cloud cover" value={c.cloudCover != null ? `${Math.round(c.cloudCover)}%` : "—"} />
