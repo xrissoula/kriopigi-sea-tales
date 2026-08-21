@@ -36,7 +36,8 @@ export const el: Record<string, string> = {
   Submit: "Συμμετοχή",
   About: "Σχετικά",
   "Shore Guide": "Οδηγός Ακτής",
-  '"The shore remembers every visitor."': "«Η ακτή θυμάται κάθε επισκέπτη.»",
+  '"If you dismember Greece, in the end you will be left with an olive tree, a vine, and a boat." — Odysseas Elytis':
+    '«Αν αποσυνθέσεις την Ελλάδα, στο τέλος θα σου απομείνουν μια ελιά, ένα αμπέλι κι ένα καράβι.»\n— Οδυσσέας Ελύτης',
   "Kriopigi Shore Guide · Halkidiki, Greece":
     "Οδηγός Ακτής Κρυοπηγής · Χαλκιδική, Ελλάδα",
   English: "Αγγλικά",
