@@ -29,7 +29,7 @@ export const elAnthropology: Record<string, string> = {
   "348 BCE": "348 π.Χ.",
   "Macedonian rule": "Η μακεδονική κυριαρχία",
   "Philip II of Macedon destroys Olynthus in 348 BCE, breaking the power of the Chalcidian League and strengthening Macedonian control over Halkidiki. Mende was also destroyed or severely damaged during Philip's campaigns and subsequently declined as regional power shifted elsewhere.":
-    "Ο Φίλιππος Β΄ της Μακεδονίας καταστρέφει την Όλυνθο το 348 π.Χ., συντρίβοντας τη δύναμη της Χαλκιδικής Συμπολιτείας και ισχυροποιώντας τον μακεδονικό έλεγχο στη Χαλκιδική. Η Μένδη καταστράφηκε ή υπέστη σοβαρές ζημιές κατά τις εκστρατείες του Φιλίππου και στη συνέχεια παρήκμασε, καθώς το κέντρο βάρους της περιοχής μετατοπίστηκε αλλού.",
+    "Ο Φίλιππος Β΄ της Μακεδονίας καταστρέφει την Όλυνθο το 348 π.Χ., συντρίβοντας τη δύναμη της Χαλκιδικής Συμπολιτείας και ισχυροποιώντας τον μακεδονικό έλεγχο στη Χαλκιδική. Η Μένδη υπέστη σοβαρή παρακμή μετά τις εκστρατείες του Φιλίππου, καθώς το κέντρο βάρους της περιοχής μετατοπίστηκε αλλού.",
   "Small ivory head identified as a portrait of Philip II of Macedon, recovered from the royal tumulus at Aigai (Vergina).":
     "Μικρή ελεφάντινη κεφαλή που ταυτίζεται με πορτρέτο του Φιλίππου Β΄, από τον βασιλικό τύμβο των Αιγών (σημερινή Βεργίνα).",
   "Ivory portrait head identified as Philip II of Macedon, recovered from Tomb II of the Great Tumulus at Aigai (modern Vergina), the royal necropolis of the Macedonian kings.":
