@@ -17,6 +17,7 @@ export const el: Record<string, string> = {
   ...elBiogeochemistry,
   ...elAnthropology,
   ...elConservation,
+  ...elSnorkel,
 
 
 
