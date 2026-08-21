@@ -142,6 +142,70 @@ const zones: Zone[] = [
   },
 ];
 
+/** Maps checklist phrases on this page to species entries on /flora-fauna. */
+const linkedSpecies: Record<string, string> = {
+  "ghost crab burrows in the dry sand": "Ocypode cursor",
+  "sea rocket flowering above the wrack": "Cakile maritima",
+  "sea holly with its blue-grey spines": "Eryngium maritimum",
+  "gulls working the shallows": "Larus michahellis",
+  "beach wrack alive with tiny isopods": "Tylos europaeus",
+  "schools of sand smelt shimmering in the light": "Atherina hepsetus",
+  "juvenile sea bream in the warm edge water": "Sparus aurata",
+  "sea cucumbers on the ripple crests": "Holothuria tubulosa",
+  "a little wrasse investigating your fins": "Coris julis",
+  "a salema school grazing": "Sarpa salpa",
+  "a two-banded seabream": "Diplodus vulgaris",
+  "a white seabream": "Diplodus sargus",
+  "a striped seabream": "Lithognathus mormyrus",
+  "a painted comber sitting perfectly still": "Serranus scriba",
+  "a sea cucumber and the clean sand behind it": "Holothuria tubulosa",
+  "a sand smelt shoal turning together": "Atherina hepsetus",
+  "an octopus den": "Octopus vulgaris",
+  "a peacock wrasse in breeding colour": "Symphodus tinca",
+  "a rainbow wrasse": "Coris julis",
+  "a five-spotted wrasse": "Symphodus roissali",
+  "a dusky grouper holding its ground": "Epinephelus marginatus",
+  "damselfish clouding above the reef": "Chromis chromis",
+  "salema grazing the leaves": "Sarpa salpa",
+  "a cuttlefish changing colour": "Sepia officinalis",
+  "a seahorse holding onto a blade": "Hippocampus hippocampus",
+  "a noble pen shell standing upright in the sand": "Pinna nobilis",
+  "juvenile sea bass among the shoots": "Dicentrarchus labrax",
+  "a wrasse sleeping among the leaves": "Coris julis",
+  "a bottlenose dolphin passing offshore": "Tursiops truncatus",
+  "tuna cutting through a bait ball": "Thunnus thynnus",
+  "a loggerhead turtle surfacing to breathe": "Caretta caretta",
+  "sea sparkle glowing in the wake after dark": "Noctiluca scintillans",
+  // Reward tiers
+  "a wrasse": "Coris julis",
+  "a seabream": "Diplodus vulgaris",
+  "a school of fish": "Atherina hepsetus",
+  "a sea cucumber": "Holothuria tubulosa",
+  "a grazing salema": "Sarpa salpa",
+  "a pen shell": "Pinna nobilis",
+  "a cuttlefish": "Sepia officinalis",
+  "a seahorse": "Hippocampus hippocampus",
+  "a dolphin": "Tursiops truncatus",
+  "a loggerhead turtle": "Caretta caretta",
+  "sea sparkle after dark": "Noctiluca scintillans",
+};
+
+function SpeciesPhrase({ phrase }: { phrase: string }) {
+  const t = useT();
+  const sci = linkedSpecies[phrase];
+  if (!sci) return <span>{t(phrase)}</span>;
+  return (
+    <Link
+      to="/flora-fauna"
+      hash={speciesSlug(sci)}
+      className="underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+      title={sci}
+    >
+      {t(phrase)}
+    </Link>
+  );
+}
+
 type LookClosely = { name: string; sci: string; what: string; look: string };
 
 const lookClosely: LookClosely[] = [
