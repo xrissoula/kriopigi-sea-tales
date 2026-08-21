@@ -172,7 +172,7 @@ export const elSnorkel: Record<string, string> = {
   "a grazing salema": "μια σάλπα που βόσκει",
   "a pen shell": "μια πίννα",
   "a cuttlefish": "μια σουπιά",
-  "Lucky Day": "Μέρα με τύχη",
+  "Lucky Day": "Τυχερή μέρα",
   "Rare, unplannable, worth remembering.":
     "Σπάνια, απρόβλεπτα, αξέχαστα.",
   "a seahorse": "ένας ιππόκαμπος",
