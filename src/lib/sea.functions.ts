@@ -45,6 +45,26 @@ export type SeaConditions = {
 
 const num = (v: unknown): number | null => (typeof v === "number" && Number.isFinite(v) ? v : null);
 
+/**
+ * Fetch JSON with a couple of retries. Returns null instead of throwing so that
+ * one unavailable upstream never blanks the whole page — the UI hides nulls.
+ */
+async function fetchJson(url: string, attempts = 3): Promise<any | null> {
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const res = await fetch(url, {
+        headers: { accept: "application/json", "user-agent": "kriopigi-shore-guide/1.0" },
+        signal: AbortSignal.timeout(8000),
+      });
+      if (res.ok) return await res.json();
+    } catch {
+      // fall through to retry
+    }
+    if (i < attempts - 1) await new Promise((r) => setTimeout(r, 300 * (i + 1)));
+  }
+  return null;
+}
+
 export const getSeaConditions = createServerFn({ method: "GET" }).handler(async (): Promise<SeaConditions> => {
   const marineUrl =
     `https://marine-api.open-meteo.com/v1/marine?latitude=${LAT}&longitude=${LON}` +
@@ -55,16 +75,10 @@ export const getSeaConditions = createServerFn({ method: "GET" }).handler(async 
     "&current=temperature_2m,wind_speed_10m,wind_direction_10m,cloud_cover" +
     "&daily=sunrise,sunset,wind_speed_10m_max,wind_direction_10m_dominant&forecast_days=6&timezone=Europe%2FAthens";
 
-  const [marineRes, weatherRes] = await Promise.all([
-    fetch(marineUrl, { headers: { accept: "application/json" } }),
-    fetch(weatherUrl, { headers: { accept: "application/json" } }),
-  ]);
-  if (!marineRes.ok || !weatherRes.ok) throw new Error("Marine forecast unavailable");
+  const [marine, weather] = await Promise.all([fetchJson(marineUrl), fetchJson(weatherUrl)]);
+  const dayDates: string[] = weather?.daily?.time ?? marine?.daily?.time ?? [];
+  const days: SeaDay[] = dayDates.map((date: string, i: number) => ({
 
-  const marine = (await marineRes.json()) as any;
-  const weather = (await weatherRes.json()) as any;
-
-  const days: SeaDay[] = (weather?.daily?.time ?? []).map((date: string, i: number) => ({
     date,
     sst: num(marine?.daily?.sea_surface_temperature_max?.[i]),
     waveHeight: num(marine?.daily?.wave_height_max?.[i]),
