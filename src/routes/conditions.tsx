@@ -44,7 +44,33 @@ export const Route = createFileRoute("/conditions")({
   }),
   loader: ({ context }) => context.queryClient.ensureQueryData(seaQuery),
   component: Conditions,
+  errorComponent: SeaError,
+  notFoundComponent: SeaError,
 });
+
+function SeaError() {
+  const t = useT();
+  return (
+    <SiteLayout>
+      <PageHeader
+        eyebrow={t("Live conditions")}
+        title={t("The Sea Today")}
+        lead={t("The marine forecast is temporarily unavailable. Please try again shortly.")}
+      />
+      <div className="px-5 pb-16 max-w-3xl mx-auto">
+        <a
+          href="https://poseidon.hcmr.gr/"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full bg-accent text-accent-foreground px-5 py-3 text-sm font-medium"
+        >
+          {t("Open POSEIDON forecasts")}
+        </a>
+      </div>
+    </SiteLayout>
+  );
+}
+
 
 const timeOnly = (iso: string | null) =>
   iso ? new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) : "—";
