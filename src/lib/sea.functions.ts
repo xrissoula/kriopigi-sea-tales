@@ -76,9 +76,9 @@ export const getSeaConditions = createServerFn({ method: "GET" }).handler(async 
     "&daily=sunrise,sunset,wind_speed_10m_max,wind_direction_10m_dominant&forecast_days=6&timezone=Europe%2FAthens";
 
   const [marine, weather] = await Promise.all([fetchJson(marineUrl), fetchJson(weatherUrl)]);
+  const dayDates: string[] = weather?.daily?.time ?? marine?.daily?.time ?? [];
+  const days: SeaDay[] = dayDates.map((date: string, i: number) => ({
 
-
-  const days: SeaDay[] = (weather?.daily?.time ?? []).map((date: string, i: number) => ({
     date,
     sst: num(marine?.daily?.sea_surface_temperature_max?.[i]),
     waveHeight: num(marine?.daily?.wave_height_max?.[i]),
