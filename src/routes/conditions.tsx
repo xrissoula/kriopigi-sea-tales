@@ -5,6 +5,8 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
 import { speciesSlug } from "@/lib/species";
 import { getSeaConditions } from "@/lib/sea.functions";
+import { getRecentSightings } from "@/lib/sightings.functions";
+
 import {
   bestTimes,
   compass,
@@ -24,6 +26,13 @@ const seaQuery = queryOptions({
   refetchInterval: 60 * 60 * 1000,
 });
 
+const sightingsQuery = queryOptions({
+  queryKey: ["local-sightings"],
+  queryFn: () => getRecentSightings(),
+  staleTime: 60 * 60 * 1000,
+});
+
+
 export const Route = createFileRoute("/conditions")({
   head: () => ({
     meta: [
@@ -42,7 +51,13 @@ export const Route = createFileRoute("/conditions")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  loader: ({ context }) => context.queryClient.ensureQueryData(seaQuery),
+  loader: async ({ context }) => {
+    await Promise.all([
+      context.queryClient.ensureQueryData(seaQuery),
+      context.queryClient.ensureQueryData(sightingsQuery),
+    ]);
+  },
+
   component: Conditions,
 });
 
@@ -86,6 +101,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function Conditions() {
   const t = useT();
   const { data } = useSuspenseQuery(seaQuery);
+  const sightings = useSuspenseQuery(sightingsQuery).data.sightings;
+
   const c = data.current;
   const season = seasonOf(c.time ? new Date(c.time) : new Date());
   const note = naturalistNote(data, season);
@@ -260,12 +277,54 @@ function Conditions() {
 
         {/* Recent local sightings */}
         <Section title="Recent local sightings">
-          <div className="rounded-2xl border border-dashed border-border p-6 text-center">
-            <p className="text-sm text-muted-foreground">
-              {t("Verified observations from the shore will appear here — each marked ✓ Confirmed on iNaturalist, with photograph, species and observation date — once the iNaturalist feed for Kriopigi is connected.")}
-            </p>
-          </div>
+          <p className="text-sm text-muted-foreground max-w-2xl">
+            {t("Observations recorded around Kriopigi and posted to iNaturalist, newest first.")}
+          </p>
+          {sightings.length === 0 ? (
+            <div className="mt-4 rounded-2xl border border-dashed border-border p-6 text-center">
+              <p className="text-sm text-muted-foreground">
+                {t("No recent observations are available right now. Check back soon.")}
+              </p>
+            </div>
+          ) : (
+            <div className="mt-4 grid sm:grid-cols-2 gap-3">
+              {sightings.map((s) => (
+                <a
+                  key={s.id}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-4 rounded-xl bg-card border border-border p-4 shadow-soft hover:border-accent/40 transition-colors"
+                >
+                  {s.photoUrl && (
+                    <img
+                      src={s.photoUrl}
+                      alt={s.commonName ?? s.scientificName ?? "iNaturalist observation"}
+                      loading="lazy"
+                      className="w-20 h-20 rounded-lg object-cover flex-none bg-muted"
+                    />
+                  )}
+                  <div className="min-w-0">
+                    <p className="font-serif text-lg text-foreground leading-tight">
+                      {t(s.commonName ?? s.scientificName ?? "Unidentified")}
+                    </p>
+                    {s.scientificName && <p className="text-xs italic text-muted-foreground">{s.scientificName}</p>}
+                    <p className="mt-1.5 text-xs text-muted-foreground">
+                      {s.qualityGrade === "research" ? t("Confirmed on iNaturalist") : t("Awaiting identification")}
+                      {s.observedOn ? ` · ${new Date(s.observedOn).toLocaleDateString("en-GB", { dateStyle: "medium" })}` : ""}
+                    </p>
+                    {s.observer && (
+                      <p className="text-xs text-muted-foreground">
+                        {t("Observed by")} {s.observer}
+                      </p>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          )}
         </Section>
+
 
         {/* Forecast timeline */}
         <Section title="Five-day outlook">
