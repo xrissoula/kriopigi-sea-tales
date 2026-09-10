@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { speciesSlug } from "@/lib/species";
+import { speciesImage } from "@/lib/species-images";
+
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
 import posidonia from "@/assets/posidonia.jpg";
