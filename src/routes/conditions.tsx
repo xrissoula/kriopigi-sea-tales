@@ -101,6 +101,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function Conditions() {
   const t = useT();
   const { data } = useSuspenseQuery(seaQuery);
+  const sightings = useSuspenseQuery(sightingsQuery).data.sightings;
+
   const c = data.current;
   const season = seasonOf(c.time ? new Date(c.time) : new Date());
   const note = naturalistNote(data, season);
