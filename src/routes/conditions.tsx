@@ -51,7 +51,13 @@ export const Route = createFileRoute("/conditions")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  loader: ({ context }) => context.queryClient.ensureQueryData(seaQuery),
+  loader: async ({ context }) => {
+    await Promise.all([
+      context.queryClient.ensureQueryData(seaQuery),
+      context.queryClient.ensureQueryData(sightingsQuery),
+    ]);
+  },
+
   component: Conditions,
 });
 
