@@ -303,17 +303,30 @@ function Snorkeling() {
               <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                 {i === 0 ? t("Look for") : t("Can you find\u2026")}
               </p>
-              <ul className="mt-3 space-y-2">
-                {z.hunt.map((h) => (
-                  <li key={h} className="flex gap-3 text-sm text-foreground/90 leading-relaxed">
-                    <span
-                      aria-hidden="true"
-                      className="mt-[3px] w-3.5 h-3.5 rounded-[3px] border border-accent/60 flex-shrink-0"
-                    />
-                    <SpeciesPhrase phrase={h} />
-                  </li>
-                ))}
+              <ul className="mt-3 space-y-3">
+                {z.hunt.map((h) => {
+                  const sci = linkedSpecies[h];
+                  const img = sci ? speciesImage(sci) : undefined;
+                  return (
+                    <li key={h} className="flex items-center gap-3 text-sm text-foreground/90 leading-relaxed">
+                      <span
+                        aria-hidden="true"
+                        className="w-3.5 h-3.5 rounded-[3px] border border-accent/60 flex-shrink-0"
+                      />
+                      {img && (
+                        <img
+                          src={img}
+                          alt={sci}
+                          loading="lazy"
+                          className="w-11 h-11 rounded-lg object-cover flex-none bg-muted"
+                        />
+                      )}
+                      <SpeciesPhrase phrase={h} />
+                    </li>
+                  );
+                })}
               </ul>
+
             </div>
 
             {z.tip && (
