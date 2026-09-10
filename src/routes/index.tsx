@@ -57,7 +57,7 @@ function Index() {
       <section className="px-5 pb-16 max-w-5xl mx-auto grid gap-4 sm:grid-cols-2">
         <FeatureCard to="/map" image={kassandraMap} icon={<Map size={18} />} title="Interactive Map" desc="Trails, springs, dive points & access notes." />
         <FeatureCard to="/flora-fauna" image={turtle} icon={<Leaf size={18} />} title="Flora & Fauna" desc="Five ecological zones, from pine line to open sea." />
-        <FeatureCard to="/snorkeling" image={posidonia} icon={<Waves size={18} />} title="Snorkeling" desc="Three coves, mapped with depth & visibility." />
+        <FeatureCard to="/snorkeling" image={posidonia} icon={<Waves size={18} />} title="Snorkeling" desc="A treasure hunt through the water — what to spot in each zone." />
         <FeatureCard to="/conservation" image={conservationPath} icon={<Shield size={18} />} title="Conservation" desc="Posidonia meadows & how to tread lightly." />
       </section>
     </SiteLayout>
