@@ -47,8 +47,8 @@ export const el: Record<string, string> = {
   "Halkidiki · Kassandra Peninsula": "Χαλκιδική · Χερσόνησος Κασσάνδρας",
   "A field guide to the": "Ένας οδηγός πεδίου για την",
   "Kriopigi shore": "ακτή της Κρυοπηγής",
-  "Walk the cove with us — through species, stories, and the slow language of the Aegean.":
-    "Περπατήστε μαζί μας στον όρμο, μέσα από είδη, ιστορίες και την αργή γλώσσα του Αιγαίου.",
+  "Walk the beach with us through species, stories, and the slow language of the Aegean.":
+    "Περπατήστε μαζί μας στην παραλία, μέσα από είδη, ιστορίες και την αργή γλώσσα του Αιγαίου.",
   "Open the map": "Άνοιγμα χάρτη",
   "Aerial view of Kriopigi Beach at golden hour":
     "Αεροφωτογραφία της παραλίας Κρυοπηγής στο χρυσό φως",
