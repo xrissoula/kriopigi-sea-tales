@@ -24,6 +24,13 @@ const seaQuery = queryOptions({
   refetchInterval: 60 * 60 * 1000,
 });
 
+const sightingsQuery = queryOptions({
+  queryKey: ["local-sightings"],
+  queryFn: () => getRecentSightings(),
+  staleTime: 60 * 60 * 1000,
+});
+
+
 export const Route = createFileRoute("/conditions")({
   head: () => ({
     meta: [
