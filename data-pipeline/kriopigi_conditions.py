@@ -202,11 +202,67 @@ def fetch_weather():
     }
 
 
+
+def fetch_daily():
+    """Six-day daily outlook (weather + marine), used by the site's five-day cards."""
+    weather_url = (
+        "https://api.open-meteo.com/v1/forecast"
+        f"?latitude={LAT}&longitude={LON}"
+        "&daily=sunrise,sunset,wind_speed_10m_max,wind_direction_10m_dominant"
+        "&forecast_days=6"
+        "&timezone=Europe%2FAthens"
+    )
+    marine_url = (
+        "https://marine-api.open-meteo.com/v1/marine"
+        f"?latitude={LAT}&longitude={LON}"
+        "&daily=wave_height_max,sea_surface_temperature_max"
+        "&forecast_days=6"
+        "&timezone=Europe%2FAthens"
+    )
+
+    with urllib.request.urlopen(weather_url) as response:
+        weather = json.load(response)["daily"]
+
+    try:
+        with urllib.request.urlopen(marine_url) as response:
+            marine = json.load(response)["daily"]
+    except Exception:
+        marine = {}
+
+    def at(source, key, i):
+        values = source.get(key) or []
+        return values[i] if i < len(values) else None
+
+    days = []
+    for i, date in enumerate(weather["time"]):
+        days.append(
+            {
+                "date": date,
+                "sunrise": at(weather, "sunrise", i),
+                "sunset": at(weather, "sunset", i),
+                "wind_speed_max_kmh": at(weather, "wind_speed_10m_max", i),
+                "wind_direction_dominant_degrees": at(
+                    weather, "wind_direction_10m_dominant", i
+                ),
+                "wave_height_max_m": at(marine, "wave_height_max", i),
+                "sea_temperature_max_c": at(marine, "sea_surface_temperature_max", i),
+            }
+        )
+
+    return days
+
+
 def main():
     fetch_copernicus()
 
     marine = read_copernicus()
     weather = fetch_weather()
+
+    try:
+        daily = fetch_daily()
+    except Exception as error:
+        print(f"daily outlook unavailable: {error}")
+        daily = []
 
     output = {
         "location": {
@@ -217,11 +273,13 @@ def main():
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "marine": marine,
         "weather": weather,
+        "daily": daily,
         "sources": {
             "marine": "Copernicus Marine Service",
             "weather": "Open-Meteo",
         },
     }
+
 
     json_text = json.dumps(output, indent=2, ensure_ascii=False)
 
