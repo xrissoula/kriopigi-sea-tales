@@ -146,7 +146,7 @@ const S = {
   sarpa: {
     sci: "Sarpa salpa",
     common: "Salema porgy",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Salpa_%28Sarpa_salpa%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_54.jpg/330px-Salpa_%28Sarpa_salpa%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_54.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sarpa_salpa_.jpg/330px-Sarpa_salpa_.jpg",
   },
   octopus: {
     sci: "Octopus vulgaris",
@@ -181,7 +181,7 @@ const S = {
   diplodus: {
     sci: "Diplodus vulgaris",
     common: "Common two-banded sea bream",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Diplodus_vulgaris_Sardinia.jpg/330px-Diplodus_vulgaris_Sardinia.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg/330px-Mojarra_%28Diplodus_vulgaris%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2020-07-31%2C_DD_20.jpg",
   },
 };
 
