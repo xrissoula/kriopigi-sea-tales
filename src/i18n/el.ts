@@ -66,8 +66,8 @@ export const el: Record<string, string> = {
   "A treasure hunt through the water — what to spot in each zone.":
     "Ένας υποβρύχιος θησαυρός γνώσης — τι να αναζητήσετε σε κάθε ζώνη.",
   Conservation: "Προστασία",
-  "Posidonia meadows & how to tread lightly.":
-    "Λιβάδια της Ποσειδωνίας και πώς να πατάμε ελαφρά.",
+  "What the beach ridge, winter erosion, and carried-in trash can teach us.":
+    "Τι μας διδάσκει η χειμερινή διάβρωση, η κορυφογραμμή της παραλίας και τα σκουπίδια που φέρνει η θάλασσα.",
   Section: "Ενότητα",
 
   // --- Field Notes (History) hub ---
