@@ -141,4 +141,12 @@ export const elSea: Record<string, string> = {
   "Common two-banded sea bream": "Σαργός (δίγραμμος σπάρος)",
   "Continental great cormorant": "Κορμοράνος",
   "Neptune grass": "Ποσειδωνία",
+  // --- Recent local sightings ---
+  "Observations recorded around Kriopigi and posted to iNaturalist, newest first.":
+    "Παρατηρήσεις που έχουν καταγραφεί στην περιοχή της Κρυοπηγής και δημοσιευτεί στο iNaturalist, με τις πιο πρόσφατες πρώτα.",
+  "No recent observations are available right now. Check back soon.":
+    "Δεν υπάρχουν πρόσφατες παρατηρήσεις προς το παρόν. Επισκεφθείτε ξανά σύντομα.",
+  "Awaiting identification": "Σε αναμονή ταυτοποίησης",
+  "Observed by": "Παρατήρηση από",
+  "Unidentified": "Μη ταυτοποιημένο",
 };
