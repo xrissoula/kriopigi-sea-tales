@@ -7,7 +7,7 @@ import { Camera, MapPin, Send } from "lucide-react";
 export const Route = createFileRoute("/submit")({
   head: () => ({
     meta: [
-      { title: "Submit an Observation, Kriopigi Shore Guide" },
+      { title: "Submit an Observation | Kriopigi Shore Guide" },
       { name: "description", content: "Share what you saw at Kriopigi: species, weather, debris, anything worth recording." },
     ],
   }),

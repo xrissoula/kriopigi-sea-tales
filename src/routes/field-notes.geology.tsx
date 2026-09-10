@@ -16,7 +16,7 @@ import aegeanCirculation from "@/assets/aegean-circulation.png";
 export const Route = createFileRoute("/field-notes/geology")({
   head: () => ({
     meta: [
-      { title: "Geological & Natural History, Kriopigi Shore Guide" },
+      { title: "Geological & Natural History | Kriopigi Shore Guide" },
       { name: "description", content: "The deep-time formation of the Kriopigi cove: tectonics, limestone, springs, and the rise of its ecosystem." },
     ],
   }),

@@ -27,13 +27,13 @@ const seaQuery = queryOptions({
 export const Route = createFileRoute("/conditions")({
   head: () => ({
     meta: [
-      { title: "The Sea Today, Kriopigi Shore Guide" },
+      { title: "The Sea Today | Kriopigi Shore Guide" },
       {
         name: "description",
         content:
           "Live marine conditions for Kriopigi Beach, sea temperature, waves, wind and currents, read as a marine naturalist's daily field note.",
       },
-      { property: "og:title", content: "The Sea Today, Kriopigi Shore Guide" },
+      { property: "og:title", content: "The Sea Today | Kriopigi Shore Guide" },
       {
         property: "og:description",
         content: "A live snapshot of the waters around Kriopigi, combining marine observations with natural history.",

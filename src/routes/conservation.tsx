@@ -9,7 +9,7 @@ import { Leaf, AlertTriangle, HandHeart, Shell, Sun } from "lucide-react";
 export const Route = createFileRoute("/conservation")({
   head: () => ({
     meta: [
-      { title: "Conservation, Kriopigi Shore Guide" },
+      { title: "Conservation | Kriopigi Shore Guide" },
       { name: "description", content: "Protecting Posidonia meadows, nesting habitats, and the fragile Mediterranean coast at Kriopigi." },
     ],
   }),

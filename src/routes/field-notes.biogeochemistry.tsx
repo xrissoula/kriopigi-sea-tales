@@ -12,7 +12,7 @@ import anthropologyTower from "@/assets/anthropology-tower.webp";
 export const Route = createFileRoute("/field-notes/biogeochemistry")({
   head: () => ({
     meta: [
-      { title: "Biogeochemistry of the Aegean, Kriopigi Shore Guide" },
+      { title: "Biogeochemistry of the Aegean | Kriopigi Shore Guide" },
       { name: "description", content: "From plate tectonics to dissolved oxygen, how the Aegean's deep architecture shapes its living chemistry." },
     ],
   }),

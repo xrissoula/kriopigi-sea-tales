@@ -6,9 +6,9 @@ import christina from "@/assets/christina-amparoudes.jpeg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About, Kriopigi Shore Guide" },
+      { title: "About | Kriopigi Shore Guide" },
       { name: "description", content: "About Christina Anthemides-Kelley and the Kriopigi Shore Guide project." },
-      { property: "og:title", content: "About, Kriopigi Shore Guide" },
+      { property: "og:title", content: "About | Kriopigi Shore Guide" },
       { property: "og:description", content: "A Greek-American writer, sailor, and naturalist documenting the Kriopigi coast." },
     ],
   }),

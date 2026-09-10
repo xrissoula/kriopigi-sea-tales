@@ -26,7 +26,7 @@ type Period = {
 export const Route = createFileRoute("/field-notes/anthropology")({
   head: () => ({
     meta: [
-      { title: "Anthropological History, Kriopigi Shore Guide" },
+      { title: "Anthropological History | Kriopigi Shore Guide" },
       { name: "description", content: "Human history of the Kassandra peninsula, from Neolithic settlers through Byzantine villages to today's tourist coast." },
     ],
   }),

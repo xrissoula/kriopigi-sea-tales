@@ -7,13 +7,13 @@ import posidonia from "@/assets/posidonia.jpg";
 export const Route = createFileRoute("/snorkeling")({
   head: () => ({
     meta: [
-      { title: "Snorkel Journey, Kriopigi Shore Guide" },
+      { title: "Snorkel Journey | Kriopigi Shore Guide" },
       {
         name: "description",
         content:
           "Swim out from the beach and watch the ecosystem change beneath you: six zones from the strand line to blue water, with things to look for in each.",
       },
-      { property: "og:title", content: "Snorkel Journey, Kriopigi Shore Guide" },
+      { property: "og:title", content: "Snorkel Journey | Kriopigi Shore Guide" },
       {
         property: "og:description",
         content: "A continuous underwater scavenger hunt at Kriopigi, from ghost crab burrows to the Posidonia forest and open blue.",

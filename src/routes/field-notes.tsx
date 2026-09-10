@@ -9,7 +9,7 @@ import hero from "@/assets/hero-kriopigi.webp";
 export const Route = createFileRoute("/field-notes")({
   head: () => ({
     meta: [
-      { title: "Field Notes, Kriopigi Shore Guide" },
+      { title: "Field Notes | Kriopigi Shore Guide" },
       { name: "description", content: "A chronological field guide to Kriopigi: geology, human history, and the living shore." },
     ],
   }),

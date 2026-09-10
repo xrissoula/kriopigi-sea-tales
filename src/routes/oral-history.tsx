@@ -7,7 +7,7 @@ import { Camera } from "lucide-react";
 export const Route = createFileRoute("/oral-history")({
   head: () => ({
     meta: [
-      { title: "Voices & Images, Kriopigi Shore Guide" },
+      { title: "Voices & Images | Kriopigi Shore Guide" },
       { name: "description", content: "Recorded oral histories from locals and a community photo archive of the Kriopigi shore." },
     ],
   }),

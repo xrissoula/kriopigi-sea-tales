@@ -36,7 +36,7 @@ export const el: Record<string, string> = {
   Submit: "Συμμετοχή",
   About: "Σχετικά",
   "Shore Guide": "Οδηγός Ακτής",
-  '"If you take Greece apart, in the end all that will remain are an olive tree, a vine, and a ship. Which means: with those three things, you can build her again.", Odysseas Elytis':
+  '"If you take Greece apart, in the end all that will remain are an olive tree, a vine, and a ship. Which means: with those three things, you can build her again." - Odysseas Elytis':
     '«Αν αποσυνθέσεις την Ελλάδα, στο τέλος θα σου απομείνουν μια ελιά, ένα αμπέλι κι ένα καράβι. Που σημαίνει: με άλλα τόσα την ξαναφτιάχνεις.»\n- Οδυσσέας Ελύτης',
   "Kriopigi Shore Guide · Halkidiki, Greece":
     "Οδηγός Ακτής Κρυοπηγής · Χαλκιδική, Ελλάδα",

@@ -12,9 +12,9 @@ import eupholidoptera from "@/assets/eupholidoptera-smyrnensis.jpg.asset.json";
 export const Route = createFileRoute("/flora-fauna")({
   head: () => ({
     meta: [
-      { title: "Flora & Fauna, Kriopigi Shore Guide" },
+      { title: "Flora & Fauna | Kriopigi Shore Guide" },
       { name: "description", content: "A field catalogue of Kriopigi's species, zone by zone, from the pine-shaded dune to the deep-water meadows." },
-      { property: "og:title", content: "Flora & Fauna, Kriopigi Shore Guide" },
+      { property: "og:title", content: "Flora & Fauna | Kriopigi Shore Guide" },
       { property: "og:description", content: "From the pine line to the open sea: five ecological zones of the Kriopigi shore." },
     ],
   }),
