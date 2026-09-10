@@ -46,6 +46,62 @@
       "from": "S"
     }
   },
+  "daily": [
+    {
+      "date": "2026-09-10",
+      "sunrise": "2026-09-10T07:02",
+      "sunset": "2026-09-10T19:43",
+      "wind_speed_max_kmh": 9.4,
+      "wind_direction_dominant_degrees": 83,
+      "wave_height_max_m": 0.18,
+      "sea_temperature_max_c": 26.4
+    },
+    {
+      "date": "2026-09-11",
+      "sunrise": "2026-09-11T07:03",
+      "sunset": "2026-09-11T19:41",
+      "wind_speed_max_kmh": 10.2,
+      "wind_direction_dominant_degrees": 132,
+      "wave_height_max_m": 0.12,
+      "sea_temperature_max_c": 26.8
+    },
+    {
+      "date": "2026-09-12",
+      "sunrise": "2026-09-12T07:04",
+      "sunset": "2026-09-12T19:40",
+      "wind_speed_max_kmh": 7.6,
+      "wind_direction_dominant_degrees": 106,
+      "wave_height_max_m": 0.12,
+      "sea_temperature_max_c": 26.4
+    },
+    {
+      "date": "2026-09-13",
+      "sunrise": "2026-09-13T07:05",
+      "sunset": "2026-09-13T19:38",
+      "wind_speed_max_kmh": 16.1,
+      "wind_direction_dominant_degrees": 17,
+      "wave_height_max_m": 0.38,
+      "sea_temperature_max_c": 26.3
+    },
+    {
+      "date": "2026-09-14",
+      "sunrise": "2026-09-14T07:06",
+      "sunset": "2026-09-14T19:36",
+      "wind_speed_max_kmh": 14.5,
+      "wind_direction_dominant_degrees": 129,
+      "wave_height_max_m": 0.26,
+      "sea_temperature_max_c": 26.1
+    },
+    {
+      "date": "2026-09-15",
+      "sunrise": "2026-09-15T07:06",
+      "sunset": "2026-09-15T19:35",
+      "wind_speed_max_kmh": 13.3,
+      "wind_direction_dominant_degrees": 43,
+      "wave_height_max_m": 0.1,
+      "sea_temperature_max_c": 26.1
+    }
+  ],
   "sources": {
     "marine": "Copernicus Marine Service",
     "weather": "Open-Meteo"
