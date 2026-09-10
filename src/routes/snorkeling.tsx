@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { speciesSlug } from "@/lib/species";
+import { speciesImage } from "@/lib/species-images";
+
 import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
 import posidonia from "@/assets/posidonia.jpg";
@@ -301,17 +303,30 @@ function Snorkeling() {
               <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                 {i === 0 ? t("Look for") : t("Can you find\u2026")}
               </p>
-              <ul className="mt-3 space-y-2">
-                {z.hunt.map((h) => (
-                  <li key={h} className="flex gap-3 text-sm text-foreground/90 leading-relaxed">
-                    <span
-                      aria-hidden="true"
-                      className="mt-[3px] w-3.5 h-3.5 rounded-[3px] border border-accent/60 flex-shrink-0"
-                    />
-                    <SpeciesPhrase phrase={h} />
-                  </li>
-                ))}
+              <ul className="mt-3 space-y-3">
+                {z.hunt.map((h) => {
+                  const sci = linkedSpecies[h];
+                  const img = sci ? speciesImage(sci) : undefined;
+                  return (
+                    <li key={h} className="flex items-center gap-3 text-sm text-foreground/90 leading-relaxed">
+                      <span
+                        aria-hidden="true"
+                        className="w-3.5 h-3.5 rounded-[3px] border border-accent/60 flex-shrink-0"
+                      />
+                      {img && (
+                        <img
+                          src={img}
+                          alt={sci}
+                          loading="lazy"
+                          className="w-11 h-11 rounded-lg object-cover flex-none bg-muted"
+                        />
+                      )}
+                      <SpeciesPhrase phrase={h} />
+                    </li>
+                  );
+                })}
               </ul>
+
             </div>
 
             {z.tip && (
@@ -332,19 +347,30 @@ function Snorkeling() {
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {lookClosely.map((s) => (
-            <li key={s.sci} className="rounded-2xl bg-card border border-border shadow-soft p-5">
-              <h3 className="font-serif text-xl text-foreground">{t(s.name)}</h3>
-              <Link
-                to="/flora-fauna"
-                hash={speciesSlug(s.sci)}
-                className="text-xs italic text-muted-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
-              >
-                {s.sci}
-              </Link>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(s.what)}</p>
-              <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-accent">{t("Look closely")}</p>
-              <p className="mt-1 text-sm text-foreground/90 leading-relaxed">{t(s.look)}</p>
+            <li key={s.sci} className="rounded-2xl bg-card border border-border shadow-soft overflow-hidden">
+              {speciesImage(s.sci) && (
+                <img
+                  src={speciesImage(s.sci)}
+                  alt={t(s.name)}
+                  loading="lazy"
+                  className="w-full h-40 object-cover bg-muted"
+                />
+              )}
+              <div className="p-5">
+                <h3 className="font-serif text-xl text-foreground">{t(s.name)}</h3>
+                <Link
+                  to="/flora-fauna"
+                  hash={speciesSlug(s.sci)}
+                  className="text-xs italic text-muted-foreground underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
+                  {s.sci}
+                </Link>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t(s.what)}</p>
+                <p className="mt-3 text-[10px] uppercase tracking-[0.2em] text-accent">{t("Look closely")}</p>
+                <p className="mt-1 text-sm text-foreground/90 leading-relaxed">{t(s.look)}</p>
+              </div>
             </li>
+
           ))}
         </ul>
       </section>
