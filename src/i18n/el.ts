@@ -63,8 +63,8 @@ export const el: Record<string, string> = {
   "Five ecological zones, from pine line to open sea.":
     "Πέντε οικολογικές ζώνες, από τη γραμμή των πεύκων έως την ανοιχτή θάλασσα.",
   Snorkeling: "Κατάδυση με αναπνευστήρα",
-  "Three coves, mapped with depth & visibility.":
-    "Τρεις κολπίσκοι, χαρτογραφημένοι με βάθος και ορατότητα.",
+  "A treasure hunt through the water — what to spot in each zone.":
+    "Ένας υποβρύχιος θησαυρός γνώσης — τι να αναζητήσετε σε κάθε ζώνη.",
   Conservation: "Προστασία",
   "Posidonia meadows & how to tread lightly.":
     "Λιβάδια της Ποσειδωνίας και πώς να πατάμε ελαφρά.",
