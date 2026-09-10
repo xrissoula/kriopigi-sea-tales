@@ -5,6 +5,8 @@ import { SiteLayout, PageHeader } from "@/components/SiteLayout";
 import { useT } from "@/i18n";
 import { speciesSlug } from "@/lib/species";
 import { getSeaConditions } from "@/lib/sea.functions";
+import { getRecentSightings } from "@/lib/sightings.functions";
+
 import {
   bestTimes,
   compass,
