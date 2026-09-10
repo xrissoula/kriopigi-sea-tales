@@ -27,13 +27,13 @@ const seaQuery = queryOptions({
 export const Route = createFileRoute("/conditions")({
   head: () => ({
     meta: [
-      { title: "The Sea Today — Kriopigi Shore Guide" },
+      { title: "The Sea Today | Kriopigi Shore Guide" },
       {
         name: "description",
         content:
-          "Live marine conditions for Kriopigi Beach — sea temperature, waves, wind and currents, read as a marine naturalist's daily field note.",
+          "Live marine conditions for Kriopigi Beach, sea temperature, waves, wind and currents, read as a marine naturalist's daily field note.",
       },
-      { property: "og:title", content: "The Sea Today — Kriopigi Shore Guide" },
+      { property: "og:title", content: "The Sea Today | Kriopigi Shore Guide" },
       {
         property: "og:description",
         content: "A live snapshot of the waters around Kriopigi, combining marine observations with natural history.",
@@ -73,7 +73,7 @@ function SeaError() {
 
 
 const timeOnly = (iso: string | null) =>
-  iso ? new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) : "—";
+  iso ? new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) : " - ";
 
 function Stat({
   icon: Icon,
@@ -133,20 +133,20 @@ function Conditions() {
         {/* Hero snapshot */}
         <div className="rounded-2xl bg-gradient-sea p-6 md:p-8 text-primary-foreground shadow-deep">
           <p className="text-[10px] uppercase tracking-[0.25em] opacity-80">
-            {t("Forecast issued")} {c.time ? new Date(c.time).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : "—"}
+            {t("Forecast issued")} {c.time ? new Date(c.time).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : " - "}
           </p>
           <p className="font-serif text-5xl mt-2">
-            {c.sst != null ? `${c.sst.toFixed(1)}°C` : "—"} <span className="text-2xl opacity-80">{t("sea surface")}</span>
+            {c.sst != null ? `${c.sst.toFixed(1)}°C` : " - "} <span className="text-2xl opacity-80">{t("sea surface")}</span>
           </p>
           <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] opacity-75">{t("Wind")}</p>
-              <p className="opacity-95">{windKn != null ? `${windKn} kn ${compass(c.windDirection)}` : "—"}</p>
+              <p className="opacity-95">{windKn != null ? `${windKn} kn ${compass(c.windDirection)}` : " - "}</p>
               <p className="text-[11px] opacity-70">{t(windPhrase(c.windSpeed))}</p>
             </div>
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] opacity-75">{t("Wave height")}</p>
-              <p className="opacity-95">{c.waveHeight != null ? `${c.waveHeight.toFixed(2)} m` : "—"}</p>
+              <p className="opacity-95">{c.waveHeight != null ? `${c.waveHeight.toFixed(2)} m` : " - "}</p>
             </div>
             {c.currentVelocity != null && (
               <div>
@@ -160,7 +160,7 @@ function Conditions() {
           <p className="mt-5 text-[11px] opacity-75">{t("Data source: POSEIDON · Hellenic Centre for Marine Research")}</p>
         </div>
 
-        {/* Naturalist note — centrepiece */}
+        {/* Naturalist note, centrepiece */}
         <section className="mt-8 rounded-2xl border border-accent/30 bg-card p-6 md:p-8 shadow-soft">
           <p className="text-[11px] uppercase tracking-[0.25em] text-accent font-medium">{t("Today's naturalist note")}</p>
           <div className="mt-3 space-y-3 font-serif text-lg md:text-xl leading-relaxed text-foreground/90">
@@ -169,7 +169,7 @@ function Conditions() {
             ))}
           </div>
           <p className="mt-4 text-xs text-muted-foreground italic">
-            {t("Inferred from today's sea state, water temperature and season — a statement of likelihood, not a record of sightings.")}
+            {t("Inferred from today's sea state, water temperature and season, a statement of likelihood, not a record of sightings.")}
           </p>
         </section>
 
@@ -177,18 +177,18 @@ function Conditions() {
         <Section title="Marine conditions">
           <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">{t("Sea")}</p>
           <div className="mt-2 grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <Stat icon={Droplet} label="Surface temperature" value={c.sst != null ? `${c.sst.toFixed(1)}°C` : "—"} />
-            <Stat icon={Waves} label="Wave height" value={c.waveHeight != null ? `${c.waveHeight.toFixed(2)} m` : "—"} />
+            <Stat icon={Droplet} label="Surface temperature" value={c.sst != null ? `${c.sst.toFixed(1)}°C` : " - "} />
+            <Stat icon={Waves} label="Wave height" value={c.waveHeight != null ? `${c.waveHeight.toFixed(2)} m` : " - "} />
             <Stat
               icon={Navigation}
               label="Swell direction"
-              value={c.waveDirection != null ? compass(c.waveDirection) : "—"}
+              value={c.waveDirection != null ? compass(c.waveDirection) : " - "}
               note={c.waveDirection != null ? `${Math.round(c.waveDirection)}°` : undefined}
             />
             <Stat
               icon={Compass}
               label="Current"
-              value={c.currentVelocity != null ? `${c.currentVelocity.toFixed(1)} km/h` : "—"}
+              value={c.currentVelocity != null ? `${c.currentVelocity.toFixed(1)} km/h` : " - "}
               note={c.currentDirection != null ? `setting ${compass(c.currentDirection)}` : undefined}
             />
           </div>
@@ -198,11 +198,11 @@ function Conditions() {
             <Stat
               icon={Wind}
               label="Wind"
-              value={windKn != null ? `${windKn} kn` : "—"}
+              value={windKn != null ? `${windKn} kn` : " - "}
               note={c.windDirection != null ? `${compass(c.windDirection)} · ${t(windPhrase(c.windSpeed))}` : undefined}
             />
-            <Stat icon={Thermometer} label="Air temperature" value={c.airTemp != null ? `${c.airTemp.toFixed(1)}°C` : "—"} />
-            <Stat icon={CloudSun} label="Cloud cover" value={c.cloudCover != null ? `${Math.round(c.cloudCover)}%` : "—"} />
+            <Stat icon={Thermometer} label="Air temperature" value={c.airTemp != null ? `${c.airTemp.toFixed(1)}°C` : " - "} />
+            <Stat icon={CloudSun} label="Cloud cover" value={c.cloudCover != null ? `${Math.round(c.cloudCover)}%` : " - "} />
             <div className="rounded-xl bg-card border border-border p-4 shadow-soft">
               <div className="flex items-center justify-between text-muted-foreground">
                 <span className="text-[10px] uppercase tracking-[0.2em]">{t("Sun")}</span>
@@ -258,7 +258,7 @@ function Conditions() {
         {/* Species most likely today */}
         <Section title="Species most likely today">
           <p className="text-sm text-muted-foreground max-w-2xl">
-            {t("Likelihood suggestions drawn from the species already documented in the Flora & Fauna guide — not sightings.")}
+            {t("Likelihood suggestions drawn from the species already documented in the Flora & Fauna guide, not sightings.")}
           </p>
           <div className="mt-4 grid sm:grid-cols-2 gap-3">
             {species.map((s) => (
@@ -288,7 +288,7 @@ function Conditions() {
         <Section title="Recent local sightings">
           <div className="rounded-2xl border border-dashed border-border p-6 text-center">
             <p className="text-sm text-muted-foreground">
-              {t("Verified observations from the shore will appear here — each marked ✓ Confirmed on iNaturalist, with photograph, species and observation date — once the iNaturalist feed for Kriopigi is connected.")}
+              {t("Verified observations from the shore will appear here, each marked ✓ Confirmed on iNaturalist, with photograph, species and observation date, once the iNaturalist feed for Kriopigi is connected.")}
             </p>
           </div>
         </Section>
@@ -303,8 +303,8 @@ function Conditions() {
                     {new Date(d.date).toLocaleDateString("en-GB", { weekday: "long" })}
                   </span>
                   <span className="text-xs text-muted-foreground tabular-nums">
-                    {d.sst != null ? `${d.sst.toFixed(1)}°C` : "—"} · {d.waveHeight != null ? `${d.waveHeight.toFixed(2)} m` : "—"} ·{" "}
-                    {knots(d.windSpeed) != null ? `${knots(d.windSpeed)} kn ${compass(d.windDirection)}` : "—"}
+                    {d.sst != null ? `${d.sst.toFixed(1)}°C` : " - "} · {d.waveHeight != null ? `${d.waveHeight.toFixed(2)} m` : " - "} ·{" "}
+                    {knots(d.windSpeed) != null ? `${knots(d.windSpeed)} kn ${compass(d.windDirection)}` : " - "}
                   </span>
                 </div>
                 <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{t(daySummary(d))}</p>
@@ -322,7 +322,7 @@ function Conditions() {
             </a>
           </p>
           <p className="mt-2">
-            {t("Forecast issue time")}: {c.time ?? "—"} · {t("Last refreshed")}:{" "}
+            {t("Forecast issue time")}: {c.time ?? " - "} · {t("Last refreshed")}:{" "}
             {new Date(data.fetchedAt).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" })} ·{" "}
             {t("Data refreshes hourly. No measurement on this page is estimated or invented; unavailable fields are hidden.")}
           </p>
