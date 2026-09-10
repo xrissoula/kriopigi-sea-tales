@@ -6,7 +6,7 @@ import { createServerFn } from "@tanstack/react-start";
  * The page is written against this single adapter so that the underlying
  * provider can be swapped for the POSEIDON (HCMR) operational forecast API
  * once endpoint credentials are available: keep the returned `SeaConditions`
- * shape and only replace the fetch below. Nothing here is ever synthesised —
+ * shape and only replace the fetch below. Nothing here is ever synthesised -
  * missing fields are returned as `null` and hidden by the UI.
  */
 
@@ -47,7 +47,7 @@ const num = (v: unknown): number | null => (typeof v === "number" && Number.isFi
 
 /**
  * Fetch JSON with a couple of retries. Returns null instead of throwing so that
- * one unavailable upstream never blanks the whole page — the UI hides nulls.
+ * one unavailable upstream never blanks the whole page, the UI hides nulls.
  */
 async function fetchJson(url: string, attempts = 3): Promise<any | null> {
   for (let i = 0; i < attempts; i++) {
