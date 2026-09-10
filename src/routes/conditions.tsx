@@ -260,12 +260,54 @@ function Conditions() {
 
         {/* Recent local sightings */}
         <Section title="Recent local sightings">
-          <div className="rounded-2xl border border-dashed border-border p-6 text-center">
-            <p className="text-sm text-muted-foreground">
-              {t("Verified observations from the shore will appear here — each marked ✓ Confirmed on iNaturalist, with photograph, species and observation date — once the iNaturalist feed for Kriopigi is connected.")}
-            </p>
-          </div>
+          <p className="text-sm text-muted-foreground max-w-2xl">
+            {t("Observations recorded around Kriopigi and posted to iNaturalist, newest first.")}
+          </p>
+          {sightings.length === 0 ? (
+            <div className="mt-4 rounded-2xl border border-dashed border-border p-6 text-center">
+              <p className="text-sm text-muted-foreground">
+                {t("No recent observations are available right now. Check back soon.")}
+              </p>
+            </div>
+          ) : (
+            <div className="mt-4 grid sm:grid-cols-2 gap-3">
+              {sightings.map((s) => (
+                <a
+                  key={s.id}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-4 rounded-xl bg-card border border-border p-4 shadow-soft hover:border-accent/40 transition-colors"
+                >
+                  {s.photoUrl && (
+                    <img
+                      src={s.photoUrl}
+                      alt={s.commonName ?? s.scientificName ?? "iNaturalist observation"}
+                      loading="lazy"
+                      className="w-20 h-20 rounded-lg object-cover flex-none bg-muted"
+                    />
+                  )}
+                  <div className="min-w-0">
+                    <p className="font-serif text-lg text-foreground leading-tight">
+                      {t(s.commonName ?? s.scientificName ?? "Unidentified")}
+                    </p>
+                    {s.scientificName && <p className="text-xs italic text-muted-foreground">{s.scientificName}</p>}
+                    <p className="mt-1.5 text-xs text-muted-foreground">
+                      {s.qualityGrade === "research" ? t("Confirmed on iNaturalist") : t("Awaiting identification")}
+                      {s.observedOn ? ` · ${new Date(s.observedOn).toLocaleDateString("en-GB", { dateStyle: "medium" })}` : ""}
+                    </p>
+                    {s.observer && (
+                      <p className="text-xs text-muted-foreground">
+                        {t("Observed by")} {s.observer}
+                      </p>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          )}
         </Section>
+
 
         {/* Forecast timeline */}
         <Section title="Five-day outlook">
