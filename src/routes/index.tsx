@@ -34,7 +34,7 @@ function Index() {
             {t("A field guide to the")} <em className="text-accent not-italic">{t("Kriopigi shore")}</em>.
           </h1>
           <p className="mt-4 text-primary-foreground/85 text-base md:text-lg max-w-md leading-relaxed">
-            {t("Walk the beach with us — through species, stories, and the slow language of the Aegean.")}
+            {t("Walk the beach with us through species, stories, and the slow language of the Aegean.")}
           </p>
           <Link to="/map" className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent text-accent-foreground px-5 py-3 text-sm font-medium shadow-deep hover:opacity-90 transition">
             {t("Open the map")} <ArrowRight size={16} />
