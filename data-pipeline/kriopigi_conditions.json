@@ -4,28 +4,28 @@
     "latitude": 40.046,
     "longitude": 23.48
   },
-  "generated_at_utc": "2026-09-10T18:44:50.855738+00:00",
+  "generated_at_utc": "2026-09-10T19:01:34.640826+00:00",
   "marine": {
     "marine_model_grid": {
       "latitude": 40.0625,
       "longitude": 23.5
     },
-    "sea_temperature_c": 27.3,
+    "sea_temperature_c": 27.2,
     "current": {
-      "speed_m_s": 0.0264,
-      "speed_cm_s": 2.6,
-      "toward_degrees": 184,
+      "speed_m_s": 0.0244,
+      "speed_cm_s": 2.4,
+      "toward_degrees": 186,
       "toward": "S",
-      "model_time": "2026-09-10T18:30:00.000000000"
+      "model_time": "2026-09-10T19:00:00.000000000"
     },
     "waves": {
-      "significant_height_m": 0.06,
+      "significant_height_m": 0.05,
       "mean_period_s": 2.1,
-      "from_degrees": 113,
-      "from": "SE",
-      "model_time": "2026-09-10T18:00:00.000000000"
+      "from_degrees": 112,
+      "from": "E",
+      "model_time": "2026-09-10T19:00:00.000000000"
     },
-    "temperature_model_time": "2026-09-10T18:00:00.000000000"
+    "temperature_model_time": "2026-09-10T19:00:00.000000000"
   },
   "weather": {
     "weather_model_grid": {
