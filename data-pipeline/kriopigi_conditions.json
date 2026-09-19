@@ -4,46 +4,46 @@
     "latitude": 40.046,
     "longitude": 23.48
   },
-  "generated_at_utc": "2026-09-18T21:43:21.177733+00:00",
+  "generated_at_utc": "2026-09-19T00:22:55.270485+00:00",
   "marine": {
     "marine_model_grid": {
       "latitude": 40.0625,
       "longitude": 23.5
     },
-    "sea_temperature_c": 26.0,
+    "sea_temperature_c": 25.9,
     "current": {
-      "speed_m_s": 0.0381,
-      "speed_cm_s": 3.8,
-      "toward_degrees": 136,
+      "speed_m_s": 0.0354,
+      "speed_cm_s": 3.5,
+      "toward_degrees": 143,
       "toward": "SE",
-      "model_time": "2026-09-18T21:30:00.000000000"
+      "model_time": "2026-09-19T00:15:00.000000000"
     },
     "waves": {
-      "significant_height_m": 0.12,
-      "mean_period_s": 1.8,
-      "from_degrees": 116,
+      "significant_height_m": 0.07,
+      "mean_period_s": 1.7,
+      "from_degrees": 113,
       "from": "SE",
-      "model_time": "2026-09-18T21:00:00.000000000"
+      "model_time": "2026-09-19T00:00:00.000000000"
     },
-    "temperature_model_time": "2026-09-18T21:00:00.000000000"
+    "temperature_model_time": "2026-09-19T00:00:00.000000000"
   },
   "weather": {
     "weather_model_grid": {
       "latitude": 40.0625,
       "longitude": 23.4375
     },
-    "forecast_time_local": "2026-09-19T01:00",
-    "air_temperature_c": 23.0,
+    "forecast_time_local": "2026-09-19T03:00",
+    "air_temperature_c": 22.9,
     "apparent_temperature_c": 25.2,
-    "cloud_cover_percent": 83,
+    "cloud_cover_percent": 78,
     "precipitation_mm": 0.0,
     "weather": "Partly cloudy",
-    "atmospheric_visibility_km": 38.5,
+    "atmospheric_visibility_km": 37.5,
     "wind": {
-      "speed_m_s": 0.72,
-      "gust_m_s": 1.9,
-      "from_degrees": 124,
-      "from": "SE"
+      "speed_m_s": 1.0,
+      "gust_m_s": 1.7,
+      "from_degrees": 96,
+      "from": "E"
     }
   },
   "daily": [
@@ -53,7 +53,7 @@
       "sunset": "2026-09-19T19:28",
       "wind_speed_max_kmh": 8.0,
       "wind_direction_dominant_degrees": 140,
-      "wave_height_max_m": 0.18,
+      "wave_height_max_m": 0.22,
       "sea_temperature_max_c": 25.6
     },
     {
@@ -62,7 +62,7 @@
       "sunset": "2026-09-20T19:27",
       "wind_speed_max_kmh": 10.2,
       "wind_direction_dominant_degrees": 142,
-      "wave_height_max_m": 0.12,
+      "wave_height_max_m": 0.1,
       "sea_temperature_max_c": 25.5
     },
     {
@@ -71,7 +71,7 @@
       "sunset": "2026-09-21T19:25",
       "wind_speed_max_kmh": 10.5,
       "wind_direction_dominant_degrees": 244,
-      "wave_height_max_m": 0.16,
+      "wave_height_max_m": 0.1,
       "sea_temperature_max_c": 25.8
     },
     {
@@ -80,7 +80,7 @@
       "sunset": "2026-09-22T19:23",
       "wind_speed_max_kmh": 13.8,
       "wind_direction_dominant_degrees": 183,
-      "wave_height_max_m": 0.62,
+      "wave_height_max_m": 0.52,
       "sea_temperature_max_c": 25.2
     },
     {
@@ -89,7 +89,7 @@
       "sunset": "2026-09-23T19:22",
       "wind_speed_max_kmh": 14.4,
       "wind_direction_dominant_degrees": 303,
-      "wave_height_max_m": 0.7,
+      "wave_height_max_m": 1.02,
       "sea_temperature_max_c": 24.7
     },
     {
@@ -98,7 +98,7 @@
       "sunset": "2026-09-24T19:20",
       "wind_speed_max_kmh": 14.2,
       "wind_direction_dominant_degrees": 167,
-      "wave_height_max_m": 0.18,
+      "wave_height_max_m": 0.42,
       "sea_temperature_max_c": 24.4
     }
   ],
